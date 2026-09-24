@@ -110,6 +110,17 @@ function karu_esencial_whatsapp_url( $message = '' ) {
 }
 
 /**
+ * Devuelve el contenido de bloques de la landing completa.
+ *
+ * @return string
+ */
+function karu_esencial_get_landing_content() {
+	ob_start();
+	include get_theme_file_path( 'patterns/landing.php' );
+	return ob_get_clean();
+}
+
+/**
  * Al activar el tema, crea la página "Inicio" con la landing completa
  * (editable desde el editor de páginas) y la define como portada.
  */
@@ -120,16 +131,12 @@ function karu_esencial_create_landing_page() {
 		return;
 	}
 
-	ob_start();
-	include get_theme_file_path( 'patterns/landing.php' );
-	$content = ob_get_clean();
-
 	$page_id = wp_insert_post(
 		array(
 			'post_type'    => 'page',
 			'post_status'  => 'publish',
 			'post_title'   => __( 'Inicio', 'karu-esencial' ),
-			'post_content' => wp_slash( $content ),
+			'post_content' => wp_slash( karu_esencial_get_landing_content() ),
 		)
 	);
 
@@ -139,6 +146,7 @@ function karu_esencial_create_landing_page() {
 
 	update_post_meta( $page_id, '_wp_page_template', 'page-landing' );
 	update_option( 'karu_esencial_landing_page_id', $page_id );
+	update_option( 'karu_esencial_landing_version', wp_get_theme()->get( 'Version' ) );
 
 	if ( 'page' !== get_option( 'show_on_front' ) || ! get_option( 'page_on_front' ) ) {
 		update_option( 'show_on_front', 'page' );
@@ -146,3 +154,44 @@ function karu_esencial_create_landing_page() {
 	}
 }
 add_action( 'after_switch_theme', 'karu_esencial_create_landing_page' );
+
+/**
+ * Al actualizar el tema, renueva el diseño de la página "Inicio" solo si
+ * nunca fue editada (fecha de modificación igual a la de creación).
+ * Si ya tiene cambios del usuario, no se toca.
+ */
+function karu_esencial_maybe_update_landing_page() {
+	$version = wp_get_theme()->get( 'Version' );
+
+	if ( get_option( 'karu_esencial_landing_version' ) === $version || ! current_user_can( 'edit_pages' ) ) {
+		return;
+	}
+
+	update_option( 'karu_esencial_landing_version', $version );
+
+	$page = get_post( (int) get_option( 'karu_esencial_landing_page_id' ) );
+
+	if ( ! $page || 'page' !== $page->post_type || 'trash' === $page->post_status || $page->post_modified_gmt !== $page->post_date_gmt ) {
+		return;
+	}
+
+	wp_update_post(
+		array(
+			'ID'           => $page->ID,
+			'post_content' => wp_slash( karu_esencial_get_landing_content() ),
+		)
+	);
+
+	// Conserva la fecha original para que futuras versiones también puedan actualizarla.
+	global $wpdb;
+	$wpdb->update(
+		$wpdb->posts,
+		array(
+			'post_modified'     => $page->post_date,
+			'post_modified_gmt' => $page->post_date_gmt,
+		),
+		array( 'ID' => $page->ID )
+	);
+	clean_post_cache( $page->ID );
+}
+add_action( 'admin_init', 'karu_esencial_maybe_update_landing_page' );

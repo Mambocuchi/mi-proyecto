@@ -12,6 +12,12 @@
 
 $karu_home = home_url( '/' );
 ?>
+<!-- wp:group {"align":"full","className":"karu-topbar","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull karu-topbar"><!-- wp:paragraph {"align":"center","className":"karu-topbar__text"} -->
+<p class="has-text-align-center karu-topbar__text"><strong>100% natural</strong> · Despacho a domicilio o retiro coordinado · Pedidos por <a href="<?php echo esc_url( karu_esencial_whatsapp_url( 'Hola Karü Esencial, quiero hacer un pedido.' ) ); ?>" target="_blank" rel="noreferrer noopener">WhatsApp</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"align":"full","className":"karu-header","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull karu-header"><!-- wp:group {"align":"wide","className":"karu-header__inner","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide karu-header__inner"><!-- wp:image {"linkDestination":"custom","className":"karu-logo"} -->

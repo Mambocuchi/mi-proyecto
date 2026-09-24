@@ -26,18 +26,32 @@ $karu_faqs = array(
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"karu-section-title"} -->
-<h2 class="wp-block-heading karu-section-title">Resolvemos tus dudas</h2>
+<h2 class="wp-block-heading karu-section-title">Resolvemos <em>tus dudas</em></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"karu-lead"} -->
-<p class="karu-lead">Si no encuentras lo que buscas, escríbenos. Te respondemos personalmente.</p>
+<p class="karu-lead">Todo lo que necesitas saber antes de hacer tu pedido.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"karu-help","layout":{"type":"default"}} -->
+<div class="wp-block-group karu-help"><!-- wp:image {"className":"karu-icon"} -->
+<figure class="wp-block-image karu-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/icon-atencion.svg' ) ); ?>" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"className":"karu-help__title"} -->
+<h3 class="wp-block-heading karu-help__title">¿Tienes otra pregunta?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"karu-help__text"} -->
+<p class="karu-help__text">Escríbenos y te respondemos personalmente en horario de atención.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","linkTarget":"_blank","rel":"noreferrer noopener"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( karu_esencial_whatsapp_url( 'Hola Karü Esencial, tengo una consulta.' ) ); ?>" target="_blank" rel="noreferrer noopener">Hacer una consulta</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-whatsapp","linkTarget":"_blank","rel":"noreferrer noopener"} -->
+<div class="wp-block-button is-style-whatsapp"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( karu_esencial_whatsapp_url( 'Hola Karü Esencial, tengo una consulta.' ) ); ?>" target="_blank" rel="noreferrer noopener">Hacer una consulta</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"className":"karu-faq__list"} -->

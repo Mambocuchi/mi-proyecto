@@ -17,6 +17,16 @@ Requiere WordPress 6.6 o superior y PHP 7.4 o superior.
    asigna "Inicio" como portada manualmente en Ajustes > Lectura.
 
 
+== Actualizar desde una versión anterior ==
+
+Sube el nuevo ZIP en Apariencia > Temas > Añadir nuevo > Subir tema y elige
+"Reemplazar la instalada". Al entrar al escritorio, si la página "Inicio"
+nunca fue editada, su contenido se actualiza automáticamente al nuevo diseño.
+Si ya la editaste, no se toca: para usar el nuevo diseño, abre la página,
+borra su contenido e inserta el patrón "Landing page completa" (categoría
+Karü Esencial).
+
+
 == Dónde se edita el diseño ==
 
 * Contenido de la landing: Páginas > Inicio. Todo está hecho con bloques
@@ -56,7 +66,7 @@ style.css            Cabecera del tema (sin estilos).
 theme.json           Paleta, tipografías, tamaños, espaciados y plantillas.
 functions.php        Carga de estilos, patrones, estilos de botón y página inicial.
 assets/css/styles.css  Todo el CSS del tema.
-assets/fonts/        Fraunces y Plus Jakarta Sans (woff2 locales, licencia OFL).
+assets/fonts/        Fraunces (normal y cursiva) y Plus Jakarta Sans (woff2 locales, OFL).
 assets/images/       Logo, íconos e ilustraciones SVG.
 templates/           index, page, single, 404 y page-landing.
 parts/               header y footer.

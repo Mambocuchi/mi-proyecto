@@ -25,7 +25,7 @@ $karu_uses = array(
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"karu-section-title"} -->
-<h2 class="wp-block-heading karu-section-title">Ideas simples para cada rincón de la casa</h2>
+<h2 class="wp-block-heading karu-section-title">Ideas simples para <em>cada rincón</em> de la casa</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"karu-lead"} -->
@@ -37,8 +37,8 @@ $karu_uses = array(
 <div class="wp-block-group alignwide karu-grid karu-grid--3">
 <?php foreach ( $karu_uses as $karu_use ) : ?>
 <!-- wp:group {"className":"karu-card karu-use","layout":{"type":"default"}} -->
-<div class="wp-block-group karu-card karu-use"><!-- wp:image {"className":"karu-icon karu-icon--small"} -->
-<figure class="wp-block-image karu-icon karu-icon--small"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/' . $karu_use[0] ) ); ?>" alt=""/></figure>
+<div class="wp-block-group karu-card karu-use"><!-- wp:image {"className":"karu-icon"} -->
+<figure class="wp-block-image karu-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/' . $karu_use[0] ) ); ?>" alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"className":"karu-card__title"} -->
@@ -49,8 +49,8 @@ $karu_uses = array(
 <p class="karu-card__text"><?php echo esc_html( $karu_use[2] ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"className":"karu-tag"} -->
-<p class="karu-tag"><?php echo esc_html( $karu_use[3] ); ?></p>
+<!-- wp:paragraph {"className":"karu-use__products"} -->
+<p class="karu-use__products">Usa: <strong><?php echo esc_html( $karu_use[3] ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <?php endforeach; ?>

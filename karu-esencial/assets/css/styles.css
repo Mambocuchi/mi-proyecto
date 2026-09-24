@@ -5,26 +5,32 @@
    theme.json; WordPress los expone como variables CSS (--wp--preset--*),
    que esta hoja reutiliza para mantener una sola fuente de verdad.
 
+   Paleta de marca: #4a90e2 (azul), #b8e0ff (celeste) y #ffffff (blanco).
+   Derivados: azul profundo #2a6dbf (texto y botones con buen contraste),
+   azul noche #12365f (secciones oscuras) y celeste muy claro #eef7ff.
+
    Índice
    01. Tokens del tema
    02. Base
    03. Estructura y secciones
-   04. Componentes comunes (etiquetas, tarjetas, íconos, listas)
-   05. Botones
-   06. Encabezado y navegación
-   07. Hero
-   08. Productos
-   09. Beneficios
-   10. Cómo usarlos
-   11. Cómo comprar
-   12. Galería
-   13. Testimonios
-   14. Preguntas frecuentes
-   15. Llamado a la acción final
-   16. Pie de página
-   17. Páginas internas y blog
-   18. Responsive
-   19. Movimiento reducido
+   04. Encabezados de sección
+   05. Componentes comunes
+   06. Botones
+   07. Barra superior, encabezado y navegación
+   08. Hero
+   09. Franja de atributos
+   10. Productos
+   11. Beneficios
+   12. Cómo usarlos
+   13. Cómo comprar
+   14. Galería
+   15. Testimonios
+   16. Preguntas frecuentes
+   17. Llamado a la acción final
+   18. Pie de página
+   19. Páginas internas y blog
+   20. Responsive
+   21. Movimiento y mejoras progresivas
    ========================================================================== */
 
 
@@ -36,12 +42,14 @@
 	--karu-blue: var(--wp--preset--color--primary, #4a90e2);
 	--karu-blue-strong: var(--wp--preset--color--primary-strong, #2a6dbf);
 	--karu-blue-hover: #225ca3;
+	--karu-navy: var(--wp--preset--color--navy, #12365f);
 	--karu-sky: var(--wp--preset--color--sky, #b8e0ff);
 	--karu-sky-light: var(--wp--preset--color--sky-light, #eef7ff);
 	--karu-white: var(--wp--preset--color--base, #ffffff);
-	--karu-ink: var(--wp--preset--color--contrast, #1f2a37);
-	--karu-muted: var(--wp--preset--color--muted, #566273);
-	--karu-border: #deecf9;
+	--karu-ink: var(--wp--preset--color--contrast, #17263a);
+	--karu-muted: var(--wp--preset--color--muted, #51607a);
+	--karu-border: #dcebf9;
+	--karu-border-strong: #c4def7;
 
 	--karu-font-heading: var(--wp--preset--font-family--heading, Georgia, serif);
 	--karu-font-body: var(--wp--preset--font-family--body, system-ui, sans-serif);
@@ -49,7 +57,7 @@
 	--karu-radius-sm: 0.75rem;
 	--karu-radius: 1.25rem;
 	--karu-radius-lg: 1.75rem;
-	--karu-radius-xl: 2.25rem;
+	--karu-radius-xl: 2.5rem;
 	--karu-pill: 999px;
 
 	--karu-shadow: var(--wp--preset--shadow--soft, 0 8px 24px rgba(42, 109, 191, 0.08));
@@ -57,6 +65,7 @@
 
 	--karu-gap: clamp(1rem, 2vw, 1.5rem);
 	--karu-section-space: var(--wp--preset--spacing--70, clamp(4rem, 8vw, 7rem));
+	--karu-topbar-height: 2.375rem;
 	--karu-header-height: 4.75rem;
 	--karu-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -87,9 +96,16 @@ h3,
 h4 {
 	color: var(--karu-ink);
 	font-weight: 600;
-	letter-spacing: -0.02em;
-	line-height: 1.12;
+	letter-spacing: -0.022em;
+	line-height: 1.1;
 	text-wrap: balance;
+}
+
+h1 em,
+h2 em {
+	color: var(--karu-blue-strong);
+	font-style: italic;
+	font-weight: 500;
 }
 
 p {
@@ -132,41 +148,77 @@ img {
 	margin-block: 0;
 }
 
+/* Reinicio de márgenes del flujo nativo: cada componente define los suyos más abajo. */
+.karu-section-head > *,
+.karu-split-head > *,
+.karu-split-head__main > *,
+.karu-hero__content > *,
+.karu-benefits__intro > *,
+.karu-faq__intro > *,
+.karu-cta__content > *,
+.karu-card > *,
+.karu-product > *,
+.karu-product__body > *,
+.karu-feature > *,
+.karu-promise > *,
+.karu-help > *,
+.karu-step > *,
+.karu-stats > *,
+.karu-stat > *,
+.karu-float > *,
+.karu-compare > * {
+	margin-block: 0;
+}
+
 .karu-section {
+	position: relative;
 	margin-block: 0;
 	padding-block: var(--karu-section-space);
 	scroll-margin-top: var(--karu-header-height);
 }
 
 .karu-section--tint {
-	background: linear-gradient(180deg, var(--karu-sky-light) 0%, #f6fbff 100%);
+	background: var(--karu-sky-light);
 }
 
-.karu-section-head {
-	margin-bottom: clamp(2.5rem, 5vw, 4rem);
-	text-align: center;
+.karu-section--sky {
+	background: linear-gradient(180deg, var(--karu-sky) 0%, #d3ebff 100%);
 }
 
-/* Reinicio de márgenes del flujo nativo: cada componente define los suyos más abajo. */
-.karu-section-head > *,
-.karu-hero__content > *,
-.karu-faq__intro > *,
-.karu-cta__panel > *,
-.karu-card > *,
-.karu-product__body > * {
-	margin-block: 0;
+.karu-section--dark {
+	overflow: hidden;
+	isolation: isolate;
+	background:
+		radial-gradient(50rem 30rem at 100% 0%, rgba(74, 144, 226, 0.45) 0%, rgba(74, 144, 226, 0) 60%),
+		radial-gradient(40rem 30rem at 0% 100%, rgba(42, 109, 191, 0.5) 0%, rgba(42, 109, 191, 0) 60%),
+		var(--karu-navy);
+	color: rgba(255, 255, 255, 0.82);
 }
 
-.karu-section-title {
-	margin-block: 0 1rem;
-	font-size: var(--wp--preset--font-size--xx-large);
+.karu-section--dark::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	right: -4rem;
+	bottom: -5rem;
+	width: 26rem;
+	height: 26rem;
+	background: url("../images/hoja-decorativa.svg") center / contain no-repeat;
+	opacity: 0.08;
+	pointer-events: none;
 }
 
-.karu-lead {
-	margin-block: 0;
-	color: var(--karu-muted);
-	font-size: var(--wp--preset--font-size--large);
-	line-height: 1.6;
+.karu-section--dark h2,
+.karu-section--dark h3 {
+	color: var(--karu-white);
+}
+
+.karu-section--dark h2 em {
+	color: var(--karu-sky);
+}
+
+.karu-section--dark .karu-lead {
+	color: rgba(255, 255, 255, 0.8);
 }
 
 /* Grillas de tarjetas */
@@ -196,23 +248,64 @@ img {
 
 
 /* ==========================================================================
-   04. Componentes comunes
+   04. Encabezados de sección
    ========================================================================== */
 
-/* Antetítulo tipo "pill" */
+/* Centrado */
+.karu-section-head {
+	margin-bottom: clamp(2.5rem, 5vw, 4rem);
+	text-align: center;
+}
+
+/* Dividido: título a la izquierda, bajada a la derecha */
+.karu-split-head {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+	align-items: end;
+	gap: 1.5rem clamp(2rem, 6vw, 6rem);
+	margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.karu-split-head .karu-section-title {
+	margin-bottom: 0;
+}
+
+.karu-split-head__aside {
+	padding-bottom: 0.4rem;
+}
+
+.karu-section-title {
+	margin-block: 0 1.125rem;
+	font-size: var(--wp--preset--font-size--xx-large);
+	line-height: 1.06;
+}
+
+.karu-lead {
+	margin-block: 0;
+	color: var(--karu-muted);
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.6;
+}
+
+.karu-section-head .karu-lead {
+	max-width: 40rem;
+	margin-inline: auto;
+}
+
+/* Antetítulo */
 .karu-eyebrow {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 0.55rem;
 	width: fit-content;
 	margin-block: 0 1.25rem;
-	padding: 0.4rem 0.9rem;
+	padding: 0.45rem 0.95rem 0.45rem 0.7rem;
 	border-radius: var(--karu-pill);
 	background: var(--karu-sky-light);
 	color: var(--karu-blue-strong);
-	font-size: 0.8125rem;
+	font-size: 0.78rem;
 	font-weight: 700;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.12em;
 	line-height: 1.3;
 	text-transform: uppercase;
 }
@@ -220,31 +313,42 @@ img {
 .karu-eyebrow::before {
 	content: "";
 	flex: none;
-	width: 0.45rem;
-	height: 0.45rem;
-	border-radius: 50%;
-	background: var(--karu-blue);
+	width: 1rem;
+	height: 1rem;
+	background: url("../images/icon-natural.svg") center / contain no-repeat;
 }
 
 .karu-section-head .karu-eyebrow,
-.karu-cta__panel .karu-eyebrow,
 .karu-404 .karu-eyebrow {
 	margin-inline: auto;
-	margin-bottom: 1.25rem;
 }
 
-.karu-section--tint .karu-eyebrow {
+.karu-section--tint .karu-eyebrow,
+.karu-section--sky .karu-eyebrow,
+.karu-hero .karu-eyebrow {
 	background: var(--karu-white);
+	box-shadow: 0 4px 14px -6px rgba(42, 109, 191, 0.3);
 }
 
-.karu-eyebrow--light {
-	background: rgba(255, 255, 255, 0.14);
+.karu-eyebrow--light,
+.karu-section--dark .karu-eyebrow {
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 0 0 1px rgba(184, 224, 255, 0.25);
 	color: var(--karu-white);
 }
 
-.karu-eyebrow--light::before {
-	background: var(--karu-sky);
+.karu-eyebrow--light::before,
+.karu-section--dark .karu-eyebrow::before {
+	background-color: var(--karu-sky);
+	background-image: none;
+	-webkit-mask: url("../images/icon-natural.svg") center / contain no-repeat;
+	mask: url("../images/icon-natural.svg") center / contain no-repeat;
 }
+
+
+/* ==========================================================================
+   05. Componentes comunes
+   ========================================================================== */
 
 /* Etiqueta pequeña */
 .karu-tag {
@@ -255,9 +359,9 @@ img {
 	border-radius: var(--karu-pill);
 	background: var(--karu-sky-light);
 	color: var(--karu-blue-strong);
-	font-size: 0.75rem;
+	font-size: 0.72rem;
 	font-weight: 700;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.06em;
 	line-height: 1.4;
 	text-transform: uppercase;
 }
@@ -292,27 +396,21 @@ img {
 .wp-block-image.karu-icon {
 	display: grid;
 	place-items: center;
-	width: 3.75rem;
-	height: 3.75rem;
+	width: 3.5rem;
+	height: 3.5rem;
 	margin: 0 0 1.5rem;
 	border-radius: 1.125rem;
-	background: var(--karu-sky-light);
+	background: linear-gradient(135deg, var(--karu-sky) 0%, #dff0ff 100%);
 }
 
 .wp-block-image.karu-icon img {
-	width: 2rem;
-	height: 2rem;
+	width: 1.75rem;
+	height: 1.75rem;
 }
 
-.wp-block-image.karu-icon--small {
-	width: 3rem;
-	height: 3rem;
-	border-radius: 1rem;
-}
-
-.wp-block-image.karu-icon--small img {
-	width: 1.6rem;
-	height: 1.6rem;
+.karu-section--tint .wp-block-image.karu-icon {
+	background: var(--karu-white);
+	box-shadow: 0 8px 20px -10px rgba(42, 109, 191, 0.35);
 }
 
 /* Lista con checks */
@@ -353,7 +451,7 @@ img {
 
 
 /* ==========================================================================
-   05. Botones
+   06. Botones
    ========================================================================== */
 
 .wp-block-buttons {
@@ -365,11 +463,11 @@ img {
 	align-items: center;
 	justify-content: center;
 	gap: 0.6rem;
-	padding: 0.95rem 1.6rem;
+	padding: 1rem 1.65rem;
 	border: 2px solid transparent;
 	border-radius: var(--karu-pill);
 	background-color: var(--karu-blue-strong);
-	box-shadow: 0 10px 24px -10px rgba(42, 109, 191, 0.65);
+	box-shadow: 0 12px 26px -12px rgba(42, 109, 191, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.18);
 	color: var(--karu-white);
 	font-family: var(--karu-font-body);
 	font-size: 1rem;
@@ -387,7 +485,7 @@ img {
 
 .wp-block-button .wp-block-button__link:hover {
 	background-color: var(--karu-blue-hover);
-	box-shadow: 0 16px 30px -12px rgba(42, 109, 191, 0.7);
+	box-shadow: 0 18px 32px -14px rgba(42, 109, 191, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.18);
 	color: var(--karu-white);
 	transform: translateY(-2px);
 }
@@ -398,7 +496,7 @@ img {
 
 /* Contorno (secundario) */
 .wp-block-button.is-style-outline .wp-block-button__link {
-	border-color: var(--karu-sky);
+	border-color: var(--karu-border-strong);
 	background-color: var(--karu-white);
 	box-shadow: none;
 	color: var(--karu-blue-strong);
@@ -406,12 +504,13 @@ img {
 
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
 	border-color: var(--karu-blue);
-	background-color: var(--karu-sky-light);
-	color: var(--karu-blue-strong);
+	background-color: var(--karu-white);
+	color: var(--karu-blue-hover);
 }
 
-/* WhatsApp: ícono antes del texto */
-.wp-block-button.is-style-whatsapp .wp-block-button__link::before {
+/* Íconos: WhatsApp antes del texto, flecha después */
+.wp-block-button.is-style-whatsapp .wp-block-button__link::before,
+.wp-block-button.is-style-light .wp-block-button__link::before {
 	content: "";
 	flex: none;
 	width: 1.25em;
@@ -421,10 +520,25 @@ img {
 	mask: url("../images/whatsapp.svg") center / contain no-repeat;
 }
 
+.wp-block-button.karu-btn-arrow .wp-block-button__link::after {
+	content: "";
+	flex: none;
+	width: 1.1em;
+	height: 1.1em;
+	background-color: currentColor;
+	-webkit-mask: url("../images/flecha.svg") center / contain no-repeat;
+	mask: url("../images/flecha.svg") center / contain no-repeat;
+	transition: transform 0.3s var(--karu-ease);
+}
+
+.wp-block-button.karu-btn-arrow .wp-block-button__link:hover::after {
+	transform: translateX(3px);
+}
+
 /* Claro (sobre fondos azules) */
 .wp-block-button.is-style-light .wp-block-button__link {
 	background-color: var(--karu-white);
-	box-shadow: 0 18px 40px -16px rgba(15, 40, 80, 0.55);
+	box-shadow: 0 18px 40px -16px rgba(8, 30, 60, 0.6);
 	color: var(--karu-blue-strong);
 }
 
@@ -433,35 +547,52 @@ img {
 	color: var(--karu-blue-hover);
 }
 
-.wp-block-button.is-style-light .wp-block-button__link::before {
-	content: "";
-	flex: none;
-	width: 1.3em;
-	height: 1.3em;
-	background-color: currentColor;
-	-webkit-mask: url("../images/whatsapp.svg") center / contain no-repeat;
-	mask: url("../images/whatsapp.svg") center / contain no-repeat;
-}
-
 /* Tamaño extra grande */
 .wp-block-button.karu-button--xl .wp-block-button__link {
-	padding: 1.2rem 2.4rem;
-	font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+	padding: 1.25rem 2.4rem;
+	font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
 }
 
 
 /* ==========================================================================
-   06. Encabezado y navegación
+   07. Barra superior, encabezado y navegación
    ========================================================================== */
 
+/* El encabezado se fija arriba; la barra superior se oculta al hacer scroll. */
 .wp-site-blocks > header {
 	position: sticky;
-	top: 0;
+	top: calc(var(--karu-topbar-height) * -1);
 	z-index: 100;
 }
 
 .admin-bar .wp-site-blocks > header {
-	top: var(--wp-admin--admin-bar--height, 32px);
+	top: calc(var(--wp-admin--admin-bar--height, 32px) - var(--karu-topbar-height));
+}
+
+.karu-topbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: var(--karu-topbar-height);
+	overflow: hidden;
+	background: var(--karu-navy);
+	color: var(--karu-sky);
+}
+
+.karu-topbar__text {
+	margin: 0;
+	font-size: 0.8125rem;
+	letter-spacing: 0.01em;
+	white-space: nowrap;
+}
+
+.karu-topbar__text strong {
+	color: var(--karu-white);
+}
+
+.karu-topbar__text a {
+	color: var(--karu-white);
+	font-weight: 700;
 }
 
 .karu-header {
@@ -478,7 +609,7 @@ img {
 	position: absolute;
 	z-index: -1;
 	inset: 0;
-	background: rgba(255, 255, 255, 0.86);
+	background: rgba(255, 255, 255, 0.88);
 	-webkit-backdrop-filter: saturate(180%) blur(14px);
 	backdrop-filter: saturate(180%) blur(14px);
 }
@@ -488,7 +619,7 @@ img {
 }
 
 .karu-header__actions {
-	gap: clamp(1rem, 2.5vw, 2rem);
+	gap: clamp(1rem, 2.5vw, 2.25rem);
 }
 
 .wp-block-image.karu-logo {
@@ -503,24 +634,26 @@ img {
 }
 
 .karu-nav {
-	gap: clamp(1rem, 2vw, 1.75rem);
+	gap: clamp(1rem, 2vw, 1.9rem);
 	font-size: 0.9375rem;
 	font-weight: 600;
 }
 
 .karu-nav .wp-block-navigation-item__content {
-	padding-block: 0.4rem;
+	padding-block: 0.35rem;
+	background: linear-gradient(var(--karu-blue), var(--karu-blue)) 0 100% / 0 2px no-repeat;
 	color: var(--karu-ink);
 	text-decoration: none;
-	transition: color 0.2s ease;
+	transition: background-size 0.35s var(--karu-ease), color 0.2s ease;
 }
 
 .karu-nav .wp-block-navigation-item__content:hover {
+	background-size: 100% 2px;
 	color: var(--karu-blue-strong);
 }
 
 .karu-header__cta .wp-block-button__link {
-	padding: 0.7rem 1.2rem;
+	padding: 0.72rem 1.2rem;
 	font-size: 0.9375rem;
 }
 
@@ -557,6 +690,7 @@ img {
 	display: block;
 	width: 100%;
 	padding-block: 1rem;
+	background: none;
 	font-family: var(--karu-font-heading);
 	font-size: 1.625rem;
 	font-weight: 600;
@@ -564,40 +698,79 @@ img {
 
 
 /* ==========================================================================
-   07. Hero
+   08. Hero
    ========================================================================== */
 
 .karu-hero {
+	margin-block: 0;
+	padding-top: clamp(0.75rem, 1.5vw, 1.25rem);
+	background: var(--karu-white);
+}
+
+/* Panel celeste redondeado */
+.karu-hero > .karu-hero__panel {
 	position: relative;
 	overflow: hidden;
-	padding-block: clamp(3rem, 6vw, 5.5rem) clamp(4rem, 8vw, 7rem);
+	isolation: isolate;
+	max-width: 1380px;
+	padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 5vw, 5rem) clamp(6rem, 10vw, 8.5rem);
+	border-radius: var(--karu-radius-xl);
 	background:
-		radial-gradient(55% 60% at 88% 18%, rgba(184, 224, 255, 0.6) 0%, rgba(184, 224, 255, 0) 70%),
-		radial-gradient(40% 50% at 0% 100%, rgba(184, 224, 255, 0.35) 0%, rgba(184, 224, 255, 0) 70%),
-		linear-gradient(180deg, #f5faff 0%, var(--karu-white) 100%);
+		radial-gradient(38rem 30rem at 82% 35%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 60%),
+		radial-gradient(30rem 24rem at 0% 100%, rgba(74, 144, 226, 0.28) 0%, rgba(74, 144, 226, 0) 65%),
+		linear-gradient(160deg, var(--karu-sky) 0%, #cde8ff 55%, #e3f2ff 100%);
+}
+
+/* Hoja decorativa y trama de puntos */
+.karu-hero__panel::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: -6rem;
+	left: -5rem;
+	width: 24rem;
+	height: 24rem;
+	background: url("../images/hoja-decorativa.svg") center / contain no-repeat;
+	opacity: 0.6;
+	transform: rotate(-12deg);
+	pointer-events: none;
+}
+
+.karu-hero__panel::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	width: 22rem;
+	height: 16rem;
+	background: radial-gradient(circle, rgba(42, 109, 191, 0.22) 1.4px, transparent 1.6px) 0 0 / 18px 18px;
+	-webkit-mask: linear-gradient(225deg, #000 0%, transparent 70%);
+	mask: linear-gradient(225deg, #000 0%, transparent 70%);
+	pointer-events: none;
 }
 
 .wp-block-columns.karu-hero__grid {
-	gap: clamp(2.5rem, 5vw, 5rem);
+	gap: clamp(2rem, 5vw, 4.5rem);
 	margin-block: 0;
 }
 
+.wp-block-columns.karu-hero__grid > .wp-block-column.karu-hero__content {
+	flex-grow: 1.05;
+}
+
 .karu-hero__title {
-	margin-block: 0 1.5rem;
+	margin-bottom: 1.5rem;
 	font-size: var(--wp--preset--font-size--display);
-	letter-spacing: -0.03em;
-	line-height: 1.04;
+	letter-spacing: -0.035em;
+	line-height: 1.02;
 }
 
-.karu-hero__title em {
-	padding-inline: 0.05em;
-	background: linear-gradient(180deg, transparent 62%, var(--karu-sky) 62%, var(--karu-sky) 92%, transparent 92%);
-	color: var(--karu-blue-strong);
-	font-style: normal;
-}
-
-.karu-hero .karu-lead {
-	max-width: 34rem;
+.karu-hero__lead {
+	max-width: 33rem;
+	color: #34465f;
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.6;
 }
 
 .karu-hero__actions {
@@ -605,7 +778,15 @@ img {
 }
 
 .karu-hero__trust {
-	margin-top: 2.25rem;
+	gap: 0.625rem;
+	margin-top: 2rem;
+}
+
+.karu-hero__trust li {
+	padding: 0.45rem 0.95rem 0.45rem 0.5rem;
+	border-radius: var(--karu-pill);
+	background: rgba(255, 255, 255, 0.7);
+	font-size: 0.875rem;
 }
 
 .karu-hero__media {
@@ -619,216 +800,536 @@ img {
 .wp-block-image.karu-hero__image img {
 	display: block;
 	width: 100%;
-	aspect-ratio: 5 / 6;
-	object-fit: cover;
-	border-radius: var(--karu-radius-xl);
-	box-shadow: var(--karu-shadow-lifted);
+	aspect-ratio: 800 / 760;
 }
 
-.karu-hero__badge {
+/* Tarjetas flotantes */
+.karu-float {
 	position: absolute;
-	bottom: 2.5rem;
-	left: -1.75rem;
-	max-width: 17rem;
-	padding: 1rem 1.25rem 1rem 4.25rem;
-	border: 1px solid var(--karu-border);
+	z-index: 2;
+	padding: 0.8rem 1.15rem 0.8rem 3.6rem;
+	border: 1px solid rgba(255, 255, 255, 0.8);
 	border-radius: var(--karu-radius);
-	background: var(--karu-white);
+	background: rgba(255, 255, 255, 0.92);
 	box-shadow: var(--karu-shadow-lifted);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 }
 
-.karu-hero__badge::before {
+.karu-float::before {
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: 1rem;
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 0.875rem;
-	background: var(--karu-sky-light) url("../images/icon-natural.svg") center / 1.4rem no-repeat;
+	left: 0.8rem;
+	width: 2.2rem;
+	height: 2.2rem;
+	border-radius: 0.75rem;
+	background: var(--karu-sky-light) url("../images/icon-natural.svg") center / 1.2rem no-repeat;
 	transform: translateY(-50%);
 }
 
-.karu-hero__badge > * {
-	margin: 0;
+.karu-float--top {
+	top: 6%;
+	right: 0;
 }
 
-.karu-hero__badge-title {
+.karu-float--top::before {
+	background-image: url("../images/icon-planeta.svg");
+}
+
+.karu-float--bottom {
+	bottom: 12%;
+	left: -1rem;
+}
+
+.karu-float__title {
 	color: var(--karu-ink);
-	font-size: 0.975rem;
+	font-size: 0.95rem;
 	font-weight: 700;
 	line-height: 1.3;
 }
 
-.karu-hero__badge-text {
+.karu-float__text {
 	color: var(--karu-muted);
-	font-size: 0.8125rem;
+	font-size: 0.8rem;
+	line-height: 1.35;
+}
+
+/* Barra de datos que se superpone al panel */
+.karu-hero > .karu-stats {
+	position: relative;
+	z-index: 2;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	max-width: 1120px;
+	margin-top: calc(clamp(3.25rem, 6vw, 4.25rem) * -1);
+	padding: 1.75rem 0.5rem;
+	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius-lg);
+	background: var(--karu-white);
+	box-shadow: var(--karu-shadow-lifted);
+}
+
+.karu-stat {
+	padding: 0.25rem 1.25rem;
+	text-align: center;
+}
+
+.karu-stat + .karu-stat {
+	border-left: 1px solid var(--karu-border);
+}
+
+.karu-stat__value {
+	color: var(--karu-blue-strong);
+	font-family: var(--karu-font-heading);
+	font-size: clamp(1.75rem, 3vw, 2.4rem);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1.05;
+}
+
+.karu-stat__label {
+	margin-top: 0.4rem !important;
+	color: var(--karu-muted);
+	font-size: 0.875rem;
 	line-height: 1.4;
 }
 
 
 /* ==========================================================================
-   08. Productos
+   09. Franja de atributos
+   ========================================================================== */
+
+.karu-hero > .karu-band {
+	margin-top: clamp(3.5rem, 7vw, 5.5rem);
+	padding: 1.15rem clamp(1rem, 4vw, 2rem);
+	background:
+		linear-gradient(90deg, rgba(42, 109, 191, 0.35) 0%, rgba(42, 109, 191, 0) 30%, rgba(42, 109, 191, 0) 70%, rgba(42, 109, 191, 0.35) 100%),
+		var(--karu-blue);
+}
+
+.karu-band__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem 2.25rem;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.karu-band__list li {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	color: var(--karu-white);
+	font-family: var(--karu-font-heading);
+	font-size: clamp(1.1875rem, 2vw, 1.5rem);
+	font-style: italic;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.karu-band__list li + li::before {
+	content: "";
+	flex: none;
+	width: 0.9rem;
+	height: 0.9rem;
+	margin-right: 2.25rem;
+	background-color: var(--karu-sky);
+	-webkit-mask: url("../images/icon-natural.svg") center / contain no-repeat;
+	mask: url("../images/icon-natural.svg") center / contain no-repeat;
+}
+
+
+/* ==========================================================================
+   10. Productos
    ========================================================================== */
 
 .karu-products__grid {
-	grid-template-columns: repeat(6, minmax(0, 1fr));
+	display: grid;
+	grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr));
+	gap: var(--karu-gap);
+}
+
+.karu-products__grid > * {
+	margin-block: 0;
 }
 
 .karu-product {
-	grid-column: span 2;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 	overflow: hidden;
-	padding: 0;
+	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius-lg);
+	background: var(--karu-white);
 	transition:
-		transform 0.35s var(--karu-ease),
-		box-shadow 0.35s var(--karu-ease),
-		border-color 0.35s ease;
+		transform 0.4s var(--karu-ease),
+		box-shadow 0.4s var(--karu-ease),
+		border-color 0.3s ease;
 }
 
 .karu-product:hover {
-	border-color: var(--karu-sky);
+	border-color: var(--karu-border-strong);
 	box-shadow: var(--karu-shadow-lifted);
 	transform: translateY(-4px);
 }
 
 .wp-block-image.karu-product__image {
+	display: grid;
+	place-items: center;
 	margin: 0;
 	overflow: hidden;
-	background: var(--karu-sky-light);
+	background:
+		radial-gradient(circle at 50% 58%, rgba(255, 255, 255, 0.95) 0 30%, rgba(255, 255, 255, 0) 30.5%),
+		linear-gradient(160deg, var(--karu-sky-light) 0%, #dcefff 100%);
 }
 
 .wp-block-image.karu-product__image img {
 	display: block;
 	width: 100%;
-	height: 100%;
-	aspect-ratio: 4 / 3;
-	object-fit: cover;
+	aspect-ratio: 16 / 11;
+	object-fit: contain;
 	transition: transform 0.6s var(--karu-ease);
 }
 
 .karu-product:hover .karu-product__image img {
-	transform: scale(1.04);
+	transform: scale(1.05) translateY(-4px);
 }
 
 .karu-product__body {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	padding: clamp(1.5rem, 2.5vw, 1.875rem);
+	padding: clamp(1.4rem, 2.2vw, 1.75rem);
 }
 
 .karu-product__body .karu-tag {
-	margin-bottom: 1rem;
+	margin-bottom: 0.9rem;
+}
+
+.karu-product__title {
+	margin-bottom: 0.5rem;
+	font-size: clamp(1.25rem, 1.8vw, 1.4rem);
+	line-height: 1.2;
+}
+
+.karu-product__text {
+	color: var(--karu-muted);
+	font-size: 0.95rem;
+	line-height: 1.6;
 }
 
 .karu-product__actions {
-	margin-top: auto;
-	padding-top: 1.5rem;
+	margin-top: auto !important;
+	padding-top: 1.35rem;
 }
 
-/* Las dos últimas tarjetas se muestran horizontales en escritorio */
-.karu-product:nth-child(n + 4) {
-	grid-column: span 3;
-	flex-direction: row;
+.karu-product .wp-block-button__link {
+	padding: 0.8rem 1.25rem;
+	font-size: 0.9375rem;
 }
 
-.karu-product:nth-child(n + 4) .karu-product__image {
-	flex: 0 0 44%;
+/* Producto destacado */
+.karu-product--featured {
+	grid-row: span 2;
+	border-color: transparent;
+	background: linear-gradient(180deg, var(--karu-sky) 0%, #d7edff 100%);
 }
 
-.karu-product:nth-child(n + 4) .karu-product__image img {
-	aspect-ratio: auto;
-	min-height: 100%;
+.karu-product--featured .wp-block-image.karu-product__image {
+	flex: 1 1 auto;
+	min-height: 18rem;
+	background: radial-gradient(circle at 50% 56%, rgba(255, 255, 255, 0.9) 0 34%, rgba(255, 255, 255, 0) 34.5%);
+}
+
+.karu-product--featured .wp-block-image.karu-product__image img {
+	height: 100%;
+	max-height: 34rem;
+	aspect-ratio: 400 / 520;
+}
+
+.karu-product--featured .karu-product__body {
+	flex: none;
+	padding: clamp(1.5rem, 2.8vw, 2.25rem);
+}
+
+.karu-product--featured .karu-tag {
+	background: var(--karu-white);
+}
+
+.karu-product--featured .karu-product__title {
+	font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+}
+
+.karu-product--featured .karu-product__text {
+	color: #34465f;
+	font-size: 1.025rem;
+}
+
+.karu-product__uses {
+	flex-direction: column;
+	gap: 0.55rem;
+	margin-top: 1.25rem !important;
+}
+
+.karu-product__uses li::before {
+	background-image: url("../images/check.svg");
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px var(--karu-white);
+}
+
+.karu-product--featured .wp-block-button__link {
+	padding: 1rem 1.65rem;
+	font-size: 1rem;
+}
+
+.karu-product__badge {
+	position: absolute;
+	z-index: 2;
+	top: 1.25rem;
+	left: 1.25rem;
+	padding: 0.4rem 0.85rem;
+	border-radius: var(--karu-pill);
+	background: var(--karu-navy);
+	color: var(--karu-white);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 }
 
 
 /* ==========================================================================
-   09. Beneficios
+   11. Beneficios
    ========================================================================== */
 
-.karu-feature {
-	transition:
-		transform 0.35s var(--karu-ease),
-		box-shadow 0.35s var(--karu-ease);
+.wp-block-columns.karu-benefits__grid {
+	gap: clamp(2.5rem, 6vw, 6rem);
+	margin-block: 0;
 }
 
-.karu-feature:hover {
-	box-shadow: var(--karu-shadow-lifted);
-	transform: translateY(-3px);
+.wp-block-columns.karu-benefits__grid > .wp-block-column.karu-benefits__list {
+	flex-grow: 1.4;
+}
+
+.karu-benefits__intro .karu-lead {
+	max-width: 30rem;
+}
+
+/* Tarjeta de promesa */
+.karu-promise {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+	margin-top: 2.5rem !important;
+	padding: 2rem 2rem 1.75rem;
+	border-radius: var(--karu-radius-lg);
+	background:
+		radial-gradient(20rem 14rem at 100% 0%, rgba(74, 144, 226, 0.6) 0%, rgba(74, 144, 226, 0) 70%),
+		var(--karu-navy);
+	box-shadow: 0 24px 50px -28px rgba(18, 54, 95, 0.8);
+}
+
+.karu-promise::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	right: -2.5rem;
+	bottom: -3rem;
+	width: 10rem;
+	height: 10rem;
+	background: url("../images/hoja-decorativa.svg") center / contain no-repeat;
+	opacity: 0.18;
+}
+
+.karu-promise__quote {
+	color: var(--karu-white);
+	font-family: var(--karu-font-heading);
+	font-size: clamp(1.3rem, 2vw, 1.55rem);
+	font-style: italic;
+	font-weight: 500;
+	line-height: 1.35;
+}
+
+.karu-promise__author {
+	margin-top: 1rem !important;
+	color: var(--karu-sky);
+	font-size: 0.8125rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+/* Lista de beneficios en dos columnas con líneas divisorias */
+.karu-features {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 clamp(1.5rem, 3vw, 3rem);
+}
+
+.karu-features > * {
+	margin-block: 0;
+}
+
+.karu-feature {
+	padding-block: 2rem;
+	border-top: 1px solid var(--karu-border-strong);
+}
+
+.karu-feature:nth-child(-n + 2) {
+	padding-top: 0.5rem;
+	border-top: 0;
+}
+
+.karu-feature .wp-block-image.karu-icon {
+	margin-bottom: 1.25rem;
+	transition: transform 0.4s var(--karu-ease);
+}
+
+.karu-feature:hover .wp-block-image.karu-icon {
+	transform: translateY(-3px) rotate(-4deg);
+}
+
+.karu-feature__title {
+	margin-bottom: 0.5rem;
+	font-size: 1.3rem;
+}
+
+.karu-feature__text {
+	color: var(--karu-muted);
+	font-size: 0.975rem;
+	line-height: 1.65;
 }
 
 
 /* ==========================================================================
-   10. Cómo usarlos
+   12. Cómo usarlos
    ========================================================================== */
 
 .karu-use {
+	overflow: hidden;
+	isolation: isolate;
 	box-shadow: none;
-	background: linear-gradient(180deg, var(--karu-white) 0%, #fafdff 100%);
-	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	transition:
+		transform 0.4s var(--karu-ease),
+		box-shadow 0.4s var(--karu-ease),
+		border-color 0.3s ease;
+}
+
+.karu-use::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -3.5rem;
+	right: -3.5rem;
+	width: 9rem;
+	height: 9rem;
+	border-radius: 50%;
+	background: var(--karu-sky-light);
+	transition: transform 0.6s var(--karu-ease);
 }
 
 .karu-use:hover {
-	border-color: var(--karu-sky);
-	box-shadow: var(--karu-shadow);
+	border-color: var(--karu-border-strong);
+	box-shadow: var(--karu-shadow-lifted);
+	transform: translateY(-4px);
+}
+
+.karu-use:hover::after {
+	transform: scale(1.35);
 }
 
 .karu-use .karu-card__text {
-	margin-bottom: 1.25rem;
+	margin-bottom: 1.5rem;
 }
 
-.karu-use .karu-tag {
-	margin-top: auto;
+.karu-use__products {
+	margin-top: auto !important;
+	padding-top: 1rem;
+	border-top: 1px dashed var(--karu-border-strong);
+	color: var(--karu-muted);
+	font-size: 0.85rem;
+}
+
+.karu-use__products strong {
+	color: var(--karu-blue-strong);
 }
 
 
 /* ==========================================================================
-   11. Cómo comprar
+   13. Cómo comprar (sección oscura)
    ========================================================================== */
 
 .karu-steps__list {
 	position: relative;
-	counter-reset: none;
+	gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-/* Línea que conecta los pasos (visible entre tarjetas) */
+/* Línea que conecta los pasos */
 .karu-steps__list::before {
 	content: "";
 	position: absolute;
-	top: 3.4rem;
+	top: 1.8rem;
 	right: 12%;
-	left: 12%;
-	border-top: 2px dashed var(--karu-sky);
+	left: 1.8rem;
+	border-top: 1px dashed rgba(184, 224, 255, 0.45);
 }
 
 .karu-step {
-	box-shadow: none;
+	position: relative;
 }
 
 .karu-step__number {
 	display: grid;
 	place-items: center;
-	width: 3.25rem;
-	height: 3.25rem;
-	margin-bottom: 1.5rem;
+	width: 3.6rem;
+	height: 3.6rem;
+	margin-bottom: 1.75rem !important;
+	border: 1px solid rgba(184, 224, 255, 0.55);
 	border-radius: 50%;
-	background: var(--karu-blue-strong);
-	box-shadow: 0 0 0 6px var(--karu-sky-light);
-	color: var(--karu-white);
+	background: var(--karu-navy);
+	box-shadow: 0 0 0 8px var(--karu-navy);
+	color: var(--karu-sky);
 	font-family: var(--karu-font-heading);
-	font-size: 1.125rem;
+	font-size: 1.2rem;
+	font-style: italic;
 	font-weight: 600;
 	line-height: 1;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.karu-step:hover .karu-step__number {
+	background: var(--karu-sky);
+	color: var(--karu-navy);
+}
+
+.karu-step__title {
+	margin-bottom: 0.6rem;
+	font-size: 1.4rem;
+}
+
+.karu-step__text {
+	max-width: 17rem;
+	color: rgba(255, 255, 255, 0.78);
+	font-size: 0.975rem;
+	line-height: 1.65;
+}
+
+.karu-steps .karu-center-actions {
+	margin-top: clamp(3rem, 6vw, 4.5rem);
 }
 
 
 /* ==========================================================================
-   12. Galería
+   14. Galería
    ========================================================================== */
 
 .karu-gallery__grid {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
 	gap: var(--karu-gap);
 }
 
@@ -836,74 +1337,134 @@ img {
 	margin-block: 0;
 }
 
-.wp-block-image.karu-gallery__item {
+.wp-block-image.karu-gallery__feature {
 	position: relative;
+	grid-row: span 2;
 	overflow: hidden;
 	margin: 0;
-	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius-lg);
+	background: var(--karu-sky);
+}
+
+.wp-block-image.karu-gallery__feature img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.8s var(--karu-ease);
+}
+
+.wp-block-image.karu-gallery__feature:hover img {
+	transform: scale(1.04);
+}
+
+.wp-block-image.karu-gallery__feature .wp-element-caption {
+	position: absolute;
+	bottom: 1.25rem;
+	left: 1.25rem;
+	margin: 0;
+	padding: 0.6rem 1.1rem;
+	border-radius: var(--karu-pill);
+	background: rgba(255, 255, 255, 0.94);
+	color: var(--karu-ink);
+	font-size: 0.9375rem;
+	font-weight: 700;
+}
+
+/* Comparación antes / después */
+.karu-compare {
+	padding: clamp(1.1rem, 2vw, 1.5rem);
 	border-radius: var(--karu-radius-lg);
 	background: var(--karu-sky-light);
 }
 
-.wp-block-image.karu-gallery__item img {
+.karu-compare__head {
+	gap: 0.75rem;
+	margin-bottom: 1rem !important;
+}
+
+.karu-compare__title {
+	margin: 0;
+	font-size: 1.35rem;
+}
+
+.karu-compare .karu-tag {
+	background: var(--karu-white);
+}
+
+.karu-compare__pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.75rem;
+}
+
+.karu-compare__pair > * {
+	margin-block: 0;
+}
+
+.wp-block-image.karu-compare__image {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	border-radius: var(--karu-radius);
+}
+
+.wp-block-image.karu-compare__image img {
 	display: block;
 	width: 100%;
-	height: 100%;
-	aspect-ratio: 1;
+	aspect-ratio: 4 / 3;
 	object-fit: cover;
-	transition: transform 0.7s var(--karu-ease);
 }
 
-.wp-block-image.karu-gallery__item:hover img {
-	transform: scale(1.05);
-}
-
-.wp-block-image.karu-gallery__item--feature {
-	grid-column: span 2;
-	grid-row: span 2;
-}
-
-.wp-block-image.karu-gallery__item .wp-element-caption {
+.wp-block-image.karu-compare__image .wp-element-caption {
 	position: absolute;
-	top: 1rem;
-	left: 1rem;
+	top: 0.75rem;
+	left: 0.75rem;
 	margin: 0;
-	padding: 0.4rem 0.85rem;
+	padding: 0.3rem 0.75rem;
 	border-radius: var(--karu-pill);
 	background: rgba(255, 255, 255, 0.94);
-	box-shadow: 0 6px 16px -6px rgba(31, 42, 55, 0.3);
 	color: var(--karu-ink);
-	font-size: 0.8125rem;
+	font-size: 0.75rem;
 	font-weight: 700;
-	line-height: 1.3;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
-.wp-block-image.karu-gallery__item.is-after .wp-element-caption {
+.wp-block-image.karu-compare__image.is-after .wp-element-caption {
 	background: var(--karu-blue-strong);
 	color: var(--karu-white);
 }
 
-.wp-block-image.karu-gallery__item--feature .wp-element-caption {
-	top: auto;
-	bottom: 1.25rem;
-	left: 1.25rem;
-	padding: 0.6rem 1.1rem;
-	font-size: 0.9375rem;
-}
-
 
 /* ==========================================================================
-   13. Testimonios
+   15. Testimonios
    ========================================================================== */
+
+.karu-section--sky .karu-section-title em {
+	color: var(--karu-blue-strong);
+}
+
+.karu-testimonials__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+	gap: var(--karu-gap);
+}
+
+.karu-testimonials__grid > * {
+	margin-block: 0;
+}
 
 .karu-testimonial {
 	overflow: hidden;
+	border-color: transparent;
+	box-shadow: 0 18px 40px -26px rgba(18, 54, 95, 0.45);
 }
 
 .karu-testimonial::after {
 	content: "\201C";
 	position: absolute;
-	top: 0.25rem;
+	top: 0.5rem;
 	right: 1.5rem;
 	color: var(--karu-sky);
 	font-family: var(--karu-font-heading);
@@ -953,9 +1514,43 @@ img {
 	font-size: 1rem;
 }
 
+/* Testimonio destacado */
+.karu-testimonial--featured {
+	grid-row: span 2;
+	padding: clamp(2rem, 4vw, 3.25rem);
+	background:
+		radial-gradient(26rem 18rem at 100% 0%, rgba(74, 144, 226, 0.55) 0%, rgba(74, 144, 226, 0) 70%),
+		var(--karu-navy);
+}
+
+.karu-testimonial--featured::after {
+	top: 1rem;
+	right: 2rem;
+	color: rgba(184, 224, 255, 0.2);
+	font-size: 11rem;
+}
+
+.karu-testimonial--featured .karu-testimonial__quote p {
+	color: var(--karu-white);
+	font-family: var(--karu-font-heading);
+	font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	line-height: 1.35;
+}
+
+.karu-testimonial--featured .karu-testimonial__quote cite {
+	border-top-color: rgba(184, 224, 255, 0.25);
+	color: var(--karu-sky);
+}
+
+.karu-testimonial--featured .karu-testimonial__quote cite strong {
+	color: var(--karu-white);
+}
+
 
 /* ==========================================================================
-   14. Preguntas frecuentes
+   16. Preguntas frecuentes
    ========================================================================== */
 
 .wp-block-columns.karu-faq__grid {
@@ -967,8 +1562,35 @@ img {
 	flex-grow: 1.6;
 }
 
-.karu-faq__intro .karu-lead {
-	margin-bottom: 2rem;
+/* Tarjeta de ayuda */
+.karu-help {
+	margin-top: 2.25rem !important;
+	padding: 1.75rem;
+	border-radius: var(--karu-radius-lg);
+	background: var(--karu-sky-light);
+}
+
+.karu-help .wp-block-image.karu-icon {
+	width: 3rem;
+	height: 3rem;
+	margin-bottom: 1.1rem;
+	background: var(--karu-white);
+}
+
+.karu-help .wp-block-image.karu-icon img {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.karu-help__title {
+	margin-bottom: 0.4rem;
+	font-size: 1.3rem;
+}
+
+.karu-help__text {
+	margin-bottom: 1.25rem !important;
+	color: var(--karu-muted);
+	font-size: 0.95rem;
 }
 
 .karu-faq__list > * {
@@ -983,18 +1605,22 @@ img {
 	border: 1px solid var(--karu-border);
 	border-radius: var(--karu-radius);
 	background: var(--karu-white);
-	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.wp-block-details.karu-faq__item:hover,
+.wp-block-details.karu-faq__item:hover {
+	border-color: var(--karu-border-strong);
+}
+
 .wp-block-details.karu-faq__item[open] {
 	border-color: var(--karu-sky);
+	background: #fbfdff;
 	box-shadow: var(--karu-shadow);
 }
 
 .karu-faq__item summary {
 	position: relative;
-	padding: 1.3rem 4.25rem 1.3rem 1.5rem;
+	padding: 1.35rem 4.25rem 1.35rem 1.5rem;
 	color: var(--karu-ink);
 	font-size: 1.0625rem;
 	font-weight: 700;
@@ -1055,49 +1681,47 @@ img {
 
 
 /* ==========================================================================
-   15. Llamado a la acción final
+   17. Llamado a la acción final
    ========================================================================== */
 
 .karu-cta {
 	padding-top: 0;
 }
 
-.karu-cta__panel {
+.karu-cta > .karu-cta__panel {
 	position: relative;
 	overflow: hidden;
 	isolation: isolate;
-	padding: clamp(3.5rem, 7vw, 6rem) clamp(1.5rem, 5vw, 4rem);
+	max-width: 1380px;
+	padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 6vw, 5.5rem);
 	border-radius: var(--karu-radius-xl);
-	background: linear-gradient(135deg, #2a6dbf 0%, #2d72c4 55%, #3a80d3 100%);
-	box-shadow: 0 30px 60px -30px rgba(42, 109, 191, 0.7);
+	background:
+		radial-gradient(34rem 26rem at 85% 50%, rgba(184, 224, 255, 0.45) 0%, rgba(184, 224, 255, 0) 65%),
+		linear-gradient(120deg, #1f5aa6 0%, var(--karu-blue-strong) 45%, var(--karu-blue) 100%);
+	box-shadow: 0 40px 70px -40px rgba(18, 54, 95, 0.85);
 	color: var(--karu-white);
-	text-align: center;
-}
-
-/* Brillos decorativos */
-.karu-cta__panel::before,
-.karu-cta__panel::after {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	border-radius: 50%;
-	pointer-events: none;
 }
 
 .karu-cta__panel::before {
-	top: -40%;
-	right: -10%;
-	width: 32rem;
-	height: 32rem;
-	background: radial-gradient(circle, rgba(184, 224, 255, 0.35) 0%, rgba(184, 224, 255, 0) 70%);
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -4rem;
+	left: -4rem;
+	width: 18rem;
+	height: 18rem;
+	background: url("../images/hoja-decorativa.svg") center / contain no-repeat;
+	opacity: 0.12;
+	transform: rotate(160deg);
 }
 
-.karu-cta__panel::after {
-	bottom: -50%;
-	left: -12%;
-	width: 28rem;
-	height: 28rem;
-	background: radial-gradient(circle, rgba(74, 144, 226, 0.55) 0%, rgba(74, 144, 226, 0) 70%);
+.wp-block-columns.karu-cta__grid {
+	gap: clamp(2rem, 5vw, 4rem);
+	margin-block: 0;
+}
+
+.wp-block-columns.karu-cta__grid > .wp-block-column.karu-cta__content {
+	flex-grow: 1.2;
 }
 
 .karu-cta__title {
@@ -1106,28 +1730,49 @@ img {
 	font-size: var(--wp--preset--font-size--xx-large);
 }
 
+.karu-cta__title em {
+	color: var(--karu-sky);
+}
+
 .karu-cta__text {
-	max-width: 36rem;
-	margin-bottom: 2.5rem;
+	max-width: 32rem;
 	color: var(--karu-white);
 	font-size: var(--wp--preset--font-size--large);
 	line-height: 1.6;
 }
 
+.karu-cta__actions {
+	margin-top: 2.25rem;
+}
+
 .karu-cta__small {
-	margin-top: 1.5rem;
+	margin-top: 1.25rem !important;
 	color: rgba(255, 255, 255, 0.92);
 	font-size: 0.875rem;
 }
 
+.wp-block-image.karu-cta__image {
+	max-width: 30rem;
+	margin: 0 auto;
+}
+
+.wp-block-image.karu-cta__image img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 640 / 560;
+}
+
 
 /* ==========================================================================
-   16. Pie de página
+   18. Pie de página
    ========================================================================== */
 
 .karu-footer {
-	padding-block: clamp(3.5rem, 7vw, 5rem) 2rem;
-	background: var(--karu-ink);
+	padding-block: clamp(3.5rem, 7vw, 5.5rem) 2rem;
+	border-radius: var(--karu-radius-xl) var(--karu-radius-xl) 0 0;
+	background:
+		radial-gradient(40rem 20rem at 100% 0%, rgba(74, 144, 226, 0.28) 0%, rgba(74, 144, 226, 0) 70%),
+		var(--karu-navy);
 	color: rgba(255, 255, 255, 0.78);
 	font-size: 0.9375rem;
 	line-height: 1.7;
@@ -1216,7 +1861,7 @@ img {
 
 
 /* ==========================================================================
-   17. Páginas internas y blog
+   19. Páginas internas y blog
    ========================================================================== */
 
 .karu-page-title {
@@ -1256,51 +1901,42 @@ img {
 
 
 /* ==========================================================================
-   18. Responsive
+   20. Responsive
    ========================================================================== */
 
 /* Tablet horizontal y escritorios pequeños */
 @media (max-width: 1080px) {
 	.karu-grid--4 {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 3rem;
 	}
 
 	.karu-steps__list::before {
 		display: none;
 	}
 
+	/* Producto destacado a lo ancho, el resto en 2 columnas */
 	.karu-products__grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
-	.karu-product,
-	.karu-product:nth-child(n + 4) {
-		grid-column: span 1;
-		flex-direction: column;
-	}
-
-	.karu-product:nth-child(n + 4) .karu-product__image {
-		flex: none;
-	}
-
-	.karu-product:nth-child(n + 4) .karu-product__image img {
-		aspect-ratio: 4 / 3;
-		min-height: 0;
-	}
-
-	/* La quinta tarjeta ocupa todo el ancho en formato horizontal */
-	.karu-product:nth-child(5) {
+	.karu-product--featured {
 		grid-column: 1 / -1;
+		grid-row: auto;
 		flex-direction: row;
 	}
 
-	.karu-product:nth-child(5) .karu-product__image {
-		flex: 0 0 50%;
+	.karu-product--featured .wp-block-image.karu-product__image {
+		flex: 0 0 45%;
+		min-height: 0;
 	}
 
-	.karu-product:nth-child(5) .karu-product__image img {
-		aspect-ratio: auto;
-		min-height: 100%;
+	.karu-product--featured .karu-product__body {
+		flex: 1;
+	}
+
+	.karu-float--bottom {
+		left: 0;
 	}
 
 	/* Menú hamburguesa también en tablet */
@@ -1313,22 +1949,70 @@ img {
 	}
 }
 
+/* Hero y CTA apilados en tablet (el bloque Columnas solo apila bajo 782px) */
+@media (min-width: 782px) and (max-width: 1024px) {
+	.wp-block-columns.karu-hero__grid,
+	.wp-block-columns.karu-cta__grid {
+		flex-direction: column;
+		align-items: stretch !important;
+	}
+
+	.wp-block-columns.karu-hero__grid > .wp-block-column,
+	.wp-block-columns.karu-cta__grid > .wp-block-column {
+		flex-basis: auto;
+	}
+
+	.karu-hero__content,
+	.karu-cta__content {
+		max-width: 40rem;
+	}
+
+	.karu-hero__media {
+		width: 100%;
+		max-width: 36rem;
+		margin-inline: auto;
+	}
+
+	.karu-cta__media {
+		width: 100%;
+		max-width: 24rem;
+		margin-inline: auto;
+	}
+}
+
 /* Tablet vertical */
 @media (max-width: 900px) {
-	.karu-grid--3 {
+	.karu-grid--3,
+	.karu-features {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
-	.karu-gallery__grid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+	.karu-split-head {
+		grid-template-columns: minmax(0, 1fr);
+		align-items: start;
 	}
 
-	.wp-block-image.karu-gallery__item--feature {
+	.karu-gallery__grid,
+	.karu-testimonials__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.wp-block-image.karu-gallery__feature,
+	.karu-testimonial--featured {
 		grid-row: auto;
 	}
 
-	.wp-block-image.karu-gallery__item--feature img {
-		aspect-ratio: 16 / 10;
+	.wp-block-image.karu-gallery__feature img {
+		aspect-ratio: 16 / 11;
+	}
+
+	.karu-hero > .karu-stats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 1.25rem;
+	}
+
+	.karu-stat:nth-child(3) {
+		border-left: 0;
 	}
 }
 
@@ -1338,59 +2022,59 @@ img {
 		--karu-header-height: 4.25rem;
 	}
 
-	.karu-hero {
-		padding-top: 2.5rem;
-	}
-
-	.karu-hero__badge {
-		bottom: 1.25rem;
-		left: 1rem;
-	}
-
-	.wp-block-image.karu-hero__image img {
-		aspect-ratio: 1;
-	}
-
-	.karu-faq__intro {
-		text-align: center;
-	}
-
-	.karu-faq__intro .karu-eyebrow {
+	.karu-hero__media {
+		max-width: 34rem;
 		margin-inline: auto;
 	}
 
-	.karu-faq__intro .wp-block-buttons {
-		justify-content: center;
+	.karu-benefits__intro .karu-promise {
+		display: none;
+	}
+
+	.karu-cta__media {
+		max-width: 22rem;
+		margin-inline: auto;
 	}
 }
 
 /* Móvil */
 @media (max-width: 640px) {
+	:root {
+		--karu-topbar-height: 0px;
+		--karu-radius-xl: 1.75rem;
+	}
+
+	.karu-topbar {
+		display: none;
+	}
+
 	.karu-grid--3,
 	.karu-grid--4,
+	.karu-features,
 	.karu-products__grid {
 		grid-template-columns: minmax(0, 1fr);
 	}
 
-	.karu-product:nth-child(5) {
+	.karu-feature:nth-child(2) {
+		padding-top: 2rem;
+		border-top: 1px solid var(--karu-border-strong);
+	}
+
+	.karu-product--featured {
 		flex-direction: column;
 	}
 
-	.karu-product:nth-child(5) .karu-product__image {
+	.karu-product--featured .wp-block-image.karu-product__image {
 		flex: none;
-	}
-
-	.karu-product:nth-child(5) .karu-product__image img {
-		aspect-ratio: 4 / 3;
 		min-height: 0;
 	}
 
-	.karu-section-head {
-		text-align: left;
+	.karu-product--featured .wp-block-image.karu-product__image img {
+		max-height: 22rem;
 	}
 
-	.karu-section-head .karu-eyebrow {
-		margin-inline: 0;
+	.karu-hero > .karu-hero__panel {
+		padding-inline: 1.25rem;
 	}
 
 	.karu-hero__actions .wp-block-button {
@@ -1401,8 +2085,49 @@ img {
 		width: 100%;
 	}
 
-	.karu-checklist {
-		flex-direction: column;
+	.karu-float {
+		padding: 0.6rem 0.9rem 0.6rem 3rem;
+	}
+
+	.karu-float::before {
+		left: 0.6rem;
+		width: 1.9rem;
+		height: 1.9rem;
+	}
+
+	.karu-float__title {
+		font-size: 0.85rem;
+	}
+
+	.karu-float__text {
+		display: none;
+	}
+
+	.karu-band__list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.6rem 1rem;
+	}
+
+	.karu-band__list li {
+		gap: 0.5rem;
+		font-size: 1.0625rem;
+	}
+
+	.karu-band__list li::before,
+	.karu-band__list li + li::before {
+		content: "";
+		flex: none;
+		width: 0.8rem;
+		height: 0.8rem;
+		margin-right: 0;
+		background-color: var(--karu-sky);
+		-webkit-mask: url("../images/icon-natural.svg") center / contain no-repeat;
+		mask: url("../images/icon-natural.svg") center / contain no-repeat;
+	}
+
+	.karu-compare__pair {
+		gap: 0.5rem;
 	}
 
 	.wp-block-image.karu-logo img {
@@ -1418,16 +2143,12 @@ img {
 		gap: 0.75rem;
 	}
 
-	.karu-cta__panel {
-		border-radius: var(--karu-radius-lg);
-	}
-
-	.wp-block-button.karu-button--xl {
+	.wp-block-button.karu-button--xl,
+	.wp-block-button.karu-button--xl .wp-block-button__link {
 		width: 100%;
 	}
 
 	.wp-block-button.karu-button--xl .wp-block-button__link {
-		width: 100%;
 		padding: 1.05rem 1.25rem;
 		font-size: 1rem;
 	}
@@ -1447,12 +2168,32 @@ img {
 
 
 /* ==========================================================================
-   19. Movimiento reducido y mejoras progresivas
+   21. Movimiento y mejoras progresivas
    ========================================================================== */
 
 @media (prefers-reduced-motion: no-preference) {
 	html {
 		scroll-behavior: smooth;
+	}
+
+	/* Flotación suave de las tarjetas del hero */
+	@keyframes karu-float {
+		0%,
+		100% {
+			translate: 0 0;
+		}
+
+		50% {
+			translate: 0 -8px;
+		}
+	}
+
+	.karu-float--top {
+		animation: karu-float 6s ease-in-out infinite;
+	}
+
+	.karu-float--bottom {
+		animation: karu-float 7s ease-in-out 1.5s infinite;
 	}
 
 	/* Apertura suave del acordeón en navegadores compatibles */
