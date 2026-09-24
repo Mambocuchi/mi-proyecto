@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" role="img" aria-labelledby="t">
+  <title id="t">Vinagre incoloro, percarbonato de sodio y bicarbonato de sodio sobre un mesón de madera clara, con luz natural de ventana y una rama verde en un florero de cerámica</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F9FF"/><stop offset="1" stop-color="#CFE8FF"/></linearGradient>
+    <linearGradient id="glass" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".55" stop-color="#EEF7FF" stop-opacity=".7"/><stop offset="1" stop-color="#CFE5FA"/></linearGradient>
+    <linearGradient id="pouch" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF3FA"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4EBDC"/><stop offset="1" stop-color="#EADCC5"/></linearGradient>
+  </defs>
+  <rect width="600" height="560" fill="url(#bg)"/>
+  <g fill="#FFFFFF" opacity=".55">
+    <polygon points="60,0 190,0 470,430 330,430"/>
+    <polygon points="220,0 270,0 560,430 505,430" opacity=".6"/>
+  </g>
+  <rect x="380" y="60" width="160" height="200" rx="14" fill="#FFFFFF" opacity=".35"/>
+  <path d="M460 60v200M380 160h160" stroke="#DCEEFF" stroke-width="6" opacity=".7"/>
+  <rect y="430" width="600" height="130" fill="url(#wood)"/>
+  <rect y="430" width="600" height="5" fill="#E2D0B3"/>
+  <path d="M0 480c120 6 260-4 400 2s150 4 200 0M0 520c160-6 300 4 440-2" stroke="#E4D3B8" stroke-width="2" fill="none"/>
+  <g fill="#243D5B" opacity=".1">
+    <ellipse cx="172" cy="436" rx="80" ry="8"/><ellipse cx="300" cy="436" rx="80" ry="9"/><ellipse cx="432" cy="436" rx="72" ry="8"/><ellipse cx="540" cy="436" rx="32" ry="5"/>
+  </g>
+  <!-- Percarbonato -->
+  <g transform="translate(-55 142) scale(1.15)">
+    <path d="M146 76h100l8 164a11 11 0 0 1-11 12h-94a11 11 0 0 1-11-12z" fill="url(#pouch)" stroke="#D5E3F2" stroke-width="2"/>
+    <rect x="146" y="76" width="100" height="14" rx="2" fill="#E8F1FA"/>
+    <path d="M148 98h96" stroke="#D5E3F2" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="160" y="130" width="72" height="80" rx="10" fill="#B8E0FF"/>
+    <rect x="172" y="146" width="48" height="6" rx="3" fill="#243D5B"/>
+    <rect x="176" y="159" width="40" height="4" rx="2" fill="#FFFFFF"/>
+    <circle cx="184" cy="185" r="6" fill="#FFFFFF"/><circle cx="198" cy="190" r="4" fill="#FFFFFF" opacity=".85"/><circle cx="208" cy="181" r="3" fill="#FFFFFF" opacity=".7"/>
+    <rect x="172" y="198" width="48" height="3" rx="1.5" fill="#4A90E2"/>
+  </g>
+  <!-- Vinagre -->
+  <g transform="translate(30 92) scale(1.35)">
+    <path d="M188 70h24v38c0 14 30 22 30 48v84a12 12 0 0 1-12 12h-60a12 12 0 0 1-12-12v-84c0-26 30-34 30-48z" fill="url(#glass)" stroke="#9CC6EE" stroke-width="2"/>
+    <path d="M161 164h78v76a10 10 0 0 1-10 10h-58a10 10 0 0 1-10-10z" fill="#D3E9FF" opacity=".75"/>
+    <ellipse cx="200" cy="164" rx="39" ry="4" fill="#E9F4FF"/>
+    <rect x="168" y="168" width="8" height="70" rx="4" fill="#FFFFFF" opacity=".85"/>
+    <rect x="184" y="70" width="32" height="7" rx="3" fill="#3B5A80"/>
+    <rect x="186" y="54" width="28" height="18" rx="4" fill="#243D5B"/>
+    <rect x="176" y="180" width="50" height="48" rx="6" fill="#FFFFFF"/>
+    <rect x="185" y="193" width="32" height="5" rx="2.5" fill="#243D5B"/>
+    <rect x="189" y="204" width="24" height="4" rx="2" fill="#4A90E2"/>
+    <rect x="185" y="214" width="32" height="3" rx="1.5" fill="#C3D3E4"/>
+  </g>
+  <!-- Bicarbonato -->
+  <g transform="translate(210 155) scale(1.1)">
+    <rect x="146" y="112" width="108" height="140" rx="18" fill="url(#glass)" stroke="#9CC6EE" stroke-width="2"/>
+    <path d="M150 168c14-8 26 4 40-2s28-8 44-2 14 2 16 0v70a14 14 0 0 1-14 14h-72a14 14 0 0 1-14-14z" fill="#FFFFFF"/>
+    <rect x="156" y="124" width="8" height="112" rx="4" fill="#FFFFFF" opacity=".75"/>
+    <rect x="150" y="92" width="100" height="26" rx="8" fill="#E3CCAA"/>
+    <path d="M160 100h80M160 108h80" stroke="#D2B58C" stroke-width="2"/>
+    <rect x="170" y="182" width="60" height="46" rx="6" fill="#EAF5FF" stroke="#D5E6F6"/>
+    <rect x="179" y="194" width="42" height="5" rx="2.5" fill="#243D5B"/>
+    <rect x="184" y="205" width="32" height="4" rx="2" fill="#4A90E2"/>
+    <rect x="179" y="215" width="42" height="3" rx="1.5" fill="#C3D3E4"/>
+  </g>
+  <!-- Florero con rama -->
+  <path d="M540 432c-18 0-24-10-24-26 0-14 10-22 12-34h24c2 12 12 20 12 34 0 16-6 26-24 26z" fill="#FFFFFF" stroke="#E0EAF4" stroke-width="2"/>
+  <path d="M538 372c-4-40-18-70-36-96M542 372c6-44 22-80 40-104" stroke="#4E7F27" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <g fill="#5A932A">
+    <ellipse cx="516" cy="300" rx="14" ry="6" transform="rotate(50 516 300)"/>
+    <ellipse cx="528" cy="334" rx="13" ry="5.5" transform="rotate(-40 528 334)"/>
+    <ellipse cx="506" cy="274" rx="12" ry="5" transform="rotate(70 506 274)"/>
+  </g>
+  <g fill="#78AE45">
+    <ellipse cx="562" cy="300" rx="14" ry="6" transform="rotate(-50 562 300)"/>
+    <ellipse cx="552" cy="336" rx="13" ry="5.5" transform="rotate(40 552 336)"/>
+    <ellipse cx="578" cy="270" rx="12" ry="5" transform="rotate(-70 578 270)"/>
+  </g>
+  <!-- Paños doblados -->
+  <rect x="28" y="408" width="110" height="24" rx="7" fill="#FFFFFF"/>
+  <rect x="34" y="390" width="98" height="20" rx="7" fill="#EAF5FF" stroke="#D5E6F6"/>
+  <path d="M34 400h98M34 420h104" stroke="#B8E0FF" stroke-width="2"/>
+</svg>

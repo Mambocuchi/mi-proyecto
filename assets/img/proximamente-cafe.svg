@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="t">
+  <title id="t">Bolsa de café en grano junto a una taza de cerámica blanca y granos de café sobre la mesa</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5FAFF"/><stop offset="1" stop-color="#DCEEFF"/></linearGradient>
+    <g id="bean"><ellipse rx="7" ry="5" fill="#6B4A36"/><path d="M-5 1c3-3 7-1 10-2" stroke="#4A3224" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg)"/>
+  <polygon points="36,0 146,0 330,250 214,250" fill="#FFFFFF" opacity=".5"/>
+  <rect y="250" width="400" height="70" fill="#F2E8D8"/>
+  <rect y="250" width="400" height="4" fill="#E6D6BC"/>
+  <ellipse cx="170" cy="255" rx="62" ry="7" fill="#243D5B" opacity=".1"/>
+  <ellipse cx="300" cy="255" rx="50" ry="5" fill="#243D5B" opacity=".08"/>
+  <path d="M120 96h100l10 146a10 10 0 0 1-10 10h-100a10 10 0 0 1-10-10z" fill="#D9BE98"/>
+  <path d="M120 70h100v30h-100z" fill="#C9A87E"/>
+  <path d="M120 100h100" stroke="#B89468" stroke-width="2"/>
+  <rect x="134" y="140" width="72" height="72" rx="8" fill="#FFFFFF"/>
+  <rect x="146" y="154" width="48" height="6" rx="3" fill="#243D5B"/>
+  <rect x="150" y="166" width="40" height="4" rx="2" fill="#4A90E2"/>
+  <g transform="translate(162 190)"><use href="#bean"/></g>
+  <g transform="translate(178 192) rotate(30)"><use href="#bean"/></g>
+  <ellipse cx="300" cy="248" rx="54" ry="8" fill="#FFFFFF" stroke="#E0EAF4" stroke-width="2"/>
+  <path d="M268 196h64v30a24 20 0 0 1-24 20h-16a24 20 0 0 1-24-20z" fill="#FFFFFF" stroke="#E0EAF4" stroke-width="2"/>
+  <path d="M332 204c14 0 14 22 0 22" stroke="#E0EAF4" stroke-width="6" fill="none"/>
+  <ellipse cx="300" cy="196" rx="32" ry="6" fill="#6B4A36"/>
+  <path d="M292 178c-6-8 6-12 0-20M306 178c-6-8 6-12 0-20" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" opacity=".9"/>
+  <g transform="translate(60 240) rotate(-20)"><use href="#bean"/></g>
+  <g transform="translate(78 246) rotate(15)"><use href="#bean"/></g>
+  <g transform="translate(92 236) rotate(-40)"><use href="#bean"/></g>
+  <g transform="translate(246 242) rotate(10)"><use href="#bean"/></g>
+  <g transform="translate(372 244) rotate(-25)"><use href="#bean"/></g>
+</svg>

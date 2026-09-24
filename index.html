@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Karu Esencial</title>
+  <meta name="description" content="Karu Esencial: vinagre incoloro, percarbonato de sodio y bicarbonato de sodio para el cuidado del hogar en Chile. Pide directo por WhatsApp.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="assets/img/logo-karu-esencial.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/css/karu.css">
+</head>
+<body>
+
+<!-- Iconos (sprite). En WordPress: Font Awesome Free en Elementor o SVG subidos. -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-versatil" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><circle cx="17.25" cy="17.25" r="3.75"/></g></symbol>
+  <symbol id="i-simple" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19z"/><path d="m8.75 14 2.25 2.25 4.25-4.5"/></g></symbol>
+  <symbol id="i-ahorro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><ellipse cx="12" cy="6" rx="7" ry="2.75"/><path d="M5 6v6c0 1.5 3.1 2.75 7 2.75S19 13.5 19 12V6"/><path d="M5 12v6c0 1.5 3.1 2.75 7 2.75S19 19.5 19 18v-6"/></g></symbol>
+  <symbol id="i-hoja" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19.5C5 11 10 5 20 4c-.5 10-6.5 15.5-15 15.5z"/><path d="M5 19.5 13.5 11"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M6.5 3.5h3l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 5.4 5.4l1.5-2.3 4.6 1.8v3a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 4.5 5.6a2 2 0 0 1 2-2.1z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><path d="M2.5 6h11v10.5h-11zM13.5 9.5h4l3 3.5v3.5h-7"/><circle cx="6.5" cy="17.5" r="2" fill="#fff"/><circle cx="17" cy="17.5" r="2" fill="#fff"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4h0A1.5 1.5 0 0 1 4 14.5z"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" d="M4 17.5c0-4.2 1.6-8 5.5-10.5l1.2 1.6C8.6 10.2 7.8 12 7.7 13H10v6H4zm9.5 0c0-4.2 1.6-8 5.5-10.5l1.2 1.6c-2.1 1.6-2.9 3.4-3 4.4h2.3v6h-6z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.25" cy="6.75" r="1" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M14.5 8.5h3v-4h-3a4 4 0 0 0-4 4v2.5h-3v4h3v6.5h4V15h3l.75-4H14.5V9a.5.5 0 0 1 .5-.5z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+</svg>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- 1. HEADER — en WordPress: Header Builder de Blocksy Free (logo + menú + botón + menú móvil) -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Karu Esencial, ir al inicio">
+      <img src="assets/img/logo-karu-esencial.webp" alt="Karu Esencial" width="720" height="421">
+    </a>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta-mobile" href="https://wa.me/56989048914" target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-wa"/></svg> Pedir por WhatsApp
+      </a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://wa.me/56989048914" target="_blank" rel="noopener">
+      <svg class="icon"><use href="#i-wa"/></svg> Pedir por WhatsApp
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+      <svg class="icon icon-open"><use href="#i-menu"/></svg>
+      <svg class="icon icon-close"><use href="#i-close"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- 2. HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><svg class="icon"><use href="#i-hoja"/></svg> Esenciales para el hogar · Chile</p>
+        <h1>Lo esencial para un hogar <span class="hl">más simple.</span></h1>
+        <p class="lead">Vinagre incoloro, percarbonato de sodio y bicarbonato de sodio: tres básicos versátiles para limpiar y cuidar tu casa. Elige lo que necesitas y pídelo directo por WhatsApp.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-wa"/></svg> Pedir por WhatsApp
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#productos">Conocer productos <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ul class="hero-points">
+          <li><svg class="icon"><use href="#i-check"/></svg> Pedidos directos por WhatsApp</li>
+          <li><svg class="icon"><use href="#i-check"/></svg> Atención cercana</li>
+          <li><svg class="icon"><use href="#i-check"/></svg> Productos multiuso</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <!-- Reemplazar por fotografía real: productos Karu sobre mesón de madera clara con luz natural de ventana -->
+        <img src="assets/img/hero-composicion.svg" alt="Vinagre incoloro, percarbonato de sodio y bicarbonato de sodio sobre un mesón de madera clara, con luz natural" width="600" height="560">
+        <div class="hero-note">
+          <span class="hero-note-icon"><svg class="icon"><use href="#i-chat"/></svg></span>
+          <span><strong>¿Dudas?</strong> Escríbenos al<br>+56 9 8904 8914</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PRODUCTOS -->
+  <section class="section" id="productos">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Productos</p>
+        <h2>Nuestros productos esenciales</h2>
+        <p>Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan y te ayudamos a elegir el formato que te acomoda.</p>
+      </header>
+
+      <div class="product-grid">
+        <article class="card product-card reveal">
+          <figure class="product-media">
+            <img src="assets/img/producto-vinagre.svg" alt="Botella de vinagre incoloro sobre mesón de madera clara" width="400" height="320" loading="lazy">
+          </figure>
+          <div class="product-body">
+            <p class="tag">Cocina y baño</p>
+            <h3>Vinagre Incoloro</h3>
+            <p>Un clásico de la casa que acompaña la limpieza de todos los días.</p>
+            <p class="uses-title">Usos habituales</p>
+            <ul class="uses">
+              <li><svg class="icon"><use href="#i-check"/></svg> Vidrios, espejos y cerámicas</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Ayuda a remover sarro en hervidores y llaves</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Superficies de cocina y baño</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Vinagre%20Incoloro." target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-wa"/></svg> Consultar por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="card product-card reveal">
+          <figure class="product-media">
+            <img src="assets/img/producto-percarbonato.svg" alt="Bolsa de percarbonato de sodio junto a un bowl de cerámica con gránulos blancos" width="400" height="320" loading="lazy">
+          </figure>
+          <div class="product-body">
+            <p class="tag">Lavado de ropa</p>
+            <h3>Percarbonato de Sodio</h3>
+            <p>Gránulos que liberan oxígeno al disolverse en agua tibia o caliente. Muy usado en el lavado y la limpieza.</p>
+            <p class="uses-title">Usos habituales</p>
+            <ul class="uses">
+              <li><svg class="icon"><use href="#i-check"/></svg> Complemento para lavar ropa blanca</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Remojo de prendas con manchas</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Juntas, tablas y superficies</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Percarbonato%20de%20Sodio." target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-wa"/></svg> Consultar por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="card product-card reveal">
+          <figure class="product-media">
+            <img src="assets/img/producto-bicarbonato.svg" alt="Frasco de vidrio con bicarbonato de sodio y tapa de madera" width="400" height="320" loading="lazy">
+          </figure>
+          <div class="product-body">
+            <p class="tag">Multiuso</p>
+            <h3>Bicarbonato de Sodio</h3>
+            <p>El comodín de la casa: un polvo suave que sirve para muchas tareas de limpieza.</p>
+            <p class="uses-title">Usos habituales</p>
+            <ul class="uses">
+              <li><svg class="icon"><use href="#i-check"/></svg> Limpieza suave de ollas, lavaplatos y horno</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Ayuda a reducir olores en refrigerador y calzado</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Complemento en el lavado de ropa</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Bicarbonato%20de%20Sodio." target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-wa"/></svg> Consultar por WhatsApp
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <p class="note">Lee siempre las indicaciones del envase y no mezcles productos de limpieza con cloro.</p>
+
+      <!-- Próximamente -->
+      <div class="soon">
+        <div class="soon-head">
+          <p class="eyebrow">Próximamente</p>
+          <h3>Nuevos esenciales para tu cocina</h3>
+          <p>Estamos preparando dos productos más. Si te interesan, escríbenos y te avisamos cuando estén disponibles.</p>
+        </div>
+        <div class="soon-grid">
+          <article class="card soon-card reveal">
+            <figure class="soon-media">
+              <img src="assets/img/proximamente-aceite.svg" alt="Botella de aceite de oliva junto a una rama de olivo" width="400" height="320" loading="lazy">
+            </figure>
+            <div class="soon-body">
+              <span class="badge">Próximamente</span>
+              <h4>Aceite de Oliva</h4>
+              <p>Para cocinar, aliñar y compartir en la mesa.</p>
+              <a class="link-cta" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20av%C3%ADsenme%20cuando%20llegue%20el%20Aceite%20de%20Oliva." target="_blank" rel="noopener">Avísame por WhatsApp <svg class="icon"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="card soon-card reveal">
+            <figure class="soon-media">
+              <img src="assets/img/proximamente-cafe.svg" alt="Bolsa de café en grano junto a una taza de cerámica" width="400" height="320" loading="lazy">
+            </figure>
+            <div class="soon-body">
+              <span class="badge">Próximamente</span>
+              <h4>Café en Grano</h4>
+              <p>Para preparar en casa, a tu manera.</p>
+              <a class="link-cta" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20av%C3%ADsenme%20cuando%20llegue%20el%20Caf%C3%A9%20en%20Grano." target="_blank" rel="noopener">Avísame por WhatsApp <svg class="icon"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BENEFICIOS -->
+  <section class="section section-tint" id="beneficios">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Beneficios</p>
+        <h2>¿Por qué elegir Karu Esencial?</h2>
+        <p>Pocos productos, bien elegidos, para las tareas de todos los días.</p>
+      </header>
+      <div class="benefit-grid">
+        <div class="benefit reveal">
+          <span class="benefit-icon"><svg class="icon"><use href="#i-versatil"/></svg></span>
+          <h3>Versatilidad</h3>
+          <p>Un mismo producto te acompaña en distintas tareas de la casa.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-icon"><svg class="icon"><use href="#i-simple"/></svg></span>
+          <h3>Simpleza</h3>
+          <p>Productos fáciles de entender y de sumar a tu rutina.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-icon"><svg class="icon"><use href="#i-ahorro"/></svg></span>
+          <h3>Ahorro</h3>
+          <p>Básicos multiuso que pueden ayudarte a ordenar el presupuesto del hogar.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-icon"><svg class="icon"><use href="#i-hoja"/></svg></span>
+          <h3>Conciencia</h3>
+          <p>Una propuesta pensada para un consumo más consciente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CÓMO COMPRAR -->
+  <section class="section" id="como-comprar">
+    <div class="container buy-grid">
+      <div class="buy-copy">
+        <p class="eyebrow">Cómo comprar</p>
+        <h2>Comprar es simple</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <div><h3>Elige</h3><p>Conoce nuestros productos y elige lo que necesitas.</p></div>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <div><h3>Escríbenos</h3><p>Haz clic en WhatsApp y cuéntanos qué productos buscas.</p></div>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <div><h3>Coordina tu pedido</h3><p>Te ayudamos a coordinar tu compra y la entrega.</p></div>
+          </li>
+        </ol>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20comprar." target="_blank" rel="noopener">
+          <svg class="icon"><use href="#i-wa"/></svg> Quiero comprar
+        </a>
+      </div>
+      <div class="chat-card reveal" aria-hidden="true">
+        <div class="chat-top">
+          <span class="chat-avatar"><svg class="icon"><use href="#i-wa"/></svg></span>
+          <span><strong>Karu Esencial</strong><small>+56 9 8904 8914</small></span>
+        </div>
+        <div class="chat-body">
+          <p class="bubble">Hola Karu Esencial, quiero pedir bicarbonato de sodio y vinagre incoloro. ¿Qué formatos tienen?</p>
+          <p class="chat-hint">Así de simple: un mensaje y coordinamos tu pedido por el mismo chat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TESTIMONIOS — estructura preparada. Solo publicar testimonios reales y autorizados. -->
+  <section class="section section-warm" id="testimonios">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Testimonios</p>
+        <h2>Experiencias de nuestros clientes</h2>
+        <p>Pronto compartiremos aquí las opiniones de quienes ya usan Karu Esencial. Solo publicamos testimonios reales y con autorización.</p>
+      </header>
+      <div class="testimonial-grid">
+        <!--
+          Plantilla de testimonio real (reemplaza la tarjeta vacía):
+          <figure class="card testimonial">
+            <svg class="icon quote"><use href="#i-quote"/></svg>
+            <blockquote>Texto del testimonio.</blockquote>
+            <figcaption><strong>Nombre</strong><span>Comuna · Producto</span></figcaption>
+          </figure>
+        -->
+        <figure class="testimonial is-empty"><svg class="icon quote"><use href="#i-quote"/></svg><span class="line"></span><span class="line"></span><span class="line short"></span><figcaption>Espacio para testimonio</figcaption></figure>
+        <figure class="testimonial is-empty"><svg class="icon quote"><use href="#i-quote"/></svg><span class="line"></span><span class="line"></span><span class="line short"></span><figcaption>Espacio para testimonio</figcaption></figure>
+        <figure class="testimonial is-empty"><svg class="icon quote"><use href="#i-quote"/></svg><span class="line"></span><span class="line"></span><span class="line short"></span><figcaption>Espacio para testimonio</figcaption></figure>
+      </div>
+      <p class="center">
+        <a class="link-cta" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20compartir%20mi%20experiencia%20con%20sus%20productos." target="_blank" rel="noopener">¿Ya compraste? Cuéntanos tu experiencia <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 7. PREGUNTAS FRECUENTES — en Elementor Free: widget Acordeón -->
+  <section class="section" id="preguntas">
+    <div class="container faq-grid">
+      <header class="section-head align-left">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Resolvemos tus dudas</h2>
+        <p>¿No encuentras lo que buscas? Escríbenos y te respondemos por WhatsApp.</p>
+        <a class="btn btn-ghost" href="https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20tengo%20una%20consulta." target="_blank" rel="noopener">
+          <svg class="icon"><use href="#i-wa"/></svg> Consultar por WhatsApp
+        </a>
+      </header>
+      <div class="faq">
+        <details open>
+          <summary>¿Cómo puedo comprar?</summary>
+          <p>Escríbenos por WhatsApp al +56 9 8904 8914 con los productos que te interesan. Coordinamos tu pedido por el mismo chat.</p>
+        </details>
+        <details>
+          <summary>¿Dónde realizan entregas?</summary>
+          <p>Cuéntanos tu comuna por WhatsApp y te confirmamos las opciones de entrega disponibles para tu zona.</p>
+        </details>
+        <details>
+          <summary>¿Cómo puedo conocer los precios?</summary>
+          <p>Te compartimos precios y formatos actualizados por WhatsApp, según los productos que necesites.</p>
+        </details>
+        <details>
+          <summary>¿Qué usos tiene cada producto?</summary>
+          <p>En la sección <a href="#productos">Productos</a> encontrarás los usos habituales de cada uno. Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase.</p>
+        </details>
+        <details>
+          <summary>¿Qué formatos están disponibles?</summary>
+          <p>Los formatos pueden variar según disponibilidad. Consúltanos por WhatsApp y te contamos las opciones vigentes.</p>
+        </details>
+        <details>
+          <summary>¿Cómo puedo contactar a Karu Esencial?</summary>
+          <p>Nuestro canal principal es WhatsApp: +56 9 8904 8914. También puedes llamarnos a ese número.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CTA PRINCIPAL -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-panel">
+        <span class="bubble-deco b1"></span><span class="bubble-deco b2"></span><span class="bubble-deco b3"></span>
+        <h2>¿Qué necesitas para tu hogar?</h2>
+        <p>Conoce nuestros productos y haz tu pedido directamente por WhatsApp.</p>
+        <a class="btn btn-white btn-xl" href="https://wa.me/56989048914" target="_blank" rel="noopener">
+          <svg class="icon icon-wa"><use href="#i-wa"/></svg> Pedir por WhatsApp
+        </a>
+        <p class="cta-number">+56 9 8904 8914</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container contact-grid">
+      <header class="section-head align-left">
+        <p class="eyebrow">Contacto</p>
+        <h2>Conversemos</h2>
+        <p>WhatsApp es la forma más rápida de hacer tu pedido o resolver una duda.</p>
+      </header>
+      <div class="contact-cards">
+        <a class="card contact-card contact-main" href="https://wa.me/56989048914" target="_blank" rel="noopener">
+          <span class="contact-icon wa"><svg class="icon"><use href="#i-wa"/></svg></span>
+          <span class="contact-text"><small>WhatsApp · canal principal</small><strong>+56 9 8904 8914</strong></span>
+          <span class="contact-go">Escribir <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="card contact-card" href="tel:+56989048914">
+          <span class="contact-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+          <span class="contact-text"><small>Teléfono</small><strong>+56 9 8904 8914</strong></span>
+        </a>
+        <div class="card contact-card">
+          <span class="contact-icon"><svg class="icon"><use href="#i-truck"/></svg></span>
+          <span class="contact-text"><small>Entregas</small><strong>Coordinamos por WhatsApp</strong></span>
+        </div>
+        <!-- Redes sociales: reemplazar href="#" por los perfiles reales o eliminar este bloque -->
+        <div class="card contact-card">
+          <span class="contact-icon"><svg class="icon"><use href="#i-instagram"/></svg></span>
+          <span class="contact-text"><small>Redes sociales</small><strong class="social-inline"><a href="#" aria-label="Instagram de Karu Esencial">Instagram</a> · <a href="#" aria-label="Facebook de Karu Esencial">Facebook</a></strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 10. FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo-karu-esencial.webp" alt="Karu Esencial" width="720" height="421" loading="lazy">
+      <p>Productos esenciales y versátiles para el cuidado del hogar en Chile. Pronto, también para tu cocina.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram de Karu Esencial"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="#" aria-label="Facebook de Karu Esencial"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        <a href="https://wa.me/56989048914" target="_blank" rel="noopener" aria-label="WhatsApp de Karu Esencial"><svg class="icon"><use href="#i-wa"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Navegación del pie de página">
+      <h2>Navegación</h2>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h2>Productos</h2>
+      <ul>
+        <li><a href="#productos">Vinagre Incoloro</a></li>
+        <li><a href="#productos">Percarbonato de Sodio</a></li>
+        <li><a href="#productos">Bicarbonato de Sodio</a></li>
+        <li class="muted">Aceite de Oliva · pronto</li>
+        <li class="muted">Café en Grano · pronto</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="https://wa.me/56989048914" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="tel:+56989048914">+56 9 8904 8914</a></li>
+        <li>Chile</li>
+      </ul>
+      <a class="btn btn-primary btn-sm" href="https://wa.me/56989048914" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg> Pedir por WhatsApp</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Karu Esencial. Todos los derechos reservados.</p>
+    <p><a href="#">Política de privacidad</a> · <a href="#">Términos y condiciones</a></p>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp — en WordPress: widget HTML de Elementor + CSS -->
+<a class="wa-float" href="https://wa.me/56989048914" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+  <svg class="icon"><use href="#i-wa"/></svg>
+</a>
+
+<script src="assets/js/karu.js"></script>
+</body>
+</html>
