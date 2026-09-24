@@ -1,0 +1,1485 @@
+/* ==========================================================================
+   Karü Esencial — Hoja de estilos principal
+   --------------------------------------------------------------------------
+   Los colores, tipografías, tamaños y espaciados se definen como tokens en
+   theme.json; WordPress los expone como variables CSS (--wp--preset--*),
+   que esta hoja reutiliza para mantener una sola fuente de verdad.
+
+   Índice
+   01. Tokens del tema
+   02. Base
+   03. Estructura y secciones
+   04. Componentes comunes (etiquetas, tarjetas, íconos, listas)
+   05. Botones
+   06. Encabezado y navegación
+   07. Hero
+   08. Productos
+   09. Beneficios
+   10. Cómo usarlos
+   11. Cómo comprar
+   12. Galería
+   13. Testimonios
+   14. Preguntas frecuentes
+   15. Llamado a la acción final
+   16. Pie de página
+   17. Páginas internas y blog
+   18. Responsive
+   19. Movimiento reducido
+   ========================================================================== */
+
+
+/* ==========================================================================
+   01. Tokens del tema
+   ========================================================================== */
+
+:root {
+	--karu-blue: var(--wp--preset--color--primary, #4a90e2);
+	--karu-blue-strong: var(--wp--preset--color--primary-strong, #2a6dbf);
+	--karu-blue-hover: #225ca3;
+	--karu-sky: var(--wp--preset--color--sky, #b8e0ff);
+	--karu-sky-light: var(--wp--preset--color--sky-light, #eef7ff);
+	--karu-white: var(--wp--preset--color--base, #ffffff);
+	--karu-ink: var(--wp--preset--color--contrast, #1f2a37);
+	--karu-muted: var(--wp--preset--color--muted, #566273);
+	--karu-border: #deecf9;
+
+	--karu-font-heading: var(--wp--preset--font-family--heading, Georgia, serif);
+	--karu-font-body: var(--wp--preset--font-family--body, system-ui, sans-serif);
+
+	--karu-radius-sm: 0.75rem;
+	--karu-radius: 1.25rem;
+	--karu-radius-lg: 1.75rem;
+	--karu-radius-xl: 2.25rem;
+	--karu-pill: 999px;
+
+	--karu-shadow: var(--wp--preset--shadow--soft, 0 8px 24px rgba(42, 109, 191, 0.08));
+	--karu-shadow-lifted: var(--wp--preset--shadow--lifted, 0 20px 48px rgba(42, 109, 191, 0.14));
+
+	--karu-gap: clamp(1rem, 2vw, 1.5rem);
+	--karu-section-space: var(--wp--preset--spacing--70, clamp(4rem, 8vw, 7rem));
+	--karu-header-height: 4.75rem;
+	--karu-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* ==========================================================================
+   02. Base
+   ========================================================================== */
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: var(--karu-sky);
+	color: var(--karu-ink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--karu-ink);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1.12;
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+a {
+	color: var(--karu-blue-strong);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+a:hover {
+	color: var(--karu-blue-hover);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+:where(a, button, summary, input, textarea, select, .wp-block-button__link):focus-visible {
+	outline: 3px solid var(--karu-blue);
+	outline-offset: 3px;
+	border-radius: 0.375rem;
+}
+
+
+/* ==========================================================================
+   03. Estructura y secciones
+   ========================================================================== */
+
+/* Sin espacios entre encabezado, contenido y pie. */
+.wp-site-blocks > * {
+	margin-block: 0;
+}
+
+.karu-main,
+.karu-main > .wp-block-post-content {
+	margin-block: 0;
+}
+
+.karu-section {
+	margin-block: 0;
+	padding-block: var(--karu-section-space);
+	scroll-margin-top: var(--karu-header-height);
+}
+
+.karu-section--tint {
+	background: linear-gradient(180deg, var(--karu-sky-light) 0%, #f6fbff 100%);
+}
+
+.karu-section-head {
+	margin-bottom: clamp(2.5rem, 5vw, 4rem);
+	text-align: center;
+}
+
+/* Reinicio de márgenes del flujo nativo: cada componente define los suyos más abajo. */
+.karu-section-head > *,
+.karu-hero__content > *,
+.karu-faq__intro > *,
+.karu-cta__panel > *,
+.karu-card > *,
+.karu-product__body > * {
+	margin-block: 0;
+}
+
+.karu-section-title {
+	margin-block: 0 1rem;
+	font-size: var(--wp--preset--font-size--xx-large);
+}
+
+.karu-lead {
+	margin-block: 0;
+	color: var(--karu-muted);
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.6;
+}
+
+/* Grillas de tarjetas */
+.karu-grid {
+	display: grid;
+	gap: var(--karu-gap);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.karu-grid > * {
+	margin-block: 0;
+}
+
+.karu-grid--3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.karu-grid--4 {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.karu-center-actions {
+	margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+
+/* ==========================================================================
+   04. Componentes comunes
+   ========================================================================== */
+
+/* Antetítulo tipo "pill" */
+.karu-eyebrow {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	width: fit-content;
+	margin-block: 0 1.25rem;
+	padding: 0.4rem 0.9rem;
+	border-radius: var(--karu-pill);
+	background: var(--karu-sky-light);
+	color: var(--karu-blue-strong);
+	font-size: 0.8125rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+
+.karu-eyebrow::before {
+	content: "";
+	flex: none;
+	width: 0.45rem;
+	height: 0.45rem;
+	border-radius: 50%;
+	background: var(--karu-blue);
+}
+
+.karu-section-head .karu-eyebrow,
+.karu-cta__panel .karu-eyebrow,
+.karu-404 .karu-eyebrow {
+	margin-inline: auto;
+	margin-bottom: 1.25rem;
+}
+
+.karu-section--tint .karu-eyebrow {
+	background: var(--karu-white);
+}
+
+.karu-eyebrow--light {
+	background: rgba(255, 255, 255, 0.14);
+	color: var(--karu-white);
+}
+
+.karu-eyebrow--light::before {
+	background: var(--karu-sky);
+}
+
+/* Etiqueta pequeña */
+.karu-tag {
+	display: inline-flex;
+	width: fit-content;
+	margin: 0;
+	padding: 0.3rem 0.75rem;
+	border-radius: var(--karu-pill);
+	background: var(--karu-sky-light);
+	color: var(--karu-blue-strong);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+
+/* Tarjetas */
+.karu-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: clamp(1.5rem, 2.5vw, 2rem);
+	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius-lg);
+	background: var(--karu-white);
+	box-shadow: var(--karu-shadow);
+}
+
+.karu-card__title {
+	margin-block: 0 0.6rem;
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.2;
+}
+
+.karu-card__text {
+	margin: 0;
+	color: var(--karu-muted);
+	font-size: 0.975rem;
+	line-height: 1.65;
+}
+
+/* Íconos en recuadro */
+.wp-block-image.karu-icon {
+	display: grid;
+	place-items: center;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 0 1.5rem;
+	border-radius: 1.125rem;
+	background: var(--karu-sky-light);
+}
+
+.wp-block-image.karu-icon img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.wp-block-image.karu-icon--small {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 1rem;
+}
+
+.wp-block-image.karu-icon--small img {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+/* Lista con checks */
+.karu-checklist {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 1.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.karu-checklist li {
+	display: flex;
+	align-items: center;
+	gap: 0.55rem;
+	margin: 0;
+	color: var(--karu-ink);
+	font-size: 0.9375rem;
+	font-weight: 600;
+}
+
+.karu-checklist li::before {
+	content: "";
+	flex: none;
+	width: 1.25rem;
+	height: 1.25rem;
+	background: url("../images/check.svg") center / contain no-repeat;
+}
+
+.karu-note {
+	max-width: 44rem;
+	margin: clamp(2rem, 4vw, 3rem) auto 0;
+	color: var(--karu-muted);
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   05. Botones
+   ========================================================================== */
+
+.wp-block-buttons {
+	gap: 0.875rem;
+}
+
+.wp-block-button .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6rem;
+	padding: 0.95rem 1.6rem;
+	border: 2px solid transparent;
+	border-radius: var(--karu-pill);
+	background-color: var(--karu-blue-strong);
+	box-shadow: 0 10px 24px -10px rgba(42, 109, 191, 0.65);
+	color: var(--karu-white);
+	font-family: var(--karu-font-body);
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.005em;
+	line-height: 1.2;
+	text-decoration: none;
+	transition:
+		transform 0.25s var(--karu-ease),
+		box-shadow 0.25s var(--karu-ease),
+		background-color 0.25s ease,
+		border-color 0.25s ease,
+		color 0.25s ease;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+	background-color: var(--karu-blue-hover);
+	box-shadow: 0 16px 30px -12px rgba(42, 109, 191, 0.7);
+	color: var(--karu-white);
+	transform: translateY(-2px);
+}
+
+.wp-block-button .wp-block-button__link:active {
+	transform: translateY(0);
+}
+
+/* Contorno (secundario) */
+.wp-block-button.is-style-outline .wp-block-button__link {
+	border-color: var(--karu-sky);
+	background-color: var(--karu-white);
+	box-shadow: none;
+	color: var(--karu-blue-strong);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	border-color: var(--karu-blue);
+	background-color: var(--karu-sky-light);
+	color: var(--karu-blue-strong);
+}
+
+/* WhatsApp: ícono antes del texto */
+.wp-block-button.is-style-whatsapp .wp-block-button__link::before {
+	content: "";
+	flex: none;
+	width: 1.25em;
+	height: 1.25em;
+	background-color: currentColor;
+	-webkit-mask: url("../images/whatsapp.svg") center / contain no-repeat;
+	mask: url("../images/whatsapp.svg") center / contain no-repeat;
+}
+
+/* Claro (sobre fondos azules) */
+.wp-block-button.is-style-light .wp-block-button__link {
+	background-color: var(--karu-white);
+	box-shadow: 0 18px 40px -16px rgba(15, 40, 80, 0.55);
+	color: var(--karu-blue-strong);
+}
+
+.wp-block-button.is-style-light .wp-block-button__link:hover {
+	background-color: var(--karu-sky-light);
+	color: var(--karu-blue-hover);
+}
+
+.wp-block-button.is-style-light .wp-block-button__link::before {
+	content: "";
+	flex: none;
+	width: 1.3em;
+	height: 1.3em;
+	background-color: currentColor;
+	-webkit-mask: url("../images/whatsapp.svg") center / contain no-repeat;
+	mask: url("../images/whatsapp.svg") center / contain no-repeat;
+}
+
+/* Tamaño extra grande */
+.wp-block-button.karu-button--xl .wp-block-button__link {
+	padding: 1.2rem 2.4rem;
+	font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+}
+
+
+/* ==========================================================================
+   06. Encabezado y navegación
+   ========================================================================== */
+
+.wp-site-blocks > header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.admin-bar .wp-site-blocks > header {
+	top: var(--wp-admin--admin-bar--height, 32px);
+}
+
+.karu-header {
+	position: relative;
+	isolation: isolate;
+	padding-block: 0.875rem;
+	border-bottom: 1px solid rgba(184, 224, 255, 0.55);
+}
+
+/* El desenfoque va en un pseudo-elemento: si estuviera en .karu-header,
+   el menú móvil (position: fixed) quedaría recortado dentro del encabezado. */
+.karu-header::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: rgba(255, 255, 255, 0.86);
+	-webkit-backdrop-filter: saturate(180%) blur(14px);
+	backdrop-filter: saturate(180%) blur(14px);
+}
+
+.karu-header__inner {
+	gap: 1.5rem;
+}
+
+.karu-header__actions {
+	gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.wp-block-image.karu-logo {
+	flex: none;
+	margin: 0;
+}
+
+.wp-block-image.karu-logo img {
+	display: block;
+	width: 150px;
+	height: auto;
+}
+
+.karu-nav {
+	gap: clamp(1rem, 2vw, 1.75rem);
+	font-size: 0.9375rem;
+	font-weight: 600;
+}
+
+.karu-nav .wp-block-navigation-item__content {
+	padding-block: 0.4rem;
+	color: var(--karu-ink);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.karu-nav .wp-block-navigation-item__content:hover {
+	color: var(--karu-blue-strong);
+}
+
+.karu-header__cta .wp-block-button__link {
+	padding: 0.7rem 1.2rem;
+	font-size: 0.9375rem;
+}
+
+/* Menú móvil (superposición nativa del bloque Navegación) */
+.karu-nav .wp-block-navigation__responsive-container-open,
+.karu-nav .wp-block-navigation__responsive-container-close {
+	color: var(--karu-ink);
+}
+
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open {
+	padding: 1.5rem clamp(1rem, 4vw, 2rem);
+	background: var(--karu-white);
+	color: var(--karu-ink);
+}
+
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: 3.5rem;
+}
+
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content,
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+	align-items: stretch;
+}
+
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+	gap: 0;
+}
+
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item {
+	border-bottom: 1px solid var(--karu-border);
+}
+
+.karu-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+	display: block;
+	width: 100%;
+	padding-block: 1rem;
+	font-family: var(--karu-font-heading);
+	font-size: 1.625rem;
+	font-weight: 600;
+}
+
+
+/* ==========================================================================
+   07. Hero
+   ========================================================================== */
+
+.karu-hero {
+	position: relative;
+	overflow: hidden;
+	padding-block: clamp(3rem, 6vw, 5.5rem) clamp(4rem, 8vw, 7rem);
+	background:
+		radial-gradient(55% 60% at 88% 18%, rgba(184, 224, 255, 0.6) 0%, rgba(184, 224, 255, 0) 70%),
+		radial-gradient(40% 50% at 0% 100%, rgba(184, 224, 255, 0.35) 0%, rgba(184, 224, 255, 0) 70%),
+		linear-gradient(180deg, #f5faff 0%, var(--karu-white) 100%);
+}
+
+.wp-block-columns.karu-hero__grid {
+	gap: clamp(2.5rem, 5vw, 5rem);
+	margin-block: 0;
+}
+
+.karu-hero__title {
+	margin-block: 0 1.5rem;
+	font-size: var(--wp--preset--font-size--display);
+	letter-spacing: -0.03em;
+	line-height: 1.04;
+}
+
+.karu-hero__title em {
+	padding-inline: 0.05em;
+	background: linear-gradient(180deg, transparent 62%, var(--karu-sky) 62%, var(--karu-sky) 92%, transparent 92%);
+	color: var(--karu-blue-strong);
+	font-style: normal;
+}
+
+.karu-hero .karu-lead {
+	max-width: 34rem;
+}
+
+.karu-hero__actions {
+	margin-top: 2.25rem;
+}
+
+.karu-hero__trust {
+	margin-top: 2.25rem;
+}
+
+.karu-hero__media {
+	position: relative;
+}
+
+.wp-block-image.karu-hero__image {
+	margin: 0;
+}
+
+.wp-block-image.karu-hero__image img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 5 / 6;
+	object-fit: cover;
+	border-radius: var(--karu-radius-xl);
+	box-shadow: var(--karu-shadow-lifted);
+}
+
+.karu-hero__badge {
+	position: absolute;
+	bottom: 2.5rem;
+	left: -1.75rem;
+	max-width: 17rem;
+	padding: 1rem 1.25rem 1rem 4.25rem;
+	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius);
+	background: var(--karu-white);
+	box-shadow: var(--karu-shadow-lifted);
+}
+
+.karu-hero__badge::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 0.875rem;
+	background: var(--karu-sky-light) url("../images/icon-natural.svg") center / 1.4rem no-repeat;
+	transform: translateY(-50%);
+}
+
+.karu-hero__badge > * {
+	margin: 0;
+}
+
+.karu-hero__badge-title {
+	color: var(--karu-ink);
+	font-size: 0.975rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.karu-hero__badge-text {
+	color: var(--karu-muted);
+	font-size: 0.8125rem;
+	line-height: 1.4;
+}
+
+
+/* ==========================================================================
+   08. Productos
+   ========================================================================== */
+
+.karu-products__grid {
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.karu-product {
+	grid-column: span 2;
+	overflow: hidden;
+	padding: 0;
+	transition:
+		transform 0.35s var(--karu-ease),
+		box-shadow 0.35s var(--karu-ease),
+		border-color 0.35s ease;
+}
+
+.karu-product:hover {
+	border-color: var(--karu-sky);
+	box-shadow: var(--karu-shadow-lifted);
+	transform: translateY(-4px);
+}
+
+.wp-block-image.karu-product__image {
+	margin: 0;
+	overflow: hidden;
+	background: var(--karu-sky-light);
+}
+
+.wp-block-image.karu-product__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	transition: transform 0.6s var(--karu-ease);
+}
+
+.karu-product:hover .karu-product__image img {
+	transform: scale(1.04);
+}
+
+.karu-product__body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: clamp(1.5rem, 2.5vw, 1.875rem);
+}
+
+.karu-product__body .karu-tag {
+	margin-bottom: 1rem;
+}
+
+.karu-product__actions {
+	margin-top: auto;
+	padding-top: 1.5rem;
+}
+
+/* Las dos últimas tarjetas se muestran horizontales en escritorio */
+.karu-product:nth-child(n + 4) {
+	grid-column: span 3;
+	flex-direction: row;
+}
+
+.karu-product:nth-child(n + 4) .karu-product__image {
+	flex: 0 0 44%;
+}
+
+.karu-product:nth-child(n + 4) .karu-product__image img {
+	aspect-ratio: auto;
+	min-height: 100%;
+}
+
+
+/* ==========================================================================
+   09. Beneficios
+   ========================================================================== */
+
+.karu-feature {
+	transition:
+		transform 0.35s var(--karu-ease),
+		box-shadow 0.35s var(--karu-ease);
+}
+
+.karu-feature:hover {
+	box-shadow: var(--karu-shadow-lifted);
+	transform: translateY(-3px);
+}
+
+
+/* ==========================================================================
+   10. Cómo usarlos
+   ========================================================================== */
+
+.karu-use {
+	box-shadow: none;
+	background: linear-gradient(180deg, var(--karu-white) 0%, #fafdff 100%);
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.karu-use:hover {
+	border-color: var(--karu-sky);
+	box-shadow: var(--karu-shadow);
+}
+
+.karu-use .karu-card__text {
+	margin-bottom: 1.25rem;
+}
+
+.karu-use .karu-tag {
+	margin-top: auto;
+}
+
+
+/* ==========================================================================
+   11. Cómo comprar
+   ========================================================================== */
+
+.karu-steps__list {
+	position: relative;
+	counter-reset: none;
+}
+
+/* Línea que conecta los pasos (visible entre tarjetas) */
+.karu-steps__list::before {
+	content: "";
+	position: absolute;
+	top: 3.4rem;
+	right: 12%;
+	left: 12%;
+	border-top: 2px dashed var(--karu-sky);
+}
+
+.karu-step {
+	box-shadow: none;
+}
+
+.karu-step__number {
+	display: grid;
+	place-items: center;
+	width: 3.25rem;
+	height: 3.25rem;
+	margin-bottom: 1.5rem;
+	border-radius: 50%;
+	background: var(--karu-blue-strong);
+	box-shadow: 0 0 0 6px var(--karu-sky-light);
+	color: var(--karu-white);
+	font-family: var(--karu-font-heading);
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+
+/* ==========================================================================
+   12. Galería
+   ========================================================================== */
+
+.karu-gallery__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: var(--karu-gap);
+}
+
+.karu-gallery__grid > * {
+	margin-block: 0;
+}
+
+.wp-block-image.karu-gallery__item {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius-lg);
+	background: var(--karu-sky-light);
+}
+
+.wp-block-image.karu-gallery__item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	transition: transform 0.7s var(--karu-ease);
+}
+
+.wp-block-image.karu-gallery__item:hover img {
+	transform: scale(1.05);
+}
+
+.wp-block-image.karu-gallery__item--feature {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.wp-block-image.karu-gallery__item .wp-element-caption {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	margin: 0;
+	padding: 0.4rem 0.85rem;
+	border-radius: var(--karu-pill);
+	background: rgba(255, 255, 255, 0.94);
+	box-shadow: 0 6px 16px -6px rgba(31, 42, 55, 0.3);
+	color: var(--karu-ink);
+	font-size: 0.8125rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.wp-block-image.karu-gallery__item.is-after .wp-element-caption {
+	background: var(--karu-blue-strong);
+	color: var(--karu-white);
+}
+
+.wp-block-image.karu-gallery__item--feature .wp-element-caption {
+	top: auto;
+	bottom: 1.25rem;
+	left: 1.25rem;
+	padding: 0.6rem 1.1rem;
+	font-size: 0.9375rem;
+}
+
+
+/* ==========================================================================
+   13. Testimonios
+   ========================================================================== */
+
+.karu-testimonial {
+	overflow: hidden;
+}
+
+.karu-testimonial::after {
+	content: "\201C";
+	position: absolute;
+	top: 0.25rem;
+	right: 1.5rem;
+	color: var(--karu-sky);
+	font-family: var(--karu-font-heading);
+	font-size: 6.5rem;
+	line-height: 1;
+	pointer-events: none;
+}
+
+.wp-block-image.karu-testimonial__stars {
+	margin: 0 0 1.25rem;
+}
+
+.wp-block-image.karu-testimonial__stars img {
+	display: block;
+	width: 6.5rem;
+}
+
+.wp-block-quote.karu-testimonial__quote {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.karu-testimonial__quote p {
+	margin: 0 0 1.5rem;
+	color: var(--karu-ink);
+	font-size: 1.0625rem;
+	line-height: 1.7;
+}
+
+.karu-testimonial__quote cite {
+	display: block;
+	margin-top: auto;
+	padding-top: 1.25rem;
+	border-top: 1px solid var(--karu-border);
+	color: var(--karu-muted);
+	font-size: 0.875rem;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+.karu-testimonial__quote cite strong {
+	color: var(--karu-ink);
+	font-size: 1rem;
+}
+
+
+/* ==========================================================================
+   14. Preguntas frecuentes
+   ========================================================================== */
+
+.wp-block-columns.karu-faq__grid {
+	gap: clamp(2.5rem, 6vw, 6rem);
+	margin-block: 0;
+}
+
+.wp-block-columns.karu-faq__grid > .wp-block-column.karu-faq__list {
+	flex-grow: 1.6;
+}
+
+.karu-faq__intro .karu-lead {
+	margin-bottom: 2rem;
+}
+
+.karu-faq__list > * {
+	margin-block: 0;
+}
+
+.karu-faq__list > * + * {
+	margin-top: 0.875rem;
+}
+
+.wp-block-details.karu-faq__item {
+	border: 1px solid var(--karu-border);
+	border-radius: var(--karu-radius);
+	background: var(--karu-white);
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wp-block-details.karu-faq__item:hover,
+.wp-block-details.karu-faq__item[open] {
+	border-color: var(--karu-sky);
+	box-shadow: var(--karu-shadow);
+}
+
+.karu-faq__item summary {
+	position: relative;
+	padding: 1.3rem 4.25rem 1.3rem 1.5rem;
+	color: var(--karu-ink);
+	font-size: 1.0625rem;
+	font-weight: 700;
+	line-height: 1.4;
+	list-style: none;
+	cursor: pointer;
+}
+
+.karu-faq__item summary::-webkit-details-marker {
+	display: none;
+}
+
+/* Círculo */
+.karu-faq__item summary::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 1.25rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: var(--karu-sky-light);
+	transform: translateY(-50%);
+	transition: background-color 0.3s ease;
+}
+
+/* Signo "+" que rota a "×" al abrir */
+.karu-faq__item summary::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: 1.75rem;
+	width: 1rem;
+	height: 1rem;
+	margin-top: -0.5rem;
+	background-color: var(--karu-blue-strong);
+	-webkit-mask: url("../images/plus.svg") center / contain no-repeat;
+	mask: url("../images/plus.svg") center / contain no-repeat;
+	transition: transform 0.35s var(--karu-ease), background-color 0.3s ease;
+}
+
+.karu-faq__item[open] summary::after {
+	background: var(--karu-blue-strong);
+}
+
+.karu-faq__item[open] summary::before {
+	background-color: var(--karu-white);
+	transform: rotate(45deg);
+}
+
+.karu-faq__item > :not(summary) {
+	margin: 0;
+	padding: 0 1.5rem 1.4rem;
+	color: var(--karu-muted);
+	line-height: 1.7;
+}
+
+
+/* ==========================================================================
+   15. Llamado a la acción final
+   ========================================================================== */
+
+.karu-cta {
+	padding-top: 0;
+}
+
+.karu-cta__panel {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+	padding: clamp(3.5rem, 7vw, 6rem) clamp(1.5rem, 5vw, 4rem);
+	border-radius: var(--karu-radius-xl);
+	background: linear-gradient(135deg, #2a6dbf 0%, #2d72c4 55%, #3a80d3 100%);
+	box-shadow: 0 30px 60px -30px rgba(42, 109, 191, 0.7);
+	color: var(--karu-white);
+	text-align: center;
+}
+
+/* Brillos decorativos */
+.karu-cta__panel::before,
+.karu-cta__panel::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+.karu-cta__panel::before {
+	top: -40%;
+	right: -10%;
+	width: 32rem;
+	height: 32rem;
+	background: radial-gradient(circle, rgba(184, 224, 255, 0.35) 0%, rgba(184, 224, 255, 0) 70%);
+}
+
+.karu-cta__panel::after {
+	bottom: -50%;
+	left: -12%;
+	width: 28rem;
+	height: 28rem;
+	background: radial-gradient(circle, rgba(74, 144, 226, 0.55) 0%, rgba(74, 144, 226, 0) 70%);
+}
+
+.karu-cta__title {
+	margin-bottom: 1.25rem;
+	color: var(--karu-white);
+	font-size: var(--wp--preset--font-size--xx-large);
+}
+
+.karu-cta__text {
+	max-width: 36rem;
+	margin-bottom: 2.5rem;
+	color: var(--karu-white);
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.6;
+}
+
+.karu-cta__small {
+	margin-top: 1.5rem;
+	color: rgba(255, 255, 255, 0.92);
+	font-size: 0.875rem;
+}
+
+
+/* ==========================================================================
+   16. Pie de página
+   ========================================================================== */
+
+.karu-footer {
+	padding-block: clamp(3.5rem, 7vw, 5rem) 2rem;
+	background: var(--karu-ink);
+	color: rgba(255, 255, 255, 0.78);
+	font-size: 0.9375rem;
+	line-height: 1.7;
+}
+
+.karu-footer a {
+	color: var(--karu-sky);
+	text-decoration: none;
+}
+
+.karu-footer a:hover {
+	color: var(--karu-white);
+	text-decoration: underline;
+}
+
+.wp-block-columns.karu-footer__grid {
+	gap: clamp(2rem, 4vw, 3.5rem);
+	margin-block: 0;
+}
+
+.wp-block-columns.karu-footer__grid > .wp-block-column.karu-footer__brand {
+	flex-grow: 1.4;
+}
+
+.karu-footer__grid .wp-block-column > * {
+	margin-block: 0;
+}
+
+.karu-footer__grid .wp-block-column > * + * {
+	margin-top: 1rem;
+}
+
+.karu-footer .wp-block-image.karu-logo img {
+	width: 160px;
+}
+
+.karu-footer__brand p {
+	max-width: 22rem;
+}
+
+.karu-footer__title {
+	color: var(--karu-white);
+	font-family: var(--karu-font-body);
+	font-size: 0.8125rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.wp-block-social-links.karu-social {
+	gap: 0.625rem;
+	margin-top: 1.5rem;
+	font-size: 1.125rem;
+}
+
+.wp-block-social-links.is-style-logos-only.karu-social .wp-social-link {
+	margin: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.08);
+	color: var(--karu-white);
+	transition: background-color 0.25s ease, transform 0.25s var(--karu-ease);
+}
+
+.wp-block-social-links.is-style-logos-only.karu-social .wp-social-link:hover {
+	background: var(--karu-blue-strong);
+	transform: translateY(-2px);
+}
+
+.wp-block-social-links.is-style-logos-only.karu-social .wp-social-link a {
+	padding: 0.65rem;
+	color: var(--karu-white);
+}
+
+.wp-block-separator.karu-footer__divider {
+	margin-block: clamp(2.5rem, 5vw, 3.5rem) 1.5rem;
+	border: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	opacity: 1;
+}
+
+.karu-footer__legal {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.8125rem;
+}
+
+
+/* ==========================================================================
+   17. Páginas internas y blog
+   ========================================================================== */
+
+.karu-page-title {
+	margin-bottom: 2rem;
+	font-size: var(--wp--preset--font-size--xx-large);
+}
+
+.karu-meta {
+	color: var(--karu-muted);
+	font-size: 0.875rem;
+}
+
+.karu-post-card {
+	gap: 0.75rem;
+}
+
+.karu-post-card .wp-block-post-featured-image {
+	margin: calc(clamp(1.5rem, 2.5vw, 2rem) * -1) calc(clamp(1.5rem, 2.5vw, 2rem) * -1) 0.5rem;
+}
+
+.karu-post-card__title {
+	font-size: var(--wp--preset--font-size--x-large);
+}
+
+.karu-post-card__title a {
+	color: var(--karu-ink);
+	text-decoration: none;
+}
+
+.karu-404 {
+	text-align: center;
+}
+
+.karu-404 .karu-lead {
+	margin-bottom: 2.25rem;
+}
+
+
+/* ==========================================================================
+   18. Responsive
+   ========================================================================== */
+
+/* Tablet horizontal y escritorios pequeños */
+@media (max-width: 1080px) {
+	.karu-grid--4 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.karu-steps__list::before {
+		display: none;
+	}
+
+	.karu-products__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.karu-product,
+	.karu-product:nth-child(n + 4) {
+		grid-column: span 1;
+		flex-direction: column;
+	}
+
+	.karu-product:nth-child(n + 4) .karu-product__image {
+		flex: none;
+	}
+
+	.karu-product:nth-child(n + 4) .karu-product__image img {
+		aspect-ratio: 4 / 3;
+		min-height: 0;
+	}
+
+	/* La quinta tarjeta ocupa todo el ancho en formato horizontal */
+	.karu-product:nth-child(5) {
+		grid-column: 1 / -1;
+		flex-direction: row;
+	}
+
+	.karu-product:nth-child(5) .karu-product__image {
+		flex: 0 0 50%;
+	}
+
+	.karu-product:nth-child(5) .karu-product__image img {
+		aspect-ratio: auto;
+		min-height: 100%;
+	}
+
+	/* Menú hamburguesa también en tablet */
+	.karu-nav .wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	.karu-nav .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+}
+
+/* Tablet vertical */
+@media (max-width: 900px) {
+	.karu-grid--3 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.karu-gallery__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.wp-block-image.karu-gallery__item--feature {
+		grid-row: auto;
+	}
+
+	.wp-block-image.karu-gallery__item--feature img {
+		aspect-ratio: 16 / 10;
+	}
+}
+
+/* Columnas apiladas (mismo punto de quiebre que el bloque Columnas) */
+@media (max-width: 781px) {
+	:root {
+		--karu-header-height: 4.25rem;
+	}
+
+	.karu-hero {
+		padding-top: 2.5rem;
+	}
+
+	.karu-hero__badge {
+		bottom: 1.25rem;
+		left: 1rem;
+	}
+
+	.wp-block-image.karu-hero__image img {
+		aspect-ratio: 1;
+	}
+
+	.karu-faq__intro {
+		text-align: center;
+	}
+
+	.karu-faq__intro .karu-eyebrow {
+		margin-inline: auto;
+	}
+
+	.karu-faq__intro .wp-block-buttons {
+		justify-content: center;
+	}
+}
+
+/* Móvil */
+@media (max-width: 640px) {
+	.karu-grid--3,
+	.karu-grid--4,
+	.karu-products__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.karu-product:nth-child(5) {
+		flex-direction: column;
+	}
+
+	.karu-product:nth-child(5) .karu-product__image {
+		flex: none;
+	}
+
+	.karu-product:nth-child(5) .karu-product__image img {
+		aspect-ratio: 4 / 3;
+		min-height: 0;
+	}
+
+	.karu-section-head {
+		text-align: left;
+	}
+
+	.karu-section-head .karu-eyebrow {
+		margin-inline: 0;
+	}
+
+	.karu-hero__actions .wp-block-button {
+		flex: 1 1 100%;
+	}
+
+	.karu-hero__actions .wp-block-button__link {
+		width: 100%;
+	}
+
+	.karu-checklist {
+		flex-direction: column;
+	}
+
+	.wp-block-image.karu-logo img {
+		width: 118px;
+	}
+
+	.karu-header__cta .wp-block-button__link {
+		padding: 0.6rem 0.9rem;
+		font-size: 0.8125rem;
+	}
+
+	.karu-header__actions {
+		gap: 0.75rem;
+	}
+
+	.karu-cta__panel {
+		border-radius: var(--karu-radius-lg);
+	}
+
+	.wp-block-button.karu-button--xl {
+		width: 100%;
+	}
+
+	.wp-block-button.karu-button--xl .wp-block-button__link {
+		width: 100%;
+		padding: 1.05rem 1.25rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.karu-header__cta .wp-block-button__link::before {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.admin-bar .wp-site-blocks > header {
+		top: 0;
+	}
+}
+
+
+/* ==========================================================================
+   19. Movimiento reducido y mejoras progresivas
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	/* Apertura suave del acordeón en navegadores compatibles */
+	@supports (interpolate-size: allow-keywords) {
+		:root {
+			interpolate-size: allow-keywords;
+		}
+
+		.karu-faq__item::details-content {
+			overflow: clip;
+			block-size: 0;
+			transition:
+				block-size 0.35s var(--karu-ease),
+				content-visibility 0.35s allow-discrete;
+		}
+
+		.karu-faq__item[open]::details-content {
+			block-size: auto;
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+	}
+}

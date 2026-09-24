@@ -1,0 +1,173 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1200px"
+		},
+		"color": {
+			"custom": true,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{
+					"slug": "base",
+					"name": "Blanco",
+					"color": "#ffffff"
+				},
+				{
+					"slug": "primary",
+					"name": "Azul principal",
+					"color": "#4a90e2"
+				},
+				{
+					"slug": "primary-strong",
+					"name": "Azul profundo (texto y botones accesibles)",
+					"color": "#2a6dbf"
+				},
+				{
+					"slug": "sky",
+					"name": "Celeste suave",
+					"color": "#b8e0ff"
+				},
+				{
+					"slug": "sky-light",
+					"name": "Celeste muy claro (fondos)",
+					"color": "#eef7ff"
+				},
+				{
+					"slug": "contrast",
+					"name": "Gris oscuro (texto)",
+					"color": "#1f2a37"
+				},
+				{
+					"slug": "muted",
+					"name": "Gris medio (texto secundario)",
+					"color": "#566273"
+				}
+			]
+		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"slug": "soft",
+					"name": "Suave",
+					"shadow": "0 1px 2px rgba(31, 42, 55, 0.04), 0 8px 24px rgba(42, 109, 191, 0.08)"
+				},
+				{
+					"slug": "lifted",
+					"name": "Elevada",
+					"shadow": "0 2px 6px rgba(31, 42, 55, 0.05), 0 20px 48px rgba(42, 109, 191, 0.14)"
+				}
+			]
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"units": [ "px", "rem", "em", "%", "vw", "vh" ],
+			"spacingSizes": [
+				{ "slug": "10", "name": "2XS", "size": "0.375rem" },
+				{ "slug": "20", "name": "XS", "size": "0.75rem" },
+				{ "slug": "30", "name": "S", "size": "1rem" },
+				{ "slug": "40", "name": "M", "size": "1.5rem" },
+				{ "slug": "50", "name": "L", "size": "clamp(1.75rem, 3vw, 2.5rem)" },
+				{ "slug": "60", "name": "XL", "size": "clamp(2.5rem, 5vw, 4rem)" },
+				{ "slug": "70", "name": "2XL", "size": "clamp(4rem, 8vw, 7rem)" }
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"writingMode": false,
+			"fontFamilies": [
+				{
+					"slug": "body",
+					"name": "Plus Jakarta Sans",
+					"fontFamily": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Plus Jakarta Sans",
+							"fontStyle": "normal",
+							"fontWeight": "200 800",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/plus-jakarta-sans-latin-wght.woff2" ]
+						}
+					]
+				},
+				{
+					"slug": "heading",
+					"name": "Fraunces",
+					"fontFamily": "Fraunces, Georgia, \"Times New Roman\", serif",
+					"fontFace": [
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/fraunces-latin-wght.woff2" ]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "small", "name": "Pequeño", "size": "0.875rem", "fluid": false },
+				{ "slug": "medium", "name": "Normal", "size": "1rem", "fluid": { "min": "1rem", "max": "1.0625rem" } },
+				{ "slug": "large", "name": "Destacado", "size": "1.25rem", "fluid": { "min": "1.0625rem", "max": "1.25rem" } },
+				{ "slug": "x-large", "name": "Título pequeño", "size": "1.5rem", "fluid": { "min": "1.25rem", "max": "1.5rem" } },
+				{ "slug": "xx-large", "name": "Título de sección", "size": "3rem", "fluid": { "min": "2rem", "max": "3rem" } },
+				{ "slug": "display", "name": "Portada", "size": "4.25rem", "fluid": { "min": "2.5rem", "max": "4.25rem" } }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"blockGap": "1.25rem",
+			"padding": {
+				"top": "0",
+				"right": "clamp(1rem, 4vw, 2rem)",
+				"bottom": "0",
+				"left": "clamp(1rem, 4vw, 2rem)"
+			}
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": "1.65"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|heading"
+				}
+			}
+		}
+	},
+	"customTemplates": [
+		{
+			"name": "page-landing",
+			"title": "Landing Karü Esencial (ancho completo)",
+			"postTypes": [ "page" ]
+		}
+	],
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Encabezado",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Pie de página",
+			"area": "footer"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","align":"full","className":"karu-main karu-section","layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignfull karu-main karu-section"><!-- wp:query-title {"type":"archive","className":"karu-page-title"} /-->
+
+<!-- wp:query {"queryId":1,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"className":"karu-grid karu-grid--3 karu-posts"} -->
+<!-- wp:group {"className":"karu-card karu-post-card","layout":{"type":"default"}} -->
+<div class="wp-block-group karu-card karu-post-card"><!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:post-date {"className":"karu-meta"} /-->
+
+<!-- wp:post-title {"level":2,"isLink":true,"className":"karu-post-card__title"} /-->
+
+<!-- wp:post-excerpt {"excerptLength":24} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Aún no hay publicaciones por aquí.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
