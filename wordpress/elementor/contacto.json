@@ -370,7 +370,9 @@
             "unit": "px",
             "size": 2
            },
-           "_flex_size": "grow"
+           "_flex_size": "custom",
+           "_flex_grow": 1,
+           "_flex_shrink": 1
           },
           "elements": [
            {
@@ -581,7 +583,9 @@
             "unit": "px",
             "size": 2
            },
-           "_flex_size": "grow"
+           "_flex_size": "custom",
+           "_flex_grow": 1,
+           "_flex_shrink": 1
           },
           "elements": [
            {
@@ -744,7 +748,9 @@
             "unit": "px",
             "size": 2
            },
-           "_flex_size": "grow"
+           "_flex_size": "custom",
+           "_flex_grow": 1,
+           "_flex_shrink": 1
           },
           "elements": [
            {

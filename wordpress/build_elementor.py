@@ -491,7 +491,7 @@ def step(num, title, desc, last=False):
         column([heading(title, "h3", None, "accent", typography_typography="custom",
                         typography_font_family="Nunito", typography_font_weight="800",
                         typography_font_size=px(20)),
-                text(f"<p>{desc}</p>")], g=4, _flex_size="grow"),
+                text(f"<p>{desc}</p>")], g=4, _flex_size="custom", _flex_grow=1, _flex_shrink=1),
     ], g=18, align="flex-start", stack=None, padding=dims(18, 0), flex_wrap_mobile="nowrap",
         _title=f"Paso {num}", **s)
 
@@ -677,7 +677,7 @@ def contact_card(ico, small, big, url=None, main=False):
         heading(big, "p", None, "accent", typography_typography="custom", typography_font_family="Nunito",
                 typography_font_weight="900" if main else "800", typography_font_size=px(24 if main else 18),
                 typography_font_size_mobile=px(21 if main else 17)),
-    ], g=2, _flex_size="grow")
+    ], g=2, _flex_size="custom", _flex_grow=1, _flex_shrink=1)
     kids = [ic, txt]
     if main:
         kids.append(heading("Escribir →", "p", None, "primary", typography_typography="custom",
