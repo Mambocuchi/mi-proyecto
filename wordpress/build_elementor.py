@@ -312,9 +312,10 @@ def hero():
         text("<p>Vinagre incoloro, percarbonato de sodio y bicarbonato de sodio: tres básicos versátiles "
              "para limpiar y cuidar tu casa. Elige lo que necesitas y pídelo directo por WhatsApp.</p>", typo="lead"),
         row([
-            button("Pedir por WhatsApp", wa("Hola Karu Esencial, quiero hacer un pedido."), size="lg"),
+            button("Pedir por WhatsApp", wa("Hola Karu Esencial, quiero hacer un pedido."), size="lg",
+                   align_m="justify"),
             button("Conocer productos", f"{SITE}/productos/", kind="ghost", size="lg",
-                   ico="fas fa-arrow-right", ico_after=True),
+                   ico="fas fa-arrow-right", ico_after=True, align_m="justify"),
         ], g=12, wrap=True, stack=None, _title="Botones", flex_direction_mobile="column",
             flex_align_items_mobile="stretch"),
         checklist(["Pedidos directos por WhatsApp", "Atención cercana", "Productos multiuso"], inline=True,
@@ -322,7 +323,7 @@ def hero():
     ], width=52, width_t=100, g=24, _title="Texto hero")
     note = row([
         widget("icon", selected_icon=icon("fas fa-comment"), view="stacked", shape="rounded",
-               size=px(18), icon_padding=px(11), border_radius=dims(12),
+               size=px(18), icon_padding=px(11), border_radius=dims(12), _flex_size="none",
                __globals__={"primary_color": gc("celestesuave"), "secondary_color": gc("primary")}),
         text("<p><strong>¿Dudas?</strong> Escríbenos al<br>+56 9 8904 8914</p>", typo="pequeno"),
     ], g=12, stack=None, _title="Nota flotante", width={"unit": "px", "size": 250, "sizes": []},
@@ -491,20 +492,21 @@ def step(num, title, desc, last=False):
                         typography_font_family="Nunito", typography_font_weight="800",
                         typography_font_size=px(20)),
                 text(f"<p>{desc}</p>")], g=4, _flex_size="grow"),
-    ], g=18, align="flex-start", stack=None, padding=dims(18, 0), _title=f"Paso {num}", **s)
+    ], g=18, align="flex-start", stack=None, padding=dims(18, 0), flex_wrap_mobile="nowrap",
+        _title=f"Paso {num}", **s)
 
 
 def chat_card():
     top = row([
         widget("icon", selected_icon=icon("fab fa-whatsapp"), view="stacked", shape="circle", size=px(20),
-               icon_padding=px(11), __globals__={"primary_color": gc("whatsapp"), "secondary_color": gc("blanco")}),
+               icon_padding=px(11), _flex_size="none", __globals__={"primary_color": gc("whatsapp"), "secondary_color": gc("blanco")}),
         column([
             heading("Karu Esencial", "p", None, "accent", typography_typography="custom",
                     typography_font_family="Figtree", typography_font_weight="700", typography_font_size=px(16)),
             heading("+56 9 8904 8914", "p", "pequeno", "text", typography_typography="custom",
                     typography_font_size=px(13)),
         ], g=0),
-    ], g=12, stack=None, padding=dims(12, 14, 16, 14), _title="Contacto")
+    ], g=12, stack=None, padding=dims(12, 14, 16, 14), flex_wrap_mobile="nowrap", _title="Contacto")
     body = column([
         text("<p>Hola Karu Esencial, quiero pedir bicarbonato de sodio y vinagre incoloro. ¿Qué formatos tienen?</p>",
              typo="pequeno", color="accent", _background_background="classic", _padding=dims(14, 16),
@@ -553,7 +555,7 @@ def testimonials_section():
                      "Pronto compartiremos aquí las opiniones de quienes ya usan Karu Esencial. "
                      "Solo publicamos testimonios reales y con autorización."),
         grid([testimonial_slot(), testimonial_slot(True), testimonial_slot(True)], 3, cols_t=3, cols_m=1, g=20,
-             _title="Testimonios"),
+             _title="Testimonios", grid_rows_grid_mobile={"unit": "fr", "size": 1, "sizes": []}),
         button("¿Ya compraste? Cuéntanos tu experiencia",
                wa("Hola Karu Esencial, quiero compartir mi experiencia con sus productos."),
                kind="link", ico="fas fa-arrow-right", ico_after=True, align="center", _margin=dims(32, 0, 0, 0)),
@@ -666,6 +668,7 @@ def page_intro(eyebrow_text, title, body):
 def contact_card(ico, small, big, url=None, main=False):
     ic = widget("icon", selected_icon=icon(ico), view="stacked", shape="circle" if main else "rounded",
                 size=px(26 if main else 20), icon_padding=px(15 if main else 14), border_radius=dims(14),
+                _flex_size="none",
                 __globals__={"primary_color": gc("whatsapp" if main else "celestesuave"),
                              "secondary_color": gc("blanco" if main else "primary")})
     txt = column([
@@ -679,8 +682,9 @@ def contact_card(ico, small, big, url=None, main=False):
     if main:
         kids.append(heading("Escribir →", "p", None, "primary", typography_typography="custom",
                             typography_font_family="Figtree", typography_font_weight="700",
-                            typography_font_size=px(16), hide_mobile="hidden-mobile"))
+                            typography_font_size=px(16), hide_mobile="hidden-mobile", _flex_size="none"))
     s = dict(content_width="full", flex_direction="row", flex_align_items="center", flex_gap=gap(16),
+             flex_wrap="nowrap", flex_wrap_mobile="nowrap",
              padding=dims(24 if main else 20), border_border="solid", border_width=dims(1), border_radius=dims(20),
              background_background="classic", box_shadow_box_shadow_type="yes", box_shadow_box_shadow=shadow(4, 16, 0.05),
              _title=small,

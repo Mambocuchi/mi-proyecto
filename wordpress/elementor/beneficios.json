@@ -760,6 +760,7 @@
             "left": "0",
             "isLinked": false
            },
+           "flex_wrap_mobile": "nowrap",
            "_title": "Paso 01",
            "border_border": "solid",
            "border_width": {
@@ -886,6 +887,7 @@
             "left": "0",
             "isLinked": false
            },
+           "flex_wrap_mobile": "nowrap",
            "_title": "Paso 02",
            "border_border": "solid",
            "border_width": {
@@ -1012,6 +1014,7 @@
             "left": "0",
             "isLinked": false
            },
+           "flex_wrap_mobile": "nowrap",
            "_title": "Paso 03"
           },
           "elements": [
@@ -1253,6 +1256,7 @@
           "left": "14",
           "isLinked": false
          },
+         "flex_wrap_mobile": "nowrap",
          "_title": "Contacto"
         },
         "elements": [
@@ -1277,6 +1281,7 @@
             "size": 11,
             "sizes": []
            },
+           "_flex_size": "none",
            "__globals__": {
             "primary_color": "globals/colors?id=whatsapp",
             "secondary_color": "globals/colors?id=blanco"
@@ -1606,7 +1611,7 @@
      },
      "grid_rows_grid_mobile": {
       "unit": "fr",
-      "size": 3,
+      "size": 1,
       "sizes": []
      },
      "grid_gaps": {

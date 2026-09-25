@@ -251,6 +251,8 @@
           "unit": "px",
           "size": 16
          },
+         "flex_wrap": "nowrap",
+         "flex_wrap_mobile": "nowrap",
          "padding": {
           "unit": "px",
           "top": "24",
@@ -346,6 +348,7 @@
             "left": "14",
             "isLinked": true
            },
+           "_flex_size": "none",
            "__globals__": {
             "primary_color": "globals/colors?id=whatsapp",
             "secondary_color": "globals/colors?id=blanco"
@@ -437,7 +440,8 @@
             "size": 16,
             "sizes": []
            },
-           "hide_mobile": "hidden-mobile"
+           "hide_mobile": "hidden-mobile",
+           "_flex_size": "none"
           },
           "elements": []
          }
@@ -458,6 +462,8 @@
           "unit": "px",
           "size": 16
          },
+         "flex_wrap": "nowrap",
+         "flex_wrap_mobile": "nowrap",
          "padding": {
           "unit": "px",
           "top": "20",
@@ -553,6 +559,7 @@
             "left": "14",
             "isLinked": true
            },
+           "_flex_size": "none",
            "__globals__": {
             "primary_color": "globals/colors?id=celestesuave",
             "secondary_color": "globals/colors?id=primary"
@@ -643,6 +650,8 @@
           "unit": "px",
           "size": 16
          },
+         "flex_wrap": "nowrap",
+         "flex_wrap_mobile": "nowrap",
          "padding": {
           "unit": "px",
           "top": "20",
@@ -713,6 +722,7 @@
             "left": "14",
             "isLinked": true
            },
+           "_flex_size": "none",
            "__globals__": {
             "primary_color": "globals/colors?id=celestesuave",
             "secondary_color": "globals/colors?id=primary"
