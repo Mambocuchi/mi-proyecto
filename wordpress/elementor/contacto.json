@@ -1,0 +1,940 @@
+[
+ {
+  "id": "16362d0",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "88",
+    "right": "20",
+    "bottom": "80",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "48",
+    "right": "18",
+    "bottom": "44",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "background_background": "classic",
+   "__globals__": {
+    "background_color": "globals/colors?id=celestesuave"
+   },
+   "_title": "Encabezado de página"
+  },
+  "elements": [
+   {
+    "id": "3d8e012",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "boxed_width": {
+      "unit": "px",
+      "size": 720,
+      "sizes": []
+     },
+     "flex_direction": "column",
+     "flex_align_items": "center",
+     "flex_gap": {
+      "column": "16",
+      "row": "16",
+      "isLinked": true,
+      "unit": "px",
+      "size": 16
+     },
+     "_title": "Encabezado de página"
+    },
+    "elements": [
+     {
+      "id": "c5fddd7",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Contacto",
+       "header_size": "p",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=eyebrow",
+        "title_color": "globals/colors?id=primary"
+       },
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "0bb9166",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Conversemos",
+       "header_size": "h1",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=h2seccion",
+        "title_color": "globals/colors?id=accent"
+       },
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "9a3af20",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Escríbenos por WhatsApp o déjanos un mensaje. Te ayudamos a elegir y a coordinar tu pedido.</p>",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=lead",
+        "text_color": "globals/colors?id=text"
+       },
+       "align": "center"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "37be83f",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "88",
+    "right": "20",
+    "bottom": "120",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "64",
+    "right": "18",
+    "bottom": "64",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "_element_id": "contacto",
+   "_title": "Contacto"
+  },
+  "elements": [
+   {
+    "id": "ebf14ec",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "48",
+      "row": "48",
+      "isLinked": true,
+      "unit": "px",
+      "size": 48
+     },
+     "flex_align_items": "flex-start",
+     "flex_direction_tablet": "column",
+     "flex_align_items_tablet": "stretch",
+     "flex_direction_mobile": "column",
+     "flex_align_items_mobile": "stretch",
+     "_title": "Contacto"
+    },
+    "elements": [
+     {
+      "id": "7e125b8",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "16",
+        "row": "16",
+        "isLinked": true,
+        "unit": "px",
+        "size": 16
+       },
+       "width": {
+        "unit": "%",
+        "size": 46,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "_title": "Canales de contacto"
+      },
+      "elements": [
+       {
+        "id": "4876087",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Hablemos por WhatsApp",
+         "header_size": "h2",
+         "__globals__": {
+          "title_color": "globals/colors?id=accent"
+         },
+         "typography_typography": "custom",
+         "typography_font_family": "Nunito",
+         "typography_font_weight": "800",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 30,
+          "sizes": []
+         },
+         "typography_font_size_mobile": {
+          "unit": "px",
+          "size": 26,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "237e0ca",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Es la forma más rápida de hacer tu pedido o resolver una duda.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "61397d2",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_align_items": "center",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "24",
+          "bottom": "24",
+          "left": "24",
+          "isLinked": true
+         },
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "_title": "WhatsApp · canal principal",
+         "__globals__": {
+          "background_color": "globals/colors?id=celestesuave",
+          "border_color": "globals/colors?id=secondary"
+         },
+         "html_tag": "a",
+         "link": {
+          "url": "https://wa.me/56989048914",
+          "is_external": "on",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -2,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 200,
+          "sizes": []
+         }
+        },
+        "elements": [
+         {
+          "id": "0799230",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+           "selected_icon": {
+            "value": "fab fa-whatsapp",
+            "library": "fa-brands"
+           },
+           "view": "stacked",
+           "shape": "circle",
+           "size": {
+            "unit": "px",
+            "size": 26,
+            "sizes": []
+           },
+           "icon_padding": {
+            "unit": "px",
+            "size": 15,
+            "sizes": []
+           },
+           "border_radius": {
+            "unit": "px",
+            "top": "14",
+            "right": "14",
+            "bottom": "14",
+            "left": "14",
+            "isLinked": true
+           },
+           "__globals__": {
+            "primary_color": "globals/colors?id=whatsapp",
+            "secondary_color": "globals/colors?id=blanco"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "ca8fe7b",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "2",
+            "row": "2",
+            "isLinked": true,
+            "unit": "px",
+            "size": 2
+           },
+           "_flex_size": "grow"
+          },
+          "elements": [
+           {
+            "id": "00466ed",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "WhatsApp · canal principal",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "cfeafca",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "+56 9 8904 8914",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=accent"
+             },
+             "typography_typography": "custom",
+             "typography_font_family": "Nunito",
+             "typography_font_weight": "900",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+             },
+             "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 21,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "1973f1f",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Escribir →",
+           "header_size": "p",
+           "__globals__": {
+            "title_color": "globals/colors?id=primary"
+           },
+           "typography_typography": "custom",
+           "typography_font_family": "Figtree",
+           "typography_font_weight": "700",
+           "typography_font_size": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+           },
+           "hide_mobile": "hidden-mobile"
+          },
+          "elements": []
+         }
+        ]
+       },
+       {
+        "id": "90b126e",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_align_items": "center",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "_title": "Teléfono",
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=grisclaro"
+         },
+         "html_tag": "a",
+         "link": {
+          "url": "tel:+56989048914",
+          "is_external": "",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -2,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 200,
+          "sizes": []
+         }
+        },
+        "elements": [
+         {
+          "id": "e64a3d3",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+           "selected_icon": {
+            "value": "fas fa-phone",
+            "library": "fa-solid"
+           },
+           "view": "stacked",
+           "shape": "rounded",
+           "size": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+           },
+           "icon_padding": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+           },
+           "border_radius": {
+            "unit": "px",
+            "top": "14",
+            "right": "14",
+            "bottom": "14",
+            "left": "14",
+            "isLinked": true
+           },
+           "__globals__": {
+            "primary_color": "globals/colors?id=celestesuave",
+            "secondary_color": "globals/colors?id=primary"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "e87e547",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "2",
+            "row": "2",
+            "isLinked": true,
+            "unit": "px",
+            "size": 2
+           },
+           "_flex_size": "grow"
+          },
+          "elements": [
+           {
+            "id": "b0f0a9d",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Teléfono",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "412e462",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "+56 9 8904 8914",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=accent"
+             },
+             "typography_typography": "custom",
+             "typography_font_family": "Nunito",
+             "typography_font_weight": "800",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+             },
+             "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "1743f71",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_align_items": "center",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "_title": "Entregas",
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=grisclaro"
+         }
+        },
+        "elements": [
+         {
+          "id": "55bfbc6",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+           "selected_icon": {
+            "value": "fas fa-truck",
+            "library": "fa-solid"
+           },
+           "view": "stacked",
+           "shape": "rounded",
+           "size": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+           },
+           "icon_padding": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+           },
+           "border_radius": {
+            "unit": "px",
+            "top": "14",
+            "right": "14",
+            "bottom": "14",
+            "left": "14",
+            "isLinked": true
+           },
+           "__globals__": {
+            "primary_color": "globals/colors?id=celestesuave",
+            "secondary_color": "globals/colors?id=primary"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "30c6d09",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "2",
+            "row": "2",
+            "isLinked": true,
+            "unit": "px",
+            "size": 2
+           },
+           "_flex_size": "grow"
+          },
+          "elements": [
+           {
+            "id": "fcb54b2",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Entregas",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "1202342",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Coordinamos por WhatsApp",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=accent"
+             },
+             "typography_typography": "custom",
+             "typography_font_family": "Nunito",
+             "typography_font_weight": "800",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+             },
+             "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "9f441cf",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "14",
+        "row": "14",
+        "isLinked": true,
+        "unit": "px",
+        "size": 14
+       },
+       "width": {
+        "unit": "%",
+        "size": 54,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "36",
+        "bottom": "36",
+        "left": "36",
+        "isLinked": true
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "24",
+        "right": "20",
+        "bottom": "24",
+        "left": "20",
+        "isLinked": false
+       },
+       "background_background": "classic",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1",
+        "isLinked": true
+       },
+       "border_radius": {
+        "unit": "px",
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24",
+        "isLinked": true
+       },
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 14,
+        "blur": 36,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.08)"
+       },
+       "_title": "Formulario",
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco",
+        "border_color": "globals/colors?id=grisclaro"
+       }
+      },
+      "elements": [
+       {
+        "id": "7594469",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Déjanos tu mensaje",
+         "header_size": "h2",
+         "__globals__": {
+          "title_color": "globals/colors?id=accent"
+         },
+         "typography_typography": "custom",
+         "typography_font_family": "Nunito",
+         "typography_font_weight": "800",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 30,
+          "sizes": []
+         },
+         "typography_font_size_mobile": {
+          "unit": "px",
+          "size": 26,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "95926e1",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Completa el formulario y te responderemos a la brevedad.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "611fb1b",
+        "elType": "widget",
+        "widgetType": "wpforms",
+        "settings": {
+         "form_id": "70",
+         "display_form_name": "",
+         "display_form_description": "",
+         "fieldSize": "medium",
+         "fieldBorderRadius": "12",
+         "fieldBorderColor": "#DCE6F0",
+         "fieldTextColor": "#243D5B",
+         "fieldBackgroundColor": "#FFFFFF",
+         "labelColor": "#243D5B",
+         "labelSublabelColor": "#5B6C82",
+         "buttonSize": "large",
+         "buttonBorderRadius": "999",
+         "buttonBackgroundColor": "#4A90E2",
+         "buttonBorderColor": "#4A90E2",
+         "buttonTextColor": "#FFFFFF",
+         "wpformsTheme": "default"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,3165 @@
+[
+ {
+  "id": "6901bd4",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "88",
+    "right": "20",
+    "bottom": "80",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "48",
+    "right": "18",
+    "bottom": "44",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "background_background": "classic",
+   "__globals__": {
+    "background_color": "globals/colors?id=celestesuave"
+   },
+   "_title": "Encabezado de página"
+  },
+  "elements": [
+   {
+    "id": "e5bf506",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "boxed_width": {
+      "unit": "px",
+      "size": 720,
+      "sizes": []
+     },
+     "flex_direction": "column",
+     "flex_align_items": "center",
+     "flex_gap": {
+      "column": "16",
+      "row": "16",
+      "isLinked": true,
+      "unit": "px",
+      "size": 16
+     },
+     "_title": "Encabezado de página"
+    },
+    "elements": [
+     {
+      "id": "8126fb0",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Productos",
+       "header_size": "p",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=eyebrow",
+        "title_color": "globals/colors?id=primary"
+       },
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "8759d2c",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Nuestros productos esenciales",
+       "header_size": "h1",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=h2seccion",
+        "title_color": "globals/colors?id=accent"
+       },
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "1c9c0f0",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan y te ayudamos a elegir el formato que te acomoda.</p>",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=lead",
+        "text_color": "globals/colors?id=text"
+       },
+       "align": "center"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "9716fe6",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "88",
+    "right": "20",
+    "bottom": "120",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "64",
+    "right": "18",
+    "bottom": "64",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "_element_id": "productos",
+   "_title": "Productos"
+  },
+  "elements": [
+   {
+    "id": "bd2f2bd",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "container_type": "grid",
+     "grid_columns_grid": {
+      "unit": "fr",
+      "size": 3,
+      "sizes": []
+     },
+     "grid_columns_grid_tablet": {
+      "unit": "fr",
+      "size": 2,
+      "sizes": []
+     },
+     "grid_columns_grid_mobile": {
+      "unit": "fr",
+      "size": 1,
+      "sizes": []
+     },
+     "grid_rows_grid": {
+      "unit": "fr",
+      "size": 1,
+      "sizes": []
+     },
+     "grid_rows_grid_tablet": {
+      "unit": "fr",
+      "size": 2,
+      "sizes": []
+     },
+     "grid_rows_grid_mobile": {
+      "unit": "fr",
+      "size": 3,
+      "sizes": []
+     },
+     "grid_gaps": {
+      "column": "24",
+      "row": "24",
+      "isLinked": true,
+      "unit": "px"
+     },
+     "grid_auto_flow": "row",
+     "grid_align_items": "stretch",
+     "_title": "Tarjetas de productos"
+    },
+    "elements": [
+     {
+      "id": "547dbb6",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "background_background": "classic",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1",
+        "isLinked": true
+       },
+       "border_radius": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+       },
+       "overflow": "hidden",
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 4,
+        "blur": 16,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.05)"
+       },
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco",
+        "border_color": "globals/colors?id=grisclaro"
+       },
+       "box_shadow_hover_box_shadow_type": "yes",
+       "box_shadow_hover_box_shadow": {
+        "horizontal": 0,
+        "vertical": 14,
+        "blur": 36,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.1)"
+       },
+       "_transform_translateY_effect_hover": {
+        "unit": "px",
+        "size": -4,
+        "sizes": []
+       },
+       "_transform_transition_hover": {
+        "unit": "px",
+        "size": 250,
+        "sizes": []
+       },
+       "_title": "Vinagre Incoloro",
+       "animation": "fadeInUp",
+       "animation_duration": "fast"
+      },
+      "elements": [
+       {
+        "id": "9e8b289",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/producto-vinagre.svg",
+          "id": 63,
+          "size": "",
+          "source": "library"
+         },
+         "image_size": "full",
+         "width": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "height": {
+          "unit": "px",
+          "size": 300,
+          "sizes": []
+         },
+         "object-fit": "cover",
+         "height_mobile": {
+          "unit": "px",
+          "size": 260,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "a76a534",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "_flex_size": "grow",
+         "padding": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "28",
+          "left": "26",
+          "isLinked": false
+         },
+         "_title": "Cuerpo"
+        },
+        "elements": [
+         {
+          "id": "6dea4df",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "12",
+            "row": "12",
+            "isLinked": true,
+            "unit": "px",
+            "size": 12
+           },
+           "_flex_size": "grow",
+           "_title": "Contenido"
+          },
+          "elements": [
+           {
+            "id": "b1a3b85",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Cocina y baño",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "_background_color": "globals/colors?id=celestesuave"
+             },
+             "_background_background": "classic",
+             "_padding": {
+              "unit": "px",
+              "top": "4",
+              "right": "12",
+              "bottom": "4",
+              "left": "12",
+              "isLinked": false
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "33e78ae",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Vinagre Incoloro",
+             "header_size": "h3",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "1f55bad",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>Un clásico de la casa que acompaña la limpieza de todos los días.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "56d6756",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Usos habituales",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=eyebrow",
+              "title_color": "globals/colors?id=text"
+             },
+             "_margin": {
+              "unit": "px",
+              "top": "4",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "1c3a75b",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+             "view": "traditional",
+             "icon_list": [
+              {
+               "_id": "c479788",
+               "text": "Vidrios, espejos y cerámicas",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              },
+              {
+               "_id": "5af7ca0",
+               "text": "Ayuda a remover sarro en hervidores y llaves",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              },
+              {
+               "_id": "0cb97d6",
+               "text": "Superficies de cocina y baño",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              }
+             ],
+             "icon_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             },
+             "space_between": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_indent": {
+              "unit": "px",
+              "size": 8,
+              "sizes": []
+             },
+             "__globals__": {
+              "icon_color": "globals/colors?id=primary",
+              "text_color": "globals/colors?id=text",
+              "icon_typography_typography": "globals/typography?id=pequeno"
+             },
+             "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "8",
+              "left": "0",
+              "isLinked": false
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "2421e39",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+           "text": "Consultar por WhatsApp",
+           "link": {
+            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Vinagre%20Incoloro.",
+            "is_external": "on",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "size": "md",
+           "border_radius": {
+            "unit": "px",
+            "top": "999",
+            "right": "999",
+            "bottom": "999",
+            "left": "999",
+            "isLinked": true
+           },
+           "button_hover_transition_duration": {
+            "unit": "s",
+            "size": 0.2,
+            "sizes": []
+           },
+           "__globals__": {
+            "typography_typography": "globals/typography?id=accent",
+            "background_color": "globals/colors?id=primary",
+            "button_text_color": "globals/colors?id=blanco",
+            "button_background_hover_color": "globals/colors?id=azulhover",
+            "hover_color": "globals/colors?id=blanco"
+           },
+           "selected_icon": {
+            "value": "fab fa-whatsapp",
+            "library": "fa-brands"
+           },
+           "icon_indent": {
+            "unit": "px",
+            "size": 10,
+            "sizes": []
+           },
+           "text_padding": {
+            "unit": "px",
+            "top": "15",
+            "right": "28",
+            "bottom": "15",
+            "left": "28",
+            "isLinked": false
+           },
+           "button_box_shadow_box_shadow_type": "yes",
+           "button_box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 6,
+            "blur": 18,
+            "spread": 0,
+            "color": "rgba(74,144,226,0.28)"
+           },
+           "align": "justify"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "07de30c",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "background_background": "classic",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1",
+        "isLinked": true
+       },
+       "border_radius": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+       },
+       "overflow": "hidden",
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 4,
+        "blur": 16,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.05)"
+       },
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco",
+        "border_color": "globals/colors?id=grisclaro"
+       },
+       "box_shadow_hover_box_shadow_type": "yes",
+       "box_shadow_hover_box_shadow": {
+        "horizontal": 0,
+        "vertical": 14,
+        "blur": 36,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.1)"
+       },
+       "_transform_translateY_effect_hover": {
+        "unit": "px",
+        "size": -4,
+        "sizes": []
+       },
+       "_transform_transition_hover": {
+        "unit": "px",
+        "size": 250,
+        "sizes": []
+       },
+       "_title": "Percarbonato de Sodio",
+       "animation": "fadeInUp",
+       "animation_duration": "fast"
+      },
+      "elements": [
+       {
+        "id": "dd3a6bf",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/producto-percarbonato.svg",
+          "id": 64,
+          "size": "",
+          "source": "library"
+         },
+         "image_size": "full",
+         "width": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "height": {
+          "unit": "px",
+          "size": 300,
+          "sizes": []
+         },
+         "object-fit": "cover",
+         "height_mobile": {
+          "unit": "px",
+          "size": 260,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "9944e21",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "_flex_size": "grow",
+         "padding": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "28",
+          "left": "26",
+          "isLinked": false
+         },
+         "_title": "Cuerpo"
+        },
+        "elements": [
+         {
+          "id": "3a7ae9c",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "12",
+            "row": "12",
+            "isLinked": true,
+            "unit": "px",
+            "size": 12
+           },
+           "_flex_size": "grow",
+           "_title": "Contenido"
+          },
+          "elements": [
+           {
+            "id": "1f91d29",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Lavado de ropa",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "_background_color": "globals/colors?id=celestesuave"
+             },
+             "_background_background": "classic",
+             "_padding": {
+              "unit": "px",
+              "top": "4",
+              "right": "12",
+              "bottom": "4",
+              "left": "12",
+              "isLinked": false
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "a60641b",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Percarbonato de Sodio",
+             "header_size": "h3",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "2bc244d",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>Gránulos que liberan oxígeno al disolverse en agua tibia o caliente. Muy usado en el lavado y la limpieza.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "326cbfa",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Usos habituales",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=eyebrow",
+              "title_color": "globals/colors?id=text"
+             },
+             "_margin": {
+              "unit": "px",
+              "top": "4",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "ab3d469",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+             "view": "traditional",
+             "icon_list": [
+              {
+               "_id": "f1172fc",
+               "text": "Complemento para lavar ropa blanca",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              },
+              {
+               "_id": "a743f35",
+               "text": "Remojo de prendas con manchas",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              },
+              {
+               "_id": "394ed84",
+               "text": "Juntas, tablas y superficies",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              }
+             ],
+             "icon_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             },
+             "space_between": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_indent": {
+              "unit": "px",
+              "size": 8,
+              "sizes": []
+             },
+             "__globals__": {
+              "icon_color": "globals/colors?id=primary",
+              "text_color": "globals/colors?id=text",
+              "icon_typography_typography": "globals/typography?id=pequeno"
+             },
+             "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "8",
+              "left": "0",
+              "isLinked": false
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "6abe5ad",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+           "text": "Consultar por WhatsApp",
+           "link": {
+            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Percarbonato%20de%20Sodio.",
+            "is_external": "on",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "size": "md",
+           "border_radius": {
+            "unit": "px",
+            "top": "999",
+            "right": "999",
+            "bottom": "999",
+            "left": "999",
+            "isLinked": true
+           },
+           "button_hover_transition_duration": {
+            "unit": "s",
+            "size": 0.2,
+            "sizes": []
+           },
+           "__globals__": {
+            "typography_typography": "globals/typography?id=accent",
+            "background_color": "globals/colors?id=primary",
+            "button_text_color": "globals/colors?id=blanco",
+            "button_background_hover_color": "globals/colors?id=azulhover",
+            "hover_color": "globals/colors?id=blanco"
+           },
+           "selected_icon": {
+            "value": "fab fa-whatsapp",
+            "library": "fa-brands"
+           },
+           "icon_indent": {
+            "unit": "px",
+            "size": 10,
+            "sizes": []
+           },
+           "text_padding": {
+            "unit": "px",
+            "top": "15",
+            "right": "28",
+            "bottom": "15",
+            "left": "28",
+            "isLinked": false
+           },
+           "button_box_shadow_box_shadow_type": "yes",
+           "button_box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 6,
+            "blur": 18,
+            "spread": 0,
+            "color": "rgba(74,144,226,0.28)"
+           },
+           "align": "justify"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "080f211",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "background_background": "classic",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1",
+        "isLinked": true
+       },
+       "border_radius": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+       },
+       "overflow": "hidden",
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 4,
+        "blur": 16,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.05)"
+       },
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco",
+        "border_color": "globals/colors?id=grisclaro"
+       },
+       "box_shadow_hover_box_shadow_type": "yes",
+       "box_shadow_hover_box_shadow": {
+        "horizontal": 0,
+        "vertical": 14,
+        "blur": 36,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.1)"
+       },
+       "_transform_translateY_effect_hover": {
+        "unit": "px",
+        "size": -4,
+        "sizes": []
+       },
+       "_transform_transition_hover": {
+        "unit": "px",
+        "size": 250,
+        "sizes": []
+       },
+       "_title": "Bicarbonato de Sodio",
+       "animation": "fadeInUp",
+       "animation_duration": "fast"
+      },
+      "elements": [
+       {
+        "id": "5602fd9",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/producto-bicarbonato.svg",
+          "id": 65,
+          "size": "",
+          "source": "library"
+         },
+         "image_size": "full",
+         "width": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "height": {
+          "unit": "px",
+          "size": 300,
+          "sizes": []
+         },
+         "object-fit": "cover",
+         "height_mobile": {
+          "unit": "px",
+          "size": 260,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "eb692e7",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "_flex_size": "grow",
+         "padding": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "28",
+          "left": "26",
+          "isLinked": false
+         },
+         "_title": "Cuerpo"
+        },
+        "elements": [
+         {
+          "id": "15ee586",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "12",
+            "row": "12",
+            "isLinked": true,
+            "unit": "px",
+            "size": 12
+           },
+           "_flex_size": "grow",
+           "_title": "Contenido"
+          },
+          "elements": [
+           {
+            "id": "3926d09",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Multiuso",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "_background_color": "globals/colors?id=celestesuave"
+             },
+             "_background_background": "classic",
+             "_padding": {
+              "unit": "px",
+              "top": "4",
+              "right": "12",
+              "bottom": "4",
+              "left": "12",
+              "isLinked": false
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "3ee9a08",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Bicarbonato de Sodio",
+             "header_size": "h3",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "ea9e4d5",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>El comodín de la casa: un polvo suave que sirve para muchas tareas de limpieza.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "d021fcd",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Usos habituales",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=eyebrow",
+              "title_color": "globals/colors?id=text"
+             },
+             "_margin": {
+              "unit": "px",
+              "top": "4",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "bc83f0e",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+             "view": "traditional",
+             "icon_list": [
+              {
+               "_id": "2941c4d",
+               "text": "Limpieza suave de ollas, lavaplatos y horno",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              },
+              {
+               "_id": "1420fec",
+               "text": "Ayuda a reducir olores en refrigerador y calzado",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              },
+              {
+               "_id": "7ec4dfa",
+               "text": "Complemento en el lavado de ropa",
+               "selected_icon": {
+                "value": "fas fa-check",
+                "library": "fa-solid"
+               }
+              }
+             ],
+             "icon_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             },
+             "space_between": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_indent": {
+              "unit": "px",
+              "size": 8,
+              "sizes": []
+             },
+             "__globals__": {
+              "icon_color": "globals/colors?id=primary",
+              "text_color": "globals/colors?id=text",
+              "icon_typography_typography": "globals/typography?id=pequeno"
+             },
+             "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "8",
+              "left": "0",
+              "isLinked": false
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "1ff996b",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+           "text": "Consultar por WhatsApp",
+           "link": {
+            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Bicarbonato%20de%20Sodio.",
+            "is_external": "on",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "size": "md",
+           "border_radius": {
+            "unit": "px",
+            "top": "999",
+            "right": "999",
+            "bottom": "999",
+            "left": "999",
+            "isLinked": true
+           },
+           "button_hover_transition_duration": {
+            "unit": "s",
+            "size": 0.2,
+            "sizes": []
+           },
+           "__globals__": {
+            "typography_typography": "globals/typography?id=accent",
+            "background_color": "globals/colors?id=primary",
+            "button_text_color": "globals/colors?id=blanco",
+            "button_background_hover_color": "globals/colors?id=azulhover",
+            "hover_color": "globals/colors?id=blanco"
+           },
+           "selected_icon": {
+            "value": "fab fa-whatsapp",
+            "library": "fa-brands"
+           },
+           "icon_indent": {
+            "unit": "px",
+            "size": 10,
+            "sizes": []
+           },
+           "text_padding": {
+            "unit": "px",
+            "top": "15",
+            "right": "28",
+            "bottom": "15",
+            "left": "28",
+            "isLinked": false
+           },
+           "button_box_shadow_box_shadow_type": "yes",
+           "button_box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 6,
+            "blur": 18,
+            "spread": 0,
+            "color": "rgba(74,144,226,0.28)"
+           },
+           "align": "justify"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "983d9c8",
+    "elType": "widget",
+    "widgetType": "text-editor",
+    "settings": {
+     "editor": "<p>Lee siempre las indicaciones del envase y no mezcles productos de limpieza con cloro.</p>",
+     "__globals__": {
+      "typography_typography": "globals/typography?id=pequeno",
+      "text_color": "globals/colors?id=text"
+     },
+     "align": "center",
+     "_margin": {
+      "unit": "px",
+      "top": "24",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     }
+    },
+    "elements": []
+   },
+   {
+    "id": "1529602",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "48",
+      "row": "48",
+      "isLinked": true,
+      "unit": "px",
+      "size": 48
+     },
+     "flex_align_items": "center",
+     "flex_direction_tablet": "column",
+     "flex_align_items_tablet": "stretch",
+     "flex_direction_mobile": "column",
+     "flex_align_items_mobile": "stretch",
+     "_title": "Próximamente",
+     "padding": {
+      "unit": "px",
+      "top": "48",
+      "right": "48",
+      "bottom": "48",
+      "left": "48",
+      "isLinked": true
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "28",
+      "right": "20",
+      "bottom": "28",
+      "left": "20",
+      "isLinked": false
+     },
+     "margin": {
+      "unit": "px",
+      "top": "88",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "margin_mobile": {
+      "unit": "px",
+      "top": "56",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "background_background": "classic",
+     "border_radius": {
+      "unit": "px",
+      "top": "32",
+      "right": "32",
+      "bottom": "32",
+      "left": "32",
+      "isLinked": true
+     },
+     "__globals__": {
+      "background_color": "globals/colors?id=blancocalido"
+     }
+    },
+    "elements": [
+     {
+      "id": "5d92886",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "12",
+        "row": "12",
+        "isLinked": true,
+        "unit": "px",
+        "size": 12
+       },
+       "width": {
+        "unit": "%",
+        "size": 32,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "_title": "Texto"
+      },
+      "elements": [
+       {
+        "id": "b895ee9",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Próximamente",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=eyebrow",
+          "title_color": "globals/colors?id=primary"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "6c5a456",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Nuevos esenciales para tu cocina",
+         "header_size": "h3",
+         "__globals__": {
+          "title_color": "globals/colors?id=accent"
+         },
+         "typography_typography": "custom",
+         "typography_font_family": "Nunito",
+         "typography_font_weight": "800",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 30,
+          "sizes": []
+         },
+         "typography_font_size_mobile": {
+          "unit": "px",
+          "size": 24,
+          "sizes": []
+         },
+         "typography_line_height": {
+          "unit": "em",
+          "size": 1.15,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "5c6867c",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Estamos preparando dos productos más. Si te interesan, escríbenos y te avisamos cuando estén disponibles.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "cd6ecdd",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "container_type": "grid",
+       "grid_columns_grid": {
+        "unit": "fr",
+        "size": 2,
+        "sizes": []
+       },
+       "grid_columns_grid_tablet": {
+        "unit": "fr",
+        "size": 2,
+        "sizes": []
+       },
+       "grid_columns_grid_mobile": {
+        "unit": "fr",
+        "size": 1,
+        "sizes": []
+       },
+       "grid_rows_grid": {
+        "unit": "fr",
+        "size": 1,
+        "sizes": []
+       },
+       "grid_rows_grid_tablet": {
+        "unit": "fr",
+        "size": 1,
+        "sizes": []
+       },
+       "grid_rows_grid_mobile": {
+        "unit": "fr",
+        "size": 2,
+        "sizes": []
+       },
+       "grid_gaps": {
+        "column": "20",
+        "row": "20",
+        "isLinked": true,
+        "unit": "px"
+       },
+       "grid_auto_flow": "row",
+       "grid_align_items": "stretch",
+       "width": {
+        "unit": "%",
+        "size": 68,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "_title": "Tarjetas"
+      },
+      "elements": [
+       {
+        "id": "1bc82ee",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "0",
+          "row": "0",
+          "isLinked": true,
+          "unit": "px",
+          "size": 0
+         },
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "overflow": "hidden",
+         "box_shadow_box_shadow_type": "",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=grisclaro"
+         },
+         "_title": "Aceite de Oliva"
+        },
+        "elements": [
+         {
+          "id": "46deeed",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+           "image": {
+            "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/proximamente-aceite.svg",
+            "id": 66,
+            "size": "",
+            "source": "library"
+           },
+           "image_size": "full",
+           "width": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "height": {
+            "unit": "px",
+            "size": 200,
+            "sizes": []
+           },
+           "object-fit": "cover",
+           "height_mobile": {
+            "unit": "px",
+            "size": 190,
+            "sizes": []
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "2dbe1b5",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "8",
+            "row": "8",
+            "isLinked": true,
+            "unit": "px",
+            "size": 8
+           },
+           "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "22",
+            "bottom": "22",
+            "left": "22",
+            "isLinked": false
+           },
+           "_title": "Cuerpo"
+          },
+          "elements": [
+           {
+            "id": "24bbda7",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Próximamente",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "_border_color": "globals/colors?id=primary"
+             },
+             "_padding": {
+              "unit": "px",
+              "top": "3",
+              "right": "10",
+              "bottom": "3",
+              "left": "10",
+              "isLinked": false
+             },
+             "_border_border": "dashed",
+             "_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "756e662",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Aceite de Oliva",
+             "header_size": "h4",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "c58f0a2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>Para cocinar, aliñar y compartir en la mesa.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "7a3a35a",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+             "text": "Avísame por WhatsApp",
+             "link": {
+              "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20av%C3%ADsenme%20cuando%20llegue%20el%20Aceite%20de%20Oliva.",
+              "is_external": "on",
+              "nofollow": "",
+              "custom_attributes": ""
+             },
+             "size": "md",
+             "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "button_hover_transition_duration": {
+              "unit": "s",
+              "size": 0.2,
+              "sizes": []
+             },
+             "__globals__": {
+              "typography_typography": "globals/typography?id=accent",
+              "button_text_color": "globals/colors?id=primary",
+              "hover_color": "globals/colors?id=azulhover"
+             },
+             "selected_icon": {
+              "value": "fas fa-arrow-right",
+              "library": "fa-solid"
+             },
+             "icon_indent": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "icon_align": "row-reverse",
+             "text_padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+             },
+             "background_background": "classic",
+             "background_color": "rgba(255,255,255,0)",
+             "button_background_hover_color": "rgba(255,255,255,0)"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "671e2ed",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "0",
+          "row": "0",
+          "isLinked": true,
+          "unit": "px",
+          "size": 0
+         },
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "overflow": "hidden",
+         "box_shadow_box_shadow_type": "",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=grisclaro"
+         },
+         "_title": "Café en Grano"
+        },
+        "elements": [
+         {
+          "id": "18523dd",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+           "image": {
+            "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/proximamente-cafe.svg",
+            "id": 67,
+            "size": "",
+            "source": "library"
+           },
+           "image_size": "full",
+           "width": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "height": {
+            "unit": "px",
+            "size": 200,
+            "sizes": []
+           },
+           "object-fit": "cover",
+           "height_mobile": {
+            "unit": "px",
+            "size": 190,
+            "sizes": []
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "51e6908",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "8",
+            "row": "8",
+            "isLinked": true,
+            "unit": "px",
+            "size": 8
+           },
+           "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "22",
+            "bottom": "22",
+            "left": "22",
+            "isLinked": false
+           },
+           "_title": "Cuerpo"
+          },
+          "elements": [
+           {
+            "id": "e67918b",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Próximamente",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "_border_color": "globals/colors?id=primary"
+             },
+             "_padding": {
+              "unit": "px",
+              "top": "3",
+              "right": "10",
+              "bottom": "3",
+              "left": "10",
+              "isLinked": false
+             },
+             "_border_border": "dashed",
+             "_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 12,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "cff80d1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Café en Grano",
+             "header_size": "h4",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "f1e7e75",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>Para preparar en casa, a tu manera.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "eae7073",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+             "text": "Avísame por WhatsApp",
+             "link": {
+              "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20av%C3%ADsenme%20cuando%20llegue%20el%20Caf%C3%A9%20en%20Grano.",
+              "is_external": "on",
+              "nofollow": "",
+              "custom_attributes": ""
+             },
+             "size": "md",
+             "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "button_hover_transition_duration": {
+              "unit": "s",
+              "size": 0.2,
+              "sizes": []
+             },
+             "__globals__": {
+              "typography_typography": "globals/typography?id=accent",
+              "button_text_color": "globals/colors?id=primary",
+              "hover_color": "globals/colors?id=azulhover"
+             },
+             "selected_icon": {
+              "value": "fas fa-arrow-right",
+              "library": "fa-solid"
+             },
+             "icon_indent": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "icon_align": "row-reverse",
+             "text_padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+             },
+             "background_background": "classic",
+             "background_color": "rgba(255,255,255,0)",
+             "button_background_hover_color": "rgba(255,255,255,0)"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "683ac2e",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "20",
+    "bottom": "120",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "64",
+    "right": "18",
+    "bottom": "64",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "_element_id": "como-comprar",
+   "_title": "Cómo comprar"
+  },
+  "elements": [
+   {
+    "id": "b7aa8be",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "88",
+      "row": "88",
+      "isLinked": true,
+      "unit": "px",
+      "size": 88
+     },
+     "flex_align_items": "center",
+     "flex_direction_tablet": "column",
+     "flex_align_items_tablet": "stretch",
+     "flex_direction_mobile": "column",
+     "flex_align_items_mobile": "stretch",
+     "_title": "Cómo comprar"
+    },
+    "elements": [
+     {
+      "id": "96e0f86",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "24",
+        "row": "24",
+        "isLinked": true,
+        "unit": "px",
+        "size": 24
+       },
+       "width": {
+        "unit": "%",
+        "size": 55,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "_title": "Pasos para comprar"
+      },
+      "elements": [
+       {
+        "id": "bbd9435",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Cómo comprar",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=eyebrow",
+          "title_color": "globals/colors?id=primary"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "1b24847",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Comprar es simple",
+         "header_size": "h2",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=h2seccion",
+          "title_color": "globals/colors?id=accent"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "297ae3b",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "0",
+          "row": "0",
+          "isLinked": true,
+          "unit": "px",
+          "size": 0
+         },
+         "_title": "Pasos"
+        },
+        "elements": [
+         {
+          "id": "8b31a0a",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "row",
+           "flex_gap": {
+            "column": "18",
+            "row": "18",
+            "isLinked": true,
+            "unit": "px",
+            "size": 18
+           },
+           "flex_align_items": "flex-start",
+           "padding": {
+            "unit": "px",
+            "top": "18",
+            "right": "0",
+            "bottom": "18",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Paso 01",
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "1",
+            "left": "0",
+            "isLinked": false
+           },
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "6b9ecaf",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "01",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=numero",
+              "title_color": "globals/colors?id=secondary"
+             },
+             "_element_width": "initial",
+             "_element_custom_width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+             },
+             "_element_custom_width_mobile": {
+              "unit": "px",
+              "size": 48,
+              "sizes": []
+             },
+             "text_stroke_text_stroke_type": "yes",
+             "text_stroke_text_stroke": {
+              "unit": "px",
+              "size": 1.5,
+              "sizes": []
+             },
+             "text_stroke_stroke_color": "#4A90E2"
+            },
+            "elements": []
+           },
+           {
+            "id": "59c8a77",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "4",
+              "row": "4",
+              "isLinked": true,
+              "unit": "px",
+              "size": 4
+             },
+             "_flex_size": "grow"
+            },
+            "elements": [
+             {
+              "id": "61b05cf",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Elige",
+               "header_size": "h3",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "800",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "abb2245",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+               "editor": "<p>Conoce nuestros productos y elige lo que necesitas.</p>",
+               "__globals__": {
+                "typography_typography": "globals/typography?id=text",
+                "text_color": "globals/colors?id=text"
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "6d31cb9",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "row",
+           "flex_gap": {
+            "column": "18",
+            "row": "18",
+            "isLinked": true,
+            "unit": "px",
+            "size": 18
+           },
+           "flex_align_items": "flex-start",
+           "padding": {
+            "unit": "px",
+            "top": "18",
+            "right": "0",
+            "bottom": "18",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Paso 02",
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "1",
+            "left": "0",
+            "isLinked": false
+           },
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "d70a044",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "02",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=numero",
+              "title_color": "globals/colors?id=secondary"
+             },
+             "_element_width": "initial",
+             "_element_custom_width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+             },
+             "_element_custom_width_mobile": {
+              "unit": "px",
+              "size": 48,
+              "sizes": []
+             },
+             "text_stroke_text_stroke_type": "yes",
+             "text_stroke_text_stroke": {
+              "unit": "px",
+              "size": 1.5,
+              "sizes": []
+             },
+             "text_stroke_stroke_color": "#4A90E2"
+            },
+            "elements": []
+           },
+           {
+            "id": "954d44f",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "4",
+              "row": "4",
+              "isLinked": true,
+              "unit": "px",
+              "size": 4
+             },
+             "_flex_size": "grow"
+            },
+            "elements": [
+             {
+              "id": "16def06",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Escríbenos",
+               "header_size": "h3",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "800",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "de1581b",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+               "editor": "<p>Haz clic en WhatsApp y cuéntanos qué productos buscas.</p>",
+               "__globals__": {
+                "typography_typography": "globals/typography?id=text",
+                "text_color": "globals/colors?id=text"
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "4afa071",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "row",
+           "flex_gap": {
+            "column": "18",
+            "row": "18",
+            "isLinked": true,
+            "unit": "px",
+            "size": 18
+           },
+           "flex_align_items": "flex-start",
+           "padding": {
+            "unit": "px",
+            "top": "18",
+            "right": "0",
+            "bottom": "18",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Paso 03"
+          },
+          "elements": [
+           {
+            "id": "78905eb",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "03",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=numero",
+              "title_color": "globals/colors?id=secondary"
+             },
+             "_element_width": "initial",
+             "_element_custom_width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+             },
+             "_element_custom_width_mobile": {
+              "unit": "px",
+              "size": 48,
+              "sizes": []
+             },
+             "text_stroke_text_stroke_type": "yes",
+             "text_stroke_text_stroke": {
+              "unit": "px",
+              "size": 1.5,
+              "sizes": []
+             },
+             "text_stroke_stroke_color": "#4A90E2"
+            },
+            "elements": []
+           },
+           {
+            "id": "f3a6799",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "4",
+              "row": "4",
+              "isLinked": true,
+              "unit": "px",
+              "size": 4
+             },
+             "_flex_size": "grow"
+            },
+            "elements": [
+             {
+              "id": "024358d",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Coordina tu pedido",
+               "header_size": "h3",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "800",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "435f900",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+               "editor": "<p>Te ayudamos a coordinar tu compra y la entrega.</p>",
+               "__globals__": {
+                "typography_typography": "globals/typography?id=text",
+                "text_color": "globals/colors?id=text"
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "0709d47",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Quiero comprar",
+         "link": {
+          "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20comprar.",
+          "is_external": "on",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "size": "lg",
+         "border_radius": {
+          "unit": "px",
+          "top": "999",
+          "right": "999",
+          "bottom": "999",
+          "left": "999",
+          "isLinked": true
+         },
+         "button_hover_transition_duration": {
+          "unit": "s",
+          "size": 0.2,
+          "sizes": []
+         },
+         "__globals__": {
+          "typography_typography": "globals/typography?id=accent",
+          "background_color": "globals/colors?id=primary",
+          "button_text_color": "globals/colors?id=blanco",
+          "button_background_hover_color": "globals/colors?id=azulhover",
+          "hover_color": "globals/colors?id=blanco"
+         },
+         "selected_icon": {
+          "value": "fab fa-whatsapp",
+          "library": "fa-brands"
+         },
+         "icon_indent": {
+          "unit": "px",
+          "size": 10,
+          "sizes": []
+         },
+         "text_padding": {
+          "unit": "px",
+          "top": "18",
+          "right": "32",
+          "bottom": "18",
+          "left": "32",
+          "isLinked": false
+         },
+         "button_box_shadow_box_shadow_type": "yes",
+         "button_box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 6,
+          "blur": 18,
+          "spread": 0,
+          "color": "rgba(74,144,226,0.28)"
+         },
+         "align_mobile": "justify"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "61c7b4f",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "width": {
+        "unit": "%",
+        "size": 45,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "14",
+        "right": "14",
+        "bottom": "14",
+        "left": "14",
+        "isLinked": true
+       },
+       "background_background": "classic",
+       "border_radius": {
+        "unit": "px",
+        "top": "32",
+        "right": "32",
+        "bottom": "32",
+        "left": "32",
+        "isLinked": true
+       },
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 4,
+        "blur": 16,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.05)"
+       },
+       "hide_mobile": "hidden-mobile",
+       "_title": "Ejemplo de chat",
+       "__globals__": {
+        "background_color": "globals/colors?id=celestesuave"
+       }
+      },
+      "elements": [
+       {
+        "id": "dac6210",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_gap": {
+          "column": "12",
+          "row": "12",
+          "isLinked": true,
+          "unit": "px",
+          "size": 12
+         },
+         "flex_align_items": "center",
+         "padding": {
+          "unit": "px",
+          "top": "12",
+          "right": "14",
+          "bottom": "16",
+          "left": "14",
+          "isLinked": false
+         },
+         "_title": "Contacto"
+        },
+        "elements": [
+         {
+          "id": "443633a",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+           "selected_icon": {
+            "value": "fab fa-whatsapp",
+            "library": "fa-brands"
+           },
+           "view": "stacked",
+           "shape": "circle",
+           "size": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+           },
+           "icon_padding": {
+            "unit": "px",
+            "size": 11,
+            "sizes": []
+           },
+           "__globals__": {
+            "primary_color": "globals/colors?id=whatsapp",
+            "secondary_color": "globals/colors?id=blanco"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "2edc5ad",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "0",
+            "row": "0",
+            "isLinked": true,
+            "unit": "px",
+            "size": 0
+           }
+          },
+          "elements": [
+           {
+            "id": "0d744f4",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Karu Esencial",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=accent"
+             },
+             "typography_typography": "custom",
+             "typography_font_family": "Figtree",
+             "typography_font_weight": "700",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 16,
+              "sizes": []
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "9acf758",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "+56 9 8904 8914",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "5b2a51e",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "18",
+          "row": "18",
+          "isLinked": true,
+          "unit": "px",
+          "size": 18
+         },
+         "padding": {
+          "unit": "px",
+          "top": "28",
+          "right": "22",
+          "bottom": "24",
+          "left": "22",
+          "isLinked": false
+         },
+         "background_background": "classic",
+         "border_radius": {
+          "unit": "px",
+          "top": "22",
+          "right": "22",
+          "bottom": "22",
+          "left": "22",
+          "isLinked": true
+         },
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco"
+         },
+         "_title": "Mensaje"
+        },
+        "elements": [
+         {
+          "id": "826bb43",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+           "editor": "<p>Hola Karu Esencial, quiero pedir bicarbonato de sodio y vinagre incoloro. ¿Qué formatos tienen?</p>",
+           "__globals__": {
+            "typography_typography": "globals/typography?id=pequeno",
+            "text_color": "globals/colors?id=accent",
+            "_background_color": "globals/colors?id=secondary"
+           },
+           "_background_background": "classic",
+           "_padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "16",
+            "bottom": "14",
+            "left": "16",
+            "isLinked": false
+           },
+           "_border_radius": {
+            "unit": "px",
+            "top": "18",
+            "right": "18",
+            "bottom": "4",
+            "left": "18",
+            "isLinked": false
+           },
+           "_element_width": "initial",
+           "_element_custom_width": {
+            "unit": "%",
+            "size": 88,
+            "sizes": []
+           },
+           "_flex_align_self": "flex-end"
+          },
+          "elements": []
+         },
+         {
+          "id": "e5ce014",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+           "editor": "<p>Así de simple: un mensaje y coordinamos tu pedido por el mismo chat.</p>",
+           "__globals__": {
+            "typography_typography": "globals/typography?id=pequeno",
+            "text_color": "globals/colors?id=text"
+           },
+           "align": "center",
+           "typography_typography": "custom",
+           "typography_font_size": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+           }
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "8ac107a",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "20",
+    "bottom": "120",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "0",
+    "right": "18",
+    "bottom": "64",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "_title": "CTA final"
+  },
+  "elements": [
+   {
+    "id": "0c1502b",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_align_items": "center",
+     "flex_gap": {
+      "column": "18",
+      "row": "18",
+      "isLinked": true,
+      "unit": "px",
+      "size": 18
+     },
+     "padding": {
+      "unit": "px",
+      "top": "96",
+      "right": "64",
+      "bottom": "96",
+      "left": "64",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "56",
+      "right": "22",
+      "bottom": "56",
+      "left": "22",
+      "isLinked": false
+     },
+     "border_radius": {
+      "unit": "px",
+      "top": "32",
+      "right": "32",
+      "bottom": "32",
+      "left": "32",
+      "isLinked": true
+     },
+     "background_background": "gradient",
+     "background_color": "#6AA8EE",
+     "background_color_b": "#4A90E2",
+     "background_color_stop": {
+      "unit": "%",
+      "size": 0,
+      "sizes": []
+     },
+     "background_color_b_stop": {
+      "unit": "%",
+      "size": 55,
+      "sizes": []
+     },
+     "background_gradient_type": "radial",
+     "background_gradient_position": "top left",
+     "_title": "Panel CTA"
+    },
+    "elements": [
+     {
+      "id": "d06628a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "¿Qué necesitas para tu hogar?",
+       "header_size": "h2",
+       "__globals__": {
+        "title_color": "globals/colors?id=blanco"
+       },
+       "align": "center",
+       "typography_typography": "custom",
+       "typography_font_family": "Nunito",
+       "typography_font_weight": "900",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 54,
+        "sizes": []
+       },
+       "typography_font_size_tablet": {
+        "unit": "px",
+        "size": 44,
+        "sizes": []
+       },
+       "typography_font_size_mobile": {
+        "unit": "px",
+        "size": 34,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 1.1,
+        "sizes": []
+       },
+       "typography_letter_spacing": {
+        "unit": "px",
+        "size": -1,
+        "sizes": []
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "e6c0e01",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Conoce nuestros productos y haz tu pedido directamente por WhatsApp.</p>",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=lead",
+        "text_color": "globals/colors?id=blanco"
+       },
+       "align": "center",
+       "_element_width": "initial",
+       "_element_custom_width": {
+        "unit": "px",
+        "size": 520,
+        "sizes": []
+       },
+       "_element_custom_width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "52ef9e1",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Pedir por WhatsApp",
+       "link": {
+        "url": "https://wa.me/56989048914",
+        "is_external": "on",
+        "nofollow": "",
+        "custom_attributes": ""
+       },
+       "size": "xl",
+       "border_radius": {
+        "unit": "px",
+        "top": "999",
+        "right": "999",
+        "bottom": "999",
+        "left": "999",
+        "isLinked": true
+       },
+       "button_hover_transition_duration": {
+        "unit": "s",
+        "size": 0.2,
+        "sizes": []
+       },
+       "__globals__": {
+        "typography_typography": "globals/typography?id=accent",
+        "background_color": "globals/colors?id=blanco",
+        "button_text_color": "globals/colors?id=accent",
+        "button_background_hover_color": "globals/colors?id=blancocalido",
+        "hover_color": "globals/colors?id=accent"
+       },
+       "selected_icon": {
+        "value": "fab fa-whatsapp",
+        "library": "fa-brands"
+       },
+       "icon_indent": {
+        "unit": "px",
+        "size": 10,
+        "sizes": []
+       },
+       "text_padding": {
+        "unit": "px",
+        "top": "22",
+        "right": "40",
+        "bottom": "22",
+        "left": "40",
+        "isLinked": false
+       },
+       "button_box_shadow_box_shadow_type": "yes",
+       "button_box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 10,
+        "blur": 30,
+        "spread": 0,
+        "color": "rgba(20,50,90,0.18)"
+       },
+       "align": "center",
+       "align_mobile": "justify",
+       "_margin": {
+        "unit": "px",
+        "top": "10",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "74f743a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "+56 9 8904 8914",
+       "header_size": "p",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=pequeno",
+        "title_color": "globals/colors?id=secondary"
+       },
+       "align": "center",
+       "typography_typography": "custom",
+       "typography_font_weight": "600",
+       "typography_letter_spacing": {
+        "unit": "px",
+        "size": 0.6,
+        "sizes": []
+       }
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ }
+]
