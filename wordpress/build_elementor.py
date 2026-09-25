@@ -613,10 +613,10 @@ def accordion(items):
     return w
 
 
-def faq_section(items, more_link=False, tag_title="h2"):
-    head_items = [
-        eyebrow("Preguntas frecuentes"),
-        heading("Resolvemos tus dudas", tag_title, "h2seccion"),
+def faq_section(items, more_link=False, tag_title="h2", page=False):
+    head_items = [] if page else [eyebrow("Preguntas frecuentes")]
+    head_items += [
+        heading("¿Tienes otra consulta?" if page else "Resolvemos tus dudas", tag_title, "h2seccion"),
         text("<p>¿No encuentras lo que buscas? Escríbenos y te respondemos por WhatsApp.</p>"),
         button("Consultar por WhatsApp", wa("Hola Karu Esencial, tengo una consulta."), kind="ghost",
                _margin=dims(8, 0, 0, 0)),
@@ -742,9 +742,9 @@ def pages(form_id):
                        "Pocos productos, bien elegidos, para las tareas de todos los días."),
             benefits_section(with_head=False), how_to_buy_section(), testimonials_section(), cta_section()],
         "preguntas-frecuentes": [
-            page_intro("Preguntas frecuentes", "Preguntas frecuentes",
+            page_intro("Ayuda", "Preguntas frecuentes",
                        "Respuestas breves sobre cómo comprar, precios, formatos y entregas."),
-            faq_section(FAQ), cta_section()],
+            faq_section(FAQ, page=True), cta_section()],
         "contacto": [
             page_intro("Contacto", "Conversemos",
                        "Escríbenos por WhatsApp o déjanos un mensaje. Te ayudamos a elegir y a coordinar tu pedido."),
