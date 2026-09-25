@@ -484,7 +484,7 @@ def step(num, title, desc, last=False):
                   "__globals__": {"border_color": gc("grisclaro")}})
     return row([
         heading(num, "p", "numero", "secondary", _element_width="initial",
-                _element_custom_width=px(64), _element_custom_width_mobile=px(48),
+                _element_custom_width=px(64), _element_custom_width_mobile=px(48), _flex_size="none",
                 text_stroke_text_stroke_type="yes", text_stroke_text_stroke=px(1.5),
                 text_stroke_stroke_color="#4A90E2"),
         column([heading(title, "h3", None, "accent", typography_typography="custom",
@@ -584,7 +584,7 @@ def accordion(items):
         items=[{"_id": eid(), "item_title": q, "element_css_id": ""} for q, _ in items],
         title_tag="h3", default_state="expanded", max_items_expended="one", faq_schema="yes",
         accordion_item_title_icon=icon("fas fa-plus"), accordion_item_title_icon_active=icon("fas fa-minus"),
-        accordion_item_title_icon_position="end",
+        accordion_item_title_icon_position="end", accordion_item_title_position_horizontal="stretch",
         accordion_item_title_space_between=px(12), accordion_item_title_distance_from_content=px(0),
         accordion_background_normal_background="classic", accordion_background_hover_background="classic",
         accordion_background_active_background="classic",

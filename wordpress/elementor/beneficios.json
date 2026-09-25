@@ -797,6 +797,7 @@
               "size": 48,
               "sizes": []
              },
+             "_flex_size": "none",
              "text_stroke_text_stroke_type": "yes",
              "text_stroke_text_stroke": {
               "unit": "px",
@@ -922,6 +923,7 @@
               "size": 48,
               "sizes": []
              },
+             "_flex_size": "none",
              "text_stroke_text_stroke_type": "yes",
              "text_stroke_text_stroke": {
               "unit": "px",
@@ -1035,6 +1037,7 @@
               "size": 48,
               "sizes": []
              },
+             "_flex_size": "none",
              "text_stroke_text_stroke_type": "yes",
              "text_stroke_text_stroke": {
               "unit": "px",

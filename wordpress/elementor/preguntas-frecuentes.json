@@ -394,6 +394,7 @@
           "library": "fa-solid"
          },
          "accordion_item_title_icon_position": "end",
+         "accordion_item_title_position_horizontal": "stretch",
          "accordion_item_title_space_between": {
           "unit": "px",
           "size": 12,

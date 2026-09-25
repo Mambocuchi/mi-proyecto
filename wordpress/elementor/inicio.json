@@ -3350,6 +3350,7 @@
               "size": 48,
               "sizes": []
              },
+             "_flex_size": "none",
              "text_stroke_text_stroke_type": "yes",
              "text_stroke_text_stroke": {
               "unit": "px",
@@ -3475,6 +3476,7 @@
               "size": 48,
               "sizes": []
              },
+             "_flex_size": "none",
              "text_stroke_text_stroke_type": "yes",
              "text_stroke_text_stroke": {
               "unit": "px",
@@ -3588,6 +3590,7 @@
               "size": 48,
               "sizes": []
              },
+             "_flex_size": "none",
              "text_stroke_text_stroke_type": "yes",
              "text_stroke_text_stroke": {
               "unit": "px",
@@ -4823,6 +4826,7 @@
           "library": "fa-solid"
          },
          "accordion_item_title_icon_position": "end",
+         "accordion_item_title_position_horizontal": "stretch",
          "accordion_item_title_space_between": {
           "unit": "px",
           "size": 12,
