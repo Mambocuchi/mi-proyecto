@@ -2044,6 +2044,13 @@
           "size": 250,
           "sizes": []
          },
+         "flex_gap_mobile": {
+          "column": "0",
+          "row": "0",
+          "isLinked": true,
+          "unit": "px",
+          "size": 0
+         },
          "flex_direction_mobile": "column",
          "flex_align_items": "stretch",
          "flex_wrap": "nowrap",
@@ -2533,6 +2540,13 @@
           "unit": "px",
           "size": 250,
           "sizes": []
+         },
+         "flex_gap_mobile": {
+          "column": "0",
+          "row": "0",
+          "isLinked": true,
+          "unit": "px",
+          "size": 0
          },
          "flex_direction_mobile": "column",
          "flex_align_items": "stretch",

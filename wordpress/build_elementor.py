@@ -436,7 +436,7 @@ def pack_card(key, name, includes, price, old):
     ], width=58, width_t=58, width_m=100, g=12, padding=dims(28, 28, 28, 4), padding_mobile=dims(22, 22, 26, 22),
         flex_justify_content="center", _title="Contenido")
     media = column([image(key, height=320, height_m=220)], width=42, width_t=42, width_m=100, g=0, _title="Imagen")
-    return card([media, content], g=24, flex_direction="row", flex_direction_mobile="column",
+    return card([media, content], g=24, flex_gap_mobile=gap(0), flex_direction="row", flex_direction_mobile="column",
                 flex_align_items="stretch", flex_wrap="nowrap", _title=name,
                 animation="fadeInUp", animation_duration="fast",
                 __globals__={"background_color": gc("blanco"), "border_color": gc("secondary")})
