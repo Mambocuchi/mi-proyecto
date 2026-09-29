@@ -538,7 +538,7 @@
   ]
  },
  {
-  "id": "8c92e5a",
+  "id": "b0d1606",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -646,7 +646,7 @@
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
-       "editor": "<p>Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan y te ayudamos a elegir el formato que te acomoda.</p>",
+       "editor": "<p>Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, en qué formato vienen y cuánto cuestan.</p>",
        "__globals__": {
         "typography_typography": "globals/typography?id=text",
         "text_color": "globals/colors?id=text"
@@ -658,7 +658,7 @@
     ]
    },
    {
-    "id": "139345c",
+    "id": "e092540",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -706,7 +706,7 @@
     },
     "elements": [
      {
-      "id": "9543f30",
+      "id": "809d187",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -782,7 +782,7 @@
       },
       "elements": [
        {
-        "id": "7559039",
+        "id": "30ad30a",
         "elType": "widget",
         "widgetType": "image",
         "settings": {
@@ -813,7 +813,7 @@
         "elements": []
        },
        {
-        "id": "393a5e3",
+        "id": "df7a076",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1017,13 +1017,190 @@
           ]
          },
          {
-          "id": "b19554b",
+          "id": "012c017",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "6",
+            "row": "6",
+            "isLinked": true,
+            "unit": "px",
+            "size": 6
+           },
+           "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Formato y precio",
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "9543f30",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Formato 5 litros",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "cddba0b",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "row",
+             "flex_gap": {
+              "column": "10",
+              "row": "10",
+              "isLinked": true,
+              "unit": "px",
+              "size": 10
+             },
+             "flex_align_items": "center",
+             "flex_wrap": "wrap",
+             "flex_wrap_mobile": "wrap",
+             "_title": "Precio"
+            },
+            "elements": [
+             {
+              "id": "b19554b",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "$6.500",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "900",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+               },
+               "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 28,
+                "sizes": []
+               },
+               "typography_line_height": {
+                "unit": "em",
+                "size": 1,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "393a5e3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "$7.500",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=text"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Figtree",
+               "typography_font_weight": "500",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+               },
+               "typography_text_decoration": "line-through"
+              },
+              "elements": []
+             },
+             {
+              "id": "7559039",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Ahorras $1.000",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent",
+                "_background_color": "globals/colors?id=secondary"
+               },
+               "_flex_size": "none",
+               "_background_background": "classic",
+               "_padding": {
+                "unit": "px",
+                "top": "4",
+                "right": "10",
+                "bottom": "4",
+                "left": "10",
+                "isLinked": false
+               },
+               "_border_radius": {
+                "unit": "px",
+                "top": "999",
+                "right": "999",
+                "bottom": "999",
+                "left": "999",
+                "isLinked": true
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Figtree",
+               "typography_font_weight": "700",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "1c4b2b8",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
            "text": "Consultar por WhatsApp",
            "link": {
-            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Vinagre%20Incoloro.",
+            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Vinagre%20Incoloro%20de%205%20litros.",
             "is_external": "on",
             "nofollow": "",
             "custom_attributes": ""
@@ -1083,7 +1260,7 @@
       ]
      },
      {
-      "id": "e8ca936",
+      "id": "e67dbb0",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1159,7 +1336,7 @@
       },
       "elements": [
        {
-        "id": "33d9970",
+        "id": "7f2f68c",
         "elType": "widget",
         "widgetType": "image",
         "settings": {
@@ -1190,7 +1367,7 @@
         "elements": []
        },
        {
-        "id": "53063b8",
+        "id": "c20e78d",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1216,7 +1393,7 @@
         },
         "elements": [
          {
-          "id": "932ce9b",
+          "id": "d2835f4",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1234,7 +1411,7 @@
           },
           "elements": [
            {
-            "id": "cddba0b",
+            "id": "4128787",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1274,7 +1451,7 @@
             "elements": []
            },
            {
-            "id": "012c017",
+            "id": "c1c5e80",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1288,7 +1465,7 @@
             "elements": []
            },
            {
-            "id": "1c4b2b8",
+            "id": "932ce9b",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1301,7 +1478,7 @@
             "elements": []
            },
            {
-            "id": "df7a076",
+            "id": "6afc82a",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1329,14 +1506,14 @@
             "elements": []
            },
            {
-            "id": "c1c5e80",
+            "id": "3b44f90",
             "elType": "widget",
             "widgetType": "icon-list",
             "settings": {
              "view": "traditional",
              "icon_list": [
               {
-               "_id": "30ad30a",
+               "_id": "53063b8",
                "text": "Complemento para lavar ropa blanca",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1344,7 +1521,7 @@
                }
               },
               {
-               "_id": "809d187",
+               "_id": "33d9970",
                "text": "Remojo de prendas con manchas",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1352,7 +1529,7 @@
                }
               },
               {
-               "_id": "4128787",
+               "_id": "e8ca936",
                "text": "Juntas, tablas y superficies",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1394,13 +1571,127 @@
           ]
          },
          {
-          "id": "6afc82a",
+          "id": "d5ec2b4",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "6",
+            "row": "6",
+            "isLinked": true,
+            "unit": "px",
+            "size": 6
+           },
+           "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Formato y precio",
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "3b6b312",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Formato 1 kg",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "b11455b",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "row",
+             "flex_gap": {
+              "column": "10",
+              "row": "10",
+              "isLinked": true,
+              "unit": "px",
+              "size": 10
+             },
+             "flex_align_items": "center",
+             "flex_wrap": "wrap",
+             "flex_wrap_mobile": "wrap",
+             "_title": "Precio"
+            },
+            "elements": [
+             {
+              "id": "f844b95",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "$7.500",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "900",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+               },
+               "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 28,
+                "sizes": []
+               },
+               "typography_line_height": {
+                "unit": "em",
+                "size": 1,
+                "sizes": []
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "6d18b7d",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
            "text": "Consultar por WhatsApp",
            "link": {
-            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Percarbonato%20de%20Sodio.",
+            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Percarbonato%20de%20Sodio%20de%201%20kg.",
             "is_external": "on",
             "nofollow": "",
             "custom_attributes": ""
@@ -1460,7 +1751,7 @@
       ]
      },
      {
-      "id": "079d6f2",
+      "id": "dcdacb4",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1536,7 +1827,7 @@
       },
       "elements": [
        {
-        "id": "72b34ca",
+        "id": "22af1db",
         "elType": "widget",
         "widgetType": "image",
         "settings": {
@@ -1567,7 +1858,7 @@
         "elements": []
        },
        {
-        "id": "f9aa001",
+        "id": "5c930a4",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1593,7 +1884,7 @@
         },
         "elements": [
          {
-          "id": "7f2f68c",
+          "id": "75ce923",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1611,7 +1902,7 @@
           },
           "elements": [
            {
-            "id": "3b44f90",
+            "id": "f9aa001",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1651,7 +1942,7 @@
             "elements": []
            },
            {
-            "id": "d2835f4",
+            "id": "72b34ca",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1665,7 +1956,7 @@
             "elements": []
            },
            {
-            "id": "f844b95",
+            "id": "079d6f2",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1678,7 +1969,7 @@
             "elements": []
            },
            {
-            "id": "3b6b312",
+            "id": "139345c",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1706,14 +1997,14 @@
             "elements": []
            },
            {
-            "id": "c20e78d",
+            "id": "4995d05",
             "elType": "widget",
             "widgetType": "icon-list",
             "settings": {
              "view": "traditional",
              "icon_list": [
               {
-               "_id": "b11455b",
+               "_id": "e9a2922",
                "text": "Limpieza suave de ollas, lavaplatos y horno",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1721,7 +2012,7 @@
                }
               },
               {
-               "_id": "d5ec2b4",
+               "_id": "16a6e29",
                "text": "Ayuda a reducir olores en refrigerador y calzado",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1729,7 +2020,7 @@
                }
               },
               {
-               "_id": "6d18b7d",
+               "_id": "c8e100c",
                "text": "Complemento en el lavado de ropa",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1771,13 +2062,190 @@
           ]
          },
          {
-          "id": "e67dbb0",
+          "id": "75cabdb",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "6",
+            "row": "6",
+            "isLinked": true,
+            "unit": "px",
+            "size": 6
+           },
+           "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Formato y precio",
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "aa831a1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Formato 1 kg",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "fadd4fe",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "row",
+             "flex_gap": {
+              "column": "10",
+              "row": "10",
+              "isLinked": true,
+              "unit": "px",
+              "size": 10
+             },
+             "flex_align_items": "center",
+             "flex_wrap": "wrap",
+             "flex_wrap_mobile": "wrap",
+             "_title": "Precio"
+            },
+            "elements": [
+             {
+              "id": "2770ec9",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "$2.500",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "900",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+               },
+               "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 28,
+                "sizes": []
+               },
+               "typography_line_height": {
+                "unit": "em",
+                "size": 1,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "48197ff",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "$3.000",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=text"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Figtree",
+               "typography_font_weight": "500",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+               },
+               "typography_text_decoration": "line-through"
+              },
+              "elements": []
+             },
+             {
+              "id": "2f828f2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Ahorras $500",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent",
+                "_background_color": "globals/colors?id=secondary"
+               },
+               "_flex_size": "none",
+               "_background_background": "classic",
+               "_padding": {
+                "unit": "px",
+                "top": "4",
+                "right": "10",
+                "bottom": "4",
+                "left": "10",
+                "isLinked": false
+               },
+               "_border_radius": {
+                "unit": "px",
+                "top": "999",
+                "right": "999",
+                "bottom": "999",
+                "left": "999",
+                "isLinked": true
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Figtree",
+               "typography_font_weight": "700",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "6c856cc",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
            "text": "Consultar por WhatsApp",
            "link": {
-            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Bicarbonato%20de%20Sodio.",
+            "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Bicarbonato%20de%20Sodio%20de%201%20kg.",
             "is_external": "on",
             "nofollow": "",
             "custom_attributes": ""
@@ -1839,7 +2307,7 @@
     ]
    },
    {
-    "id": "e9a2922",
+    "id": "6f1e5fb",
     "elType": "widget",
     "widgetType": "text-editor",
     "settings": {
@@ -1861,7 +2329,1150 @@
     "elements": []
    },
    {
-    "id": "66931f9",
+    "id": "b5529e9",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "28",
+      "row": "28",
+      "isLinked": true,
+      "unit": "px",
+      "size": 28
+     },
+     "margin": {
+      "unit": "px",
+      "top": "88",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "margin_mobile": {
+      "unit": "px",
+      "top": "56",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "_element_id": "packs",
+     "_title": "Packs de ahorro"
+    },
+    "elements": [
+     {
+      "id": "66931f9",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "10",
+        "row": "10",
+        "isLinked": true,
+        "unit": "px",
+        "size": 10
+       },
+       "_title": "Encabezado"
+      },
+      "elements": [
+       {
+        "id": "d3640d0",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Packs de ahorro",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=eyebrow",
+          "title_color": "globals/colors?id=primary"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "d12f113",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Llévalos juntos y ahorra",
+         "header_size": "h3",
+         "__globals__": {
+          "title_color": "globals/colors?id=accent"
+         },
+         "typography_typography": "custom",
+         "typography_font_family": "Nunito",
+         "typography_font_weight": "800",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 30,
+          "sizes": []
+         },
+         "typography_font_size_mobile": {
+          "unit": "px",
+          "size": 24,
+          "sizes": []
+         },
+         "typography_line_height": {
+          "unit": "em",
+          "size": 1.15,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "ba71bc2",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Combinaciones listas para pedir por WhatsApp.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "36bd5d2",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "container_type": "grid",
+       "grid_columns_grid": {
+        "unit": "fr",
+        "size": 2,
+        "sizes": []
+       },
+       "grid_columns_grid_tablet": {
+        "unit": "fr",
+        "size": 1,
+        "sizes": []
+       },
+       "grid_columns_grid_mobile": {
+        "unit": "fr",
+        "size": 1,
+        "sizes": []
+       },
+       "grid_rows_grid": {
+        "unit": "fr",
+        "size": 1,
+        "sizes": []
+       },
+       "grid_rows_grid_tablet": {
+        "unit": "fr",
+        "size": 2,
+        "sizes": []
+       },
+       "grid_rows_grid_mobile": {
+        "unit": "fr",
+        "size": 2,
+        "sizes": []
+       },
+       "grid_gaps": {
+        "column": "24",
+        "row": "24",
+        "isLinked": true,
+        "unit": "px"
+       },
+       "grid_auto_flow": "row",
+       "grid_align_items": "stretch",
+       "_title": "Tarjetas de packs"
+      },
+      "elements": [
+       {
+        "id": "dc43f49",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_gap": {
+          "column": "24",
+          "row": "24",
+          "isLinked": true,
+          "unit": "px",
+          "size": 24
+         },
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "overflow": "hidden",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=secondary"
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -4,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 250,
+          "sizes": []
+         },
+         "flex_direction_mobile": "column",
+         "flex_align_items": "stretch",
+         "flex_wrap": "nowrap",
+         "_title": "Pack Vinagre + Bicarbonato",
+         "animation": "fadeInUp",
+         "animation_duration": "fast"
+        },
+        "elements": [
+         {
+          "id": "999b5d4",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "0",
+            "row": "0",
+            "isLinked": true,
+            "unit": "px",
+            "size": 0
+           },
+           "width": {
+            "unit": "%",
+            "size": 42,
+            "sizes": []
+           },
+           "width_tablet": {
+            "unit": "%",
+            "size": 42,
+            "sizes": []
+           },
+           "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "_title": "Imagen"
+          },
+          "elements": [
+           {
+            "id": "83730f3",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+             "image": {
+              "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/pack-vinagre-bicarbonato.svg",
+              "id": 121,
+              "size": "",
+              "source": "library"
+             },
+             "image_size": "full",
+             "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+             },
+             "height": {
+              "unit": "px",
+              "size": 320,
+              "sizes": []
+             },
+             "object-fit": "cover",
+             "height_mobile": {
+              "unit": "px",
+              "size": 220,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "09c5548",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "12",
+            "row": "12",
+            "isLinked": true,
+            "unit": "px",
+            "size": 12
+           },
+           "width": {
+            "unit": "%",
+            "size": 58,
+            "sizes": []
+           },
+           "width_tablet": {
+            "unit": "%",
+            "size": 58,
+            "sizes": []
+           },
+           "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "padding": {
+            "unit": "px",
+            "top": "28",
+            "right": "28",
+            "bottom": "28",
+            "left": "4",
+            "isLinked": false
+           },
+           "padding_mobile": {
+            "unit": "px",
+            "top": "22",
+            "right": "22",
+            "bottom": "26",
+            "left": "22",
+            "isLinked": false
+           },
+           "flex_justify_content": "center",
+           "_title": "Contenido"
+          },
+          "elements": [
+           {
+            "id": "8c92e5a",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Pack ahorro",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=blanco",
+              "_background_color": "globals/colors?id=primary"
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "_background_background": "classic",
+             "_padding": {
+              "unit": "px",
+              "top": "4",
+              "right": "12",
+              "bottom": "4",
+              "left": "12",
+              "isLinked": false
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "5d052f1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Pack Vinagre + Bicarbonato",
+             "header_size": "h3",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "e569742",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p><strong>Incluye:</strong> 1 Vinagre Incoloro de 5 litros + 1 Bicarbonato de Sodio de 1 kg.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "0cb26fc",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "6",
+              "row": "6",
+              "isLinked": true,
+              "unit": "px",
+              "size": 6
+             },
+             "padding": {
+              "unit": "px",
+              "top": "14",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "border_border": "solid",
+             "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "_title": "Formato y precio",
+             "__globals__": {
+              "border_color": "globals/colors?id=grisclaro"
+             }
+            },
+            "elements": [
+             {
+              "id": "8b622c4",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+               "content_width": "full",
+               "flex_direction": "row",
+               "flex_gap": {
+                "column": "10",
+                "row": "10",
+                "isLinked": true,
+                "unit": "px",
+                "size": 10
+               },
+               "flex_align_items": "center",
+               "flex_wrap": "wrap",
+               "flex_wrap_mobile": "wrap",
+               "_title": "Precio"
+              },
+              "elements": [
+               {
+                "id": "7d0c5b1",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                 "title": "$8.500",
+                 "header_size": "p",
+                 "__globals__": {
+                  "title_color": "globals/colors?id=accent"
+                 },
+                 "_flex_size": "none",
+                 "typography_typography": "custom",
+                 "typography_font_family": "Nunito",
+                 "typography_font_weight": "900",
+                 "typography_font_size": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                 },
+                 "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                 },
+                 "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                 }
+                },
+                "elements": []
+               },
+               {
+                "id": "c6d1c9a",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                 "title": "$10.000",
+                 "header_size": "p",
+                 "__globals__": {
+                  "title_color": "globals/colors?id=text"
+                 },
+                 "_flex_size": "none",
+                 "typography_typography": "custom",
+                 "typography_font_family": "Figtree",
+                 "typography_font_weight": "500",
+                 "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                 },
+                 "typography_text_decoration": "line-through"
+                },
+                "elements": []
+               },
+               {
+                "id": "8832780",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                 "title": "Ahorras $1.500",
+                 "header_size": "p",
+                 "__globals__": {
+                  "title_color": "globals/colors?id=accent",
+                  "_background_color": "globals/colors?id=secondary"
+                 },
+                 "_flex_size": "none",
+                 "_background_background": "classic",
+                 "_padding": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "10",
+                  "bottom": "4",
+                  "left": "10",
+                  "isLinked": false
+                 },
+                 "_border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                 },
+                 "typography_typography": "custom",
+                 "typography_font_family": "Figtree",
+                 "typography_font_weight": "700",
+                 "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                 }
+                },
+                "elements": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "d170261",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+             "text": "Pedir por WhatsApp",
+             "link": {
+              "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20el%20Pack%20Vinagre%20%2B%20Bicarbonato.",
+              "is_external": "on",
+              "nofollow": "",
+              "custom_attributes": ""
+             },
+             "size": "md",
+             "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "button_hover_transition_duration": {
+              "unit": "s",
+              "size": 0.2,
+              "sizes": []
+             },
+             "__globals__": {
+              "typography_typography": "globals/typography?id=accent",
+              "background_color": "globals/colors?id=primary",
+              "button_text_color": "globals/colors?id=blanco",
+              "button_background_hover_color": "globals/colors?id=azulhover",
+              "hover_color": "globals/colors?id=blanco"
+             },
+             "selected_icon": {
+              "value": "fab fa-whatsapp",
+              "library": "fa-brands"
+             },
+             "icon_indent": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_padding": {
+              "unit": "px",
+              "top": "15",
+              "right": "28",
+              "bottom": "15",
+              "left": "28",
+              "isLinked": false
+             },
+             "button_box_shadow_box_shadow_type": "yes",
+             "button_box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 6,
+              "blur": 18,
+              "spread": 0,
+              "color": "rgba(74,144,226,0.28)"
+             },
+             "align": "justify",
+             "_margin": {
+              "unit": "px",
+              "top": "6",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "4f8053a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_gap": {
+          "column": "24",
+          "row": "24",
+          "isLinked": true,
+          "unit": "px",
+          "size": 24
+         },
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "overflow": "hidden",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=secondary"
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -4,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 250,
+          "sizes": []
+         },
+         "flex_direction_mobile": "column",
+         "flex_align_items": "stretch",
+         "flex_wrap": "nowrap",
+         "_title": "Pack 2 Vinagres",
+         "animation": "fadeInUp",
+         "animation_duration": "fast"
+        },
+        "elements": [
+         {
+          "id": "da4be85",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "0",
+            "row": "0",
+            "isLinked": true,
+            "unit": "px",
+            "size": 0
+           },
+           "width": {
+            "unit": "%",
+            "size": 42,
+            "sizes": []
+           },
+           "width_tablet": {
+            "unit": "%",
+            "size": 42,
+            "sizes": []
+           },
+           "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "_title": "Imagen"
+          },
+          "elements": [
+           {
+            "id": "5a7ff64",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+             "image": {
+              "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/pack-2-vinagres.svg",
+              "id": 122,
+              "size": "",
+              "source": "library"
+             },
+             "image_size": "full",
+             "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+             },
+             "height": {
+              "unit": "px",
+              "size": 320,
+              "sizes": []
+             },
+             "object-fit": "cover",
+             "height_mobile": {
+              "unit": "px",
+              "size": 220,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "b23ccbe",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "12",
+            "row": "12",
+            "isLinked": true,
+            "unit": "px",
+            "size": 12
+           },
+           "width": {
+            "unit": "%",
+            "size": 58,
+            "sizes": []
+           },
+           "width_tablet": {
+            "unit": "%",
+            "size": 58,
+            "sizes": []
+           },
+           "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "padding": {
+            "unit": "px",
+            "top": "28",
+            "right": "28",
+            "bottom": "28",
+            "left": "4",
+            "isLinked": false
+           },
+           "padding_mobile": {
+            "unit": "px",
+            "top": "22",
+            "right": "22",
+            "bottom": "26",
+            "left": "22",
+            "isLinked": false
+           },
+           "flex_justify_content": "center",
+           "_title": "Contenido"
+          },
+          "elements": [
+           {
+            "id": "842e70e",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Pack ahorro",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=blanco",
+              "_background_color": "globals/colors?id=primary"
+             },
+             "_element_width": "auto",
+             "_flex_align_self": "flex-start",
+             "_background_background": "classic",
+             "_padding": {
+              "unit": "px",
+              "top": "4",
+              "right": "12",
+              "bottom": "4",
+              "left": "12",
+              "isLinked": false
+             },
+             "_border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "700"
+            },
+            "elements": []
+           },
+           {
+            "id": "1f323ed",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Pack 2 Vinagres",
+             "header_size": "h3",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=h3tarjeta",
+              "title_color": "globals/colors?id=accent"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "dcddf8b",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p><strong>Incluye:</strong> 2 Vinagres Incoloros de 5 litros.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           },
+           {
+            "id": "d81f93f",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "6",
+              "row": "6",
+              "isLinked": true,
+              "unit": "px",
+              "size": 6
+             },
+             "padding": {
+              "unit": "px",
+              "top": "14",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "border_border": "solid",
+             "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             },
+             "_title": "Formato y precio",
+             "__globals__": {
+              "border_color": "globals/colors?id=grisclaro"
+             }
+            },
+            "elements": [
+             {
+              "id": "0a6882e",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+               "content_width": "full",
+               "flex_direction": "row",
+               "flex_gap": {
+                "column": "10",
+                "row": "10",
+                "isLinked": true,
+                "unit": "px",
+                "size": 10
+               },
+               "flex_align_items": "center",
+               "flex_wrap": "wrap",
+               "flex_wrap_mobile": "wrap",
+               "_title": "Precio"
+              },
+              "elements": [
+               {
+                "id": "f7984cc",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                 "title": "$12.000",
+                 "header_size": "p",
+                 "__globals__": {
+                  "title_color": "globals/colors?id=accent"
+                 },
+                 "_flex_size": "none",
+                 "typography_typography": "custom",
+                 "typography_font_family": "Nunito",
+                 "typography_font_weight": "900",
+                 "typography_font_size": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                 },
+                 "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                 },
+                 "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                 }
+                },
+                "elements": []
+               },
+               {
+                "id": "907937f",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                 "title": "$14.000",
+                 "header_size": "p",
+                 "__globals__": {
+                  "title_color": "globals/colors?id=text"
+                 },
+                 "_flex_size": "none",
+                 "typography_typography": "custom",
+                 "typography_font_family": "Figtree",
+                 "typography_font_weight": "500",
+                 "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                 },
+                 "typography_text_decoration": "line-through"
+                },
+                "elements": []
+               },
+               {
+                "id": "2ad1bdd",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                 "title": "Ahorras $2.000",
+                 "header_size": "p",
+                 "__globals__": {
+                  "title_color": "globals/colors?id=accent",
+                  "_background_color": "globals/colors?id=secondary"
+                 },
+                 "_flex_size": "none",
+                 "_background_background": "classic",
+                 "_padding": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "10",
+                  "bottom": "4",
+                  "left": "10",
+                  "isLinked": false
+                 },
+                 "_border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                 },
+                 "typography_typography": "custom",
+                 "typography_font_family": "Figtree",
+                 "typography_font_weight": "700",
+                 "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                 }
+                },
+                "elements": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "1e6455a",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+             "text": "Pedir por WhatsApp",
+             "link": {
+              "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20el%20Pack%202%20Vinagres.",
+              "is_external": "on",
+              "nofollow": "",
+              "custom_attributes": ""
+             },
+             "size": "md",
+             "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "button_hover_transition_duration": {
+              "unit": "s",
+              "size": 0.2,
+              "sizes": []
+             },
+             "__globals__": {
+              "typography_typography": "globals/typography?id=accent",
+              "background_color": "globals/colors?id=primary",
+              "button_text_color": "globals/colors?id=blanco",
+              "button_background_hover_color": "globals/colors?id=azulhover",
+              "hover_color": "globals/colors?id=blanco"
+             },
+             "selected_icon": {
+              "value": "fab fa-whatsapp",
+              "library": "fa-brands"
+             },
+             "icon_indent": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_padding": {
+              "unit": "px",
+              "top": "15",
+              "right": "28",
+              "bottom": "15",
+              "left": "28",
+              "isLinked": false
+             },
+             "button_box_shadow_box_shadow_type": "yes",
+             "button_box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 6,
+              "blur": 18,
+              "spread": 0,
+              "color": "rgba(74,144,226,0.28)"
+             },
+             "align": "justify",
+             "_margin": {
+              "unit": "px",
+              "top": "6",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "60b963f",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -1927,7 +3538,7 @@
     },
     "elements": [
      {
-      "id": "75ce923",
+      "id": "8196625",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1959,7 +3570,7 @@
       },
       "elements": [
        {
-        "id": "16a6e29",
+        "id": "709f489",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -1973,7 +3584,7 @@
         "elements": []
        },
        {
-        "id": "c8e100c",
+        "id": "af5c17c",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -2004,7 +3615,7 @@
         "elements": []
        },
        {
-        "id": "4995d05",
+        "id": "49bf6ee",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -2019,7 +3630,7 @@
       ]
      },
      {
-      "id": "ba71bc2",
+      "id": "7cd0726",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2082,7 +3693,7 @@
       },
       "elements": [
        {
-        "id": "6c856cc",
+        "id": "3bd67f7",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -2138,7 +3749,7 @@
         },
         "elements": [
          {
-          "id": "2770ec9",
+          "id": "154068f",
           "elType": "widget",
           "widgetType": "image",
           "settings": {
@@ -2169,7 +3780,7 @@
           "elements": []
          },
          {
-          "id": "75cabdb",
+          "id": "f1c6ac1",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2194,7 +3805,7 @@
           },
           "elements": [
            {
-            "id": "48197ff",
+            "id": "4a74aab",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -2242,7 +3853,7 @@
             "elements": []
            },
            {
-            "id": "2f828f2",
+            "id": "1383d84",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -2256,7 +3867,7 @@
             "elements": []
            },
            {
-            "id": "aa831a1",
+            "id": "7097e65",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -2269,7 +3880,7 @@
             "elements": []
            },
            {
-            "id": "fadd4fe",
+            "id": "ddb8729",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
@@ -2328,7 +3939,7 @@
         ]
        },
        {
-        "id": "d12f113",
+        "id": "f005b53",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -2384,7 +3995,7 @@
         },
         "elements": [
          {
-          "id": "5c930a4",
+          "id": "eafadcb",
           "elType": "widget",
           "widgetType": "image",
           "settings": {
@@ -2415,7 +4026,7 @@
           "elements": []
          },
          {
-          "id": "d3640d0",
+          "id": "cdffefb",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2440,7 +4051,7 @@
           },
           "elements": [
            {
-            "id": "22af1db",
+            "id": "790585f",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -2488,7 +4099,7 @@
             "elements": []
            },
            {
-            "id": "dcdacb4",
+            "id": "38252e7",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -2502,7 +4113,7 @@
             "elements": []
            },
            {
-            "id": "e092540",
+            "id": "e7b5709",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -2515,7 +4126,7 @@
             "elements": []
            },
            {
-            "id": "6f1e5fb",
+            "id": "a134574",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
@@ -2580,7 +4191,7 @@
   ]
  },
  {
-  "id": "83730f3",
+  "id": "4a7047c",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -2619,7 +4230,7 @@
   },
   "elements": [
    {
-    "id": "c6d1c9a",
+    "id": "2c77cde",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -2658,7 +4269,7 @@
     },
     "elements": [
      {
-      "id": "5d052f1",
+      "id": "50d3854",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -2673,7 +4284,7 @@
       "elements": []
      },
      {
-      "id": "e569742",
+      "id": "70dec25",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -2688,7 +4299,7 @@
       "elements": []
      },
      {
-      "id": "7d0c5b1",
+      "id": "8f57e93",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -2704,7 +4315,7 @@
     ]
    },
    {
-    "id": "09c5548",
+    "id": "ea377b0",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -2752,7 +4363,7 @@
     },
     "elements": [
      {
-      "id": "8832780",
+      "id": "abdac55",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -2853,7 +4464,7 @@
       "elements": []
      },
      {
-      "id": "8b622c4",
+      "id": "f31210d",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -2954,7 +4565,7 @@
       "elements": []
      },
      {
-      "id": "0cb26fc",
+      "id": "85f141a",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -3055,7 +4666,7 @@
       "elements": []
      },
      {
-      "id": "d170261",
+      "id": "317dfc0",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -3160,7 +4771,7 @@
   ]
  },
  {
-  "id": "38252e7",
+  "id": "e5bf506",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -3195,7 +4806,7 @@
   },
   "elements": [
    {
-    "id": "790585f",
+    "id": "1c9c0f0",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -3217,7 +4828,7 @@
     },
     "elements": [
      {
-      "id": "49bf6ee",
+      "id": "3cc9141",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3249,7 +4860,7 @@
       },
       "elements": [
        {
-        "id": "999b5d4",
+        "id": "be625ce",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3263,7 +4874,7 @@
         "elements": []
        },
        {
-        "id": "dc43f49",
+        "id": "d3f1eb8",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3277,7 +4888,7 @@
         "elements": []
        },
        {
-        "id": "709f489",
+        "id": "d82448a",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3294,7 +4905,7 @@
         },
         "elements": [
          {
-          "id": "907937f",
+          "id": "5d9535d",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3333,7 +4944,7 @@
           },
           "elements": [
            {
-            "id": "842e70e",
+            "id": "ec39b24",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3366,7 +4977,7 @@
             "elements": []
            },
            {
-            "id": "f7984cc",
+            "id": "275c29d",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -3385,7 +4996,7 @@
             },
             "elements": [
              {
-              "id": "1f323ed",
+              "id": "5a02ec0",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3406,7 +5017,7 @@
               "elements": []
              },
              {
-              "id": "dcddf8b",
+              "id": "0cbc385",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3423,7 +5034,7 @@
           ]
          },
          {
-          "id": "b23ccbe",
+          "id": "0d79c75",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3462,7 +5073,7 @@
           },
           "elements": [
            {
-            "id": "2ad1bdd",
+            "id": "9f064b3",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3495,7 +5106,7 @@
             "elements": []
            },
            {
-            "id": "1e6455a",
+            "id": "6f0f33c",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -3514,7 +5125,7 @@
             },
             "elements": [
              {
-              "id": "0a6882e",
+              "id": "b5f5716",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3535,7 +5146,7 @@
               "elements": []
              },
              {
-              "id": "d81f93f",
+              "id": "b72e13b",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3552,7 +5163,7 @@
           ]
          },
          {
-          "id": "b5529e9",
+          "id": "b7733d6",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3579,7 +5190,7 @@
           },
           "elements": [
            {
-            "id": "5a7ff64",
+            "id": "bc2bf2e",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3612,7 +5223,7 @@
             "elements": []
            },
            {
-            "id": "36bd5d2",
+            "id": "6712e0d",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -3631,7 +5242,7 @@
             },
             "elements": [
              {
-              "id": "da4be85",
+              "id": "1e4a2df",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3652,7 +5263,7 @@
               "elements": []
              },
              {
-              "id": "4f8053a",
+              "id": "3b4baff",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3671,7 +5282,7 @@
         ]
        },
        {
-        "id": "af5c17c",
+        "id": "b28e3a2",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -3735,7 +5346,7 @@
       ]
      },
      {
-      "id": "eafadcb",
+      "id": "8759d2c",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3796,7 +5407,7 @@
       },
       "elements": [
        {
-        "id": "7097e65",
+        "id": "e8df344",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3823,7 +5434,7 @@
         },
         "elements": [
          {
-          "id": "8196625",
+          "id": "359ebde",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -3852,7 +5463,7 @@
           "elements": []
          },
          {
-          "id": "1383d84",
+          "id": "20ea5dc",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3868,7 +5479,7 @@
           },
           "elements": [
            {
-            "id": "154068f",
+            "id": "e78a4d2",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3889,7 +5500,7 @@
             "elements": []
            },
            {
-            "id": "4a74aab",
+            "id": "8587eb7",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3913,7 +5524,7 @@
         ]
        },
        {
-        "id": "3bd67f7",
+        "id": "8126fb0",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3950,11 +5561,11 @@
         },
         "elements": [
          {
-          "id": "ddb8729",
+          "id": "6bdb460",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
-           "editor": "<p>Hola Karu Esencial, quiero pedir bicarbonato de sodio y vinagre incoloro. ¿Qué formatos tienen?</p>",
+           "editor": "<p>Hola Karu Esencial, quiero el Pack Vinagre + Bicarbonato. ¿Hacen entregas en mi comuna?</p>",
            "__globals__": {
             "typography_typography": "globals/typography?id=pequeno",
             "text_color": "globals/colors?id=accent",
@@ -3988,7 +5599,7 @@
           "elements": []
          },
          {
-          "id": "f1c6ac1",
+          "id": "9c5fc7d",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
@@ -4016,7 +5627,7 @@
   ]
  },
  {
-  "id": "d3f1eb8",
+  "id": "f1172fc",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -4055,7 +5666,7 @@
   },
   "elements": [
    {
-    "id": "f005b53",
+    "id": "1f55bad",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -4094,7 +5705,7 @@
     },
     "elements": [
      {
-      "id": "e7b5709",
+      "id": "6901bd4",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -4109,7 +5720,7 @@
       "elements": []
      },
      {
-      "id": "a134574",
+      "id": "b1a3b85",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -4124,7 +5735,7 @@
       "elements": []
      },
      {
-      "id": "cdffefb",
+      "id": "33e78ae",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -4140,7 +5751,7 @@
     ]
    },
    {
-    "id": "4a7047c",
+    "id": "2bc244d",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -4188,7 +5799,7 @@
     },
     "elements": [
      {
-      "id": "50d3854",
+      "id": "0cb97d6",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4235,7 +5846,7 @@
       },
       "elements": [
        {
-        "id": "7cd0726",
+        "id": "56d6756",
         "elType": "widget",
         "widgetType": "icon",
         "settings": {
@@ -4256,7 +5867,7 @@
         "elements": []
        },
        {
-        "id": "60b963f",
+        "id": "c479788",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -4269,7 +5880,7 @@
         "elements": []
        },
        {
-        "id": "b0d1606",
+        "id": "5af7ca0",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4292,7 +5903,7 @@
       ]
      },
      {
-      "id": "abdac55",
+      "id": "a76a534",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4340,7 +5951,7 @@
       },
       "elements": [
        {
-        "id": "70dec25",
+        "id": "1c3a75b",
         "elType": "widget",
         "widgetType": "icon",
         "settings": {
@@ -4361,7 +5972,7 @@
         "elements": []
        },
        {
-        "id": "8f57e93",
+        "id": "6dea4df",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -4374,7 +5985,7 @@
         "elements": []
        },
        {
-        "id": "2c77cde",
+        "id": "2421e39",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4397,7 +6008,7 @@
       ]
      },
      {
-      "id": "ea377b0",
+      "id": "a60641b",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4445,7 +6056,7 @@
       },
       "elements": [
        {
-        "id": "f31210d",
+        "id": "9e8b289",
         "elType": "widget",
         "widgetType": "icon",
         "settings": {
@@ -4466,7 +6077,7 @@
         "elements": []
        },
        {
-        "id": "85f141a",
+        "id": "547dbb6",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -4479,7 +6090,7 @@
         "elements": []
        },
        {
-        "id": "317dfc0",
+        "id": "1f91d29",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4504,7 +6115,7 @@
     ]
    },
    {
-    "id": "be625ce",
+    "id": "326cbfa",
     "elType": "widget",
     "widgetType": "button",
     "settings": {
@@ -4570,7 +6181,7 @@
   ]
  },
  {
-  "id": "359ebde",
+  "id": "eb692e7",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -4605,7 +6216,7 @@
   },
   "elements": [
    {
-    "id": "3cc9141",
+    "id": "1ff996b",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -4627,7 +6238,7 @@
     },
     "elements": [
      {
-      "id": "d82448a",
+      "id": "bc83f0e",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4659,7 +6270,7 @@
       },
       "elements": [
        {
-        "id": "ec39b24",
+        "id": "a743f35",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4673,7 +6284,7 @@
         "elements": []
        },
        {
-        "id": "5a02ec0",
+        "id": "394ed84",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4687,7 +6298,7 @@
         "elements": []
        },
        {
-        "id": "0cbc385",
+        "id": "ab3d469",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -4700,7 +6311,7 @@
         "elements": []
        },
        {
-        "id": "275c29d",
+        "id": "3a7ae9c",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -4774,7 +6385,7 @@
       ]
      },
      {
-      "id": "b28e3a2",
+      "id": "15ee586",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4806,23 +6417,23 @@
       },
       "elements": [
        {
-        "id": "b72e13b",
+        "id": "07de30c",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "5d9535d",
+           "_id": "6abe5ad",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "9f064b3",
+           "_id": "9944e21",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "b5f5716",
+           "_id": "dd3a6bf",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           }
@@ -4941,7 +6552,7 @@
         },
         "elements": [
          {
-          "id": "0d79c75",
+          "id": "3ee9a08",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4959,7 +6570,7 @@
           },
           "elements": [
            {
-            "id": "6f0f33c",
+            "id": "3926d09",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -4974,7 +6585,7 @@
           ]
          },
          {
-          "id": "1e4a2df",
+          "id": "d021fcd",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4992,7 +6603,7 @@
           },
           "elements": [
            {
-            "id": "bc2bf2e",
+            "id": "ea9e4d5",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -5007,7 +6618,7 @@
           ]
          },
          {
-          "id": "6712e0d",
+          "id": "1420fec",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -5025,11 +6636,11 @@
           },
           "elements": [
            {
-            "id": "3b4baff",
+            "id": "2941c4d",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Te compartimos precios y formatos actualizados por WhatsApp, según los productos que necesites.</p>",
+             "editor": "<p>Los precios de cada producto y de los packs están publicados en la página de <a href=\"https://www.karuesencial.cl/productos/\">Productos</a>. Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -5042,7 +6653,7 @@
         ]
        },
        {
-        "id": "b7733d6",
+        "id": "7ec4dfa",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -5111,7 +6722,7 @@
   ]
  },
  {
-  "id": "9c5fc7d",
+  "id": "6c5a456",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -5145,7 +6756,7 @@
   },
   "elements": [
    {
-    "id": "6bdb460",
+    "id": "b895ee9",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -5202,7 +6813,7 @@
     },
     "elements": [
      {
-      "id": "e78a4d2",
+      "id": "5602fd9",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -5244,7 +6855,7 @@
       "elements": []
      },
      {
-      "id": "8587eb7",
+      "id": "080f211",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -5269,7 +6880,7 @@
       "elements": []
      },
      {
-      "id": "20ea5dc",
+      "id": "bd2f2bd",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -5340,7 +6951,7 @@
       "elements": []
      },
      {
-      "id": "e8df344",
+      "id": "983d9c8",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

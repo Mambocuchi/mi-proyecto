@@ -1,6 +1,6 @@
 [
  {
-  "id": "caed6f0",
+  "id": "c293920",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "9f3db9a",
+    "id": "0fae757",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "1326042",
+      "id": "085fef8",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "994eac7",
+      "id": "bdd73b4",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "69fd791",
+      "id": "6b9d284",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "09ec87f",
+  "id": "f4f9099",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,7 @@
   },
   "elements": [
    {
-    "id": "b2c084e",
+    "id": "0aa05ab",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -166,7 +166,7 @@
     },
     "elements": [
      {
-      "id": "58b6de0",
+      "id": "4189927",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -198,7 +198,7 @@
       },
       "elements": [
        {
-        "id": "3612978",
+        "id": "c465a69",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -212,7 +212,7 @@
         "elements": []
        },
        {
-        "id": "9c831c9",
+        "id": "1bf1aa9",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -225,7 +225,7 @@
         "elements": []
        },
        {
-        "id": "80886cd",
+        "id": "84882df",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -299,7 +299,7 @@
       ]
      },
      {
-      "id": "51d2fbe",
+      "id": "cd55206",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -331,38 +331,38 @@
       },
       "elements": [
        {
-        "id": "477441c",
+        "id": "0b1a534",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "dd56f56",
+           "_id": "f0e26d9",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "a241220",
+           "_id": "a9467a3",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "331881d",
+           "_id": "2eb2104",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           },
           {
-           "_id": "ffde212",
+           "_id": "9d7645a",
            "item_title": "¿Qué usos tiene cada producto?",
            "element_css_id": ""
           },
           {
-           "_id": "2605554",
+           "_id": "e03b5c2",
            "item_title": "¿Qué formatos están disponibles?",
            "element_css_id": ""
           },
           {
-           "_id": "b8c7f38",
+           "_id": "58dcf4b",
            "item_title": "¿Cómo puedo contactar a Karu Esencial?",
            "element_css_id": ""
           }
@@ -481,7 +481,7 @@
         },
         "elements": [
          {
-          "id": "8f40346",
+          "id": "e1d8d88",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -499,7 +499,7 @@
           },
           "elements": [
            {
-            "id": "d6fbd39",
+            "id": "2dccfef",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -514,7 +514,7 @@
           ]
          },
          {
-          "id": "2b0c187",
+          "id": "776194a",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -532,7 +532,7 @@
           },
           "elements": [
            {
-            "id": "0f82617",
+            "id": "f4eb8c4",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -547,7 +547,7 @@
           ]
          },
          {
-          "id": "73804f6",
+          "id": "70245e1",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -565,11 +565,11 @@
           },
           "elements": [
            {
-            "id": "c6be045",
+            "id": "1b92f31",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Te compartimos precios y formatos actualizados por WhatsApp, según los productos que necesites.</p>",
+             "editor": "<p>Los precios de cada producto y de los packs están publicados en la página de <a href=\"https://www.karuesencial.cl/productos/\">Productos</a>. Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -580,7 +580,7 @@
           ]
          },
          {
-          "id": "f32fd0f",
+          "id": "646dd00",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -598,7 +598,7 @@
           },
           "elements": [
            {
-            "id": "9a1de4d",
+            "id": "84acd7c",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -613,7 +613,7 @@
           ]
          },
          {
-          "id": "1bd8885",
+          "id": "0b11b47",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -631,11 +631,11 @@
           },
           "elements": [
            {
-            "id": "77e54ef",
+            "id": "04c5f39",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Los formatos pueden variar según disponibilidad. Consúltanos por WhatsApp y te contamos las opciones vigentes.</p>",
+             "editor": "<p>El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -646,7 +646,7 @@
           ]
          },
          {
-          "id": "4fc6bcb",
+          "id": "eee0564",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -664,7 +664,7 @@
           },
           "elements": [
            {
-            "id": "d4963ed",
+            "id": "c80721d",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -687,7 +687,7 @@
   ]
  },
  {
-  "id": "48f4c61",
+  "id": "0e9270d",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -721,7 +721,7 @@
   },
   "elements": [
    {
-    "id": "f78416e",
+    "id": "d9c31fb",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -778,7 +778,7 @@
     },
     "elements": [
      {
-      "id": "94084b6",
+      "id": "1befe04",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -820,7 +820,7 @@
       "elements": []
      },
      {
-      "id": "299fec3",
+      "id": "a51d129",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -845,7 +845,7 @@
       "elements": []
      },
      {
-      "id": "5ce3e0a",
+      "id": "8e107b4",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -916,7 +916,7 @@
       "elements": []
      },
      {
-      "id": "6c998f4",
+      "id": "0ccb658",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

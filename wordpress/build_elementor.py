@@ -20,6 +20,8 @@ IMG = {
     "bicarbonato": (65, "producto-bicarbonato.svg"),
     "aceite": (66, "proximamente-aceite.svg"),
     "cafe": (67, "proximamente-cafe.svg"),
+    "pack_vb": (121, "pack-vinagre-bicarbonato.svg"),
+    "pack_2v": (122, "pack-2-vinagres.svg"),
 }
 
 _used = set()
@@ -343,15 +345,51 @@ def hero():
 PRODUCTS = [
     ("vinagre", "Cocina y baño", "Vinagre Incoloro",
      "Un clásico de la casa que acompaña la limpieza de todos los días.",
-     ["Vidrios, espejos y cerámicas", "Ayuda a remover sarro en hervidores y llaves", "Superficies de cocina y baño"]),
+     ["Vidrios, espejos y cerámicas", "Ayuda a remover sarro en hervidores y llaves", "Superficies de cocina y baño"],
+     "5 litros", 6500, 7500),
     ("percarbonato", "Lavado de ropa", "Percarbonato de Sodio",
      "Gránulos que liberan oxígeno al disolverse en agua tibia o caliente. Muy usado en el lavado y la limpieza.",
-     ["Complemento para lavar ropa blanca", "Remojo de prendas con manchas", "Juntas, tablas y superficies"]),
+     ["Complemento para lavar ropa blanca", "Remojo de prendas con manchas", "Juntas, tablas y superficies"],
+     "1 kg", 7500, None),
     ("bicarbonato", "Multiuso", "Bicarbonato de Sodio",
      "El comodín de la casa: un polvo suave que sirve para muchas tareas de limpieza.",
      ["Limpieza suave de ollas, lavaplatos y horno", "Ayuda a reducir olores en refrigerador y calzado",
-      "Complemento en el lavado de ropa"]),
+      "Complemento en el lavado de ropa"],
+     "1 kg", 2500, 3000),
 ]
+
+PACKS = [
+    ("pack_vb", "Pack Vinagre + Bicarbonato", "1 Vinagre Incoloro de 5 litros + 1 Bicarbonato de Sodio de 1 kg.",
+     8500, 10000),
+    ("pack_2v", "Pack 2 Vinagres", "2 Vinagres Incoloros de 5 litros.", 12000, 14000),
+]
+
+
+def clp(v):
+    return "$" + f"{v:,}".replace(",", ".")
+
+
+def price_block(price, old=None, fmt=None):
+    """Precio con precio anterior tachado y ahorro, para tarjetas de producto y packs."""
+    items = [heading(clp(price), "p", None, "accent", _flex_size="none", typography_typography="custom",
+                     typography_font_family="Nunito", typography_font_weight="900", typography_font_size=px(30),
+                     typography_font_size_mobile=px(28), typography_line_height={"unit": "em", "size": 1, "sizes": []})]
+    if old:
+        items.append(heading(clp(old), "p", None, "text", _flex_size="none", typography_typography="custom",
+                             typography_font_family="Figtree", typography_font_weight="500",
+                             typography_font_size=px(17), typography_text_decoration="line-through"))
+        items.append(heading(f"Ahorras {clp(old - price)}", "p", None, "accent", _flex_size="none",
+                             _background_background="classic", _padding=dims(4, 10), _border_radius=dims(999),
+                             typography_typography="custom", typography_font_family="Figtree",
+                             typography_font_weight="700", typography_font_size=px(12),
+                             __globals__={"title_color": gc("accent"), "_background_color": gc("secondary")}))
+    kids = []
+    if fmt:
+        kids.append(heading(f"Formato {fmt}", "p", "pequeno", "text", typography_typography="custom",
+                            typography_font_size=px(13), typography_font_weight="600"))
+    kids.append(row(items, g=10, stack=None, flex_wrap="wrap", flex_wrap_mobile="wrap", _title="Precio"))
+    return column(kids, g=6, padding=dims(14, 0, 0, 0), border_border="solid", border_width=dims(1, 0, 0, 0),
+                  _title="Formato y precio", __globals__={"border_color": gc("grisclaro")})
 
 
 def tag(label):
@@ -362,7 +400,7 @@ def tag(label):
                    __globals__={"title_color": gc("primary"), "_background_color": gc("celestesuave")})
 
 
-def product_card(key, tg, name, desc, uses):
+def product_card(key, tg, name, desc, uses, fmt, price, old):
     body = column([
         column([
             tag(tg),
@@ -372,7 +410,9 @@ def product_card(key, tg, name, desc, uses):
                     typography_typography="custom", typography_font_size=px(12)),
             checklist(uses, size=12, _margin=dims(0, 0, 8, 0)),
         ], g=12, _flex_size="grow", _title="Contenido"),
-        button("Consultar por WhatsApp", wa(f"Hola Karu Esencial, quiero consultar por el {name}."), full=True),
+        price_block(price, old, fmt),
+        button("Consultar por WhatsApp", wa(f"Hola Karu Esencial, quiero consultar por el {name} de {fmt}."),
+               full=True),
     ], g=16, _flex_size="grow", padding=dims(26, 26, 28, 26), _title="Cuerpo")
     return card([image(key, height=300, height_m=260), body], _title=name,
                 animation="fadeInUp", animation_duration="fast")
@@ -380,6 +420,41 @@ def product_card(key, tg, name, desc, uses):
 
 def products_grid():
     return grid([product_card(*p) for p in PRODUCTS], 3, cols_t=2, cols_m=1, g=24, _title="Tarjetas de productos")
+
+
+def pack_card(key, name, includes, price, old):
+    content = column([
+        heading("Pack ahorro", "p", "pequeno", "blanco", _element_width="auto", _flex_align_self="flex-start",
+                _background_background="classic", _padding=dims(4, 12), _border_radius=dims(999),
+                typography_typography="custom", typography_font_size=px(13), typography_font_weight="700",
+                __globals__={"title_color": gc("blanco"), "_background_color": gc("primary")}),
+        heading(name, "h3", "h3tarjeta"),
+        text(f"<p><strong>Incluye:</strong> {includes}</p>"),
+        price_block(price, old),
+        button("Pedir por WhatsApp", wa(f"Hola Karu Esencial, quiero el {name}."), full=True,
+               _margin=dims(6, 0, 0, 0)),
+    ], width=58, width_t=58, width_m=100, g=12, padding=dims(28, 28, 28, 4), padding_mobile=dims(22, 22, 26, 22),
+        flex_justify_content="center", _title="Contenido")
+    media = column([image(key, height=320, height_m=220)], width=42, width_t=42, width_m=100, g=0, _title="Imagen")
+    return card([media, content], g=24, flex_direction="row", flex_direction_mobile="column",
+                flex_align_items="stretch", flex_wrap="nowrap", _title=name,
+                animation="fadeInUp", animation_duration="fast",
+                __globals__={"background_color": gc("blanco"), "border_color": gc("secondary")})
+
+
+def packs_block():
+    return column([
+        column([
+            eyebrow("Packs de ahorro"),
+            heading("Llévalos juntos y ahorra", "h3", None, "accent",
+                    typography_typography="custom", typography_font_family="Nunito", typography_font_weight="800",
+                    typography_font_size=px(30), typography_font_size_mobile=px(24),
+                    typography_line_height={"unit": "em", "size": 1.15, "sizes": []}),
+            text("<p>Combinaciones listas para pedir por WhatsApp.</p>"),
+        ], g=10, _title="Encabezado"),
+        grid([pack_card(*p) for p in PACKS], 2, cols_t=1, cols_m=1, g=24, _title="Tarjetas de packs"),
+    ], g=28, margin=dims(88, 0, 0, 0), margin_mobile=dims(56, 0, 0, 0), _element_id="packs",
+        _title="Packs de ahorro")
 
 
 def safety_note():
@@ -427,9 +502,9 @@ def products_section(with_head=True, soon=True):
     items = []
     if with_head:
         items.append(section_head("Productos", "Nuestros productos esenciales",
-                                  "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan "
-                                  "y te ayudamos a elegir el formato que te acomoda."))
-    items += [products_grid(), safety_note()]
+                                  "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
+                                  "en qué formato vienen y cuánto cuestan."))
+    items += [products_grid(), safety_note(), packs_block()]
     if soon:
         items.append(soon_block())
     return section(items, anchor="productos", title="Productos", pad=(120 if with_head else 88, 120))
@@ -508,7 +583,7 @@ def chat_card():
         ], g=0),
     ], g=12, stack=None, padding=dims(12, 14, 16, 14), flex_wrap_mobile="nowrap", _title="Contacto")
     body = column([
-        text("<p>Hola Karu Esencial, quiero pedir bicarbonato de sodio y vinagre incoloro. ¿Qué formatos tienen?</p>",
+        text("<p>Hola Karu Esencial, quiero el Pack Vinagre + Bicarbonato. ¿Hacen entregas en mi comuna?</p>",
              typo="pequeno", color="accent", _background_background="classic", _padding=dims(14, 16),
              _border_radius={"unit": "px", "top": "18", "right": "18", "bottom": "4", "left": "18", "isLinked": False},
              _element_width="initial", _element_custom_width=pct(88), _flex_align_self="flex-end",
@@ -568,12 +643,14 @@ FAQ = [
     ("¿Dónde realizan entregas?",
      "Cuéntanos tu comuna por WhatsApp y te confirmamos las opciones de entrega disponibles para tu zona."),
     ("¿Cómo puedo conocer los precios?",
-     "Te compartimos precios y formatos actualizados por WhatsApp, según los productos que necesites."),
+     f'Los precios de cada producto y de los packs están publicados en la página de <a href="{SITE}/productos/">Productos</a>. '
+     "Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp."),
     ("¿Qué usos tiene cada producto?",
      f'En la página de <a href="{SITE}/productos/">Productos</a> encontrarás los usos habituales de cada uno. '
      "Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase."),
     ("¿Qué formatos están disponibles?",
-     "Los formatos pueden variar según disponibilidad. Consúltanos por WhatsApp y te contamos las opciones vigentes."),
+     "El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen "
+     "en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres."),
     ("¿Cómo puedo contactar a Karu Esencial?",
      f'Nuestro canal principal es WhatsApp: +56 9 8904 8914. También puedes llamarnos a ese número o '
      f'escribirnos desde la página de <a href="{SITE}/contacto/">Contacto</a>.'),
@@ -734,8 +811,8 @@ def pages(form_id):
                    faq_section(FAQ[:3], more_link=True), cta_section()],
         "productos": [
             page_intro("Productos", "Nuestros productos esenciales",
-                       "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan y te "
-                       "ayudamos a elegir el formato que te acomoda."),
+                       "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
+                       "en qué formato vienen y cuánto cuestan."),
             products_section(with_head=False), how_to_buy_section(), cta_section()],
         "beneficios": [
             page_intro("Beneficios", "¿Por qué elegir Karu Esencial?",
