@@ -8,9 +8,9 @@
   <polygon points="36,0 146,0 330,250 214,250" fill="#FFFFFF" opacity=".5"/>
   <rect y="250" width="400" height="70" fill="#F2E8D8"/>
   <rect y="250" width="400" height="4" fill="#E6D6BC"/>
-  <ellipse cx="140" cy="255" rx="58" ry="7" fill="#243D5B" opacity=".1"/>
-  <ellipse cx="268" cy="255" rx="60" ry="7" fill="#243D5B" opacity=".1"/>
-  <g transform="translate(-60 0)"><path d="M188 70h24v38c0 14 30 22 30 48v84a12 12 0 0 1-12 12h-60a12 12 0 0 1-12-12v-84c0-26 30-34 30-48z" fill="url(#glass)" stroke="#9CC6EE" stroke-width="2"/>
+  <ellipse cx="142" cy="255" rx="54" ry="7" fill="#243D5B" opacity=".1"/>
+  <ellipse cx="247" cy="255" rx="58" ry="7" fill="#243D5B" opacity=".1"/>
+  <g transform="translate(-58 0)"><path d="M188 70h24v38c0 14 30 22 30 48v84a12 12 0 0 1-12 12h-60a12 12 0 0 1-12-12v-84c0-26 30-34 30-48z" fill="url(#glass)" stroke="#9CC6EE" stroke-width="2"/>
   <path d="M161 164h78v76a10 10 0 0 1-10 10h-58a10 10 0 0 1-10-10z" fill="#D3E9FF" opacity=".75"/>
   <ellipse cx="200" cy="164" rx="39" ry="4" fill="#E9F4FF"/>
   <rect x="168" y="168" width="8" height="70" rx="4" fill="#FFFFFF" opacity=".85"/>
@@ -21,7 +21,7 @@
   <rect x="189" y="204" width="24" height="4" rx="2" fill="#4A90E2"/>
   <rect x="185" y="214" width="32" height="3" rx="1.5" fill="#C3D3E4"/>
   </g>
-  <g transform="translate(68 0)"><rect x="146" y="112" width="108" height="140" rx="18" fill="url(#glass)" stroke="#9CC6EE" stroke-width="2"/>
+  <g transform="translate(47 0)"><rect x="146" y="112" width="108" height="140" rx="18" fill="url(#glass)" stroke="#9CC6EE" stroke-width="2"/>
   <path d="M150 168c14-8 26 4 40-2s28-8 44-2 14 2 16 0v70a14 14 0 0 1-14 14h-72a14 14 0 0 1-14-14z" fill="#FFFFFF"/>
   <rect x="156" y="124" width="8" height="112" rx="4" fill="#FFFFFF" opacity=".75"/>
   <rect x="150" y="92" width="100" height="26" rx="8" fill="#E3CCAA"/>
