@@ -6736,7 +6736,217 @@
   ]
  },
  {
-  "id": "6c5a456",
+  "id": "5c6867c",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "flex_gap": {
+    "column": "0",
+    "row": "0",
+    "isLinked": true,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "104",
+    "right": "20",
+    "bottom": "104",
+    "left": "20",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "64",
+    "right": "18",
+    "bottom": "64",
+    "left": "18",
+    "isLinked": false
+   },
+   "html_tag": "section",
+   "background_background": "classic",
+   "__globals__": {
+    "background_color": "globals/colors?id=celestesuave"
+   },
+   "_element_id": "instagram",
+   "_title": "Instagram"
+  },
+  "elements": [
+   {
+    "id": "983d9c8",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "boxed_width": {
+      "unit": "px",
+      "size": 680,
+      "sizes": []
+     },
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "14",
+      "row": "14",
+      "isLinked": true,
+      "unit": "px",
+      "size": 14
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "56",
+      "left": "0",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "36",
+      "left": "0",
+      "isLinked": false
+     },
+     "_title": "Encabezado de sección"
+    },
+    "elements": [
+     {
+      "id": "5602fd9",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Instagram",
+       "header_size": "p",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=eyebrow",
+        "title_color": "globals/colors?id=primary"
+       },
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "080f211",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Síguenos en Instagram",
+       "header_size": "h2",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=h2seccion",
+        "title_color": "globals/colors?id=accent"
+       },
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "bd2f2bd",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Novedades, ideas de uso y promociones en @karu_esencial.</p>",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=text",
+        "text_color": "globals/colors?id=text"
+       },
+       "align": "center"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "b895ee9",
+    "elType": "widget",
+    "widgetType": "shortcode",
+    "settings": {
+     "shortcode": "[instagram-feed feed=1]",
+     "_title": "Últimas publicaciones de Instagram"
+    },
+    "elements": []
+   },
+   {
+    "id": "6c5a456",
+    "elType": "widget",
+    "widgetType": "button",
+    "settings": {
+     "text": "Ver en Instagram",
+     "link": {
+      "url": "https://www.instagram.com/karu_esencial/",
+      "is_external": "on",
+      "nofollow": "",
+      "custom_attributes": ""
+     },
+     "size": "md",
+     "border_radius": {
+      "unit": "px",
+      "top": "999",
+      "right": "999",
+      "bottom": "999",
+      "left": "999",
+      "isLinked": true
+     },
+     "button_hover_transition_duration": {
+      "unit": "s",
+      "size": 0.2,
+      "sizes": []
+     },
+     "__globals__": {
+      "typography_typography": "globals/typography?id=accent",
+      "background_color": "globals/colors?id=blanco",
+      "button_text_color": "globals/colors?id=accent",
+      "border_color": "globals/colors?id=grisclaro",
+      "button_background_hover_color": "globals/colors?id=celestesuave",
+      "hover_color": "globals/colors?id=accent",
+      "button_hover_border_color": "globals/colors?id=secondary"
+     },
+     "selected_icon": {
+      "value": "fab fa-instagram",
+      "library": "fa-brands"
+     },
+     "icon_indent": {
+      "unit": "px",
+      "size": 10,
+      "sizes": []
+     },
+     "text_padding": {
+      "unit": "px",
+      "top": "15",
+      "right": "28",
+      "bottom": "15",
+      "left": "28",
+      "isLinked": false
+     },
+     "border_border": "solid",
+     "border_width": {
+      "unit": "px",
+      "top": "2",
+      "right": "2",
+      "bottom": "2",
+      "left": "2",
+      "isLinked": true
+     },
+     "align": "center",
+     "align_mobile": "justify",
+     "_margin": {
+      "unit": "px",
+      "top": "32",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     }
+    },
+    "elements": []
+   }
+  ]
+ },
+ {
+  "id": "7a3a35a",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -6770,7 +6980,7 @@
   },
   "elements": [
    {
-    "id": "b895ee9",
+    "id": "c58f0a2",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -6827,7 +7037,7 @@
     },
     "elements": [
      {
-      "id": "5602fd9",
+      "id": "5d92886",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -6869,7 +7079,7 @@
       "elements": []
      },
      {
-      "id": "080f211",
+      "id": "46deeed",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -6894,7 +7104,7 @@
       "elements": []
      },
      {
-      "id": "bd2f2bd",
+      "id": "24bbda7",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -6965,7 +7175,7 @@
       "elements": []
      },
      {
-      "id": "983d9c8",
+      "id": "756e662",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

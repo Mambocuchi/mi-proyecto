@@ -711,6 +711,16 @@ def faq_section(items, more_link=False, tag_title="h2", page=False):
         anchor="preguntas", title="Preguntas frecuentes")
 
 
+def instagram_section():
+    return section([
+        section_head("Instagram", "Síguenos en Instagram",
+                     "Novedades, ideas de uso y promociones en @karu_esencial."),
+        widget("shortcode", shortcode="[instagram-feed feed=1]", _title="Últimas publicaciones de Instagram"),
+        button("Ver en Instagram", IG, kind="ghost", ico="fab fa-instagram", align="center", align_m="justify",
+               _margin=dims(32, 0, 0, 0)),
+    ], bg="celestesuave", pad=(104, 104), anchor="instagram", title="Instagram")
+
+
 def cta_section():
     panel = container([
         heading("¿Qué necesitas para tu hogar?", "h2", None, "blanco", "center",
@@ -812,7 +822,7 @@ def contact_section(form_id):
 def pages(form_id):
     return {
         "inicio": [hero(), products_section(), benefits_section(), how_to_buy_section(), testimonials_section(),
-                   faq_section(FAQ[:3], more_link=True), cta_section()],
+                   faq_section(FAQ[:3], more_link=True), instagram_section(), cta_section()],
         "productos": [
             page_intro("Productos", "Nuestros productos esenciales",
                        "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
