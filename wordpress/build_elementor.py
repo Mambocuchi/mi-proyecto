@@ -12,6 +12,8 @@ from urllib.parse import quote
 random.seed(20260925)
 SITE = "https://www.karuesencial.cl"
 WA = "https://wa.me/56989048914"
+IG = "https://www.instagram.com/karu_esencial/"
+FB = "https://www.facebook.com/people/Karu-Esencial/61588649071645/"
 
 IMG = {
     "hero": (62, "hero-composicion.svg"),
@@ -784,6 +786,8 @@ def contact_section(form_id):
         contact_card("fab fa-whatsapp", "WhatsApp · canal principal", "+56 9 8904 8914", WA, main=True),
         contact_card("fas fa-phone", "Teléfono", "+56 9 8904 8914", "tel:+56989048914"),
         contact_card("fas fa-truck", "Entregas", "Coordinamos por WhatsApp"),
+        contact_card("fab fa-instagram", "Instagram", "@karu_esencial", IG),
+        contact_card("fab fa-facebook-f", "Facebook", "Karu Esencial", FB),
     ], width=46, width_t=100, g=16, _title="Canales de contacto")
     form = column([
         heading("Déjanos tu mensaje", "h2", None, "accent", typography_typography="custom",

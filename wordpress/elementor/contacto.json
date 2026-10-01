@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "91ce0b3",
+  "id": "d088c29",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,7 @@
   },
   "elements": [
    {
-    "id": "1ef6333",
+    "id": "5d2ff6f",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -166,7 +166,7 @@
     },
     "elements": [
      {
-      "id": "c7ae7d7",
+      "id": "6b43701",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -803,11 +803,391 @@
           ]
          }
         ]
+       },
+       {
+        "id": "b0dd427",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_align_items": "center",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "flex_wrap": "nowrap",
+         "flex_wrap_mobile": "nowrap",
+         "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "_title": "Instagram",
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=grisclaro"
+         },
+         "html_tag": "a",
+         "link": {
+          "url": "https://www.instagram.com/karu_esencial/",
+          "is_external": "on",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -2,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 200,
+          "sizes": []
+         }
+        },
+        "elements": [
+         {
+          "id": "c7ae7d7",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+           "selected_icon": {
+            "value": "fab fa-instagram",
+            "library": "fa-brands"
+           },
+           "view": "stacked",
+           "shape": "rounded",
+           "size": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+           },
+           "icon_padding": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+           },
+           "border_radius": {
+            "unit": "px",
+            "top": "14",
+            "right": "14",
+            "bottom": "14",
+            "left": "14",
+            "isLinked": true
+           },
+           "_flex_size": "none",
+           "__globals__": {
+            "primary_color": "globals/colors?id=celestesuave",
+            "secondary_color": "globals/colors?id=primary"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "f23600d",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "2",
+            "row": "2",
+            "isLinked": true,
+            "unit": "px",
+            "size": 2
+           },
+           "_flex_size": "custom",
+           "_flex_grow": 1,
+           "_flex_shrink": 1
+          },
+          "elements": [
+           {
+            "id": "941bebb",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Instagram",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "7725b62",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "@karu_esencial",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=accent"
+             },
+             "typography_typography": "custom",
+             "typography_font_family": "Nunito",
+             "typography_font_weight": "800",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+             },
+             "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "325ea55",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_align_items": "center",
+         "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "isLinked": true,
+          "unit": "px",
+          "size": 16
+         },
+         "flex_wrap": "nowrap",
+         "flex_wrap_mobile": "nowrap",
+         "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "border_border": "solid",
+         "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "box_shadow_box_shadow_type": "yes",
+         "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.05)"
+         },
+         "_title": "Facebook",
+         "__globals__": {
+          "background_color": "globals/colors?id=blanco",
+          "border_color": "globals/colors?id=grisclaro"
+         },
+         "html_tag": "a",
+         "link": {
+          "url": "https://www.facebook.com/people/Karu-Esencial/61588649071645/",
+          "is_external": "on",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -2,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 200,
+          "sizes": []
+         }
+        },
+        "elements": [
+         {
+          "id": "1ef6333",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+           "selected_icon": {
+            "value": "fab fa-facebook-f",
+            "library": "fa-brands"
+           },
+           "view": "stacked",
+           "shape": "rounded",
+           "size": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+           },
+           "icon_padding": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+           },
+           "border_radius": {
+            "unit": "px",
+            "top": "14",
+            "right": "14",
+            "bottom": "14",
+            "left": "14",
+            "isLinked": true
+           },
+           "_flex_size": "none",
+           "__globals__": {
+            "primary_color": "globals/colors?id=celestesuave",
+            "secondary_color": "globals/colors?id=primary"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "1ddae6e",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "2",
+            "row": "2",
+            "isLinked": true,
+            "unit": "px",
+            "size": 2
+           },
+           "_flex_size": "custom",
+           "_flex_grow": 1,
+           "_flex_shrink": 1
+          },
+          "elements": [
+           {
+            "id": "91ce0b3",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Facebook",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "783497d",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Karu Esencial",
+             "header_size": "p",
+             "__globals__": {
+              "title_color": "globals/colors?id=accent"
+             },
+             "typography_typography": "custom",
+             "typography_font_family": "Nunito",
+             "typography_font_weight": "800",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+             },
+             "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+             }
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
        }
       ]
      },
      {
-      "id": "b0dd427",
+      "id": "80814b5",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -885,7 +1265,7 @@
       },
       "elements": [
        {
-        "id": "941bebb",
+        "id": "a5d83ab",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -911,7 +1291,7 @@
         "elements": []
        },
        {
-        "id": "7725b62",
+        "id": "e2e891a",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -924,7 +1304,7 @@
         "elements": []
        },
        {
-        "id": "f23600d",
+        "id": "c23e157",
         "elType": "widget",
         "widgetType": "wpforms",
         "settings": {
