@@ -118,6 +118,13 @@ add_filter( 'woocommerce_form_field_tel', function ( $campo, $key ) {
 	return $campo;
 }, 10, 2 );
 
+add_filter( 'woocommerce_checkout_required_field_notice', function ( $aviso, $etiqueta, $key ) {
+	if ( $key === 'billing_phone' ) {
+		return 'Ingresa tu <strong>teléfono / WhatsApp</strong> para confirmar el pedido.';
+	}
+	return str_replace( 'Facturación ', '', $aviso );
+}, 10, 3 );
+
 // Dirección obligatoria solo para despacho a domicilio.
 add_action( 'woocommerce_after_checkout_validation', function ( $data, $errors ) {
 	$metodo = (array) ( $data['shipping_method'] ?? array() );
