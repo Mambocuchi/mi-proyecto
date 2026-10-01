@@ -44,7 +44,7 @@ add_filter( 'woocommerce_checkout_fields', function ( $fields ) {
 	$b['billing_first_name']['class']    = array( 'form-row-wide' );
 	$b['billing_first_name']['priority'] = 10;
 
-	$b['billing_phone']['label']    = 'Teléfono / WhatsApp';
+	$b['billing_phone']['label']    = KARU_ETIQUETA_TELEFONO;
 	$b['billing_phone']['required'] = true;
 	$b['billing_phone']['priority'] = 20;
 	$b['billing_phone']['class']    = array( 'form-row-first' );
@@ -98,8 +98,25 @@ add_filter( 'woocommerce_get_country_locale', function ( $locale ) {
 	$locale['CL']['state']    = array( 'required' => false, 'hidden' => true );
 	$locale['CL']['postcode'] = array( 'required' => false, 'hidden' => true );
 	$locale['CL']['city']     = array( 'label' => 'Comuna' );
+	$locale['CL']['phone']    = array( 'label' => KARU_ETIQUETA_TELEFONO, 'required' => true );
 	return $locale;
 } );
+
+// El teléfono es obligatorio y se indica con "(obligatorio)" en vez del asterisco.
+const KARU_ETIQUETA_TELEFONO = 'Teléfono / WhatsApp <span class="required karu-obligatorio" aria-hidden="true">(obligatorio)</span>';
+
+add_filter( 'woocommerce_get_country_locale_default', function ( $locale ) {
+	$locale['phone']['label']    = KARU_ETIQUETA_TELEFONO;
+	$locale['phone']['required'] = true;
+	return $locale;
+} );
+
+add_filter( 'woocommerce_form_field_tel', function ( $campo, $key ) {
+	if ( $key === 'billing_phone' ) {
+		$campo = str_replace( '&nbsp;<span class="required" aria-hidden="true">*</span>', '', $campo );
+	}
+	return $campo;
+}, 10, 2 );
 
 // Dirección obligatoria solo para despacho a domicilio.
 add_action( 'woocommerce_after_checkout_validation', function ( $data, $errors ) {
@@ -109,6 +126,9 @@ add_action( 'woocommerce_after_checkout_validation', function ( $data, $errors )
 		if ( strpos( (string) $m, 'flat_rate' ) === 0 ) {
 			$es_despacho = true;
 		}
+	}
+	if ( trim( (string) ( $data['billing_phone'] ?? '' ) ) === '' && ! $errors->get_error_data( 'billing_phone_required' ) ) {
+		$errors->add( 'billing_phone_required', 'Ingresa tu <strong>teléfono / WhatsApp</strong> para confirmar el pedido.', array( 'id' => 'billing_phone' ) );
 	}
 	if ( $es_despacho && trim( (string) ( $data['billing_address_1'] ?? '' ) ) === '' ) {
 		$errors->add( 'validation', 'Ingresa tu <strong>dirección</strong> para el despacho a domicilio, o elige retiro en Castellón 1333.' );
@@ -219,7 +239,7 @@ add_filter( 'woocommerce_cart_ready_to_calc_shipping', function ( $listo ) {
 // Campo de país oculto (solo Chile).
 add_action( 'wp_head', function () {
 	if ( function_exists( 'is_checkout' ) && is_checkout() ) {
-		echo '<style>.karu-oculto{display:none!important}</style>';
+		echo '<style>.karu-oculto{display:none!important}.karu-obligatorio{font-size:.85em;font-weight:400}</style>';
 	}
 } );
 
