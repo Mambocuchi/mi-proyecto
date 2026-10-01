@@ -44,7 +44,7 @@ add_filter( 'woocommerce_checkout_fields', function ( $fields ) {
 	$b['billing_first_name']['class']    = array( 'form-row-wide' );
 	$b['billing_first_name']['priority'] = 10;
 
-	$b['billing_phone']['label']    = KARU_ETIQUETA_TELEFONO;
+	$b['billing_phone']['label']    = 'Teléfono / WhatsApp';
 	$b['billing_phone']['required'] = true;
 	$b['billing_phone']['priority'] = 20;
 	$b['billing_phone']['class']    = array( 'form-row-first' );
@@ -113,7 +113,7 @@ add_filter( 'woocommerce_get_country_locale_default', function ( $locale ) {
 
 add_filter( 'woocommerce_form_field_tel', function ( $campo, $key ) {
 	if ( $key === 'billing_phone' ) {
-		$campo = str_replace( '&nbsp;<span class="required" aria-hidden="true">*</span>', '', $campo );
+		$campo = str_replace( 'Teléfono / WhatsApp&nbsp;<span class="required" aria-hidden="true">*</span>', KARU_ETIQUETA_TELEFONO, $campo );
 	}
 	return $campo;
 }, 10, 2 );
