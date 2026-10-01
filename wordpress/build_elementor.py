@@ -694,8 +694,8 @@ FAQ = [
      "enviárnoslo. Si prefieres, también puedes escribirnos directo al +56 9 8904 8914."),
     ("¿Dónde realizan entregas?",
      "Despachamos en el Gran Concepción: Concepción, Talcahuano, Hualpén, San Pedro de la Paz, Chiguayante, Penco, "
-     "Tomé, Coronel, Lota y Hualqui. Desde $20.000 el despacho es gratis; bajo ese monto cuesta $1.000 en San Pedro "
-     "de la Paz, $2.000 en Concepción y Chiguayante, y $3.000 en las demás comunas. También puedes retirar gratis en "
+     "Tomé, Coronel, Lota y Hualqui. Desde $20.000 el despacho es gratis; bajo ese monto cuesta $1.000 en Concepción "
+     "y San Pedro de la Paz, $2.000 en Chiguayante y $3.000 en las demás comunas. También puedes retirar gratis en "
      "Castellón 1333, Concepción (lunes a jueves de 08:30 a 18:00 y viernes de 08:30 a 13:00). Por ahora no hacemos "
      "envíos a otras regiones."),
     ("¿Cómo puedo pagar?",
