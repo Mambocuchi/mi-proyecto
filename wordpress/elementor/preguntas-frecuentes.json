@@ -1,6 +1,6 @@
 [
  {
-  "id": "0aa05ab",
+  "id": "1befe04",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "cd55206",
+    "id": "f4f9099",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "c80721d",
+      "id": "4189927",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "eee0564",
+      "id": "cd55206",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "4189927",
+      "id": "0aa05ab",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "3fb4c05",
+  "id": "abe7de4",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,7 @@
   },
   "elements": [
    {
-    "id": "19c5d1d",
+    "id": "13aa207",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -166,7 +166,7 @@
     },
     "elements": [
      {
-      "id": "d369199",
+      "id": "19c5d1d",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -198,7 +198,7 @@
       },
       "elements": [
        {
-        "id": "f4f9099",
+        "id": "a51d129",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -212,7 +212,7 @@
         "elements": []
        },
        {
-        "id": "1befe04",
+        "id": "8e107b4",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -225,7 +225,7 @@
         "elements": []
        },
        {
-        "id": "a51d129",
+        "id": "0ccb658",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -299,7 +299,7 @@
       ]
      },
      {
-      "id": "e0fe8b6",
+      "id": "3fb4c05",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -331,38 +331,38 @@
       },
       "elements": [
        {
-        "id": "6b9a26c",
+        "id": "2432045",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "8e107b4",
+           "_id": "d9c31fb",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "0ccb658",
+           "_id": "0e9270d",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "d9c31fb",
+           "_id": "a90c7c1",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           },
           {
-           "_id": "0e9270d",
+           "_id": "11717b7",
            "item_title": "¿Qué usos tiene cada producto?",
            "element_css_id": ""
           },
           {
-           "_id": "a90c7c1",
+           "_id": "6b9a26c",
            "item_title": "¿Qué formatos están disponibles?",
            "element_css_id": ""
           },
           {
-           "_id": "11717b7",
+           "_id": "8fb8f2d",
            "item_title": "¿Cómo puedo contactar a Karu Esencial?",
            "element_css_id": ""
           }
@@ -481,7 +481,7 @@
         },
         "elements": [
          {
-          "id": "2432045",
+          "id": "731dc8b",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -499,44 +499,11 @@
           },
           "elements": [
            {
-            "id": "8fb8f2d",
-            "elType": "widget",
-            "widgetType": "text-editor",
-            "settings": {
-             "editor": "<p>Escríbenos por WhatsApp al +56 9 8904 8914 con los productos que te interesan. Coordinamos tu pedido por el mismo chat.</p>",
-             "__globals__": {
-              "typography_typography": "globals/typography?id=text",
-              "text_color": "globals/colors?id=text"
-             }
-            },
-            "elements": []
-           }
-          ]
-         },
-         {
-          "id": "731dc8b",
-          "elType": "container",
-          "isInner": true,
-          "settings": {
-           "content_width": "full",
-           "flex_direction": "column",
-           "padding": {
-            "unit": "px",
-            "top": "14",
-            "right": "22",
-            "bottom": "18",
-            "left": "22",
-            "isLinked": false
-           },
-           "_title": "¿Dónde realizan entregas?"
-          },
-          "elements": [
-           {
             "id": "6cd9672",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Cuéntanos tu comuna por WhatsApp y te confirmamos las opciones de entrega disponibles para tu zona.</p>",
+             "editor": "<p>Escríbenos por WhatsApp al +56 9 8904 8914 con los productos que te interesan. Coordinamos tu pedido por el mismo chat.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -561,7 +528,7 @@
             "left": "22",
             "isLinked": false
            },
-           "_title": "¿Cómo puedo conocer los precios?"
+           "_title": "¿Dónde realizan entregas?"
           },
           "elements": [
            {
@@ -569,7 +536,7 @@
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Los precios de cada producto y de los packs están publicados en la página de <a href=\"https://www.karuesencial.cl/productos/\">Productos</a>. Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp.</p>",
+             "editor": "<p>Cuéntanos tu comuna por WhatsApp y te confirmamos las opciones de entrega disponibles para tu zona.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -594,7 +561,7 @@
             "left": "22",
             "isLinked": false
            },
-           "_title": "¿Qué usos tiene cada producto?"
+           "_title": "¿Cómo puedo conocer los precios?"
           },
           "elements": [
            {
@@ -602,7 +569,7 @@
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>En la página de <a href=\"https://www.karuesencial.cl/productos/\">Productos</a> encontrarás los usos habituales de cada uno. Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase.</p>",
+             "editor": "<p>Los precios de cada producto y de los packs están publicados en la página de <a href=\"https://www.karuesencial.cl/productos/\">Productos</a>. Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -627,7 +594,7 @@
             "left": "22",
             "isLinked": false
            },
-           "_title": "¿Qué formatos están disponibles?"
+           "_title": "¿Qué usos tiene cada producto?"
           },
           "elements": [
            {
@@ -635,7 +602,7 @@
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres.</p>",
+             "editor": "<p>En la página de <a href=\"https://www.karuesencial.cl/productos/\">Productos</a> encontrarás los usos habituales de cada uno. Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -660,11 +627,44 @@
             "left": "22",
             "isLinked": false
            },
-           "_title": "¿Cómo puedo contactar a Karu Esencial?"
+           "_title": "¿Qué formatos están disponibles?"
           },
           "elements": [
            {
             "id": "3a04426",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "e0fe8b6",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "22",
+            "bottom": "18",
+            "left": "22",
+            "isLinked": false
+           },
+           "_title": "¿Cómo puedo contactar a Karu Esencial?"
+          },
+          "elements": [
+           {
+            "id": "d369199",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -687,7 +687,7 @@
   ]
  },
  {
-  "id": "941bebb",
+  "id": "f23600d",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -721,7 +721,7 @@
   },
   "elements": [
    {
-    "id": "c7ae7d7",
+    "id": "7725b62",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -778,7 +778,7 @@
     },
     "elements": [
      {
-      "id": "13aa207",
+      "id": "2ef89a8",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -820,7 +820,7 @@
       "elements": []
      },
      {
-      "id": "abe7de4",
+      "id": "d8582bc",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -845,7 +845,7 @@
       "elements": []
      },
      {
-      "id": "2ef89a8",
+      "id": "c7ae7d7",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -916,7 +916,7 @@
       "elements": []
      },
      {
-      "id": "d8582bc",
+      "id": "941bebb",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

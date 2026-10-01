@@ -5641,7 +5641,7 @@
   ]
  },
  {
-  "id": "3926d09",
+  "id": "3ee9a08",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -5753,7 +5753,7 @@
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
-       "editor": "<p>Pronto compartiremos aquí las opiniones de quienes ya usan Karu Esencial. Solo publicamos testimonios reales y con autorización.</p>",
+       "editor": "<p>Pronto compartiremos aquí las opiniones de quienes ya usan Karu Esencial. Solo publicamos testimonios reales y con autorización. Quienes comparten su experiencia reciben un código de descuento, sin importar si su opinión es positiva o negativa.</p>",
        "__globals__": {
         "typography_typography": "globals/typography?id=text",
         "text_color": "globals/colors?id=text"
@@ -6129,7 +6129,7 @@
     ]
    },
    {
-    "id": "07de30c",
+    "id": "3926d09",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -6168,7 +6168,7 @@
     },
     "elements": [
      {
-      "id": "6abe5ad",
+      "id": "9944e21",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -6235,7 +6235,7 @@
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Cuéntanos cómo te fue. Revisamos cada opinión y, si nos autorizas, la publicamos en esta sección junto a tu nombre y comuna.</p>",
+         "editor": "<p>Cuéntanos cómo te fue y te enviamos por correo un <strong>código de 15% de descuento</strong> para tu próxima compra. Revisamos cada opinión y, si nos autorizas, la publicamos en esta sección junto a tu nombre y comuna.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=text",
           "text_color": "globals/colors?id=text"
@@ -6244,7 +6244,7 @@
         "elements": []
        },
        {
-        "id": "ab3d469",
+        "id": "3a7ae9c",
         "elType": "widget",
         "widgetType": "icon-list",
         "settings": {
@@ -6252,7 +6252,7 @@
          "icon_list": [
           {
            "_id": "a743f35",
-           "text": "Toma menos de un minuto",
+           "text": "15% de descuento, válido por 30 días",
            "selected_icon": {
             "value": "fas fa-check",
             "library": "fa-solid"
@@ -6260,6 +6260,14 @@
           },
           {
            "_id": "394ed84",
+           "text": "Un código por persona, sea cual sea tu opinión",
+           "selected_icon": {
+            "value": "fas fa-check",
+            "library": "fa-solid"
+           }
+          },
+          {
+           "_id": "ab3d469",
            "text": "Tu correo no se publica",
            "selected_icon": {
             "value": "fas fa-check",
@@ -6291,7 +6299,7 @@
         "elements": []
        },
        {
-        "id": "3a7ae9c",
+        "id": "6abe5ad",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -6355,7 +6363,7 @@
       ]
      },
      {
-      "id": "dd3a6bf",
+      "id": "07de30c",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -6433,7 +6441,7 @@
       },
       "elements": [
        {
-        "id": "9944e21",
+        "id": "dd3a6bf",
         "elType": "widget",
         "widgetType": "wpforms",
         "settings": {
@@ -6463,7 +6471,7 @@
   ]
  },
  {
-  "id": "46deeed",
+  "id": "24bbda7",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -6498,7 +6506,7 @@
   },
   "elements": [
    {
-    "id": "5d92886",
+    "id": "46deeed",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -6520,7 +6528,7 @@
     },
     "elements": [
      {
-      "id": "6c5a456",
+      "id": "5c6867c",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -6552,7 +6560,7 @@
       },
       "elements": [
        {
-        "id": "3ee9a08",
+        "id": "ea9e4d5",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -6566,7 +6574,7 @@
         "elements": []
        },
        {
-        "id": "ea9e4d5",
+        "id": "d021fcd",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -6580,7 +6588,7 @@
         "elements": []
        },
        {
-        "id": "d021fcd",
+        "id": "2941c4d",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -6593,7 +6601,7 @@
         "elements": []
        },
        {
-        "id": "2941c4d",
+        "id": "1420fec",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -6667,7 +6675,7 @@
       ]
      },
      {
-      "id": "5c6867c",
+      "id": "5d92886",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -6699,23 +6707,23 @@
       },
       "elements": [
        {
-        "id": "15ee586",
+        "id": "1ff996b",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "1420fec",
+           "_id": "7ec4dfa",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "7ec4dfa",
+           "_id": "bc83f0e",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "bc83f0e",
+           "_id": "15ee586",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           }
@@ -6834,7 +6842,7 @@
         },
         "elements": [
          {
-          "id": "eb692e7",
+          "id": "5602fd9",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -6852,7 +6860,7 @@
           },
           "elements": [
            {
-            "id": "1ff996b",
+            "id": "eb692e7",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -6867,7 +6875,7 @@
           ]
          },
          {
-          "id": "080f211",
+          "id": "bd2f2bd",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -6885,7 +6893,7 @@
           },
           "elements": [
            {
-            "id": "5602fd9",
+            "id": "080f211",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -6900,7 +6908,7 @@
           ]
          },
          {
-          "id": "983d9c8",
+          "id": "b895ee9",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -6918,7 +6926,7 @@
           },
           "elements": [
            {
-            "id": "bd2f2bd",
+            "id": "983d9c8",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -6935,7 +6943,7 @@
         ]
        },
        {
-        "id": "b895ee9",
+        "id": "6c5a456",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -7004,7 +7012,7 @@
   ]
  },
  {
-  "id": "18523dd",
+  "id": "e67918b",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -7043,7 +7051,7 @@
   },
   "elements": [
    {
-    "id": "7a3a35a",
+    "id": "2dbe1b5",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -7082,7 +7090,7 @@
     },
     "elements": [
      {
-      "id": "24bbda7",
+      "id": "756e662",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -7097,7 +7105,7 @@
       "elements": []
      },
      {
-      "id": "756e662",
+      "id": "c58f0a2",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -7112,7 +7120,7 @@
       "elements": []
      },
      {
-      "id": "c58f0a2",
+      "id": "7a3a35a",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -7128,7 +7136,7 @@
     ]
    },
    {
-    "id": "2dbe1b5",
+    "id": "1bc82ee",
     "elType": "widget",
     "widgetType": "shortcode",
     "settings": {
@@ -7138,7 +7146,7 @@
     "elements": []
    },
    {
-    "id": "1bc82ee",
+    "id": "18523dd",
     "elType": "widget",
     "widgetType": "button",
     "settings": {
@@ -7214,7 +7222,7 @@
   ]
  },
  {
-  "id": "671e2ed",
+  "id": "cd6ecdd",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -7248,7 +7256,7 @@
   },
   "elements": [
    {
-    "id": "51e6908",
+    "id": "671e2ed",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -7305,7 +7313,7 @@
     },
     "elements": [
      {
-      "id": "e67918b",
+      "id": "cff80d1",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -7347,7 +7355,7 @@
       "elements": []
      },
      {
-      "id": "cff80d1",
+      "id": "f1e7e75",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -7372,7 +7380,7 @@
       "elements": []
      },
      {
-      "id": "f1e7e75",
+      "id": "eae7073",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -7443,7 +7451,7 @@
       "elements": []
      },
      {
-      "id": "eae7073",
+      "id": "51e6908",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

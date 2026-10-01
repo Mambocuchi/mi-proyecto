@@ -643,9 +643,11 @@ def review_block():
                 typography_typography="custom", typography_font_family="Nunito", typography_font_weight="800",
                 typography_font_size=px(30), typography_font_size_mobile=px(24),
                 typography_line_height={"unit": "em", "size": 1.15, "sizes": []}),
-        text("<p>Cuéntanos cómo te fue. Revisamos cada opinión y, si nos autorizas, la publicamos en esta "
-             "sección junto a tu nombre y comuna.</p>"),
-        checklist(["Toma menos de un minuto", "Tu correo no se publica"], size=13),
+        text("<p>Cuéntanos cómo te fue y te enviamos por correo un <strong>código de 15% de descuento</strong> "
+             "para tu próxima compra. Revisamos cada opinión y, si nos autorizas, la publicamos en esta sección "
+             "junto a tu nombre y comuna.</p>"),
+        checklist(["15% de descuento, válido por 30 días", "Un código por persona, sea cual sea tu opinión",
+                   "Tu correo no se publica"], size=13),
         button("¿Prefieres WhatsApp? Escríbenos",
                wa("Hola Karu Esencial, quiero compartir mi experiencia con sus productos."),
                kind="link", ico="fab fa-whatsapp", _margin=dims(8, 0, 0, 0)),
@@ -663,7 +665,8 @@ def testimonials_section():
     return section([
         section_head("Testimonios", "Experiencias de nuestros clientes",
                      "Pronto compartiremos aquí las opiniones de quienes ya usan Karu Esencial. "
-                     "Solo publicamos testimonios reales y con autorización."),
+                     "Solo publicamos testimonios reales y con autorización. Quienes comparten su experiencia "
+                     "reciben un código de descuento, sin importar si su opinión es positiva o negativa."),
         grid([testimonial_slot(), testimonial_slot(True), testimonial_slot(True)], 3, cols_t=3, cols_m=1, g=20,
              _title="Testimonios", grid_rows_grid_mobile={"unit": "fr", "size": 1, "sizes": []}),
         review_block(),
