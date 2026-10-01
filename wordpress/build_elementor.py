@@ -626,6 +626,39 @@ def testimonial_slot(hide_m=False):
         __globals__={"background_color": gc("blanco")}, **s)
 
 
+REVIEW_FORM_ID = 146
+
+
+def wpforms_widget(form_id):
+    return widget("wpforms", form_id=str(form_id), display_form_name="", display_form_description="",
+                  fieldSize="medium", fieldBorderRadius="12", fieldBorderColor="#DCE6F0", fieldTextColor="#243D5B",
+                  fieldBackgroundColor="#FFFFFF", labelColor="#243D5B", labelSublabelColor="#5B6C82",
+                  buttonSize="large", buttonBorderRadius="999", buttonBackgroundColor="#4A90E2",
+                  buttonBorderColor="#4A90E2", buttonTextColor="#FFFFFF", wpformsTheme="default")
+
+
+def review_block():
+    left = column([
+        heading("¿Ya probaste nuestros productos?", "h3", None, "accent",
+                typography_typography="custom", typography_font_family="Nunito", typography_font_weight="800",
+                typography_font_size=px(30), typography_font_size_mobile=px(24),
+                typography_line_height={"unit": "em", "size": 1.15, "sizes": []}),
+        text("<p>Cuéntanos cómo te fue. Revisamos cada opinión y, si nos autorizas, la publicamos en esta "
+             "sección junto a tu nombre y comuna.</p>"),
+        checklist(["Toma menos de un minuto", "Tu correo no se publica"], size=13),
+        button("¿Prefieres WhatsApp? Escríbenos",
+               wa("Hola Karu Esencial, quiero compartir mi experiencia con sus productos."),
+               kind="link", ico="fab fa-whatsapp", _margin=dims(8, 0, 0, 0)),
+    ], width=40, width_t=100, g=14, _title="Texto")
+    form = column([wpforms_widget(REVIEW_FORM_ID)], width=60, width_t=100, g=0, padding=dims(32),
+                  padding_mobile=dims(22, 18), background_background="classic", border_border="solid",
+                  border_width=dims(1), border_radius=dims(24), box_shadow_box_shadow_type="yes",
+                  box_shadow_box_shadow=shadow(14, 36, 0.08), _title="Formulario de opinión",
+                  __globals__={"background_color": gc("blanco"), "border_color": gc("grisclaro")})
+    return row([left, form], g=48, align="flex-start", stack="tablet", margin=dims(56, 0, 0, 0),
+               margin_mobile=dims(40, 0, 0, 0), _element_id="deja-tu-opinion", _title="Deja tu opinión")
+
+
 def testimonials_section():
     return section([
         section_head("Testimonios", "Experiencias de nuestros clientes",
@@ -633,9 +666,7 @@ def testimonials_section():
                      "Solo publicamos testimonios reales y con autorización."),
         grid([testimonial_slot(), testimonial_slot(True), testimonial_slot(True)], 3, cols_t=3, cols_m=1, g=20,
              _title="Testimonios", grid_rows_grid_mobile={"unit": "fr", "size": 1, "sizes": []}),
-        button("¿Ya compraste? Cuéntanos tu experiencia",
-               wa("Hola Karu Esencial, quiero compartir mi experiencia con sus productos."),
-               kind="link", ico="fas fa-arrow-right", ico_after=True, align="center", _margin=dims(32, 0, 0, 0)),
+        review_block(),
     ], bg="blancocalido", anchor="testimonios", title="Testimonios")
 
 
@@ -804,11 +835,7 @@ def contact_section(form_id):
                 typography_font_family="Nunito", typography_font_weight="800", typography_font_size=px(30),
                 typography_font_size_mobile=px(26)),
         text("<p>Completa el formulario y te responderemos a la brevedad.</p>"),
-        widget("wpforms", form_id=str(form_id), display_form_name="", display_form_description="",
-               fieldSize="medium", fieldBorderRadius="12", fieldBorderColor="#DCE6F0", fieldTextColor="#243D5B",
-               fieldBackgroundColor="#FFFFFF", labelColor="#243D5B", labelSublabelColor="#5B6C82",
-               buttonSize="large", buttonBorderRadius="999", buttonBackgroundColor="#4A90E2",
-               buttonBorderColor="#4A90E2", buttonTextColor="#FFFFFF", wpformsTheme="default"),
+        wpforms_widget(form_id),
     ], width=54, width_t=100, g=14, padding=dims(36), padding_mobile=dims(24, 20), background_background="classic",
         border_border="solid", border_width=dims(1), border_radius=dims(24), box_shadow_box_shadow_type="yes",
         box_shadow_box_shadow=shadow(14, 36, 0.08), _title="Formulario",

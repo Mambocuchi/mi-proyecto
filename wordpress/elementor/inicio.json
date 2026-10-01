@@ -5641,7 +5641,7 @@
   ]
  },
  {
-  "id": "f1172fc",
+  "id": "3926d09",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -6129,73 +6129,341 @@
     ]
    },
    {
-    "id": "326cbfa",
-    "elType": "widget",
-    "widgetType": "button",
+    "id": "07de30c",
+    "elType": "container",
+    "isInner": true,
     "settings": {
-     "text": "¿Ya compraste? Cuéntanos tu experiencia",
-     "link": {
-      "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20compartir%20mi%20experiencia%20con%20sus%20productos.",
-      "is_external": "on",
-      "nofollow": "",
-      "custom_attributes": ""
-     },
-     "size": "md",
-     "border_radius": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "48",
+      "row": "48",
+      "isLinked": true,
       "unit": "px",
-      "top": "999",
-      "right": "999",
-      "bottom": "999",
-      "left": "999",
-      "isLinked": true
+      "size": 48
      },
-     "button_hover_transition_duration": {
-      "unit": "s",
-      "size": 0.2,
-      "sizes": []
-     },
-     "__globals__": {
-      "typography_typography": "globals/typography?id=accent",
-      "button_text_color": "globals/colors?id=primary",
-      "hover_color": "globals/colors?id=azulhover"
-     },
-     "selected_icon": {
-      "value": "fas fa-arrow-right",
-      "library": "fa-solid"
-     },
-     "icon_indent": {
+     "flex_align_items": "flex-start",
+     "flex_direction_tablet": "column",
+     "flex_align_items_tablet": "stretch",
+     "flex_direction_mobile": "column",
+     "flex_align_items_mobile": "stretch",
+     "margin": {
       "unit": "px",
-      "size": 10,
-      "sizes": []
-     },
-     "icon_align": "row-reverse",
-     "text_padding": {
-      "unit": "px",
-      "top": "0",
-      "right": "0",
-      "bottom": "0",
-      "left": "0",
-      "isLinked": true
-     },
-     "background_background": "classic",
-     "background_color": "rgba(255,255,255,0)",
-     "button_background_hover_color": "rgba(255,255,255,0)",
-     "align": "center",
-     "_margin": {
-      "unit": "px",
-      "top": "32",
+      "top": "56",
       "right": "0",
       "bottom": "0",
       "left": "0",
       "isLinked": false
-     }
+     },
+     "margin_mobile": {
+      "unit": "px",
+      "top": "40",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "_element_id": "deja-tu-opinion",
+     "_title": "Deja tu opinión"
     },
-    "elements": []
+    "elements": [
+     {
+      "id": "6abe5ad",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "14",
+        "row": "14",
+        "isLinked": true,
+        "unit": "px",
+        "size": 14
+       },
+       "width": {
+        "unit": "%",
+        "size": 40,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "_title": "Texto"
+      },
+      "elements": [
+       {
+        "id": "326cbfa",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "¿Ya probaste nuestros productos?",
+         "header_size": "h3",
+         "__globals__": {
+          "title_color": "globals/colors?id=accent"
+         },
+         "typography_typography": "custom",
+         "typography_font_family": "Nunito",
+         "typography_font_weight": "800",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 30,
+          "sizes": []
+         },
+         "typography_font_size_mobile": {
+          "unit": "px",
+          "size": 24,
+          "sizes": []
+         },
+         "typography_line_height": {
+          "unit": "em",
+          "size": 1.15,
+          "sizes": []
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "f1172fc",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Cuéntanos cómo te fue. Revisamos cada opinión y, si nos autorizas, la publicamos en esta sección junto a tu nombre y comuna.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "ab3d469",
+        "elType": "widget",
+        "widgetType": "icon-list",
+        "settings": {
+         "view": "traditional",
+         "icon_list": [
+          {
+           "_id": "a743f35",
+           "text": "Toma menos de un minuto",
+           "selected_icon": {
+            "value": "fas fa-check",
+            "library": "fa-solid"
+           }
+          },
+          {
+           "_id": "394ed84",
+           "text": "Tu correo no se publica",
+           "selected_icon": {
+            "value": "fas fa-check",
+            "library": "fa-solid"
+           }
+          }
+         ],
+         "icon_size": {
+          "unit": "px",
+          "size": 13,
+          "sizes": []
+         },
+         "space_between": {
+          "unit": "px",
+          "size": 10,
+          "sizes": []
+         },
+         "text_indent": {
+          "unit": "px",
+          "size": 8,
+          "sizes": []
+         },
+         "__globals__": {
+          "icon_color": "globals/colors?id=primary",
+          "text_color": "globals/colors?id=text",
+          "icon_typography_typography": "globals/typography?id=pequeno"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "3a7ae9c",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "¿Prefieres WhatsApp? Escríbenos",
+         "link": {
+          "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20compartir%20mi%20experiencia%20con%20sus%20productos.",
+          "is_external": "on",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "size": "md",
+         "border_radius": {
+          "unit": "px",
+          "top": "999",
+          "right": "999",
+          "bottom": "999",
+          "left": "999",
+          "isLinked": true
+         },
+         "button_hover_transition_duration": {
+          "unit": "s",
+          "size": 0.2,
+          "sizes": []
+         },
+         "__globals__": {
+          "typography_typography": "globals/typography?id=accent",
+          "button_text_color": "globals/colors?id=primary",
+          "hover_color": "globals/colors?id=azulhover"
+         },
+         "selected_icon": {
+          "value": "fab fa-whatsapp",
+          "library": "fa-brands"
+         },
+         "icon_indent": {
+          "unit": "px",
+          "size": 10,
+          "sizes": []
+         },
+         "text_padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "background_background": "classic",
+         "background_color": "rgba(255,255,255,0)",
+         "button_background_hover_color": "rgba(255,255,255,0)",
+         "_margin": {
+          "unit": "px",
+          "top": "8",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+         }
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "dd3a6bf",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "width": {
+        "unit": "%",
+        "size": 60,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "32",
+        "right": "32",
+        "bottom": "32",
+        "left": "32",
+        "isLinked": true
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "22",
+        "right": "18",
+        "bottom": "22",
+        "left": "18",
+        "isLinked": false
+       },
+       "background_background": "classic",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1",
+        "isLinked": true
+       },
+       "border_radius": {
+        "unit": "px",
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24",
+        "isLinked": true
+       },
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 0,
+        "vertical": 14,
+        "blur": 36,
+        "spread": 0,
+        "color": "rgba(36,61,91,0.08)"
+       },
+       "_title": "Formulario de opinión",
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco",
+        "border_color": "globals/colors?id=grisclaro"
+       }
+      },
+      "elements": [
+       {
+        "id": "9944e21",
+        "elType": "widget",
+        "widgetType": "wpforms",
+        "settings": {
+         "form_id": "146",
+         "display_form_name": "",
+         "display_form_description": "",
+         "fieldSize": "medium",
+         "fieldBorderRadius": "12",
+         "fieldBorderColor": "#DCE6F0",
+         "fieldTextColor": "#243D5B",
+         "fieldBackgroundColor": "#FFFFFF",
+         "labelColor": "#243D5B",
+         "labelSublabelColor": "#5B6C82",
+         "buttonSize": "large",
+         "buttonBorderRadius": "999",
+         "buttonBackgroundColor": "#4A90E2",
+         "buttonBorderColor": "#4A90E2",
+         "buttonTextColor": "#FFFFFF",
+         "wpformsTheme": "default"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
    }
   ]
  },
  {
-  "id": "eb692e7",
+  "id": "46deeed",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -6230,7 +6498,7 @@
   },
   "elements": [
    {
-    "id": "1ff996b",
+    "id": "5d92886",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -6252,7 +6520,7 @@
     },
     "elements": [
      {
-      "id": "bc83f0e",
+      "id": "6c5a456",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -6284,7 +6552,7 @@
       },
       "elements": [
        {
-        "id": "a743f35",
+        "id": "3ee9a08",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -6298,7 +6566,7 @@
         "elements": []
        },
        {
-        "id": "394ed84",
+        "id": "ea9e4d5",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -6312,7 +6580,7 @@
         "elements": []
        },
        {
-        "id": "ab3d469",
+        "id": "d021fcd",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -6325,7 +6593,7 @@
         "elements": []
        },
        {
-        "id": "3a7ae9c",
+        "id": "2941c4d",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -6399,7 +6667,7 @@
       ]
      },
      {
-      "id": "15ee586",
+      "id": "5c6867c",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -6431,23 +6699,23 @@
       },
       "elements": [
        {
-        "id": "07de30c",
+        "id": "15ee586",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "6abe5ad",
+           "_id": "1420fec",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "9944e21",
+           "_id": "7ec4dfa",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "dd3a6bf",
+           "_id": "bc83f0e",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           }
@@ -6566,7 +6834,7 @@
         },
         "elements": [
          {
-          "id": "3ee9a08",
+          "id": "eb692e7",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -6584,7 +6852,7 @@
           },
           "elements": [
            {
-            "id": "3926d09",
+            "id": "1ff996b",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -6599,7 +6867,7 @@
           ]
          },
          {
-          "id": "d021fcd",
+          "id": "080f211",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -6617,7 +6885,7 @@
           },
           "elements": [
            {
-            "id": "ea9e4d5",
+            "id": "5602fd9",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -6632,7 +6900,7 @@
           ]
          },
          {
-          "id": "1420fec",
+          "id": "983d9c8",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -6650,7 +6918,7 @@
           },
           "elements": [
            {
-            "id": "2941c4d",
+            "id": "bd2f2bd",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -6667,7 +6935,7 @@
         ]
        },
        {
-        "id": "7ec4dfa",
+        "id": "b895ee9",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -6736,7 +7004,7 @@
   ]
  },
  {
-  "id": "5c6867c",
+  "id": "18523dd",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -6775,7 +7043,7 @@
   },
   "elements": [
    {
-    "id": "983d9c8",
+    "id": "7a3a35a",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -6814,7 +7082,7 @@
     },
     "elements": [
      {
-      "id": "5602fd9",
+      "id": "24bbda7",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -6829,7 +7097,7 @@
       "elements": []
      },
      {
-      "id": "080f211",
+      "id": "756e662",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -6844,7 +7112,7 @@
       "elements": []
      },
      {
-      "id": "bd2f2bd",
+      "id": "c58f0a2",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -6860,7 +7128,7 @@
     ]
    },
    {
-    "id": "b895ee9",
+    "id": "2dbe1b5",
     "elType": "widget",
     "widgetType": "shortcode",
     "settings": {
@@ -6870,7 +7138,7 @@
     "elements": []
    },
    {
-    "id": "6c5a456",
+    "id": "1bc82ee",
     "elType": "widget",
     "widgetType": "button",
     "settings": {
@@ -6946,7 +7214,7 @@
   ]
  },
  {
-  "id": "7a3a35a",
+  "id": "671e2ed",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -6980,7 +7248,7 @@
   },
   "elements": [
    {
-    "id": "c58f0a2",
+    "id": "51e6908",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -7037,7 +7305,7 @@
     },
     "elements": [
      {
-      "id": "5d92886",
+      "id": "e67918b",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -7079,7 +7347,7 @@
       "elements": []
      },
      {
-      "id": "46deeed",
+      "id": "cff80d1",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -7104,7 +7372,7 @@
       "elements": []
      },
      {
-      "id": "24bbda7",
+      "id": "f1e7e75",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -7175,7 +7443,7 @@
       "elements": []
      },
      {
-      "id": "756e662",
+      "id": "eae7073",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
