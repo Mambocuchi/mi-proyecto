@@ -1,6 +1,6 @@
 [
  {
-  "id": "1ddae6e",
+  "id": "e983809",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "783497d",
+    "id": "18d4c34",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "b0dd427",
+      "id": "7a7a951",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "1ef6333",
+      "id": "99d791a",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "91ce0b3",
+      "id": "1a618ce",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "0a35601",
+  "id": "d91f685",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,7 @@
   },
   "elements": [
    {
-    "id": "cd08e84",
+    "id": "15333be",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -166,7 +166,7 @@
     },
     "elements": [
      {
-      "id": "f91b4d5",
+      "id": "5d1ff08",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -198,7 +198,7 @@
       },
       "elements": [
        {
-        "id": "325ea55",
+        "id": "0c687ad",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -224,7 +224,7 @@
         "elements": []
        },
        {
-        "id": "6b43701",
+        "id": "b9ec250",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -237,7 +237,7 @@
         "elements": []
        },
        {
-        "id": "d088c29",
+        "id": "dd93464",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -320,7 +320,7 @@
         },
         "elements": [
          {
-          "id": "a5d83ab",
+          "id": "afac1b3",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -357,7 +357,7 @@
           "elements": []
          },
          {
-          "id": "80814b5",
+          "id": "423c33f",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -376,7 +376,7 @@
           },
           "elements": [
            {
-            "id": "e2e891a",
+            "id": "45d535d",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -397,7 +397,7 @@
             "elements": []
            },
            {
-            "id": "c23e157",
+            "id": "2a404bd",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -425,7 +425,7 @@
           ]
          },
          {
-          "id": "5d2ff6f",
+          "id": "b9da9cc",
           "elType": "widget",
           "widgetType": "heading",
           "settings": {
@@ -450,7 +450,7 @@
         ]
        },
        {
-        "id": "e983809",
+        "id": "a8d798d",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -533,7 +533,7 @@
         },
         "elements": [
          {
-          "id": "7a7a951",
+          "id": "eae220c",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -570,7 +570,7 @@
           "elements": []
          },
          {
-          "id": "18d4c34",
+          "id": "adc9100",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -589,7 +589,7 @@
           },
           "elements": [
            {
-            "id": "99d791a",
+            "id": "3303268",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -610,7 +610,7 @@
             "elements": []
            },
            {
-            "id": "1a618ce",
+            "id": "b8e8246",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -640,7 +640,7 @@
         ]
        },
        {
-        "id": "2a404bd",
+        "id": "93117de",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -690,15 +690,40 @@
           "spread": 0,
           "color": "rgba(36,61,91,0.05)"
          },
-         "_title": "Entregas",
+         "_title": "Despacho y retiro",
          "__globals__": {
           "background_color": "globals/colors?id=blanco",
           "border_color": "globals/colors?id=grisclaro"
+         },
+         "html_tag": "a",
+         "link": {
+          "url": "https://www.karuesencial.cl/preguntas-frecuentes/",
+          "is_external": "",
+          "nofollow": "",
+          "custom_attributes": ""
+         },
+         "box_shadow_hover_box_shadow_type": "yes",
+         "box_shadow_hover_box_shadow": {
+          "horizontal": 0,
+          "vertical": 14,
+          "blur": 36,
+          "spread": 0,
+          "color": "rgba(36,61,91,0.1)"
+         },
+         "_transform_translateY_effect_hover": {
+          "unit": "px",
+          "size": -2,
+          "sizes": []
+         },
+         "_transform_transition_hover": {
+          "unit": "px",
+          "size": 200,
+          "sizes": []
          }
         },
         "elements": [
          {
-          "id": "0c687ad",
+          "id": "2798e9e",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -735,7 +760,7 @@
           "elements": []
          },
          {
-          "id": "45d535d",
+          "id": "461ccc0",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -754,11 +779,11 @@
           },
           "elements": [
            {
-            "id": "b9ec250",
+            "id": "fa34191",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
-             "title": "Entregas",
+             "title": "Despacho y retiro",
              "header_size": "p",
              "__globals__": {
               "typography_typography": "globals/typography?id=pequeno",
@@ -775,11 +800,11 @@
             "elements": []
            },
            {
-            "id": "afac1b3",
+            "id": "f91b4d5",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
-             "title": "Coordinamos por WhatsApp",
+             "title": "Gran Concepción · Castellón 1333",
              "header_size": "p",
              "__globals__": {
               "title_color": "globals/colors?id=accent"
@@ -805,7 +830,7 @@
         ]
        },
        {
-        "id": "3303268",
+        "id": "0a5e217",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -888,7 +913,7 @@
         },
         "elements": [
          {
-          "id": "423c33f",
+          "id": "02d0493",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -925,7 +950,7 @@
           "elements": []
          },
          {
-          "id": "eae220c",
+          "id": "0a35601",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -944,7 +969,7 @@
           },
           "elements": [
            {
-            "id": "b9da9cc",
+            "id": "5d4084f",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -965,7 +990,7 @@
             "elements": []
            },
            {
-            "id": "dd93464",
+            "id": "cd08e84",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -995,7 +1020,7 @@
         ]
        },
        {
-        "id": "fa34191",
+        "id": "2a9b4ea",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1078,7 +1103,7 @@
         },
         "elements": [
          {
-          "id": "b8e8246",
+          "id": "6352f6c",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -1115,7 +1140,7 @@
           "elements": []
          },
          {
-          "id": "2798e9e",
+          "id": "214eb7b",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1134,7 +1159,7 @@
           },
           "elements": [
            {
-            "id": "adc9100",
+            "id": "db70fbf",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1155,7 +1180,7 @@
             "elements": []
            },
            {
-            "id": "a8d798d",
+            "id": "6f7f088",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1187,7 +1212,7 @@
       ]
      },
      {
-      "id": "5d4084f",
+      "id": "9099d31",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1265,7 +1290,7 @@
       },
       "elements": [
        {
-        "id": "461ccc0",
+        "id": "007892c",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -1291,7 +1316,7 @@
         "elements": []
        },
        {
-        "id": "93117de",
+        "id": "4903d96",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -1304,7 +1329,7 @@
         "elements": []
        },
        {
-        "id": "02d0493",
+        "id": "a4918f8",
         "elType": "widget",
         "widgetType": "wpforms",
         "settings": {

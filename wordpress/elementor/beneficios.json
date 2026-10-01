@@ -1,6 +1,6 @@
 [
  {
-  "id": "61397d2",
+  "id": "1743f71",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "1973f1f",
+    "id": "30c6d09",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "00466ed",
+      "id": "55bfbc6",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "cfeafca",
+      "id": "fcb54b2",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "ca8fe7b",
+      "id": "1202342",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "55bfbc6",
+  "id": "ebf14ec",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -148,7 +148,7 @@
   },
   "elements": [
    {
-    "id": "90b126e",
+    "id": "9f441cf",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -196,7 +196,7 @@
     },
     "elements": [
      {
-      "id": "e64a3d3",
+      "id": "7e125b8",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -297,7 +297,7 @@
       "elements": []
      },
      {
-      "id": "b0f0a9d",
+      "id": "7594469",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -398,7 +398,7 @@
       "elements": []
      },
      {
-      "id": "412e462",
+      "id": "95926e1",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -499,7 +499,7 @@
       "elements": []
      },
      {
-      "id": "e87e547",
+      "id": "611fb1b",
       "elType": "widget",
       "widgetType": "icon-box",
       "settings": {
@@ -604,7 +604,7 @@
   ]
  },
  {
-  "id": "577e2a7",
+  "id": "bdd73b4",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -639,7 +639,7 @@
   },
   "elements": [
    {
-    "id": "e0b5860",
+    "id": "085fef8",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -661,7 +661,7 @@
     },
     "elements": [
      {
-      "id": "7db91e0",
+      "id": "e0b5860",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -693,7 +693,7 @@
       },
       "elements": [
        {
-        "id": "fcb54b2",
+        "id": "37be83f",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -707,7 +707,7 @@
         "elements": []
        },
        {
-        "id": "1202342",
+        "id": "d7a1bf6",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -721,7 +721,7 @@
         "elements": []
        },
        {
-        "id": "4dc2a9d",
+        "id": "94da46e",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -738,7 +738,7 @@
         },
         "elements": [
          {
-          "id": "95926e1",
+          "id": "e750bc3",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -777,257 +777,11 @@
           },
           "elements": [
            {
-            "id": "30c6d09",
-            "elType": "widget",
-            "widgetType": "heading",
-            "settings": {
-             "title": "01",
-             "header_size": "p",
-             "__globals__": {
-              "typography_typography": "globals/typography?id=numero",
-              "title_color": "globals/colors?id=secondary"
-             },
-             "_element_width": "initial",
-             "_element_custom_width": {
-              "unit": "px",
-              "size": 64,
-              "sizes": []
-             },
-             "_element_custom_width_mobile": {
-              "unit": "px",
-              "size": 48,
-              "sizes": []
-             },
-             "_flex_size": "none",
-             "text_stroke_text_stroke_type": "yes",
-             "text_stroke_text_stroke": {
-              "unit": "px",
-              "size": 1.5,
-              "sizes": []
-             },
-             "text_stroke_stroke_color": "#4A90E2"
-            },
-            "elements": []
-           },
-           {
-            "id": "7594469",
-            "elType": "container",
-            "isInner": true,
-            "settings": {
-             "content_width": "full",
-             "flex_direction": "column",
-             "flex_gap": {
-              "column": "4",
-              "row": "4",
-              "isLinked": true,
-              "unit": "px",
-              "size": 4
-             },
-             "_flex_size": "custom",
-             "_flex_grow": 1,
-             "_flex_shrink": 1
-            },
-            "elements": [
-             {
-              "id": "1743f71",
-              "elType": "widget",
-              "widgetType": "heading",
-              "settings": {
-               "title": "Elige",
-               "header_size": "h3",
-               "__globals__": {
-                "title_color": "globals/colors?id=accent"
-               },
-               "typography_typography": "custom",
-               "typography_font_family": "Nunito",
-               "typography_font_weight": "800",
-               "typography_font_size": {
-                "unit": "px",
-                "size": 20,
-                "sizes": []
-               }
-              },
-              "elements": []
-             },
-             {
-              "id": "7e125b8",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-               "editor": "<p>Conoce nuestros productos y elige lo que necesitas.</p>",
-               "__globals__": {
-                "typography_typography": "globals/typography?id=text",
-                "text_color": "globals/colors?id=text"
-               }
-              },
-              "elements": []
-             }
-            ]
-           }
-          ]
-         },
-         {
-          "id": "d7a1bf6",
-          "elType": "container",
-          "isInner": true,
-          "settings": {
-           "content_width": "full",
-           "flex_direction": "row",
-           "flex_gap": {
-            "column": "18",
-            "row": "18",
-            "isLinked": true,
-            "unit": "px",
-            "size": 18
-           },
-           "flex_align_items": "flex-start",
-           "padding": {
-            "unit": "px",
-            "top": "18",
-            "right": "0",
-            "bottom": "18",
-            "left": "0",
-            "isLinked": false
-           },
-           "flex_wrap_mobile": "nowrap",
-           "_title": "Paso 02",
-           "border_border": "solid",
-           "border_width": {
-            "unit": "px",
-            "top": "0",
-            "right": "0",
-            "bottom": "1",
-            "left": "0",
-            "isLinked": false
-           },
-           "__globals__": {
-            "border_color": "globals/colors?id=grisclaro"
-           }
-          },
-          "elements": [
-           {
-            "id": "611fb1b",
-            "elType": "widget",
-            "widgetType": "heading",
-            "settings": {
-             "title": "02",
-             "header_size": "p",
-             "__globals__": {
-              "typography_typography": "globals/typography?id=numero",
-              "title_color": "globals/colors?id=secondary"
-             },
-             "_element_width": "initial",
-             "_element_custom_width": {
-              "unit": "px",
-              "size": 64,
-              "sizes": []
-             },
-             "_element_custom_width_mobile": {
-              "unit": "px",
-              "size": 48,
-              "sizes": []
-             },
-             "_flex_size": "none",
-             "text_stroke_text_stroke_type": "yes",
-             "text_stroke_text_stroke": {
-              "unit": "px",
-              "size": 1.5,
-              "sizes": []
-             },
-             "text_stroke_stroke_color": "#4A90E2"
-            },
-            "elements": []
-           },
-           {
-            "id": "37be83f",
-            "elType": "container",
-            "isInner": true,
-            "settings": {
-             "content_width": "full",
-             "flex_direction": "column",
-             "flex_gap": {
-              "column": "4",
-              "row": "4",
-              "isLinked": true,
-              "unit": "px",
-              "size": 4
-             },
-             "_flex_size": "custom",
-             "_flex_grow": 1,
-             "_flex_shrink": 1
-            },
-            "elements": [
-             {
-              "id": "9f441cf",
-              "elType": "widget",
-              "widgetType": "heading",
-              "settings": {
-               "title": "Escríbenos",
-               "header_size": "h3",
-               "__globals__": {
-                "title_color": "globals/colors?id=accent"
-               },
-               "typography_typography": "custom",
-               "typography_font_family": "Nunito",
-               "typography_font_weight": "800",
-               "typography_font_size": {
-                "unit": "px",
-                "size": 20,
-                "sizes": []
-               }
-              },
-              "elements": []
-             },
-             {
-              "id": "ebf14ec",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-               "editor": "<p>Haz clic en WhatsApp y cuéntanos qué productos buscas.</p>",
-               "__globals__": {
-                "typography_typography": "globals/typography?id=text",
-                "text_color": "globals/colors?id=text"
-               }
-              },
-              "elements": []
-             }
-            ]
-           }
-          ]
-         },
-         {
-          "id": "e750bc3",
-          "elType": "container",
-          "isInner": true,
-          "settings": {
-           "content_width": "full",
-           "flex_direction": "row",
-           "flex_gap": {
-            "column": "18",
-            "row": "18",
-            "isLinked": true,
-            "unit": "px",
-            "size": 18
-           },
-           "flex_align_items": "flex-start",
-           "padding": {
-            "unit": "px",
-            "top": "18",
-            "right": "0",
-            "bottom": "18",
-            "left": "0",
-            "isLinked": false
-           },
-           "flex_wrap_mobile": "nowrap",
-           "_title": "Paso 03"
-          },
-          "elements": [
-           {
             "id": "316bdf4",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
-             "title": "03",
+             "title": "01",
              "header_size": "p",
              "__globals__": {
               "typography_typography": "globals/typography?id=numero",
@@ -1079,7 +833,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-               "title": "Coordina tu pedido",
+               "title": "Elige",
                "header_size": "h3",
                "__globals__": {
                 "title_color": "globals/colors?id=accent"
@@ -1100,7 +854,253 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-               "editor": "<p>Te ayudamos a coordinar tu compra y la entrega.</p>",
+               "editor": "<p>Agrega tus productos al carrito.</p>",
+               "__globals__": {
+                "typography_typography": "globals/typography?id=text",
+                "text_color": "globals/colors?id=text"
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "e37dec9",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "row",
+           "flex_gap": {
+            "column": "18",
+            "row": "18",
+            "isLinked": true,
+            "unit": "px",
+            "size": 18
+           },
+           "flex_align_items": "flex-start",
+           "padding": {
+            "unit": "px",
+            "top": "18",
+            "right": "0",
+            "bottom": "18",
+            "left": "0",
+            "isLinked": false
+           },
+           "flex_wrap_mobile": "nowrap",
+           "_title": "Paso 02",
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "1",
+            "left": "0",
+            "isLinked": false
+           },
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "4dc2a9d",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "02",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=numero",
+              "title_color": "globals/colors?id=secondary"
+             },
+             "_element_width": "initial",
+             "_element_custom_width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+             },
+             "_element_custom_width_mobile": {
+              "unit": "px",
+              "size": 48,
+              "sizes": []
+             },
+             "_flex_size": "none",
+             "text_stroke_text_stroke_type": "yes",
+             "text_stroke_text_stroke": {
+              "unit": "px",
+              "size": 1.5,
+              "sizes": []
+             },
+             "text_stroke_stroke_color": "#4A90E2"
+            },
+            "elements": []
+           },
+           {
+            "id": "c8dc568",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "4",
+              "row": "4",
+              "isLinked": true,
+              "unit": "px",
+              "size": 4
+             },
+             "_flex_size": "custom",
+             "_flex_grow": 1,
+             "_flex_shrink": 1
+            },
+            "elements": [
+             {
+              "id": "3344a4d",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Envía tu pedido",
+               "header_size": "h3",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "800",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "7db91e0",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+               "editor": "<p>Completa tus datos y envíanos el pedido por WhatsApp con un clic.</p>",
+               "__globals__": {
+                "typography_typography": "globals/typography?id=text",
+                "text_color": "globals/colors?id=text"
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "e48dc88",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "row",
+           "flex_gap": {
+            "column": "18",
+            "row": "18",
+            "isLinked": true,
+            "unit": "px",
+            "size": 18
+           },
+           "flex_align_items": "flex-start",
+           "padding": {
+            "unit": "px",
+            "top": "18",
+            "right": "0",
+            "bottom": "18",
+            "left": "0",
+            "isLinked": false
+           },
+           "flex_wrap_mobile": "nowrap",
+           "_title": "Paso 03"
+          },
+          "elements": [
+           {
+            "id": "181eba1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "03",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=numero",
+              "title_color": "globals/colors?id=secondary"
+             },
+             "_element_width": "initial",
+             "_element_custom_width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+             },
+             "_element_custom_width_mobile": {
+              "unit": "px",
+              "size": 48,
+              "sizes": []
+             },
+             "_flex_size": "none",
+             "text_stroke_text_stroke_type": "yes",
+             "text_stroke_text_stroke": {
+              "unit": "px",
+              "size": 1.5,
+              "sizes": []
+             },
+             "text_stroke_stroke_color": "#4A90E2"
+            },
+            "elements": []
+           },
+           {
+            "id": "5014a3b",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "column",
+             "flex_gap": {
+              "column": "4",
+              "row": "4",
+              "isLinked": true,
+              "unit": "px",
+              "size": 4
+             },
+             "_flex_size": "custom",
+             "_flex_grow": 1,
+             "_flex_shrink": 1
+            },
+            "elements": [
+             {
+              "id": "c1df98f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Recibe o retira",
+               "header_size": "h3",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "800",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "0f9fe93",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+               "editor": "<p>Despacho en el Gran Concepción o retiro gratis en Castellón 1333.</p>",
                "__globals__": {
                 "typography_typography": "globals/typography?id=text",
                 "text_color": "globals/colors?id=text"
@@ -1115,14 +1115,14 @@
         ]
        },
        {
-        "id": "3344a4d",
+        "id": "be74d9a",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
-         "text": "Quiero comprar",
+         "text": "Ir a comprar",
          "link": {
-          "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20comprar.",
-          "is_external": "on",
+          "url": "https://www.karuesencial.cl/productos/",
+          "is_external": "",
           "nofollow": "",
           "custom_attributes": ""
          },
@@ -1148,8 +1148,8 @@
           "hover_color": "globals/colors?id=blanco"
          },
          "selected_icon": {
-          "value": "fab fa-whatsapp",
-          "library": "fa-brands"
+          "value": "fas fa-shopping-cart",
+          "library": "fa-solid"
          },
          "icon_indent": {
           "unit": "px",
@@ -1179,7 +1179,7 @@
       ]
      },
      {
-      "id": "be74d9a",
+      "id": "591c2d0",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1240,7 +1240,7 @@
       },
       "elements": [
        {
-        "id": "0f9fe93",
+        "id": "2134446",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1267,7 +1267,7 @@
         },
         "elements": [
          {
-          "id": "c8dc568",
+          "id": "577e2a7",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -1296,7 +1296,7 @@
           "elements": []
          },
          {
-          "id": "c1df98f",
+          "id": "e9a2bde",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1312,7 +1312,7 @@
           },
           "elements": [
            {
-            "id": "e37dec9",
+            "id": "0b3e4d5",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1333,7 +1333,7 @@
             "elements": []
            },
            {
-            "id": "181eba1",
+            "id": "ca21158",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1357,7 +1357,7 @@
         ]
        },
        {
-        "id": "94da46e",
+        "id": "d2b78bf",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1394,11 +1394,11 @@
         },
         "elements": [
          {
-          "id": "5014a3b",
+          "id": "dfd638a",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
-           "editor": "<p>Hola Karu Esencial, quiero el Pack Vinagre + Bicarbonato. ¿Hacen entregas en mi comuna?</p>",
+           "editor": "<p>Hola Karu Esencial, quiero confirmar mi pedido #1024:<br>- 1 x Pack Vinagre + Bicarbonato<br>Entrega: retiro en Castellón 1333<br>Pago: transferencia</p>",
            "__globals__": {
             "typography_typography": "globals/typography?id=pequeno",
             "text_color": "globals/colors?id=accent",
@@ -1432,11 +1432,11 @@
           "elements": []
          },
          {
-          "id": "e48dc88",
+          "id": "1da5cd8",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
-           "editor": "<p>Así de simple: un mensaje y coordinamos tu pedido por el mismo chat.</p>",
+           "editor": "<p>Así llega tu pedido: con el detalle listo para confirmar por el mismo chat.</p>",
            "__globals__": {
             "typography_typography": "globals/typography?id=pequeno",
             "text_color": "globals/colors?id=text"
@@ -1460,7 +1460,7 @@
   ]
  },
  {
-  "id": "70245e1",
+  "id": "f4f9099",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -1499,7 +1499,7 @@
   },
   "elements": [
    {
-    "id": "2134446",
+    "id": "c465a69",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -1538,7 +1538,7 @@
     },
     "elements": [
      {
-      "id": "0b3e4d5",
+      "id": "6b9d284",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -1553,7 +1553,7 @@
       "elements": []
      },
      {
-      "id": "ca21158",
+      "id": "0fae757",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -1568,7 +1568,7 @@
       "elements": []
      },
      {
-      "id": "e9a2bde",
+      "id": "c293920",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -1584,7 +1584,7 @@
     ]
    },
    {
-    "id": "f0e26d9",
+    "id": "776194a",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -1632,7 +1632,7 @@
     },
     "elements": [
      {
-      "id": "591c2d0",
+      "id": "a9467a3",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1678,252 +1678,252 @@
        }
       },
       "elements": [
-       {
-        "id": "dfd638a",
-        "elType": "widget",
-        "widgetType": "icon",
-        "settings": {
-         "selected_icon": {
-          "value": "fas fa-quote-left",
-          "library": "fa-solid"
-         },
-         "size": {
-          "unit": "px",
-          "size": 28,
-          "sizes": []
-         },
-         "align": "start",
-         "__globals__": {
-          "primary_color": "globals/colors?id=secondary"
-         }
-        },
-        "elements": []
-       },
-       {
-        "id": "1da5cd8",
-        "elType": "widget",
-        "widgetType": "text-editor",
-        "settings": {
-         "editor": "<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p>",
-         "__globals__": {
-          "typography_typography": "globals/typography?id=text",
-          "text_color": "globals/colors?id=text"
-         }
-        },
-        "elements": []
-       },
-       {
-        "id": "d2b78bf",
-        "elType": "widget",
-        "widgetType": "heading",
-        "settings": {
-         "title": "Espacio para testimonio",
-         "header_size": "p",
-         "__globals__": {
-          "typography_typography": "globals/typography?id=pequeno",
-          "title_color": "globals/colors?id=text"
-         },
-         "typography_typography": "custom",
-         "typography_font_weight": "700",
-         "typography_font_size": {
-          "unit": "px",
-          "size": 14,
-          "sizes": []
-         }
-        },
-        "elements": []
-       }
-      ]
-     },
-     {
-      "id": "0fae757",
-      "elType": "container",
-      "isInner": true,
-      "settings": {
-       "content_width": "full",
-       "flex_direction": "column",
-       "flex_gap": {
-        "column": "14",
-        "row": "14",
-        "isLinked": true,
-        "unit": "px",
-        "size": 14
-       },
-       "padding": {
-        "unit": "px",
-        "top": "28",
-        "right": "28",
-        "bottom": "28",
-        "left": "28",
-        "isLinked": true
-       },
-       "border_border": "dashed",
-       "border_width": {
-        "unit": "px",
-        "top": "2",
-        "right": "2",
-        "bottom": "2",
-        "left": "2",
-        "isLinked": true
-       },
-       "border_color": "#CBD9E8",
-       "border_radius": {
-        "unit": "px",
-        "top": "20",
-        "right": "20",
-        "bottom": "20",
-        "left": "20",
-        "isLinked": true
-       },
-       "background_background": "classic",
-       "_title": "Espacio para testimonio",
-       "__globals__": {
-        "background_color": "globals/colors?id=blanco"
-       },
-       "hide_mobile": "hidden-mobile"
-      },
-      "elements": [
-       {
-        "id": "085fef8",
-        "elType": "widget",
-        "widgetType": "icon",
-        "settings": {
-         "selected_icon": {
-          "value": "fas fa-quote-left",
-          "library": "fa-solid"
-         },
-         "size": {
-          "unit": "px",
-          "size": 28,
-          "sizes": []
-         },
-         "align": "start",
-         "__globals__": {
-          "primary_color": "globals/colors?id=secondary"
-         }
-        },
-        "elements": []
-       },
-       {
-        "id": "bdd73b4",
-        "elType": "widget",
-        "widgetType": "text-editor",
-        "settings": {
-         "editor": "<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p>",
-         "__globals__": {
-          "typography_typography": "globals/typography?id=text",
-          "text_color": "globals/colors?id=text"
-         }
-        },
-        "elements": []
-       },
-       {
-        "id": "6b9d284",
-        "elType": "widget",
-        "widgetType": "heading",
-        "settings": {
-         "title": "Espacio para testimonio",
-         "header_size": "p",
-         "__globals__": {
-          "typography_typography": "globals/typography?id=pequeno",
-          "title_color": "globals/colors?id=text"
-         },
-         "typography_typography": "custom",
-         "typography_font_weight": "700",
-         "typography_font_size": {
-          "unit": "px",
-          "size": 14,
-          "sizes": []
-         }
-        },
-        "elements": []
-       }
-      ]
-     },
-     {
-      "id": "84882df",
-      "elType": "container",
-      "isInner": true,
-      "settings": {
-       "content_width": "full",
-       "flex_direction": "column",
-       "flex_gap": {
-        "column": "14",
-        "row": "14",
-        "isLinked": true,
-        "unit": "px",
-        "size": 14
-       },
-       "padding": {
-        "unit": "px",
-        "top": "28",
-        "right": "28",
-        "bottom": "28",
-        "left": "28",
-        "isLinked": true
-       },
-       "border_border": "dashed",
-       "border_width": {
-        "unit": "px",
-        "top": "2",
-        "right": "2",
-        "bottom": "2",
-        "left": "2",
-        "isLinked": true
-       },
-       "border_color": "#CBD9E8",
-       "border_radius": {
-        "unit": "px",
-        "top": "20",
-        "right": "20",
-        "bottom": "20",
-        "left": "20",
-        "isLinked": true
-       },
-       "background_background": "classic",
-       "_title": "Espacio para testimonio",
-       "__globals__": {
-        "background_color": "globals/colors?id=blanco"
-       },
-       "hide_mobile": "hidden-mobile"
-      },
-      "elements": [
-       {
-        "id": "c293920",
-        "elType": "widget",
-        "widgetType": "icon",
-        "settings": {
-         "selected_icon": {
-          "value": "fas fa-quote-left",
-          "library": "fa-solid"
-         },
-         "size": {
-          "unit": "px",
-          "size": 28,
-          "sizes": []
-         },
-         "align": "start",
-         "__globals__": {
-          "primary_color": "globals/colors?id=secondary"
-         }
-        },
-        "elements": []
-       },
-       {
-        "id": "c465a69",
-        "elType": "widget",
-        "widgetType": "text-editor",
-        "settings": {
-         "editor": "<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p>",
-         "__globals__": {
-          "typography_typography": "globals/typography?id=text",
-          "text_color": "globals/colors?id=text"
-         }
-        },
-        "elements": []
-       },
        {
         "id": "1bf1aa9",
+        "elType": "widget",
+        "widgetType": "icon",
+        "settings": {
+         "selected_icon": {
+          "value": "fas fa-quote-left",
+          "library": "fa-solid"
+         },
+         "size": {
+          "unit": "px",
+          "size": 28,
+          "sizes": []
+         },
+         "align": "start",
+         "__globals__": {
+          "primary_color": "globals/colors?id=secondary"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "84882df",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "f0e26d9",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Espacio para testimonio",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=pequeno",
+          "title_color": "globals/colors?id=text"
+         },
+         "typography_typography": "custom",
+         "typography_font_weight": "700",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 14,
+          "sizes": []
+         }
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "58dcf4b",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "14",
+        "row": "14",
+        "isLinked": true,
+        "unit": "px",
+        "size": 14
+       },
+       "padding": {
+        "unit": "px",
+        "top": "28",
+        "right": "28",
+        "bottom": "28",
+        "left": "28",
+        "isLinked": true
+       },
+       "border_border": "dashed",
+       "border_width": {
+        "unit": "px",
+        "top": "2",
+        "right": "2",
+        "bottom": "2",
+        "left": "2",
+        "isLinked": true
+       },
+       "border_color": "#CBD9E8",
+       "border_radius": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+       },
+       "background_background": "classic",
+       "_title": "Espacio para testimonio",
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco"
+       },
+       "hide_mobile": "hidden-mobile"
+      },
+      "elements": [
+       {
+        "id": "2eb2104",
+        "elType": "widget",
+        "widgetType": "icon",
+        "settings": {
+         "selected_icon": {
+          "value": "fas fa-quote-left",
+          "library": "fa-solid"
+         },
+         "size": {
+          "unit": "px",
+          "size": 28,
+          "sizes": []
+         },
+         "align": "start",
+         "__globals__": {
+          "primary_color": "globals/colors?id=secondary"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "9d7645a",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "e03b5c2",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Espacio para testimonio",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=pequeno",
+          "title_color": "globals/colors?id=text"
+         },
+         "typography_typography": "custom",
+         "typography_font_weight": "700",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 14,
+          "sizes": []
+         }
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "f4eb8c4",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "14",
+        "row": "14",
+        "isLinked": true,
+        "unit": "px",
+        "size": 14
+       },
+       "padding": {
+        "unit": "px",
+        "top": "28",
+        "right": "28",
+        "bottom": "28",
+        "left": "28",
+        "isLinked": true
+       },
+       "border_border": "dashed",
+       "border_width": {
+        "unit": "px",
+        "top": "2",
+        "right": "2",
+        "bottom": "2",
+        "left": "2",
+        "isLinked": true
+       },
+       "border_color": "#CBD9E8",
+       "border_radius": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+       },
+       "background_background": "classic",
+       "_title": "Espacio para testimonio",
+       "__globals__": {
+        "background_color": "globals/colors?id=blanco"
+       },
+       "hide_mobile": "hidden-mobile"
+      },
+      "elements": [
+       {
+        "id": "0b1a534",
+        "elType": "widget",
+        "widgetType": "icon",
+        "settings": {
+         "selected_icon": {
+          "value": "fas fa-quote-left",
+          "library": "fa-solid"
+         },
+         "size": {
+          "unit": "px",
+          "size": 28,
+          "sizes": []
+         },
+         "align": "start",
+         "__globals__": {
+          "primary_color": "globals/colors?id=secondary"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "2dccfef",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p>",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=text",
+          "text_color": "globals/colors?id=text"
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "e1d8d88",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -1948,7 +1948,7 @@
     ]
    },
    {
-    "id": "1b92f31",
+    "id": "0aa05ab",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -1987,7 +1987,7 @@
     },
     "elements": [
      {
-      "id": "e1d8d88",
+      "id": "eee0564",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2019,7 +2019,7 @@
       },
       "elements": [
        {
-        "id": "a9467a3",
+        "id": "1b92f31",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -2050,7 +2050,7 @@
         "elements": []
        },
        {
-        "id": "2eb2104",
+        "id": "70245e1",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -2063,14 +2063,14 @@
         "elements": []
        },
        {
-        "id": "0b1a534",
+        "id": "0b11b47",
         "elType": "widget",
         "widgetType": "icon-list",
         "settings": {
          "view": "traditional",
          "icon_list": [
           {
-           "_id": "9d7645a",
+           "_id": "84acd7c",
            "text": "15% de descuento, válido por 30 días",
            "selected_icon": {
             "value": "fas fa-check",
@@ -2078,7 +2078,7 @@
            }
           },
           {
-           "_id": "e03b5c2",
+           "_id": "646dd00",
            "text": "Un código por persona, sea cual sea tu opinión",
            "selected_icon": {
             "value": "fas fa-check",
@@ -2086,7 +2086,7 @@
            }
           },
           {
-           "_id": "58dcf4b",
+           "_id": "04c5f39",
            "text": "Tu correo no se publica",
            "selected_icon": {
             "value": "fas fa-check",
@@ -2118,7 +2118,7 @@
         "elements": []
        },
        {
-        "id": "2dccfef",
+        "id": "c80721d",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -2182,7 +2182,7 @@
       ]
      },
      {
-      "id": "776194a",
+      "id": "cd55206",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2260,7 +2260,7 @@
       },
       "elements": [
        {
-        "id": "f4eb8c4",
+        "id": "4189927",
         "elType": "widget",
         "widgetType": "wpforms",
         "settings": {
@@ -2290,7 +2290,7 @@
   ]
  },
  {
-  "id": "eee0564",
+  "id": "0e9270d",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -2324,7 +2324,7 @@
   },
   "elements": [
    {
-    "id": "c80721d",
+    "id": "d9c31fb",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -2381,7 +2381,7 @@
     },
     "elements": [
      {
-      "id": "84acd7c",
+      "id": "1befe04",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -2423,7 +2423,7 @@
       "elements": []
      },
      {
-      "id": "646dd00",
+      "id": "a51d129",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -2448,7 +2448,7 @@
       "elements": []
      },
      {
-      "id": "04c5f39",
+      "id": "8e107b4",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -2519,7 +2519,7 @@
       "elements": []
      },
      {
-      "id": "0b11b47",
+      "id": "0ccb658",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

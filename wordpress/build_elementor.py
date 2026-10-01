@@ -360,6 +360,22 @@ PRODUCTS = [
      "1 kg", 2500, 3000),
 ]
 
+# IDs de los productos en WooCommerce (para "Agregar al carrito").
+WC_IDS = {"vinagre": 163, "percarbonato": 164, "bicarbonato": 165, "pack_vb": 166, "pack_2v": 167}
+
+
+def cart_url(key):
+    return f"{SITE}/carrito/?add-to-cart={WC_IDS[key]}"
+
+
+def cart_buttons(key, wa_msg):
+    return [
+        button("Agregar al carrito", cart_url(key), ico="fas fa-shopping-cart", full=True),
+        button("Consultar por WhatsApp", wa(wa_msg), kind="link", ico="fab fa-whatsapp", align="center",
+               _margin=dims(2, 0, 0, 0)),
+    ]
+
+
 PACKS = [
     ("pack_vb", "Pack Vinagre + Bicarbonato", "1 Vinagre Incoloro de 5 litros + 1 Bicarbonato de Sodio de 1 kg.",
      8500, 10000),
@@ -413,9 +429,8 @@ def product_card(key, tg, name, desc, uses, fmt, price, old):
             checklist(uses, size=12, _margin=dims(0, 0, 8, 0)),
         ], g=12, _flex_size="grow", _title="Contenido"),
         price_block(price, old, fmt),
-        button("Consultar por WhatsApp", wa(f"Hola Karu Esencial, quiero consultar por el {name} de {fmt}."),
-               full=True),
-    ], g=16, _flex_size="grow", padding=dims(26, 26, 28, 26), _title="Cuerpo")
+        *cart_buttons(key, f"Hola Karu Esencial, quiero consultar por el {name} de {fmt}."),
+    ], g=14, _flex_size="grow", padding=dims(26, 26, 28, 26), _title="Cuerpo")
     return card([image(key, height=300, height_m=260), body], _title=name,
                 animation="fadeInUp", animation_duration="fast")
 
@@ -433,8 +448,7 @@ def pack_card(key, name, includes, price, old):
         heading(name, "h3", "h3tarjeta"),
         text(f"<p><strong>Incluye:</strong> {includes}</p>"),
         price_block(price, old),
-        button("Pedir por WhatsApp", wa(f"Hola Karu Esencial, quiero el {name}."), full=True,
-               _margin=dims(6, 0, 0, 0)),
+        *cart_buttons(key, f"Hola Karu Esencial, quiero consultar por el {name}."),
     ], width=58, width_t=58, width_m=100, g=12, padding=dims(28, 28, 28, 4), padding_mobile=dims(22, 22, 26, 22),
         flex_justify_content="center", _title="Contenido")
     media = column([image(key, height=320, height_m=220)], width=42, width_t=42, width_m=100, g=0, _title="Imagen")
@@ -549,9 +563,9 @@ def benefits_section(with_head=True, tag_title="h2"):
 
 
 STEPS = [
-    ("01", "Elige", "Conoce nuestros productos y elige lo que necesitas."),
-    ("02", "Escríbenos", "Haz clic en WhatsApp y cuéntanos qué productos buscas."),
-    ("03", "Coordina tu pedido", "Te ayudamos a coordinar tu compra y la entrega."),
+    ("01", "Elige", "Agrega tus productos al carrito."),
+    ("02", "Envía tu pedido", "Completa tus datos y envíanos el pedido por WhatsApp con un clic."),
+    ("03", "Recibe o retira", "Despacho en el Gran Concepción o retiro gratis en Castellón 1333."),
 ]
 
 
@@ -585,13 +599,14 @@ def chat_card():
         ], g=0),
     ], g=12, stack=None, padding=dims(12, 14, 16, 14), flex_wrap_mobile="nowrap", _title="Contacto")
     body = column([
-        text("<p>Hola Karu Esencial, quiero el Pack Vinagre + Bicarbonato. ¿Hacen entregas en mi comuna?</p>",
+        text("<p>Hola Karu Esencial, quiero confirmar mi pedido #1024:<br>- 1 x Pack Vinagre + Bicarbonato<br>"
+             "Entrega: retiro en Castellón 1333<br>Pago: transferencia</p>",
              typo="pequeno", color="accent", _background_background="classic", _padding=dims(14, 16),
              _border_radius={"unit": "px", "top": "18", "right": "18", "bottom": "4", "left": "18", "isLinked": False},
              _element_width="initial", _element_custom_width=pct(88), _flex_align_self="flex-end",
              __globals__={"typography_typography": gt("pequeno"), "text_color": gc("accent"),
                           "_background_color": gc("secondary")}),
-        text("<p>Así de simple: un mensaje y coordinamos tu pedido por el mismo chat.</p>", typo="pequeno",
+        text("<p>Así llega tu pedido: con el detalle listo para confirmar por el mismo chat.</p>", typo="pequeno",
              align="center", typography_typography="custom", typography_font_size=px(14)),
     ], g=18, padding=dims(28, 22, 24, 22), background_background="classic", border_radius=dims(22),
         __globals__={"background_color": gc("blanco")}, _title="Mensaje")
@@ -606,7 +621,7 @@ def how_to_buy_section():
         eyebrow("Cómo comprar"),
         heading("Comprar es simple", "h2", "h2seccion"),
         column([step(*s, last=i == len(STEPS) - 1) for i, s in enumerate(STEPS)], g=0, _title="Pasos"),
-        button("Quiero comprar", wa("Hola Karu Esencial, quiero comprar."), size="lg", align_m="justify"),
+        button("Ir a comprar", f"{SITE}/productos/", size="lg", ico="fas fa-shopping-cart", align_m="justify"),
     ], width=55, width_t=100, g=24, _title="Pasos para comprar")
     return section([row([left, chat_card()], g=88, stack="tablet", _title="Cómo comprar")],
                    anchor="como-comprar", title="Cómo comprar")
@@ -675,9 +690,17 @@ def testimonials_section():
 
 FAQ = [
     ("¿Cómo puedo comprar?",
-     "Escríbenos por WhatsApp al +56 9 8904 8914 con los productos que te interesan. Coordinamos tu pedido por el mismo chat."),
+     "Agrega tus productos al carrito, completa tus datos y confirma: se abrirá WhatsApp con tu pedido listo para "
+     "enviárnoslo. Si prefieres, también puedes escribirnos directo al +56 9 8904 8914."),
     ("¿Dónde realizan entregas?",
-     "Cuéntanos tu comuna por WhatsApp y te confirmamos las opciones de entrega disponibles para tu zona."),
+     "Despachamos en el Gran Concepción: Concepción, Talcahuano, Hualpén, San Pedro de la Paz, Chiguayante, Penco, "
+     "Tomé, Coronel, Lota y Hualqui. Desde $20.000 el despacho es gratis; bajo ese monto cuesta $1.000 en San Pedro "
+     "de la Paz, $2.000 en Concepción y Chiguayante, y $3.000 en las demás comunas. También puedes retirar gratis en "
+     "Castellón 1333, Concepción (lunes a jueves de 08:30 a 18:00 y viernes de 08:30 a 13:00). Por ahora no hacemos "
+     "envíos a otras regiones."),
+    ("¿Cómo puedo pagar?",
+     "Por transferencia bancaria (te enviamos los datos por WhatsApp al recibir tu pedido) o en efectivo al recibir "
+     "o al retirar."),
     ("¿Cómo puedo conocer los precios?",
      f'Los precios de cada producto y de los packs están publicados en la página de <a href="{SITE}/productos/">Productos</a>. '
      "Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp."),
@@ -829,7 +852,7 @@ def contact_section(form_id):
         text("<p>Es la forma más rápida de hacer tu pedido o resolver una duda.</p>"),
         contact_card("fab fa-whatsapp", "WhatsApp · canal principal", "+56 9 8904 8914", WA, main=True),
         contact_card("fas fa-phone", "Teléfono", "+56 9 8904 8914", "tel:+56989048914"),
-        contact_card("fas fa-truck", "Entregas", "Coordinamos por WhatsApp"),
+        contact_card("fas fa-truck", "Despacho y retiro", "Gran Concepción · Castellón 1333", f"{SITE}/preguntas-frecuentes/"),
         contact_card("fab fa-instagram", "Instagram", "@karu_esencial", IG),
         contact_card("fab fa-facebook-f", "Facebook", "Karu Esencial", FB),
     ], width=46, width_t=100, g=16, _title="Canales de contacto")

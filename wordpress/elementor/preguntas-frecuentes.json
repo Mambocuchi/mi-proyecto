@@ -1,6 +1,6 @@
 [
  {
-  "id": "1befe04",
+  "id": "2432045",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "f4f9099",
+    "id": "8fb8f2d",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "4189927",
+      "id": "a90c7c1",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "cd55206",
+      "id": "11717b7",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "0aa05ab",
+      "id": "6b9a26c",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "abe7de4",
+  "id": "6b43701",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,7 @@
   },
   "elements": [
    {
-    "id": "13aa207",
+    "id": "325ea55",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -166,7 +166,7 @@
     },
     "elements": [
      {
-      "id": "19c5d1d",
+      "id": "783497d",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -198,7 +198,7 @@
       },
       "elements": [
        {
-        "id": "a51d129",
+        "id": "6cd9672",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -212,7 +212,7 @@
         "elements": []
        },
        {
-        "id": "8e107b4",
+        "id": "731dc8b",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -225,7 +225,7 @@
         "elements": []
        },
        {
-        "id": "0ccb658",
+        "id": "98a93e8",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -299,7 +299,7 @@
       ]
      },
      {
-      "id": "3fb4c05",
+      "id": "1ddae6e",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -331,38 +331,43 @@
       },
       "elements": [
        {
-        "id": "2432045",
+        "id": "d369199",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "d9c31fb",
+           "_id": "a2d4da8",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "0e9270d",
+           "_id": "8998339",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "a90c7c1",
+           "_id": "5c87508",
+           "item_title": "¿Cómo puedo pagar?",
+           "element_css_id": ""
+          },
+          {
+           "_id": "59acd14",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           },
           {
-           "_id": "11717b7",
+           "_id": "48d1808",
            "item_title": "¿Qué usos tiene cada producto?",
            "element_css_id": ""
           },
           {
-           "_id": "6b9a26c",
+           "_id": "3a04426",
            "item_title": "¿Qué formatos están disponibles?",
            "element_css_id": ""
           },
           {
-           "_id": "8fb8f2d",
+           "_id": "41d51b8",
            "item_title": "¿Cómo puedo contactar a Karu Esencial?",
            "element_css_id": ""
           }
@@ -481,7 +486,7 @@
         },
         "elements": [
          {
-          "id": "731dc8b",
+          "id": "19c5d1d",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -499,11 +504,11 @@
           },
           "elements": [
            {
-            "id": "6cd9672",
+            "id": "e0fe8b6",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Escríbenos por WhatsApp al +56 9 8904 8914 con los productos que te interesan. Coordinamos tu pedido por el mismo chat.</p>",
+             "editor": "<p>Agrega tus productos al carrito, completa tus datos y confirma: se abrirá WhatsApp con tu pedido listo para enviárnoslo. Si prefieres, también puedes escribirnos directo al +56 9 8904 8914.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -514,7 +519,7 @@
           ]
          },
          {
-          "id": "a2d4da8",
+          "id": "13aa207",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -532,11 +537,11 @@
           },
           "elements": [
            {
-            "id": "98a93e8",
+            "id": "3fb4c05",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Cuéntanos tu comuna por WhatsApp y te confirmamos las opciones de entrega disponibles para tu zona.</p>",
+             "editor": "<p>Despachamos en el Gran Concepción: Concepción, Talcahuano, Hualpén, San Pedro de la Paz, Chiguayante, Penco, Tomé, Coronel, Lota y Hualqui. Desde $20.000 el despacho es gratis; bajo ese monto cuesta $1.000 en San Pedro de la Paz, $2.000 en Concepción y Chiguayante, y $3.000 en las demás comunas. También puedes retirar gratis en Castellón 1333, Concepción (lunes a jueves de 08:30 a 18:00 y viernes de 08:30 a 13:00). Por ahora no hacemos envíos a otras regiones.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -547,7 +552,40 @@
           ]
          },
          {
-          "id": "5c87508",
+          "id": "2ef89a8",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "22",
+            "bottom": "18",
+            "left": "22",
+            "isLinked": false
+           },
+           "_title": "¿Cómo puedo pagar?"
+          },
+          "elements": [
+           {
+            "id": "abe7de4",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+             "editor": "<p>Por transferencia bancaria (te enviamos los datos por WhatsApp al recibir tu pedido) o en efectivo al recibir o al retirar.</p>",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=text",
+              "text_color": "globals/colors?id=text"
+             }
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "c7ae7d7",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -565,7 +603,7 @@
           },
           "elements": [
            {
-            "id": "8998339",
+            "id": "d8582bc",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -580,7 +618,7 @@
           ]
          },
          {
-          "id": "48d1808",
+          "id": "7725b62",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -598,7 +636,7 @@
           },
           "elements": [
            {
-            "id": "59acd14",
+            "id": "941bebb",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -613,7 +651,7 @@
           ]
          },
          {
-          "id": "41d51b8",
+          "id": "b0dd427",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -631,7 +669,7 @@
           },
           "elements": [
            {
-            "id": "3a04426",
+            "id": "f23600d",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -646,7 +684,7 @@
           ]
          },
          {
-          "id": "e0fe8b6",
+          "id": "91ce0b3",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -664,7 +702,7 @@
           },
           "elements": [
            {
-            "id": "d369199",
+            "id": "1ef6333",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -687,7 +725,7 @@
   ]
  },
  {
-  "id": "f23600d",
+  "id": "d088c29",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -721,7 +759,7 @@
   },
   "elements": [
    {
-    "id": "7725b62",
+    "id": "5d2ff6f",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -778,7 +816,7 @@
     },
     "elements": [
      {
-      "id": "2ef89a8",
+      "id": "a5d83ab",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -820,7 +858,7 @@
       "elements": []
      },
      {
-      "id": "d8582bc",
+      "id": "e2e891a",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -845,7 +883,7 @@
       "elements": []
      },
      {
-      "id": "c7ae7d7",
+      "id": "c23e157",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -916,7 +954,7 @@
       "elements": []
      },
      {
-      "id": "941bebb",
+      "id": "80814b5",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
