@@ -111,8 +111,8 @@ add_action( 'wpforms_process_complete_' . KARU_RESENA_FORM_ID, function ( $field
 		. '<p>' . $saludo . '</p>'
 		. '<p>Gracias por compartir tu experiencia con Karu Esencial. Como agradecimiento, este es tu código de <strong>' . KARU_RESENA_DESCUENTO . '% de descuento</strong> para tu próxima compra:</p>'
 		. '<p style="font-size:26px;font-weight:bold;letter-spacing:2px;background:#EDF6FF;border:1px dashed #4A90E2;border-radius:12px;padding:14px;text-align:center">' . esc_html( $state['codigo'] ) . '</p>'
-		. '<ul><li>Válido hasta el ' . esc_html( $fecha ) . '.</li><li>Un solo uso, en cualquier producto o pack.</li><li>Para usarlo, haz tu pedido por WhatsApp al +56 9 8904 8914 e indícanos el código.</li></ul>'
-		. '<p><a href="' . esc_url( $wa ) . '" style="display:inline-block;background:#4A90E2;color:#FFFFFF;text-decoration:none;font-weight:bold;padding:12px 24px;border-radius:999px">Pedir por WhatsApp con mi código</a></p>'
+		. '<ul><li>Válido hasta el ' . esc_html( $fecha ) . '.</li><li>Un solo uso, en cualquier producto o pack.</li><li>Para usarlo, ingrésalo en el carrito de <a href="' . esc_url( home_url( '/productos/' ) ) . '">karuesencial.cl</a> con este mismo correo, o indícanoslo por WhatsApp al +56 9 8904 8914.</li></ul>'
+		. '<p><a href="' . esc_url( home_url( '/productos/' ) ) . '" style="display:inline-block;background:#4A90E2;color:#FFFFFF;text-decoration:none;font-weight:bold;padding:12px 24px;border-radius:999px">Hacer mi pedido</a> &nbsp; <a href="' . esc_url( $wa ) . '" style="color:#4A90E2;font-weight:bold">o pedir por WhatsApp</a></p>'
 		. '<p>Un saludo,<br>Karu Esencial</p></div>';
 	wp_mail(
 		$state['email'],
