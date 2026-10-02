@@ -1005,7 +1005,7 @@ def guide_link_block():
     return column([
         text("<p>¿Quieres saber cómo usar cada producto?</p>", align="center"),
         button("Ver guía de usos", f"{SITE}/guia-de-usos/", kind="ghost", ico="fas fa-book-open", align="center"),
-    ], g=10, align="center", _margin=dims(36, 0, 0, 0), _title="Enlace guía de usos")
+    ], g=10, align="center", margin=dims(40, 0, 0, 0), margin_mobile=dims(32, 0, 0, 0), _title="Enlace guía de usos")
 
 
 def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
