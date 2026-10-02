@@ -972,9 +972,12 @@ def use_card(ico, title, steps, tip):
 
 
 def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
+    pill = tag(tg)
+    if bg:
+        pill["settings"]["__globals__"]["_background_color"] = gc("blanco")
     side = column([
         card([image(key, height=240, height_m=220)], hover=False, _title="Imagen"),
-        tag(tg),
+        pill,
         heading(name, "h2", "h3tarjeta", "accent", typography_typography="custom", typography_font_family="Nunito",
                 typography_font_weight="900", typography_font_size=px(30), typography_font_size_mobile=px(26)),
         text(f"<p>{desc}</p>"),
@@ -982,7 +985,8 @@ def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
                 typography_font_size=px(13), typography_font_weight="600"),
         *cart_buttons(key, f"Hola Karu Esencial, tengo una consulta sobre el uso del {name}."),
     ], width=32, width_t=100, g=14, _title="Producto")
-    uses_grid = grid([use_card(*u) for u in uses], 2, cols_t=2, cols_m=1, g=20, _title="Usos")
+    uses_grid = grid([use_card(*u) for u in uses], 2, cols_t=2, cols_m=1, g=20, _title="Usos",
+                     grid_rows_grid_mobile={"unit": "fr", "size": 1, "sizes": []})
     body = row([side, column([uses_grid], width=68, width_t=100, g=0, _title="Modos de uso")],
                g=40, align="flex-start", stack="tablet", _title=name)
     return section([body], bg=bg, pad=(88, 88), pad_m=(52, 52), anchor=anchor, title=f"Guía {name}")
@@ -1008,9 +1012,9 @@ def guide_tips():
     return section([card([
         heading("Antes de empezar", "h2", None, "accent", typography_typography="custom",
                 typography_font_family="Nunito", typography_font_weight="800", typography_font_size=px(22)),
-        checklist(GUIDE_TIPS, inline=True, size=13),
+        checklist(GUIDE_TIPS, size=13),
     ], pad=28, g=14, hover=False, _title="Antes de empezar", padding_mobile=dims(22))],
-        pad=(48, 0), pad_m=(32, 0), title="Antes de empezar")
+        pad=(48, 48), pad_m=(32, 32), title="Antes de empezar")
 
 
 def guide_combo():
