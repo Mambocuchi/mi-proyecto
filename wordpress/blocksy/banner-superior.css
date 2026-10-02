@@ -1,0 +1,12 @@
+/* Banner superior en movimiento (cinta que corre hacia la izquierda) */
+[data-row="top"] > .ct-container { width: 100%; max-width: none; padding-left: 0; padding-right: 0; }
+[data-row="top"] [data-column="middle"], [data-row="top"] [data-column="middle"] > [data-items],
+[data-row="top"] .ct-header-text, [data-row="top"] .ct-header-text .entry-content { width: 100%; min-width: 0; }
+.karu-marquee { overflow: hidden; width: 100%; white-space: nowrap; }
+.karu-marquee__track { display: inline-flex; width: max-content; animation: karu-marquee 70s linear infinite; }
+.karu-marquee__group { display: inline-flex; flex-shrink: 0; }
+.karu-marquee__item { padding: 0 22px; }
+.karu-marquee__sep { opacity: .6; }
+.karu-marquee:hover .karu-marquee__track { animation-play-state: paused; }
+@keyframes karu-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .karu-marquee__track { animation: none; } }
