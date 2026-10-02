@@ -1,6 +1,6 @@
 [
  {
-  "id": "63aedcc",
+  "id": "14e8e92",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "91a1f9b",
+    "id": "294952e",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "b7b032e",
+      "id": "3cdd46e",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "81fe481",
+      "id": "0038b74",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "c69b1ca",
+      "id": "7e6845c",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -105,7 +105,7 @@
       "elements": []
      },
      {
-      "id": "5130600",
+      "id": "4fde109",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -126,7 +126,7 @@
       },
       "elements": [
        {
-        "id": "15333be",
+        "id": "c69b1ca",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -191,7 +191,7 @@
         "elements": []
        },
        {
-        "id": "d91f685",
+        "id": "91a1f9b",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -256,7 +256,7 @@
         "elements": []
        },
        {
-        "id": "2e62901",
+        "id": "63aedcc",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -327,7 +327,7 @@
   ]
  },
  {
-  "id": "db3e0c0",
+  "id": "45ed850",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -361,7 +361,7 @@
   },
   "elements": [
    {
-    "id": "14e8e92",
+    "id": "3b020c6",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -425,7 +425,7 @@
     },
     "elements": [
      {
-      "id": "4fde109",
+      "id": "db3e0c0",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -446,14 +446,14 @@
       "elements": []
      },
      {
-      "id": "294952e",
+      "id": "3755741",
       "elType": "widget",
       "widgetType": "icon-list",
       "settings": {
        "view": "traditional",
        "icon_list": [
         {
-         "_id": "3cdd46e",
+         "_id": "4f91479",
          "text": "Prueba primero en una zona poco visible.",
          "selected_icon": {
           "value": "fas fa-check",
@@ -461,7 +461,7 @@
          }
         },
         {
-         "_id": "0038b74",
+         "_id": "8b72e3e",
          "text": "Usa guantes si tienes la piel sensible.",
          "selected_icon": {
           "value": "fas fa-check",
@@ -469,7 +469,7 @@
          }
         },
         {
-         "_id": "7e6845c",
+         "_id": "ab9d5bc",
          "text": "Guarda los productos bien cerrados, en un lugar seco y fuera del alcance de los niños.",
          "selected_icon": {
           "value": "fas fa-check",
@@ -505,7 +505,7 @@
   ]
  },
  {
-  "id": "52a8299",
+  "id": "c0b687f",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -544,7 +544,7 @@
   },
   "elements": [
    {
-    "id": "25fc146",
+    "id": "ed31e38",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -566,7 +566,7 @@
     },
     "elements": [
      {
-      "id": "018a8fb",
+      "id": "ca696b2",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -598,7 +598,7 @@
       },
       "elements": [
        {
-        "id": "ab9d5bc",
+        "id": "018a8fb",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -654,7 +654,7 @@
         },
         "elements": [
          {
-          "id": "8b72e3e",
+          "id": "91746ab",
           "elType": "widget",
           "widgetType": "image",
           "settings": {
@@ -687,7 +687,7 @@
         ]
        },
        {
-        "id": "4f91479",
+        "id": "7755bc2",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -727,7 +727,7 @@
         "elements": []
        },
        {
-        "id": "3755741",
+        "id": "dc82fad",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -754,11 +754,39 @@
         "elements": []
        },
        {
-        "id": "3b020c6",
+        "id": "d85c1ca",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "¿Qué es?",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=eyebrow",
+          "title_color": "globals/colors?id=text"
+         },
+         "typography_typography": "custom",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 12,
+          "sizes": []
+         },
+         "_margin": {
+          "unit": "px",
+          "top": "4",
+          "right": "0",
+          "bottom": "-6",
+          "left": "0",
+          "isLinked": false
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "0720b1b",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Un clásico para vidrios, sarro y superficies de cocina y baño.</p>",
+         "editor": "<p>Es un vinagre transparente, sin color. Su acidez ayuda a disolver el sarro y los restos de jabón, por eso es un clásico para vidrios, llaves y superficies de cocina y baño.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=text",
           "text_color": "globals/colors?id=text"
@@ -767,7 +795,7 @@
         "elements": []
        },
        {
-        "id": "45ed850",
+        "id": "a36c362",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -788,7 +816,7 @@
         "elements": []
        },
        {
-        "id": "7755bc2",
+        "id": "aa326bc",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -850,7 +878,7 @@
         "elements": []
        },
        {
-        "id": "91746ab",
+        "id": "853fba8",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -915,7 +943,7 @@
       ]
      },
      {
-      "id": "d7361d9",
+      "id": "49ada05",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -947,7 +975,7 @@
       },
       "elements": [
        {
-        "id": "7b773d6",
+        "id": "7654f96",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -995,7 +1023,7 @@
         },
         "elements": [
          {
-          "id": "a36c362",
+          "id": "0627acb",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1051,7 +1079,7 @@
           },
           "elements": [
            {
-            "id": "dc82fad",
+            "id": "59fff98",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -1118,7 +1146,7 @@
             "elements": []
            },
            {
-            "id": "d85c1ca",
+            "id": "35d7e45",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1147,7 +1175,7 @@
             "elements": []
            },
            {
-            "id": "0720b1b",
+            "id": "1d7119c",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1180,7 +1208,7 @@
           ]
          },
          {
-          "id": "ca696b2",
+          "id": "b4c6249",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1236,7 +1264,7 @@
           },
           "elements": [
            {
-            "id": "aa326bc",
+            "id": "fe5c076",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -1303,7 +1331,7 @@
             "elements": []
            },
            {
-            "id": "853fba8",
+            "id": "4f8ff7c",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1334,7 +1362,7 @@
           ]
          },
          {
-          "id": "1d7119c",
+          "id": "25fc146",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1390,7 +1418,7 @@
           },
           "elements": [
            {
-            "id": "59fff98",
+            "id": "7b773d6",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -1457,7 +1485,7 @@
             "elements": []
            },
            {
-            "id": "35d7e45",
+            "id": "d7361d9",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1488,7 +1516,7 @@
           ]
          },
          {
-          "id": "b4c6249",
+          "id": "78abb9d",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1544,7 +1572,7 @@
           },
           "elements": [
            {
-            "id": "0627acb",
+            "id": "52a8299",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -1611,7 +1639,7 @@
             "elements": []
            },
            {
-            "id": "fe5c076",
+            "id": "34533ab",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1640,7 +1668,7 @@
             "elements": []
            },
            {
-            "id": "4f8ff7c",
+            "id": "bfd3251",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1681,7 +1709,7 @@
   ]
  },
  {
-  "id": "9b3891b",
+  "id": "e72eddb",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -1716,7 +1744,7 @@
   },
   "elements": [
    {
-    "id": "865d7a3",
+    "id": "9803ed1",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -1738,7 +1766,7 @@
     },
     "elements": [
      {
-      "id": "bfb50a3",
+      "id": "72014a3",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1770,7 +1798,7 @@
       },
       "elements": [
        {
-        "id": "78abb9d",
+        "id": "812a59d",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1826,7 +1854,7 @@
         },
         "elements": [
          {
-          "id": "bfd3251",
+          "id": "bfb50a3",
           "elType": "widget",
           "widgetType": "image",
           "settings": {
@@ -1859,7 +1887,7 @@
         ]
        },
        {
-        "id": "34533ab",
+        "id": "c84bf61",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -1899,7 +1927,7 @@
         "elements": []
        },
        {
-        "id": "7654f96",
+        "id": "cf4216c",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -1926,11 +1954,39 @@
         "elements": []
        },
        {
-        "id": "49ada05",
+        "id": "59fe7e5",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "¿Qué es?",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=eyebrow",
+          "title_color": "globals/colors?id=text"
+         },
+         "typography_typography": "custom",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 12,
+          "sizes": []
+         },
+         "_margin": {
+          "unit": "px",
+          "top": "4",
+          "right": "0",
+          "bottom": "-6",
+          "left": "0",
+          "isLinked": false
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "8087314",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Gránulos que liberan oxígeno al disolverse en agua tibia o caliente.</p>",
+         "editor": "<p>Es un polvo granulado blanco que, al disolverse en agua caliente, libera oxígeno. Ese oxígeno es el que ayuda a blanquear la ropa, a quitar manchas y a limpiar a fondo juntas y tablas.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=text",
           "text_color": "globals/colors?id=text"
@@ -1939,7 +1995,94 @@
         "elements": []
        },
        {
-        "id": "ed31e38",
+        "id": "2d774d0",
+        "elType": "widget",
+        "widgetType": "icon-box",
+        "settings": {
+         "selected_icon": {
+          "value": "fas fa-thermometer-three-quarters",
+          "library": "fa-solid"
+         },
+         "view": "default",
+         "title_text": "Se activa con agua caliente",
+         "description_text": "Necesita agua sobre 40 °C para liberar el oxígeno; entre 50 y 60 °C funciona mejor. En agua fría casi no actúa, así que usa siempre agua caliente.",
+         "title_size": "p",
+         "position": "inline-start",
+         "position_mobile": "inline-start",
+         "text_align": "start",
+         "icon_size": {
+          "unit": "px",
+          "size": 22,
+          "sizes": []
+         },
+         "icon_space": {
+          "unit": "px",
+          "size": 12,
+          "sizes": []
+         },
+         "title_bottom_space": {
+          "unit": "px",
+          "size": 4,
+          "sizes": []
+         },
+         "title_typography_typography": "custom",
+         "title_typography_font_family": "Nunito",
+         "title_typography_font_weight": "800",
+         "title_typography_font_size": {
+          "unit": "px",
+          "size": 16,
+          "sizes": []
+         },
+         "description_typography_typography": "custom",
+         "description_typography_font_size": {
+          "unit": "px",
+          "size": 14,
+          "sizes": []
+         },
+         "description_typography_line_height": {
+          "unit": "em",
+          "size": 1.5,
+          "sizes": []
+         },
+         "_background_background": "classic",
+         "_padding": {
+          "unit": "px",
+          "top": "14",
+          "right": "16",
+          "bottom": "14",
+          "left": "16",
+          "isLinked": false
+         },
+         "_border_radius": {
+          "unit": "px",
+          "top": "14",
+          "right": "14",
+          "bottom": "14",
+          "left": "14",
+          "isLinked": true
+         },
+         "_border_border": "solid",
+         "_border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+         },
+         "__globals__": {
+          "primary_color": "globals/colors?id=primary",
+          "title_color": "globals/colors?id=accent",
+          "description_color": "globals/colors?id=accent",
+          "_background_color": "globals/colors?id=blanco",
+          "_border_color": "globals/colors?id=secondary"
+         },
+         "_title": "Se activa con agua caliente"
+        },
+        "elements": []
+       },
+       {
+        "id": "3889402",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -1960,7 +2103,7 @@
         "elements": []
        },
        {
-        "id": "c0b687f",
+        "id": "a41d21d",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -2022,7 +2165,7 @@
         "elements": []
        },
        {
-        "id": "c84bf61",
+        "id": "38786f3",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -2087,7 +2230,7 @@
       ]
      },
      {
-      "id": "bad71af",
+      "id": "38742a1",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2119,7 +2262,7 @@
       },
       "elements": [
        {
-        "id": "d775021",
+        "id": "d4d16d4",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -2167,7 +2310,7 @@
         },
         "elements": [
          {
-          "id": "59fe7e5",
+          "id": "47f8b7a",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2223,7 +2366,7 @@
           },
           "elements": [
            {
-            "id": "812a59d",
+            "id": "2e9bc7f",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -2290,11 +2433,11 @@
             "elements": []
            },
            {
-            "id": "cf4216c",
+            "id": "f8fb30e",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<ol><li>Agrega 1 a 2 cucharadas directo en el tambor, junto con tu detergente.</li><li>Lava con agua tibia o caliente: desde 40 °C actúa mejor.</li></ol>",
+             "editor": "<ol><li>Agrega 1 a 2 cucharadas directo en el tambor, junto con tu detergente.</li><li>Elige un programa con agua caliente: desde 40 °C se activa y entre 50 y 60 °C rinde más.</li></ol>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -2321,7 +2464,7 @@
           ]
          },
          {
-          "id": "a41d21d",
+          "id": "865d7a3",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2377,7 +2520,7 @@
           },
           "elements": [
            {
-            "id": "8087314",
+            "id": "81a8596",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -2444,11 +2587,11 @@
             "elements": []
            },
            {
-            "id": "2d774d0",
+            "id": "d775021",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<ol><li>Disuelve 1 a 2 cucharadas por litro de agua tibia o caliente.</li><li>Deja las prendas en remojo entre 1 y 6 horas.</li><li>Lávalas como siempre.</li></ol>",
+             "editor": "<ol><li>Disuelve 1 a 2 cucharadas por litro de agua caliente (sobre 40 °C).</li><li>Deja las prendas en remojo entre 1 y 6 horas.</li><li>Lávalas como siempre.</li></ol>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -2473,7 +2616,7 @@
             "elements": []
            },
            {
-            "id": "3889402",
+            "id": "bad71af",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -2506,7 +2649,7 @@
           ]
          },
          {
-          "id": "2e9bc7f",
+          "id": "0f0bf05",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2562,7 +2705,7 @@
           },
           "elements": [
            {
-            "id": "38786f3",
+            "id": "9b3891b",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -2629,7 +2772,7 @@
             "elements": []
            },
            {
-            "id": "72014a3",
+            "id": "4ed6751",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -2660,7 +2803,7 @@
           ]
          },
          {
-          "id": "81a8596",
+          "id": "ffbb3a4",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2716,7 +2859,7 @@
           },
           "elements": [
            {
-            "id": "f8fb30e",
+            "id": "0e260b9",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -2783,7 +2926,7 @@
             "elements": []
            },
            {
-            "id": "47f8b7a",
+            "id": "99abade",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -2822,7 +2965,7 @@
   ]
  },
  {
-  "id": "241c322",
+  "id": "f4557f5",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -2861,7 +3004,7 @@
   },
   "elements": [
    {
-    "id": "4e48fa6",
+    "id": "cde4f7c",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -2883,7 +3026,7 @@
     },
     "elements": [
      {
-      "id": "e72eddb",
+      "id": "2335b99",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2915,7 +3058,7 @@
       },
       "elements": [
        {
-        "id": "0e260b9",
+        "id": "219bbb0",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -2971,7 +3114,7 @@
         },
         "elements": [
          {
-          "id": "0f0bf05",
+          "id": "cceadca",
           "elType": "widget",
           "widgetType": "image",
           "settings": {
@@ -3004,7 +3147,7 @@
         ]
        },
        {
-        "id": "4ed6751",
+        "id": "c68fe86",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3044,7 +3187,7 @@
         "elements": []
        },
        {
-        "id": "99abade",
+        "id": "01955ad",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3071,11 +3214,39 @@
         "elements": []
        },
        {
-        "id": "ffbb3a4",
+        "id": "5f90654",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "¿Qué es?",
+         "header_size": "p",
+         "__globals__": {
+          "typography_typography": "globals/typography?id=eyebrow",
+          "title_color": "globals/colors?id=text"
+         },
+         "typography_typography": "custom",
+         "typography_font_size": {
+          "unit": "px",
+          "size": 12,
+          "sizes": []
+         },
+         "_margin": {
+          "unit": "px",
+          "top": "4",
+          "right": "0",
+          "bottom": "-6",
+          "left": "0",
+          "isLinked": false
+         }
+        },
+        "elements": []
+       },
+       {
+        "id": "6647512",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Un polvo suave que sirve para muchas tareas de limpieza y para reducir olores.</p>",
+         "editor": "<p>Es un polvo blanco y fino, levemente abrasivo. Sirve para frotar sin rayar, ayuda a reducir los olores y es un buen complemento en el lavado de ropa.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=text",
           "text_color": "globals/colors?id=text"
@@ -3084,7 +3255,7 @@
         "elements": []
        },
        {
-        "id": "d4d16d4",
+        "id": "07f8132",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3105,7 +3276,7 @@
         "elements": []
        },
        {
-        "id": "38742a1",
+        "id": "db44ccd",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -3167,7 +3338,7 @@
         "elements": []
        },
        {
-        "id": "9803ed1",
+        "id": "0de2a7f",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -3232,7 +3403,7 @@
       ]
      },
      {
-      "id": "6a58830",
+      "id": "f3d8c21",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3264,7 +3435,7 @@
       },
       "elements": [
        {
-        "id": "c1b70a2",
+        "id": "8a99429",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3312,7 +3483,7 @@
         },
         "elements": [
          {
-          "id": "219bbb0",
+          "id": "c1b70a2",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3368,7 +3539,7 @@
           },
           "elements": [
            {
-            "id": "c68fe86",
+            "id": "e98fba2",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -3435,7 +3606,7 @@
             "elements": []
            },
            {
-            "id": "cceadca",
+            "id": "6dbb1ef",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -3466,7 +3637,7 @@
           ]
          },
          {
-          "id": "6647512",
+          "id": "241c322",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3522,7 +3693,7 @@
           },
           "elements": [
            {
-            "id": "01955ad",
+            "id": "6a58830",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -3589,7 +3760,7 @@
             "elements": []
            },
            {
-            "id": "5f90654",
+            "id": "4e48fa6",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -3620,7 +3791,7 @@
           ]
          },
          {
-          "id": "0de2a7f",
+          "id": "eb64376",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3676,7 +3847,7 @@
           },
           "elements": [
            {
-            "id": "07f8132",
+            "id": "67d925d",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -3743,7 +3914,7 @@
             "elements": []
            },
            {
-            "id": "db44ccd",
+            "id": "13f781b",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -3774,7 +3945,7 @@
           ]
          },
          {
-          "id": "6dbb1ef",
+          "id": "f6cc9fd",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3830,7 +4001,7 @@
           },
           "elements": [
            {
-            "id": "2335b99",
+            "id": "249833d",
             "elType": "widget",
             "widgetType": "icon-box",
             "settings": {
@@ -3897,7 +4068,7 @@
             "elements": []
            },
            {
-            "id": "e98fba2",
+            "id": "22f76ed",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -3936,7 +4107,7 @@
   ]
  },
  {
-  "id": "e0a195c",
+  "id": "3e85f75",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -3970,7 +4141,7 @@
   },
   "elements": [
    {
-    "id": "fc0c7c4",
+    "id": "51dcdc2",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -4034,7 +4205,7 @@
     },
     "elements": [
      {
-      "id": "d5c734b",
+      "id": "f3bb390",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4056,7 +4227,7 @@
       },
       "elements": [
        {
-        "id": "249833d",
+        "id": "d5c734b",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -4088,7 +4259,7 @@
         },
         "elements": [
          {
-          "id": "67d925d",
+          "id": "4b7668f",
           "elType": "widget",
           "widgetType": "heading",
           "settings": {
@@ -4128,7 +4299,7 @@
           "elements": []
          },
          {
-          "id": "13f781b",
+          "id": "03214ce",
           "elType": "widget",
           "widgetType": "heading",
           "settings": {
@@ -4154,7 +4325,7 @@
           "elements": []
          },
          {
-          "id": "eb64376",
+          "id": "5128b9a",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
@@ -4169,7 +4340,7 @@
         ]
        },
        {
-        "id": "5128b9a",
+        "id": "e082d30",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -4201,7 +4372,7 @@
         },
         "elements": [
          {
-          "id": "22f76ed",
+          "id": "fc0c7c4",
           "elType": "widget",
           "widgetType": "heading",
           "settings": {
@@ -4215,7 +4386,7 @@
           "elements": []
          },
          {
-          "id": "f4557f5",
+          "id": "024c0df",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4252,7 +4423,7 @@
           },
           "elements": [
            {
-            "id": "cde4f7c",
+            "id": "0e07467",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -4272,7 +4443,7 @@
             },
             "elements": [
              {
-              "id": "f6cc9fd",
+              "id": "e0a195c",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4304,7 +4475,7 @@
               "elements": []
              },
              {
-              "id": "8a99429",
+              "id": "f4beb62",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4327,7 +4498,7 @@
               "elements": []
              },
              {
-              "id": "f3d8c21",
+              "id": "d830b38",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4371,7 +4542,7 @@
           ]
          },
          {
-          "id": "4b7668f",
+          "id": "7acf282",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -4433,7 +4604,7 @@
           "elements": []
          },
          {
-          "id": "03214ce",
+          "id": "385e62f",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -4504,7 +4675,7 @@
   ]
  },
  {
-  "id": "385e62f",
+  "id": "58ab02b",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -4538,7 +4709,7 @@
   },
   "elements": [
    {
-    "id": "7acf282",
+    "id": "e059e84",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -4595,7 +4766,7 @@
     },
     "elements": [
      {
-      "id": "f4beb62",
+      "id": "1d4d581",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -4637,7 +4808,7 @@
       "elements": []
      },
      {
-      "id": "d830b38",
+      "id": "5d627f4",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -4662,7 +4833,7 @@
       "elements": []
      },
      {
-      "id": "0e07467",
+      "id": "abe0027",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -4733,7 +4904,7 @@
       "elements": []
      },
      {
-      "id": "024c0df",
+      "id": "e164981",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

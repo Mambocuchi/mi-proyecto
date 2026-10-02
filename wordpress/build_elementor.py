@@ -515,7 +515,7 @@ def products_section(with_head=True, soon=True):
         items.append(section_head("Productos", "Nuestros productos esenciales",
                                   "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
                                   "en qué formato vienen y cuánto cuestan."))
-    items += [products_grid(), packs_block()]
+    items += [products_grid(), guide_link_block(), packs_block()]
     if soon:
         items.append(soon_block())
     return section(items, anchor="productos", title="Productos", pad=(120 if with_head else 88, 120))
@@ -700,8 +700,8 @@ FAQ = [
      f'Los precios de cada producto y de los packs están publicados en la página de <a href="{SITE}/productos/">Productos</a>. '
      "Para confirmar disponibilidad y coordinar tu pedido, escríbenos por WhatsApp."),
     ("¿Qué usos tiene cada producto?",
-     f'En la página de <a href="{SITE}/productos/">Productos</a> encontrarás los usos habituales de cada uno. '
-     "Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase."),
+     f'En nuestra <a href="{SITE}/guia-de-usos/">Guía de usos</a> te explicamos qué es cada producto y cómo usarlo, '
+     "paso a paso. Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase."),
     ("¿Qué formatos están disponibles?",
      "El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen "
      "en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres."),
@@ -871,7 +871,8 @@ def contact_section(form_id):
 
 GUIDE = [
     ("vinagre", "guia-vinagre", "Cocina y baño", "Vinagre Incoloro", "5 litros",
-     "Un clásico para vidrios, sarro y superficies de cocina y baño.",
+     "Es un vinagre transparente, sin color. Su acidez ayuda a disolver el sarro y los restos de jabón, "
+     "por eso es un clásico para vidrios, llaves y superficies de cocina y baño.",
      [
          ("fas fa-spray-can", "Vidrios y espejos",
           ["Mezcla 1 parte de vinagre con 1 parte de agua en un pulverizador.",
@@ -895,14 +896,15 @@ GUIDE = [
           "No lo uses sobre mármol, granito ni otras piedras naturales."),
      ]),
     ("percarbonato", "guia-percarbonato", "Lavado de ropa", "Percarbonato de Sodio", "1 kg",
-     "Gránulos que liberan oxígeno al disolverse en agua tibia o caliente.",
+     "Es un polvo granulado blanco que, al disolverse en agua caliente, libera oxígeno. Ese oxígeno es el que "
+     "ayuda a blanquear la ropa, a quitar manchas y a limpiar a fondo juntas y tablas.",
      [
          ("fas fa-tshirt", "Ropa blanca en la lavadora",
           ["Agrega 1 a 2 cucharadas directo en el tambor, junto con tu detergente.",
-           "Lava con agua tibia o caliente: desde 40 °C actúa mejor."],
+           "Elige un programa con agua caliente: desde 40 °C se activa y entre 50 y 60 °C rinde más."],
           None),
          ("fas fa-water", "Remojo de prendas con manchas",
-          ["Disuelve 1 a 2 cucharadas por litro de agua tibia o caliente.",
+          ["Disuelve 1 a 2 cucharadas por litro de agua caliente (sobre 40 °C).",
            "Deja las prendas en remojo entre 1 y 6 horas.",
            "Lávalas como siempre."],
           "En ropa de color, prueba antes en una parte poco visible. No lo uses en lana ni seda."),
@@ -918,7 +920,8 @@ GUIDE = [
           None),
      ]),
     ("bicarbonato", "guia-bicarbonato", "Multiuso", "Bicarbonato de Sodio", "1 kg",
-     "Un polvo suave que sirve para muchas tareas de limpieza y para reducir olores.",
+     "Es un polvo blanco y fino, levemente abrasivo. Sirve para frotar sin rayar, ayuda a reducir los olores "
+     "y es un buen complemento en el lavado de ropa.",
      [
          ("fas fa-fire-alt", "Ollas, lavaplatos y horno",
           ["Mezcla 3 partes de bicarbonato con 1 parte de agua hasta formar una pasta.",
@@ -940,6 +943,13 @@ GUIDE = [
           None),
      ]),
 ]
+
+# Aviso destacado bajo la descripción de un producto.
+GUIDE_NOTES = {
+    "percarbonato": ("Se activa con agua caliente",
+                     "Necesita agua sobre 40 °C para liberar el oxígeno; entre 50 y 60 °C funciona mejor. "
+                     "En agua fría casi no actúa, así que usa siempre agua caliente."),
+}
 
 GUIDE_TIPS = [
     "Prueba primero en una zona poco visible.",
@@ -971,6 +981,33 @@ def use_card(ico, title, steps, tip):
     return card(kids, pad=24, g=14, hover=False, _title=title)
 
 
+def guide_note(key):
+    if key not in GUIDE_NOTES:
+        return []
+    title, body = GUIDE_NOTES[key]
+    return [widget("icon-box",
+                   selected_icon=icon("fas fa-thermometer-three-quarters"), view="default", title_text=title,
+                   description_text=body, title_size="p", position="inline-start", position_mobile="inline-start",
+                   text_align="start", icon_size=px(22), icon_space=px(12), title_bottom_space=px(4),
+                   title_typography_typography="custom", title_typography_font_family="Nunito",
+                   title_typography_font_weight="800", title_typography_font_size=px(16),
+                   description_typography_typography="custom", description_typography_font_size=px(14),
+                   description_typography_line_height={"unit": "em", "size": 1.5, "sizes": []},
+                   _background_background="classic", _padding=dims(14, 16), _border_radius=dims(14),
+                   _border_border="solid", _border_width=dims(1),
+                   __globals__={"primary_color": gc("primary"), "title_color": gc("accent"),
+                                "description_color": gc("accent"), "_background_color": gc("blanco"),
+                                "_border_color": gc("secondary")},
+                   _title=title)]
+
+
+def guide_link_block():
+    return column([
+        text("<p>¿Quieres saber cómo usar cada producto?</p>", align="center"),
+        button("Ver guía de usos", f"{SITE}/guia-de-usos/", kind="ghost", ico="fas fa-book-open", align="center"),
+    ], g=10, align="center", _margin=dims(36, 0, 0, 0), _title="Enlace guía de usos")
+
+
 def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
     pill = tag(tg)
     if bg:
@@ -980,7 +1017,10 @@ def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
         pill,
         heading(name, "h2", "h3tarjeta", "accent", typography_typography="custom", typography_font_family="Nunito",
                 typography_font_weight="900", typography_font_size=px(30), typography_font_size_mobile=px(26)),
+        heading("¿Qué es?", "p", "eyebrow", "text", typography_typography="custom", typography_font_size=px(12),
+                _margin=dims(4, 0, -6, 0)),
         text(f"<p>{desc}</p>"),
+        *guide_note(key),
         heading(f"Formato {fmt}", "p", "pequeno", "text", typography_typography="custom",
                 typography_font_size=px(13), typography_font_weight="600"),
         *cart_buttons(key, f"Hola Karu Esencial, tengo una consulta sobre el uso del {name}."),
