@@ -7,11 +7,12 @@ Elementor (gratis) y WPForms Lite.
 
 | Elemento | Dónde se edita |
 |---|---|
-| Páginas Inicio, Productos, Beneficios, Preguntas frecuentes y Contacto | Elementor (plantilla "Elementor ancho completo", cabecera y pie de Blocksy) |
+| Páginas Inicio, Productos, Guía de usos, Beneficios, Preguntas frecuentes y Contacto | Elementor (plantilla "Elementor ancho completo", cabecera y pie de Blocksy) |
 | Colores y tipografías (Nunito + Figtree) | Elementor → Ajustes del sitio (colores y tipografías globales) y Blocksy → Personalizar → Colores / Tipografía |
 | Cabecera: logo, menú y botón "Pedir por WhatsApp"; menú móvil | Apariencia → Personalizar → Cabecera (Blocksy) |
 | Pie: logo, descripción, navegación, productos, contacto, copyright y WhatsApp | Apariencia → Personalizar → Pie de página (Blocksy) y Apariencia → Widgets (Pie 1 a 4) |
-| Menú "Menú principal Karu" | Apariencia → Menús (cabecera, móvil y pie) |
+| Menú "Menú principal Karu" (Inicio, Productos, Guía de usos, Beneficios, Preguntas frecuentes, Contacto) | Apariencia → Menús (cabecera, móvil y pie) |
+| Menú compacto entre 1000 y 1199 px, para que quepan los seis ítems | Apariencia → Personalizar → CSS adicional |
 | Botón flotante de WhatsApp | Elementor → Elementos flotantes → "WhatsApp Karu Esencial" (todo el sitio) |
 | Formulario "Contacto Karu Esencial" | WPForms → Todos los formularios |
 | Página de inicio | Ajustes → Lectura → Página estática "Inicio" |
