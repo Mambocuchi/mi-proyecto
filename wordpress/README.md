@@ -13,6 +13,7 @@ Elementor (gratis) y WPForms Lite.
 | Pie: logo, descripción, navegación, productos, contacto, copyright y WhatsApp | Apariencia → Personalizar → Pie de página (Blocksy) y Apariencia → Widgets (Pie 1 a 4) |
 | Menú "Menú principal Karu" (Inicio, Productos, Guía de usos, Beneficios, Preguntas frecuentes, Contacto) | Apariencia → Menús (cabecera, móvil y pie) |
 | Menú compacto entre 1000 y 1199 px, para que quepan los seis ítems | Apariencia → Personalizar → CSS adicional |
+| Banner superior "Despacho gratis…" en movimiento | Texto: Apariencia → Personalizar → Cabecera → fila superior → Texto (`blocksy/banner-superior.html`). Animación: CSS adicional (`blocksy/banner-superior.css`) |
 | Botón flotante de WhatsApp | Elementor → Elementos flotantes → "WhatsApp Karu Esencial" (todo el sitio) |
 | Formulario "Contacto Karu Esencial" | WPForms → Todos los formularios |
 | Página de inicio | Ajustes → Lectura → Página estática "Inicio" |
