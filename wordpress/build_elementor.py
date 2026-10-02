@@ -867,6 +867,183 @@ def contact_section(form_id):
 
 # ---------------------------------------------------------------- páginas
 
+# ---------------------------------------------------------------- guía de usos
+
+GUIDE = [
+    ("vinagre", "guia-vinagre", "Cocina y baño", "Vinagre Incoloro", "5 litros",
+     "Un clásico para vidrios, sarro y superficies de cocina y baño.",
+     [
+         ("fas fa-spray-can", "Vidrios y espejos",
+          ["Mezcla 1 parte de vinagre con 1 parte de agua en un pulverizador.",
+           "Rocía la superficie y pasa un paño de microfibra o papel.",
+           "Seca con un paño limpio para que no queden marcas."],
+          "Limpia a la sombra: con sol directo la mezcla se seca antes y deja manchas."),
+         ("fas fa-mug-hot", "Sarro del hervidor",
+          ["Llena el hervidor hasta la mitad con partes iguales de vinagre y agua.",
+           "Hiérvelo, apágalo y deja reposar entre 30 minutos y 1 hora.",
+           "Bota la mezcla, enjuaga y hierve una vez agua limpia antes de volver a usarlo."],
+          None),
+         ("fas fa-faucet", "Llaves y griferías",
+          ["Empapa un paño con vinagre y envuelve la llave.",
+           "Déjalo actuar entre 30 minutos y 1 hora.",
+           "Frota con una esponja, enjuaga con agua y seca."],
+          None),
+         ("fas fa-bath", "Cerámicas de cocina y baño",
+          ["Mezcla 1 parte de vinagre con 1 parte de agua.",
+           "Aplica con un paño o esponja y frota.",
+           "Enjuaga con agua y seca."],
+          "No lo uses sobre mármol, granito ni otras piedras naturales."),
+     ]),
+    ("percarbonato", "guia-percarbonato", "Lavado de ropa", "Percarbonato de Sodio", "1 kg",
+     "Gránulos que liberan oxígeno al disolverse en agua tibia o caliente.",
+     [
+         ("fas fa-tshirt", "Ropa blanca en la lavadora",
+          ["Agrega 1 a 2 cucharadas directo en el tambor, junto con tu detergente.",
+           "Lava con agua tibia o caliente: desde 40 °C actúa mejor."],
+          None),
+         ("fas fa-water", "Remojo de prendas con manchas",
+          ["Disuelve 1 a 2 cucharadas por litro de agua tibia o caliente.",
+           "Deja las prendas en remojo entre 1 y 6 horas.",
+           "Lávalas como siempre."],
+          "En ropa de color, prueba antes en una parte poco visible. No lo uses en lana ni seda."),
+         ("fas fa-border-all", "Juntas y fragüe",
+          ["Haz una pasta con percarbonato y un poco de agua caliente.",
+           "Aplícala sobre las juntas y deja actuar 15 a 20 minutos.",
+           "Frota con una escobilla y enjuaga bien."],
+          None),
+         ("fas fa-utensils", "Tablas de picar",
+          ["Espolvorea percarbonato sobre la tabla y agrega agua caliente.",
+           "Deja actuar 10 a 15 minutos.",
+           "Frota y enjuaga con abundante agua."],
+          None),
+     ]),
+    ("bicarbonato", "guia-bicarbonato", "Multiuso", "Bicarbonato de Sodio", "1 kg",
+     "Un polvo suave que sirve para muchas tareas de limpieza y para reducir olores.",
+     [
+         ("fas fa-fire-alt", "Ollas, lavaplatos y horno",
+          ["Mezcla 3 partes de bicarbonato con 1 parte de agua hasta formar una pasta.",
+           "Aplícala y deja actuar 15 minutos (en el horno, varias horas o toda la noche).",
+           "Frota con una esponja y enjuaga."],
+          None),
+         ("fas fa-snowflake", "Olores en el refrigerador",
+          ["Pon media taza de bicarbonato en un recipiente abierto.",
+           "Déjalo en una repisa del refrigerador.",
+           "Cámbialo cada 1 a 3 meses."],
+          None),
+         ("fas fa-shoe-prints", "Olores en el calzado",
+          ["Espolvorea una cucharada dentro de cada zapato en la noche.",
+           "Al día siguiente, sacúdelos bien antes de usarlos."],
+          None),
+         ("fas fa-tshirt", "Lavado de ropa",
+          ["Agrega media taza al tambor de la lavadora.",
+           "Lava como siempre, con tu detergente habitual."],
+          None),
+     ]),
+]
+
+GUIDE_TIPS = [
+    "Prueba primero en una zona poco visible.",
+    "Usa guantes si tienes la piel sensible.",
+    "Guarda los productos bien cerrados, en un lugar seco y fuera del alcance de los niños.",
+]
+
+
+def use_card(ico, title, steps, tip):
+    kids = [
+        widget("icon-box",
+               selected_icon=icon(ico), view="stacked", shape="rounded", title_text=title, description_text="",
+               title_size="h3", position="inline-start", position_mobile="inline-start", text_align="start",
+               content_vertical_alignment="middle", icon_size=px(18), icon_padding=px(12), border_radius=dims(14),
+               icon_space=px(14), title_bottom_space=px(0),
+               title_typography_typography="custom", title_typography_font_family="Nunito",
+               title_typography_font_weight="800", title_typography_font_size=px(19),
+               title_typography_line_height={"unit": "em", "size": 1.25, "sizes": []},
+               __globals__={"primary_color": gc("celestesuave"), "secondary_color": gc("primary"),
+                            "title_color": gc("accent")}),
+        text("<ol>" + "".join(f"<li>{s}</li>" for s in steps) + "</ol>",
+             _margin=dims(0), _padding=dims(0, 0, 0, 2)),
+    ]
+    if tip:
+        kids.append(text(f"<p><strong>Consejo:</strong> {tip}</p>", typo="pequeno", _padding=dims(10, 14),
+                         _background_background="classic", _border_radius=dims(12),
+                         __globals__={"typography_typography": gt("pequeno"), "text_color": gc("accent"),
+                                      "_background_color": gc("celestesuave")}))
+    return card(kids, pad=24, g=14, hover=False, _title=title)
+
+
+def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
+    side = column([
+        card([image(key, height=240, height_m=220)], hover=False, _title="Imagen"),
+        tag(tg),
+        heading(name, "h2", "h3tarjeta", "accent", typography_typography="custom", typography_font_family="Nunito",
+                typography_font_weight="900", typography_font_size=px(30), typography_font_size_mobile=px(26)),
+        text(f"<p>{desc}</p>"),
+        heading(f"Formato {fmt}", "p", "pequeno", "text", typography_typography="custom",
+                typography_font_size=px(13), typography_font_weight="600"),
+        *cart_buttons(key, f"Hola Karu Esencial, tengo una consulta sobre el uso del {name}."),
+    ], width=32, width_t=100, g=14, _title="Producto")
+    uses_grid = grid([use_card(*u) for u in uses], 2, cols_t=2, cols_m=1, g=20, _title="Usos")
+    body = row([side, column([uses_grid], width=68, width_t=100, g=0, _title="Modos de uso")],
+               g=40, align="flex-start", stack="tablet", _title=name)
+    return section([body], bg=bg, pad=(88, 88), pad_m=(52, 52), anchor=anchor, title=f"Guía {name}")
+
+
+def guide_intro():
+    links = row([button(name, f"#{anchor}", kind="ghost", size="sm", ico="fas fa-arrow-down", ico_after=True)
+                 for _, anchor, _, name, *_ in GUIDE], g=12, align="center", stack=None, wrap=True,
+                flex_justify_content="center", flex_wrap_mobile="wrap", _title="Índice")
+    return section([container([
+        eyebrow("Guía de usos", "center"),
+        heading("Cómo usar nuestros productos", "h1", "h2seccion", "accent", "center"),
+        text("<p>Usos habituales en la casa, paso a paso. Las cantidades son referenciales: "
+             "ajústalas según la suciedad y sigue siempre las indicaciones del envase.</p>",
+             typo="lead", align="center"),
+        links,
+    ], content_width="boxed", boxed_width=px(760), flex_direction="column", flex_align_items="center",
+        flex_gap=gap(16), _title="Encabezado de página")], bg="celestesuave", pad=(88, 72), pad_m=(48, 40),
+        title="Encabezado de página")
+
+
+def guide_tips():
+    return section([card([
+        heading("Antes de empezar", "h2", None, "accent", typography_typography="custom",
+                typography_font_family="Nunito", typography_font_weight="800", typography_font_size=px(22)),
+        checklist(GUIDE_TIPS, inline=True, size=13),
+    ], pad=28, g=14, hover=False, _title="Antes de empezar", padding_mobile=dims(22))],
+        pad=(48, 0), pad_m=(32, 0), title="Antes de empezar")
+
+
+def guide_combo():
+    return section([card([
+        row([
+            column([
+                tag("Mejor juntos"),
+                heading("Desagües: bicarbonato + vinagre", "h2", None, "accent", typography_typography="custom",
+                        typography_font_family="Nunito", typography_font_weight="900", typography_font_size=px(28),
+                        typography_font_size_mobile=px(24)),
+                text("<ol><li>Echa media taza de bicarbonato en el desagüe.</li>"
+                     "<li>Agrega una taza de vinagre y deja actuar 15 minutos.</li>"
+                     "<li>Enjuaga con abundante agua caliente.</li></ol>"),
+            ], width=62, width_t=100, g=12, _title="Receta"),
+            column([
+                heading("Pack Vinagre + Bicarbonato", "p", "h3tarjeta", "accent"),
+                price_block(8500, 10000),
+                *cart_buttons("pack_vb", "Hola Karu Esencial, quiero el Pack Vinagre + Bicarbonato."),
+            ], width=38, width_t=100, g=12, _title="Pack"),
+        ], g=40, align="center", stack="tablet", _title="Mejor juntos"),
+    ], pad=36, g=0, hover=False, _title="Mejor juntos", padding_mobile=dims(24),
+        __globals__={"background_color": gc("blanco"), "border_color": gc("secondary")})],
+        pad=(88, 120), pad_m=(52, 64), title="Mejor juntos")
+
+
+def guide_page():
+    items = [guide_intro(), guide_tips()]
+    for i, g in enumerate(GUIDE):
+        items.append(guide_product(*g, bg="celestesuave" if i % 2 == 0 else None))
+    items += [guide_combo(), cta_section()]
+    return items
+
+
 def pages(form_id):
     return {
         "inicio": [hero(), products_section(), benefits_section(), how_to_buy_section(), testimonials_section(),
@@ -888,6 +1065,7 @@ def pages(form_id):
             page_intro("Contacto", "Conversemos",
                        "Escríbenos por WhatsApp o déjanos un mensaje. Te ayudamos a elegir y a coordinar tu pedido."),
             contact_section(form_id)],
+        "guia-de-usos": guide_page(),
     }
 
 
