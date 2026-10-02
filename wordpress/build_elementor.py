@@ -473,11 +473,6 @@ def packs_block():
         _title="Packs de ahorro")
 
 
-def safety_note():
-    return text("<p>Lee siempre las indicaciones del envase y no mezcles productos de limpieza con cloro.</p>",
-                typo="pequeno", align="center", _margin=dims(24, 0, 0, 0))
-
-
 def soon_card(key, name, desc):
     return card([
         image(key, height=200, height_m=190),
@@ -520,7 +515,7 @@ def products_section(with_head=True, soon=True):
         items.append(section_head("Productos", "Nuestros productos esenciales",
                                   "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
                                   "en qué formato vienen y cuánto cuestan."))
-    items += [products_grid(), safety_note(), packs_block()]
+    items += [products_grid(), packs_block()]
     if soon:
         items.append(soon_block())
     return section(items, anchor="productos", title="Productos", pad=(120 if with_head else 88, 120))

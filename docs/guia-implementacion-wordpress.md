@@ -94,7 +94,6 @@ Contenedor de 2 columnas (55/45), en móvil apilado.
   `card product-card` que contiene: *Imagen* (proporción 5:4), etiqueta (texto pequeño con fondo
   celeste suave), H3, texto, título "Usos habituales", *Lista de íconos* y *Botón*
   "Consultar por WhatsApp" con el mensaje prellenado del producto.
-- Nota pequeña bajo las tarjetas: "Lee siempre las indicaciones del envase…".
 - Bloque **Próximamente**: contenedor con fondo Blanco cálido, radio 32 px. A la izquierda el
   texto; a la derecha 2 tarjetas (Aceite de Oliva, Café en Grano) con insignia "Próximamente" y
   enlace "Avísame por WhatsApp". Cuando un producto llegue, se duplica una tarjeta de producto y
