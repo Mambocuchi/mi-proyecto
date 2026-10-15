@@ -24,7 +24,7 @@ IMG = {
     "cafe": (67, "proximamente-cafe.svg"),
     "pack_vb": (121, "pack-vinagre-bicarbonato.svg"),
     "pack_2v": (122, "pack-2-vinagres.svg"),
-    "cafe_roldi": (215, "2026/10/cafe-carlos-roldi-karu.jpg"),
+    "cafe_roldi": (207, "2026/10/carlos_54364133-f9ab-4478-be47-5dd5154a68b9.png"),
 }
 
 _used = set()
