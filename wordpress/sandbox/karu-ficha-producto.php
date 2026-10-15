@@ -218,11 +218,16 @@ dl.karu-datos dd { margin: 2px 0 0; font-weight: 600; color: #243D5B; }
 .karu-cafeteria p { margin: 0; color: #243D5B; }
 .karu-cafeteria__boton { display: inline-block; padding: 13px 24px; border-radius: 999px; background: #25D366; color: #FFFFFF !important; font-weight: 700; text-decoration: none; }
 .karu-cafeteria__boton:hover { background: #1EBE5B; }
+.karu-llamado { margin-top: 36px; padding: 24px 28px; border-radius: 24px; background: #EDF6FF; border: 1px solid #B8E0FF; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+.karu-llamado p { margin: 0; color: #243D5B; }
+.karu-llamado__boton { display: inline-block; padding: 13px 24px; border-radius: 999px; background: #4A90E2; color: #FFFFFF !important; font-weight: 700; text-decoration: none; box-shadow: 0 6px 18px rgba(74,144,226,.28); }
+.karu-llamado__boton:hover { background: #3A7DCB; }
 @media (max-width: 767px) {
 	.karu-ficha .summary > .price { font-size: 26px; }
 	dl.karu-datos, .karu-ahorro { grid-template-columns: 1fr; }
 	.karu-desc h3 { font-size: 24px; }
 	.karu-cafeteria { padding: 20px; }
+	.karu-llamado { padding: 20px; }
 }
 </style>
 	<?php
