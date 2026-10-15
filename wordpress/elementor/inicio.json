@@ -1532,7 +1532,7 @@
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>Gránulos que liberan oxígeno al disolverse en agua tibia o caliente. Muy usado en el lavado y la limpieza.</p>",
+             "editor": "<p>Gránulos que liberan oxígeno al disolverse en agua caliente (sobre 40 °C). Muy usado en el lavado y la limpieza.</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"

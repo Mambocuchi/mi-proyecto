@@ -350,7 +350,7 @@ PRODUCTS = [
      ["Vidrios, espejos y cerámicas", "Ayuda a remover sarro en hervidores y llaves", "Superficies de cocina y baño"],
      "5 litros", 6500, 7500),
     ("percarbonato", "Lavado de ropa", "Percarbonato de Sodio",
-     "Gránulos que liberan oxígeno al disolverse en agua tibia o caliente. Muy usado en el lavado y la limpieza.",
+     "Gránulos que liberan oxígeno al disolverse en agua caliente (sobre 40 °C). Muy usado en el lavado y la limpieza.",
      ["Complemento para lavar ropa blanca", "Remojo de prendas con manchas", "Juntas, tablas y superficies"],
      "1 kg", 7500, None),
     ("bicarbonato", "Multiuso", "Bicarbonato de Sodio",
