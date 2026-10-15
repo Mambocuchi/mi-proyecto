@@ -932,8 +932,10 @@ def contact_section(form_id):
 
 GUIDE = [
     ("vinagre", "guia-vinagre", "Cocina y baño", "Vinagre Incoloro", "5 litros",
-     "Es un vinagre transparente, sin color. Su acidez ayuda a disolver el sarro y los restos de jabón, "
-     "por eso es un clásico para vidrios, llaves y superficies de cocina y baño.",
+     "Elaborado mediante una rigurosa fermentación acética a partir de alcohol de melaza de 95°. Cuenta con una "
+     "acidez equilibrada de 4,2° y una fórmula que incluye agua tratada y conservadores (metabisulfito de potasio) "
+     "para garantizar su durabilidad. Es el aliado perfecto para el hogar, gracias a sus potentes propiedades "
+     "desinfectantes para tareas de limpieza",
      [
          ("fas fa-spray-can", "Vidrios y espejos",
           ["Mezcla 1 parte de vinagre con 1 parte de agua en un pulverizador.",
