@@ -208,6 +208,19 @@ dl.karu-datos > div { padding: 14px 18px; border-radius: 16px; background: #EDF6
 dl.karu-datos > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
 dl.karu-datos dt { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #5B6C82; }
 dl.karu-datos dd { margin: 2px 0 0; font-weight: 600; color: #243D5B; }
+.karu-tecnica { margin-top: 16px; border: 1px solid #E4ECF4; border-radius: 16px; background: #FFFFFF; }
+.karu-tecnica summary { cursor: pointer; padding: 14px 18px; font-weight: 700; color: #4A90E2; list-style: none; }
+.karu-tecnica summary::-webkit-details-marker { display: none; }
+.karu-tecnica summary::after { content: "+"; float: right; font-size: 20px; line-height: 1; color: #4A90E2; }
+.karu-tecnica[open] summary::after { content: "−"; }
+.karu-tecnica__grupos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 4px 18px 18px; }
+.karu-tecnica h5 { margin: 0 0 8px; font-family: Nunito, sans-serif; font-weight: 800; font-size: 16px; color: #243D5B; }
+.karu-tecnica table { width: 100%; border-collapse: collapse; margin: 0; border: 0; font-size: 14px; }
+.karu-tecnica th, .karu-tecnica td { padding: 7px 0; border: 0; border-bottom: 1px solid #E4ECF4; background: none; vertical-align: top; }
+.karu-tecnica th { text-align: left; font-weight: 600; color: #243D5B; padding-right: 10px; }
+.karu-tecnica td { text-align: right; color: #5B6C82; }
+.karu-cocina .karu-tecnica { border-color: #EFE7DA; }
+.karu-cocina .karu-tecnica th, .karu-cocina .karu-tecnica td { border-bottom-color: #EFE7DA; }
 .karu-ahorro { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .karu-ahorro__item { display: flex; flex-direction: column; gap: 6px; padding: 20px; border: 1px solid #E4ECF4; border-radius: 20px; background: #FFFFFF; box-shadow: 0 4px 16px rgba(36,61,91,.05); }
 .karu-ahorro__formato { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #5B6C82; }
@@ -225,7 +238,7 @@ dl.karu-datos dd { margin: 2px 0 0; font-weight: 600; color: #243D5B; }
 .karu-llamado__boton:hover { background: #3A7DCB; }
 @media (max-width: 767px) {
 	.karu-ficha .summary > .price { font-size: 26px; }
-	dl.karu-datos, .karu-ahorro { grid-template-columns: 1fr; }
+	dl.karu-datos, .karu-ahorro, .karu-tecnica__grupos { grid-template-columns: 1fr; }
 	.karu-desc h3 { font-size: 24px; }
 	.karu-cafeteria { padding: 20px; }
 	.karu-llamado { padding: 20px; }
