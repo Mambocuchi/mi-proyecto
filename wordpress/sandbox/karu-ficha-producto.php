@@ -205,6 +205,7 @@ add_action( 'wp_head', function () {
 .karu-desc h4 { margin-top: 36px; margin-bottom: 14px; font-family: Figtree, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #4A90E2; }
 dl.karu-datos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; }
 dl.karu-datos > div { padding: 14px 18px; border-radius: 16px; background: #EDF6FF; }
+dl.karu-datos > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
 dl.karu-datos dt { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #5B6C82; }
 dl.karu-datos dd { margin: 2px 0 0; font-weight: 600; color: #243D5B; }
 .karu-ahorro { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
