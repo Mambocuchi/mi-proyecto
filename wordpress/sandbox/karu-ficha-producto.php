@@ -140,7 +140,7 @@ add_action( 'wp_head', function () {
 .karu-ficha .karu-formatos .karu-formato:hover { border-color: #B8E0FF; background: #EDF6FF; color: #243D5B; }
 .karu-ficha .karu-formatos .karu-formato.is-activo { border-color: #4A90E2; background: #EDF6FF; color: #243D5B; }
 .karu-formato:focus-visible { outline: 3px solid #B8E0FF; outline-offset: 2px; }
-.karu-ficha .single_variation { display: flex; flex-direction: column; gap: 10px; }
+.karu-ficha .single_variation:not(:empty) { display: flex !important; flex-direction: column; gap: 10px; margin-bottom: 20px; }
 .karu-ficha .single_variation .woocommerce-variation-price { order: 1; }
 .karu-ficha .single_variation .woocommerce-variation-description { order: 2; }
 .karu-ficha .single_variation .woocommerce-variation-availability { order: 3; }
