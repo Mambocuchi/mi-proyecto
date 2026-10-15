@@ -266,7 +266,8 @@ function karu_mensaje_pedido( WC_Order $order ) {
 		$l[] = 'Descuento' . ( $codigos ? ' (' . strtoupper( implode( ', ', $codigos ) ) . ')' : '' ) . ': -' . karu_clp( $order->get_discount_total() );
 	}
 	$envio = $order->get_shipping_method();
-	$l[]   = 'Entrega: ' . $envio . ( (float) $order->get_shipping_total() > 0 ? ' ' . karu_clp( $order->get_shipping_total() ) : ' (gratis)' );
+	$costo = (float) $order->get_shipping_total() > 0 ? ' ' . karu_clp( $order->get_shipping_total() ) : ( stripos( $envio, 'gratis' ) === false ? ' (gratis)' : '' );
+	$l[]   = 'Entrega: ' . $envio . $costo;
 	$l[]   = 'Total: ' . karu_clp( $order->get_total() );
 	$l[]   = 'Pago: ' . $order->get_payment_method_title();
 	$l[]   = '';
