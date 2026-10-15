@@ -21,12 +21,38 @@ function karu_ficha_activa() {
 	return (bool) get_option( 'karu_ficha_todas' ) || in_array( (int) get_queried_object_id(), KARU_FICHA_PRODUCTOS, true );
 }
 
+// Productos de la categoría "Cocina" (y sus subcategorías): detalles en tono crema.
+function karu_es_cocina( $producto_id ) {
+	$cocina = get_term_by( 'slug', 'cocina', 'product_cat' );
+	if ( ! $cocina ) {
+		return false;
+	}
+	foreach ( wc_get_product_term_ids( $producto_id, 'product_cat' ) as $cat ) {
+		if ( (int) $cat === (int) $cocina->term_id || term_is_ancestor_of( $cocina->term_id, $cat, 'product_cat' ) ) {
+			return true;
+		}
+	}
+	return false;
+}
+
 add_filter( 'body_class', function ( $clases ) {
 	if ( karu_ficha_activa() ) {
 		$clases[] = 'karu-ficha';
+		if ( karu_es_cocina( get_queried_object_id() ) ) {
+			$clases[] = 'karu-cocina';
+		}
 	}
 	return $clases;
 } );
+
+// Sección de la Guía de usos para cada producto de limpieza.
+const KARU_GUIA_PRODUCTOS = array(
+	163 => array( 'guia-vinagre', 'Ver cómo usar el Vinagre Incoloro' ),
+	164 => array( 'guia-percarbonato', 'Ver cómo usar el Percarbonato de Sodio' ),
+	165 => array( 'guia-bicarbonato', 'Ver cómo usar el Bicarbonato de Sodio' ),
+	166 => array( '', 'Ver cómo usar el vinagre y el bicarbonato' ),
+	167 => array( 'guia-vinagre', 'Ver cómo usar el Vinagre Incoloro' ),
+);
 
 // Productos con formatos: "Desde $9.500" en vez de un rango de precios.
 add_filter( 'woocommerce_variable_price_html', function ( $html, $producto ) {
@@ -56,6 +82,12 @@ add_action( 'woocommerce_after_add_to_cart_form', function () {
 		. '<li><strong>Retiro gratis</strong> en Castellón 1333, Concepción</li>'
 		. '<li>Paga con <strong>transferencia</strong> o en <strong>efectivo</strong></li>'
 		. '</ul>';
+	$id = $product->get_id();
+	if ( isset( KARU_GUIA_PRODUCTOS[ $id ] ) ) {
+		list( $ancla, $texto ) = KARU_GUIA_PRODUCTOS[ $id ];
+		$url = home_url( '/guia-de-usos/' ) . ( $ancla ? '#' . $ancla : '' );
+		echo '<a class="karu-ficha-guia" href="' . esc_url( $url ) . '"><span>' . esc_html( $texto ) . '</span> <span aria-hidden="true">→</span></a>';
+	}
 } );
 
 /* ------------------------------------------------------------------ Formatos como botones */
@@ -157,6 +189,13 @@ add_action( 'wp_head', function () {
 .karu-confianza li + li { margin-top: 8px; }
 .karu-confianza li::before { content: ""; position: absolute; left: 2px; top: .3em; width: 14px; height: 8px; border-left: 2.5px solid #4A90E2; border-bottom: 2.5px solid #4A90E2; transform: rotate(-45deg); }
 .karu-confianza strong { color: #243D5B; }
+.karu-ficha-guia { display: inline-flex; gap: 6px; margin-top: 14px; color: #4A90E2; font-weight: 700; text-decoration: none; }
+.karu-ficha-guia:hover { color: #3A7DCB; }
+/* Cocina: detalles en blanco cálido (crema); botones y enlaces siguen en azul Karu */
+.karu-cocina dl.karu-datos > div { background: #FAF8F4; border: 1px solid #EFE7DA; }
+.karu-cocina .karu-cafeteria { background: #FAF8F4; border-color: #EFE7DA; }
+.karu-cocina .karu-ahorro__nota--destacada { background: #F3EADB; }
+.karu-cocina .onsale { background: #F3EADB; }
 .karu-ficha .product_meta .sku_wrapper { display: none !important; }
 .karu-ficha .woocommerce-tabs .tabs li a { font-family: Nunito, sans-serif; font-size: 16px; font-weight: 800; text-transform: none; letter-spacing: 0; }
 /* Descripción */
