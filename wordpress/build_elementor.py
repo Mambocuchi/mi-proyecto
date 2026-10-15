@@ -933,7 +933,7 @@ def contact_section(form_id):
 GUIDE = [
     ("vinagre", "guia-vinagre", "Cocina y baño", "Vinagre Incoloro", "5 litros",
      "Elaborado mediante una rigurosa fermentación acética a partir de alcohol de melaza de 95°. Cuenta con una "
-     "acidez equilibrada de 4,2° y una fórmula que incluye agua tratada y conservadores (metabisulfito de potasio) "
+     "acidez de 4% y una fórmula que incluye agua tratada y conservadores (metabisulfito de potasio) "
      "para garantizar su durabilidad. Es un aliado perfecto para la limpieza del hogar.",
      [
          ("fas fa-spray-can", "Vidrios y espejos",
