@@ -1,6 +1,6 @@
 [
  {
-  "id": "a2d4da8",
+  "id": "423c33f",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "98a93e8",
+    "id": "2a404bd",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "2432045",
+      "id": "b9ec250",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "6cd9672",
+      "id": "afac1b3",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,7 +91,7 @@
       "elements": []
      },
      {
-      "id": "731dc8b",
+      "id": "45d535d",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "80814b5",
+  "id": "d91f685",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,7 @@
   },
   "elements": [
    {
-    "id": "c23e157",
+    "id": "15333be",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -166,7 +166,7 @@
     },
     "elements": [
      {
-      "id": "a5d83ab",
+      "id": "a4918f8",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -198,7 +198,7 @@
       },
       "elements": [
        {
-        "id": "8998339",
+        "id": "b9da9cc",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -212,7 +212,7 @@
         "elements": []
        },
        {
-        "id": "5c87508",
+        "id": "dd93464",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -225,7 +225,7 @@
         "elements": []
        },
        {
-        "id": "59acd14",
+        "id": "eae220c",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -299,7 +299,7 @@
       ]
      },
      {
-      "id": "e2e891a",
+      "id": "9099d31",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -331,43 +331,43 @@
       },
       "elements": [
        {
-        "id": "13aa207",
+        "id": "461ccc0",
         "elType": "widget",
         "widgetType": "nested-accordion",
         "settings": {
          "items": [
           {
-           "_id": "48d1808",
+           "_id": "3303268",
            "item_title": "¿Cómo puedo comprar?",
            "element_css_id": ""
           },
           {
-           "_id": "3a04426",
+           "_id": "b8e8246",
            "item_title": "¿Dónde realizan entregas?",
            "element_css_id": ""
           },
           {
-           "_id": "41d51b8",
+           "_id": "adc9100",
            "item_title": "¿Cómo puedo pagar?",
            "element_css_id": ""
           },
           {
-           "_id": "d369199",
+           "_id": "a8d798d",
            "item_title": "¿Cómo puedo conocer los precios?",
            "element_css_id": ""
           },
           {
-           "_id": "e0fe8b6",
+           "_id": "2798e9e",
            "item_title": "¿Qué usos tiene cada producto?",
            "element_css_id": ""
           },
           {
-           "_id": "19c5d1d",
+           "_id": "fa34191",
            "item_title": "¿Qué formatos están disponibles?",
            "element_css_id": ""
           },
           {
-           "_id": "3fb4c05",
+           "_id": "f91b4d5",
            "item_title": "¿Cómo puedo contactar a Karu Esencial?",
            "element_css_id": ""
           }
@@ -486,7 +486,7 @@
         },
         "elements": [
          {
-          "id": "2ef89a8",
+          "id": "02d0493",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -504,7 +504,7 @@
           },
           "elements": [
            {
-            "id": "abe7de4",
+            "id": "93117de",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -519,7 +519,7 @@
           ]
          },
          {
-          "id": "c7ae7d7",
+          "id": "cd08e84",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -537,7 +537,7 @@
           },
           "elements": [
            {
-            "id": "d8582bc",
+            "id": "5d4084f",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -552,7 +552,7 @@
           ]
          },
          {
-          "id": "7725b62",
+          "id": "0a5e217",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -570,7 +570,7 @@
           },
           "elements": [
            {
-            "id": "941bebb",
+            "id": "0a35601",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -585,7 +585,7 @@
           ]
          },
          {
-          "id": "b0dd427",
+          "id": "db70fbf",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -603,7 +603,7 @@
           },
           "elements": [
            {
-            "id": "f23600d",
+            "id": "6352f6c",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -618,7 +618,7 @@
           ]
          },
          {
-          "id": "91ce0b3",
+          "id": "214eb7b",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -636,7 +636,7 @@
           },
           "elements": [
            {
-            "id": "1ef6333",
+            "id": "6f7f088",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -651,7 +651,7 @@
           ]
          },
          {
-          "id": "1ddae6e",
+          "id": "5d1ff08",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -669,11 +669,11 @@
           },
           "elements": [
            {
-            "id": "783497d",
+            "id": "2a9b4ea",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
-             "editor": "<p>El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres.</p>",
+             "editor": "<p>El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres. El Café de especialidad Carlos Roldi viene en grano, en bolsas de 250 g, y en packs de 1 kg (4 bolsas) y 2 kg (8 bolsas).</p>",
              "__globals__": {
               "typography_typography": "globals/typography?id=text",
               "text_color": "globals/colors?id=text"
@@ -684,7 +684,7 @@
           ]
          },
          {
-          "id": "6b43701",
+          "id": "4903d96",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -702,7 +702,7 @@
           },
           "elements": [
            {
-            "id": "325ea55",
+            "id": "007892c",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -725,7 +725,7 @@
   ]
  },
  {
-  "id": "18d4c34",
+  "id": "91a1f9b",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -759,7 +759,7 @@
   },
   "elements": [
    {
-    "id": "1a618ce",
+    "id": "c69b1ca",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -816,7 +816,7 @@
     },
     "elements": [
      {
-      "id": "5d2ff6f",
+      "id": "2e62901",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -858,7 +858,7 @@
       "elements": []
      },
      {
-      "id": "d088c29",
+      "id": "5130600",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -883,7 +883,7 @@
       "elements": []
      },
      {
-      "id": "7a7a951",
+      "id": "b7b032e",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -954,7 +954,7 @@
       "elements": []
      },
      {
-      "id": "99d791a",
+      "id": "81fe481",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {

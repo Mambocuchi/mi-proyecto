@@ -24,6 +24,7 @@ IMG = {
     "cafe": (67, "proximamente-cafe.svg"),
     "pack_vb": (121, "pack-vinagre-bicarbonato.svg"),
     "pack_2v": (122, "pack-2-vinagres.svg"),
+    "cafe_roldi": (215, "2026/10/cafe-carlos-roldi-karu.jpg"),
 }
 
 _used = set()
@@ -241,7 +242,8 @@ def button(label, url, kind="primary", size="md", ico="fab fa-whatsapp", ico_aft
 def image(key, height=None, height_m=None, radius=None, **s):
     iid, fname = IMG[key]
     d = {
-        "image": {"url": f"{SITE}/wp-content/uploads/2026/09/{fname}", "id": iid, "size": "", "source": "library"},
+        "image": {"url": f"{SITE}/wp-content/uploads/{fname if '/' in fname else '2026/09/' + fname}", "id": iid,
+                  "size": "", "source": "library"},
         "image_size": "full",
         "width": pct(100),
     }
@@ -313,8 +315,8 @@ def hero():
     left = column([
         eyebrow("Esenciales para el hogar · Chile"),
         heading('Lo esencial para un hogar <span style="color:#4A90E2">más simple.</span>', "h1", "h1hero"),
-        text("<p>Vinagre incoloro, percarbonato de sodio y bicarbonato de sodio: tres básicos versátiles "
-             "para limpiar y cuidar tu casa. Elige lo que necesitas y pídelo directo por WhatsApp.</p>", typo="lead"),
+        text("<p>Vinagre incoloro, percarbonato y bicarbonato de sodio para limpiar y cuidar tu casa, y café de "
+             "especialidad para tu cocina. Elige lo que necesitas y pídelo directo por WhatsApp.</p>", typo="lead"),
         row([
             button("Pedir por WhatsApp", wa("Hola Karu Esencial, quiero hacer un pedido."), size="lg",
                    align_m="justify"),
@@ -497,25 +499,83 @@ def soon_block():
                 typography_typography="custom", typography_font_family="Nunito", typography_font_weight="800",
                 typography_font_size=px(30), typography_font_size_mobile=px(24),
                 typography_line_height={"unit": "em", "size": 1.15, "sizes": []}),
-        text("<p>Estamos preparando dos productos más. Si te interesan, escríbenos y te avisamos cuando estén disponibles.</p>"),
-    ], width=32, width_t=100, g=12, _title="Texto")
+        text("<p>Estamos preparando un producto más para tu cocina. Si te interesa, escríbenos y te avisamos "
+             "cuando esté disponible.</p>"),
+    ], width=55, width_t=100, g=12, _title="Texto")
     right = grid([
         soon_card("aceite", "Aceite de Oliva", "Para cocinar, aliñar y compartir en la mesa."),
-        soon_card("cafe", "Café en Grano", "Para preparar en casa, a tu manera."),
-    ], 2, cols_t=2, cols_m=1, g=20, width=pct(68), width_tablet=pct(100), width_mobile=pct(100), _title="Tarjetas")
+    ], 1, cols_t=1, cols_m=1, g=20, width=pct(45), width_tablet=pct(100), width_mobile=pct(100), _title="Tarjetas")
     return row([left, right], g=48, stack="tablet", _title="Próximamente",
                padding=dims(48), padding_mobile=dims(28, 20), margin=dims(88, 0, 0, 0),
                margin_mobile=dims(56, 0, 0, 0), background_background="classic", border_radius=dims(32),
                __globals__={"background_color": gc("blancocalido")})
 
 
+CAFE_URL = f"{SITE}/producto/cafe-especialidad-carlos-roldi/"
+
+
+def category_head(eyebrow_text, title, body, first=False):
+    return column([
+        eyebrow(eyebrow_text),
+        heading(title, "h3", None, "accent",
+                typography_typography="custom", typography_font_family="Nunito", typography_font_weight="900",
+                typography_font_size=px(34), typography_font_size_mobile=px(26),
+                typography_line_height={"unit": "em", "size": 1.15, "sizes": []}),
+        text(f"<p>{body}</p>"),
+    ], g=8, margin=dims(0 if first else 96, 0, 28, 0), margin_mobile=dims(0 if first else 60, 0, 22, 0),
+        _title=f"Categoría {title}")
+
+
+def cafe_card():
+    body = column([
+        tag("Café de especialidad"),
+        heading("Café de especialidad Carlos Roldi", "h3", "h3tarjeta",
+                typography_typography="custom", typography_font_family="Nunito", typography_font_weight="900",
+                typography_font_size=px(28), typography_font_size_mobile=px(24)),
+        text("<p><strong>Intenso, dulce y con cuerpo.</strong> Un café de baja acidez con notas a chocolate, nueces "
+             "y azúcar morena, ideal para espresso y café con leche. 88 puntos de cata, cultivado en Espírito "
+             "Santo, Brasil.</p>"),
+        checklist(["Café en grano, bolsas de 250 g", "Packs de 1 kg y 2 kg con descuento",
+                   "Para espresso, moka y café con leche"], size=12),
+        column([
+            heading("Formatos 250 g · 1 kg · 2 kg", "p", "pequeno", "text", typography_typography="custom",
+                    typography_font_size=px(13), typography_font_weight="600"),
+            row([
+                heading("Desde", "p", None, "text", _flex_size="none", typography_typography="custom",
+                        typography_font_family="Figtree", typography_font_weight="600", typography_font_size=px(15)),
+                heading(clp(9500), "p", None, "accent", _flex_size="none", typography_typography="custom",
+                        typography_font_family="Nunito", typography_font_weight="900", typography_font_size=px(30),
+                        typography_line_height={"unit": "em", "size": 1, "sizes": []}),
+            ], g=8, stack=None, align="baseline", _title="Precio"),
+        ], g=6, padding=dims(14, 0, 0, 0), border_border="solid", border_width=dims(1, 0, 0, 0),
+            _title="Formato y precio", __globals__={"border_color": gc("grisclaro")}),
+        row([
+            button("Ver formatos y comprar", CAFE_URL, ico="fas fa-shopping-cart", align_m="justify"),
+            button("Consultar por WhatsApp", wa("Hola Karu Esencial, quiero consultar por el Café de especialidad Carlos Roldi."),
+                   kind="link", ico="fab fa-whatsapp", align_m="center"),
+        ], g=20, wrap=True, stack="mobile", _title="Botones"),
+    ], width=56, width_t=100, g=14, padding=dims(36, 40, 36, 8), padding_tablet=dims(28, 28, 32, 28),
+        _title="Cuerpo")
+    media = column([image("cafe_roldi", height=460, height_m=320)], width=44, width_t=100, g=0, _title="Imagen")
+    return card([row([media, body], g=24, align="center", stack="tablet", _title="Café")], hover=False,
+                _title="Café Carlos Roldi", __globals__={"background_color": gc("blancocalido"),
+                                                          "border_color": gc("grisclaro")})
+
+
 def products_section(with_head=True, soon=True):
     items = []
     if with_head:
         items.append(section_head("Productos", "Nuestros productos esenciales",
-                                  "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
-                                  "en qué formato vienen y cuánto cuestan."))
-    items += [products_grid(), guide_link_block(), packs_block()]
+                                  "Básicos para la limpieza de la casa y café de especialidad para tu cocina. Te "
+                                  "contamos para qué se usan, en qué formato vienen y cuánto cuestan."))
+    items += [
+        category_head("Limpieza del hogar", "Para limpiar y cuidar tu casa",
+                      "Tres básicos multiuso que resuelven muchas tareas de todos los días.", first=True),
+        products_grid(), guide_link_block(), packs_block(),
+        category_head("Cocina", "Café de especialidad",
+                      "Un café en grano seleccionado para disfrutar en casa."),
+        cafe_card(),
+    ]
     if soon:
         items.append(soon_block())
     return section(items, anchor="productos", title="Productos", pad=(120 if with_head else 88, 120))
@@ -704,7 +764,8 @@ FAQ = [
      "paso a paso. Si tienes una duda puntual, escríbenos y te orientamos. Lee siempre las indicaciones del envase."),
     ("¿Qué formatos están disponibles?",
      "El Vinagre Incoloro viene en formato de 5 litros. El Percarbonato de Sodio y el Bicarbonato de Sodio vienen "
-     "en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres."),
+     "en formato de 1 kg. También tenemos packs de ahorro: Vinagre + Bicarbonato y 2 Vinagres. El Café de "
+     "especialidad Carlos Roldi viene en grano, en bolsas de 250 g, y en packs de 1 kg (4 bolsas) y 2 kg (8 bolsas)."),
     ("¿Cómo puedo contactar a Karu Esencial?",
      f'Nuestro canal principal es WhatsApp: +56 9 8904 8914. También puedes llamarnos a ese número o '
      f'escribirnos desde la página de <a href="{SITE}/contacto/">Contacto</a>.'),
@@ -1094,7 +1155,7 @@ def pages(form_id):
                    faq_section(FAQ[:3], more_link=True), instagram_section(), cta_section()],
         "productos": [
             page_intro("Productos", "Nuestros productos esenciales",
-                       "Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, "
+                       "Básicos para la limpieza de la casa y café de especialidad para tu cocina. Te contamos para qué se usan, "
                        "en qué formato vienen y cuánto cuestan."),
             products_section(with_head=False), how_to_buy_section(), cta_section()],
         "beneficios": [

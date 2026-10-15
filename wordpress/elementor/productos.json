@@ -1,6 +1,6 @@
 [
  {
-  "id": "de1581b",
+  "id": "683ac2e",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -38,7 +38,7 @@
   },
   "elements": [
    {
-    "id": "16def06",
+    "id": "b7aa8be",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -61,7 +61,7 @@
     },
     "elements": [
      {
-      "id": "59c8a77",
+      "id": "e5ce014",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -76,7 +76,7 @@
       "elements": []
      },
      {
-      "id": "8b31a0a",
+      "id": "5b2a51e",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -91,11 +91,11 @@
       "elements": []
      },
      {
-      "id": "d70a044",
+      "id": "61c7b4f",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
-       "editor": "<p>Tres básicos que resuelven muchas tareas de la casa. Te contamos para qué se usan, en qué formato vienen y cuánto cuestan.</p>",
+       "editor": "<p>Básicos para la limpieza de la casa y café de especialidad para tu cocina. Te contamos para qué se usan, en qué formato vienen y cuánto cuestan.</p>",
        "__globals__": {
         "typography_typography": "globals/typography?id=lead",
         "text_color": "globals/colors?id=text"
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "id": "f32fd0f",
+  "id": "611fb1b",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -144,7 +144,100 @@
   },
   "elements": [
    {
-    "id": "f08680c",
+    "id": "74f743a",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "8",
+      "row": "8",
+      "isLinked": true,
+      "unit": "px",
+      "size": 8
+     },
+     "margin": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "28",
+      "left": "0",
+      "isLinked": false
+     },
+     "margin_mobile": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "22",
+      "left": "0",
+      "isLinked": false
+     },
+     "_title": "Categoría Para limpiar y cuidar tu casa"
+    },
+    "elements": [
+     {
+      "id": "d06628a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Limpieza del hogar",
+       "header_size": "p",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=eyebrow",
+        "title_color": "globals/colors?id=primary"
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "e6c0e01",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Para limpiar y cuidar tu casa",
+       "header_size": "h3",
+       "__globals__": {
+        "title_color": "globals/colors?id=accent"
+       },
+       "typography_typography": "custom",
+       "typography_font_family": "Nunito",
+       "typography_font_weight": "900",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 34,
+        "sizes": []
+       },
+       "typography_font_size_mobile": {
+        "unit": "px",
+        "size": 26,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 1.15,
+        "sizes": []
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "52ef9e1",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Tres básicos multiuso que resuelven muchas tareas de todos los días.</p>",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=text",
+        "text_color": "globals/colors?id=text"
+       }
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "26522c4",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -192,7 +285,7 @@
     },
     "elements": [
      {
-      "id": "b7aa8be",
+      "id": "d768c70",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -268,7 +361,7 @@
       },
       "elements": [
        {
-        "id": "61c7b4f",
+        "id": "dcdd035",
         "elType": "widget",
         "widgetType": "image",
         "settings": {
@@ -299,7 +392,7 @@
         "elements": []
        },
        {
-        "id": "5b2a51e",
+        "id": "68bd748",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -325,7 +418,7 @@
         },
         "elements": [
          {
-          "id": "0709d47",
+          "id": "7e9dfdf",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -343,7 +436,7 @@
           },
           "elements": [
            {
-            "id": "954d44f",
+            "id": "0c1502b",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -383,7 +476,7 @@
             "elements": []
            },
            {
-            "id": "6d31cb9",
+            "id": "8ac107a",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -397,7 +490,7 @@
             "elements": []
            },
            {
-            "id": "78905eb",
+            "id": "8a35a53",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -410,7 +503,7 @@
             "elements": []
            },
            {
-            "id": "024358d",
+            "id": "35a0e05",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -438,14 +531,14 @@
             "elements": []
            },
            {
-            "id": "297ae3b",
+            "id": "eeab14b",
             "elType": "widget",
             "widgetType": "icon-list",
             "settings": {
              "view": "traditional",
              "icon_list": [
               {
-               "_id": "435f900",
+               "_id": "2355627",
                "text": "Vidrios, espejos y cerámicas",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -453,7 +546,7 @@
                }
               },
               {
-               "_id": "f3a6799",
+               "_id": "b3e9edc",
                "text": "Ayuda a remover sarro en hervidores y llaves",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -461,7 +554,7 @@
                }
               },
               {
-               "_id": "4afa071",
+               "_id": "1d26d19",
                "text": "Superficies de cocina y baño",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -503,7 +596,7 @@
           ]
          },
          {
-          "id": "dac6210",
+          "id": "d319d98",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -540,7 +633,7 @@
           },
           "elements": [
            {
-            "id": "9acf758",
+            "id": "9b2d646",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -561,7 +654,7 @@
             "elements": []
            },
            {
-            "id": "2edc5ad",
+            "id": "65088ad",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -581,7 +674,7 @@
             },
             "elements": [
              {
-              "id": "96e0f86",
+              "id": "cdf00a9",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -613,7 +706,7 @@
               "elements": []
              },
              {
-              "id": "443633a",
+              "id": "ebdfe1f",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -636,7 +729,7 @@
               "elements": []
              },
              {
-              "id": "0d744f4",
+              "id": "df136ea",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -680,7 +773,7 @@
           ]
          },
          {
-          "id": "826bb43",
+          "id": "121589b",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -742,7 +835,7 @@
           "elements": []
          },
          {
-          "id": "e5ce014",
+          "id": "322f374",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -809,7 +902,7 @@
       ]
      },
      {
-      "id": "9b2d646",
+      "id": "1944bd2",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -885,7 +978,7 @@
       },
       "elements": [
        {
-        "id": "df136ea",
+        "id": "78114ab",
         "elType": "widget",
         "widgetType": "image",
         "settings": {
@@ -916,7 +1009,7 @@
         "elements": []
        },
        {
-        "id": "ebdfe1f",
+        "id": "b0accd8",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -942,7 +1035,7 @@
         },
         "elements": [
          {
-          "id": "35a0e05",
+          "id": "1406fd7",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -960,7 +1053,7 @@
           },
           "elements": [
            {
-            "id": "683ac2e",
+            "id": "a7eb655",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1000,7 +1093,7 @@
             "elements": []
            },
            {
-            "id": "d06628a",
+            "id": "7ca4feb",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1014,7 +1107,7 @@
             "elements": []
            },
            {
-            "id": "e6c0e01",
+            "id": "ed6034e",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1027,7 +1120,7 @@
             "elements": []
            },
            {
-            "id": "52ef9e1",
+            "id": "b3f9e38",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1055,14 +1148,14 @@
             "elements": []
            },
            {
-            "id": "8a35a53",
+            "id": "b0437a8",
             "elType": "widget",
             "widgetType": "icon-list",
             "settings": {
              "view": "traditional",
              "icon_list": [
               {
-               "_id": "74f743a",
+               "_id": "9381191",
                "text": "Complemento para lavar ropa blanca",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1070,7 +1163,7 @@
                }
               },
               {
-               "_id": "0c1502b",
+               "_id": "13c132b",
                "text": "Remojo de prendas con manchas",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1078,7 +1171,7 @@
                }
               },
               {
-               "_id": "8ac107a",
+               "_id": "7f22614",
                "text": "Juntas, tablas y superficies",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1120,7 +1213,7 @@
           ]
          },
          {
-          "id": "eeab14b",
+          "id": "b350aad",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1157,7 +1250,7 @@
           },
           "elements": [
            {
-            "id": "b3e9edc",
+            "id": "5397a4f",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1178,7 +1271,7 @@
             "elements": []
            },
            {
-            "id": "1d26d19",
+            "id": "20e92f2",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -1198,7 +1291,7 @@
             },
             "elements": [
              {
-              "id": "2355627",
+              "id": "b6fca77",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1234,7 +1327,7 @@
           ]
          },
          {
-          "id": "7e9dfdf",
+          "id": "f08680c",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -1296,7 +1389,7 @@
           "elements": []
          },
          {
-          "id": "cdf00a9",
+          "id": "660a473",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -1363,7 +1456,7 @@
       ]
      },
      {
-      "id": "b350aad",
+      "id": "28aeb17",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1439,7 +1532,7 @@
       },
       "elements": [
        {
-        "id": "20e92f2",
+        "id": "8fe66a9",
         "elType": "widget",
         "widgetType": "image",
         "settings": {
@@ -1470,7 +1563,7 @@
         "elements": []
        },
        {
-        "id": "5397a4f",
+        "id": "512170e",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -1496,7 +1589,7 @@
         },
         "elements": [
          {
-          "id": "7ca4feb",
+          "id": "4b7f7bb",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1514,7 +1607,7 @@
           },
           "elements": [
            {
-            "id": "65088ad",
+            "id": "d6dc984",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1554,7 +1647,7 @@
             "elements": []
            },
            {
-            "id": "d319d98",
+            "id": "5001df7",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1568,7 +1661,7 @@
             "elements": []
            },
            {
-            "id": "121589b",
+            "id": "669052e",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -1581,7 +1674,7 @@
             "elements": []
            },
            {
-            "id": "322f374",
+            "id": "84e9900",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1609,14 +1702,14 @@
             "elements": []
            },
            {
-            "id": "a7eb655",
+            "id": "7e6c005",
             "elType": "widget",
             "widgetType": "icon-list",
             "settings": {
              "view": "traditional",
              "icon_list": [
               {
-               "_id": "68bd748",
+               "_id": "6a17662",
                "text": "Limpieza suave de ollas, lavaplatos y horno",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1624,7 +1717,7 @@
                }
               },
               {
-               "_id": "dcdd035",
+               "_id": "091f36a",
                "text": "Ayuda a reducir olores en refrigerador y calzado",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1632,7 +1725,7 @@
                }
               },
               {
-               "_id": "d768c70",
+               "_id": "c67192c",
                "text": "Complemento en el lavado de ropa",
                "selected_icon": {
                 "value": "fas fa-check",
@@ -1674,7 +1767,7 @@
           ]
          },
          {
-          "id": "b0437a8",
+          "id": "ae60fc5",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1711,7 +1804,7 @@
           },
           "elements": [
            {
-            "id": "13c132b",
+            "id": "520077c",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -1732,7 +1825,7 @@
             "elements": []
            },
            {
-            "id": "7f22614",
+            "id": "d393cc9",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -1752,7 +1845,7 @@
             },
             "elements": [
              {
-              "id": "ed6034e",
+              "id": "3f07ff6",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1784,7 +1877,7 @@
               "elements": []
              },
              {
-              "id": "b3f9e38",
+              "id": "0929c4d",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1807,7 +1900,7 @@
               "elements": []
              },
              {
-              "id": "9381191",
+              "id": "43b5402",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1851,7 +1944,7 @@
           ]
          },
          {
-          "id": "1406fd7",
+          "id": "ee065e2",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -1913,7 +2006,7 @@
           "elements": []
          },
          {
-          "id": "b6fca77",
+          "id": "09c7a11",
           "elType": "widget",
           "widgetType": "button",
           "settings": {
@@ -1982,7 +2075,7 @@
     ]
    },
    {
-    "id": "78114ab",
+    "id": "54d0789",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -2016,7 +2109,7 @@
     },
     "elements": [
      {
-      "id": "660a473",
+      "id": "7de15f4",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -2030,7 +2123,7 @@
       "elements": []
      },
      {
-      "id": "b0accd8",
+      "id": "e352047",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -2097,7 +2190,7 @@
     ]
    },
    {
-    "id": "994eac7",
+    "id": "4fc6bcb",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -2131,7 +2224,7 @@
     },
     "elements": [
      {
-      "id": "669052e",
+      "id": "1a5e62b",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2148,7 +2241,7 @@
       },
       "elements": [
        {
-        "id": "1944bd2",
+        "id": "7ac2134",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -2162,7 +2255,7 @@
         "elements": []
        },
        {
-        "id": "d6dc984",
+        "id": "8cc9eb7",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -2193,7 +2286,7 @@
         "elements": []
        },
        {
-        "id": "5001df7",
+        "id": "b611393",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -2208,7 +2301,7 @@
       ]
      },
      {
-      "id": "1326042",
+      "id": "d4963ed",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -2256,7 +2349,7 @@
       },
       "elements": [
        {
-        "id": "09c7a11",
+        "id": "331881d",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -2342,7 +2435,7 @@
         },
         "elements": [
          {
-          "id": "ee065e2",
+          "id": "a241220",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2374,7 +2467,7 @@
           },
           "elements": [
            {
-            "id": "ae60fc5",
+            "id": "dd56f56",
             "elType": "widget",
             "widgetType": "image",
             "settings": {
@@ -2407,7 +2500,7 @@
           ]
          },
          {
-          "id": "d393cc9",
+          "id": "80886cd",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2456,7 +2549,7 @@
           },
           "elements": [
            {
-            "id": "84e9900",
+            "id": "d2f1942",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -2496,7 +2589,7 @@
             "elements": []
            },
            {
-            "id": "6a17662",
+            "id": "c566c75",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -2510,7 +2603,7 @@
             "elements": []
            },
            {
-            "id": "091f36a",
+            "id": "5344edb",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -2523,7 +2616,7 @@
             "elements": []
            },
            {
-            "id": "0929c4d",
+            "id": "caed6f0",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -2560,7 +2653,7 @@
             },
             "elements": [
              {
-              "id": "3f07ff6",
+              "id": "9f3db9a",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -2580,7 +2673,7 @@
               },
               "elements": [
                {
-                "id": "c67192c",
+                "id": "1326042",
                 "elType": "widget",
                 "widgetType": "heading",
                 "settings": {
@@ -2612,7 +2705,7 @@
                 "elements": []
                },
                {
-                "id": "7e6c005",
+                "id": "994eac7",
                 "elType": "widget",
                 "widgetType": "heading",
                 "settings": {
@@ -2635,7 +2728,7 @@
                 "elements": []
                },
                {
-                "id": "4b7f7bb",
+                "id": "69fd791",
                 "elType": "widget",
                 "widgetType": "heading",
                 "settings": {
@@ -2679,7 +2772,7 @@
             ]
            },
            {
-            "id": "43b5402",
+            "id": "3612978",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
@@ -2741,7 +2834,7 @@
             "elements": []
            },
            {
-            "id": "520077c",
+            "id": "9c831c9",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
@@ -2808,7 +2901,7 @@
         ]
        },
        {
-        "id": "5344edb",
+        "id": "1bd8885",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -2894,7 +2987,7 @@
         },
         "elements": [
          {
-          "id": "c566c75",
+          "id": "77e54ef",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2926,7 +3019,7 @@
           },
           "elements": [
            {
-            "id": "d2f1942",
+            "id": "f32fd0f",
             "elType": "widget",
             "widgetType": "image",
             "settings": {
@@ -2959,7 +3052,7 @@
           ]
          },
          {
-          "id": "1a5e62b",
+          "id": "9a1de4d",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3008,7 +3101,7 @@
           },
           "elements": [
            {
-            "id": "512170e",
+            "id": "ffde212",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3048,7 +3141,7 @@
             "elements": []
            },
            {
-            "id": "8fe66a9",
+            "id": "2605554",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3062,7 +3155,7 @@
             "elements": []
            },
            {
-            "id": "28aeb17",
+            "id": "b8c7f38",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -3075,7 +3168,7 @@
             "elements": []
            },
            {
-            "id": "7ac2134",
+            "id": "2b0c187",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -3112,7 +3205,7 @@
             },
             "elements": [
              {
-              "id": "54d0789",
+              "id": "0f82617",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3132,7 +3225,7 @@
               },
               "elements": [
                {
-                "id": "26522c4",
+                "id": "477441c",
                 "elType": "widget",
                 "widgetType": "heading",
                 "settings": {
@@ -3164,7 +3257,7 @@
                 "elements": []
                },
                {
-                "id": "7de15f4",
+                "id": "d6fbd39",
                 "elType": "widget",
                 "widgetType": "heading",
                 "settings": {
@@ -3187,7 +3280,7 @@
                 "elements": []
                },
                {
-                "id": "e352047",
+                "id": "8f40346",
                 "elType": "widget",
                 "widgetType": "heading",
                 "settings": {
@@ -3231,7 +3324,7 @@
             ]
            },
            {
-            "id": "8cc9eb7",
+            "id": "c6be045",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
@@ -3293,7 +3386,7 @@
             "elements": []
            },
            {
-            "id": "b611393",
+            "id": "73804f6",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
@@ -3364,7 +3457,701 @@
     ]
    },
    {
-    "id": "9a1de4d",
+    "id": "09ec87f",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "8",
+      "row": "8",
+      "isLinked": true,
+      "unit": "px",
+      "size": 8
+     },
+     "margin": {
+      "unit": "px",
+      "top": "96",
+      "right": "0",
+      "bottom": "28",
+      "left": "0",
+      "isLinked": false
+     },
+     "margin_mobile": {
+      "unit": "px",
+      "top": "60",
+      "right": "0",
+      "bottom": "22",
+      "left": "0",
+      "isLinked": false
+     },
+     "_title": "Categoría Café de especialidad"
+    },
+    "elements": [
+     {
+      "id": "58b6de0",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Cocina",
+       "header_size": "p",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=eyebrow",
+        "title_color": "globals/colors?id=primary"
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "51d2fbe",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Café de especialidad",
+       "header_size": "h3",
+       "__globals__": {
+        "title_color": "globals/colors?id=accent"
+       },
+       "typography_typography": "custom",
+       "typography_font_family": "Nunito",
+       "typography_font_weight": "900",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 34,
+        "sizes": []
+       },
+       "typography_font_size_mobile": {
+        "unit": "px",
+        "size": 26,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 1.15,
+        "sizes": []
+       }
+      },
+      "elements": []
+     },
+     {
+      "id": "b2c084e",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Un café en grano seleccionado para disfrutar en casa.</p>",
+       "__globals__": {
+        "typography_typography": "globals/typography?id=text",
+        "text_color": "globals/colors?id=text"
+       }
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "61397d2",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "0",
+      "row": "0",
+      "isLinked": true,
+      "unit": "px",
+      "size": 0
+     },
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "background_background": "classic",
+     "border_border": "solid",
+     "border_width": {
+      "unit": "px",
+      "top": "1",
+      "right": "1",
+      "bottom": "1",
+      "left": "1",
+      "isLinked": true
+     },
+     "border_radius": {
+      "unit": "px",
+      "top": "20",
+      "right": "20",
+      "bottom": "20",
+      "left": "20",
+      "isLinked": true
+     },
+     "overflow": "hidden",
+     "box_shadow_box_shadow_type": "yes",
+     "box_shadow_box_shadow": {
+      "horizontal": 0,
+      "vertical": 4,
+      "blur": 16,
+      "spread": 0,
+      "color": "rgba(36,61,91,0.05)"
+     },
+     "__globals__": {
+      "background_color": "globals/colors?id=blancocalido",
+      "border_color": "globals/colors?id=grisclaro"
+     },
+     "_title": "Café Carlos Roldi"
+    },
+    "elements": [
+     {
+      "id": "1973f1f",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "row",
+       "flex_gap": {
+        "column": "24",
+        "row": "24",
+        "isLinked": true,
+        "unit": "px",
+        "size": 24
+       },
+       "flex_align_items": "center",
+       "flex_direction_tablet": "column",
+       "flex_align_items_tablet": "stretch",
+       "flex_direction_mobile": "column",
+       "flex_align_items_mobile": "stretch",
+       "_title": "Café"
+      },
+      "elements": [
+       {
+        "id": "ca8fe7b",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "0",
+          "row": "0",
+          "isLinked": true,
+          "unit": "px",
+          "size": 0
+         },
+         "width": {
+          "unit": "%",
+          "size": 44,
+          "sizes": []
+         },
+         "width_tablet": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "width_mobile": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "_title": "Imagen"
+        },
+        "elements": [
+         {
+          "id": "cfeafca",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+           "image": {
+            "url": "https://www.karuesencial.cl/wp-content/uploads/2026/10/cafe-carlos-roldi-karu.jpg",
+            "id": 215,
+            "size": "",
+            "source": "library"
+           },
+           "image_size": "full",
+           "width": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+           },
+           "height": {
+            "unit": "px",
+            "size": 460,
+            "sizes": []
+           },
+           "object-fit": "cover",
+           "height_mobile": {
+            "unit": "px",
+            "size": 320,
+            "sizes": []
+           }
+          },
+          "elements": []
+         }
+        ]
+       },
+       {
+        "id": "00466ed",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "14",
+          "row": "14",
+          "isLinked": true,
+          "unit": "px",
+          "size": 14
+         },
+         "width": {
+          "unit": "%",
+          "size": 56,
+          "sizes": []
+         },
+         "width_tablet": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "width_mobile": {
+          "unit": "%",
+          "size": 100,
+          "sizes": []
+         },
+         "padding": {
+          "unit": "px",
+          "top": "36",
+          "right": "40",
+          "bottom": "36",
+          "left": "8",
+          "isLinked": false
+         },
+         "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "28",
+          "bottom": "32",
+          "left": "28",
+          "isLinked": false
+         },
+         "_title": "Cuerpo"
+        },
+        "elements": [
+         {
+          "id": "94084b6",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Café de especialidad",
+           "header_size": "p",
+           "__globals__": {
+            "title_color": "globals/colors?id=primary",
+            "_background_color": "globals/colors?id=celestesuave"
+           },
+           "_background_background": "classic",
+           "_padding": {
+            "unit": "px",
+            "top": "4",
+            "right": "12",
+            "bottom": "4",
+            "left": "12",
+            "isLinked": false
+           },
+           "_border_radius": {
+            "unit": "px",
+            "top": "999",
+            "right": "999",
+            "bottom": "999",
+            "left": "999",
+            "isLinked": true
+           },
+           "_element_width": "auto",
+           "_flex_align_self": "flex-start",
+           "typography_typography": "custom",
+           "typography_font_size": {
+            "unit": "px",
+            "size": 13,
+            "sizes": []
+           },
+           "typography_font_weight": "700"
+          },
+          "elements": []
+         },
+         {
+          "id": "299fec3",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Café de especialidad Carlos Roldi",
+           "header_size": "h3",
+           "__globals__": {
+            "typography_typography": "globals/typography?id=h3tarjeta",
+            "title_color": "globals/colors?id=accent"
+           },
+           "typography_typography": "custom",
+           "typography_font_family": "Nunito",
+           "typography_font_weight": "900",
+           "typography_font_size": {
+            "unit": "px",
+            "size": 28,
+            "sizes": []
+           },
+           "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "5ce3e0a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+           "editor": "<p><strong>Intenso, dulce y con cuerpo.</strong> Un café de baja acidez con notas a chocolate, nueces y azúcar morena, ideal para espresso y café con leche. 88 puntos de cata, cultivado en Espírito Santo, Brasil.</p>",
+           "__globals__": {
+            "typography_typography": "globals/typography?id=text",
+            "text_color": "globals/colors?id=text"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "d6fcced",
+          "elType": "widget",
+          "widgetType": "icon-list",
+          "settings": {
+           "view": "traditional",
+           "icon_list": [
+            {
+             "_id": "6c998f4",
+             "text": "Café en grano, bolsas de 250 g",
+             "selected_icon": {
+              "value": "fas fa-check",
+              "library": "fa-solid"
+             }
+            },
+            {
+             "_id": "f78416e",
+             "text": "Packs de 1 kg y 2 kg con descuento",
+             "selected_icon": {
+              "value": "fas fa-check",
+              "library": "fa-solid"
+             }
+            },
+            {
+             "_id": "48f4c61",
+             "text": "Para espresso, moka y café con leche",
+             "selected_icon": {
+              "value": "fas fa-check",
+              "library": "fa-solid"
+             }
+            }
+           ],
+           "icon_size": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+           },
+           "space_between": {
+            "unit": "px",
+            "size": 10,
+            "sizes": []
+           },
+           "text_indent": {
+            "unit": "px",
+            "size": 8,
+            "sizes": []
+           },
+           "__globals__": {
+            "icon_color": "globals/colors?id=primary",
+            "text_color": "globals/colors?id=text",
+            "icon_typography_typography": "globals/typography?id=pequeno"
+           }
+          },
+          "elements": []
+         },
+         {
+          "id": "16362d0",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "flex_gap": {
+            "column": "6",
+            "row": "6",
+            "isLinked": true,
+            "unit": "px",
+            "size": 6
+           },
+           "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "border_border": "solid",
+           "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           },
+           "_title": "Formato y precio",
+           "__globals__": {
+            "border_color": "globals/colors?id=grisclaro"
+           }
+          },
+          "elements": [
+           {
+            "id": "c5fddd7",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Formatos 250 g · 1 kg · 2 kg",
+             "header_size": "p",
+             "__globals__": {
+              "typography_typography": "globals/typography?id=pequeno",
+              "title_color": "globals/colors?id=text"
+             },
+             "typography_typography": "custom",
+             "typography_font_size": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+             },
+             "typography_font_weight": "600"
+            },
+            "elements": []
+           },
+           {
+            "id": "3d8e012",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+             "content_width": "full",
+             "flex_direction": "row",
+             "flex_gap": {
+              "column": "8",
+              "row": "8",
+              "isLinked": true,
+              "unit": "px",
+              "size": 8
+             },
+             "flex_align_items": "baseline",
+             "_title": "Precio"
+            },
+            "elements": [
+             {
+              "id": "0bb9166",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "Desde",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=text"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Figtree",
+               "typography_font_weight": "600",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 15,
+                "sizes": []
+               }
+              },
+              "elements": []
+             },
+             {
+              "id": "9a3af20",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+               "title": "$9.500",
+               "header_size": "p",
+               "__globals__": {
+                "title_color": "globals/colors?id=accent"
+               },
+               "_flex_size": "none",
+               "typography_typography": "custom",
+               "typography_font_family": "Nunito",
+               "typography_font_weight": "900",
+               "typography_font_size": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+               },
+               "typography_line_height": {
+                "unit": "em",
+                "size": 1,
+                "sizes": []
+               }
+              },
+              "elements": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "0799230",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "row",
+           "flex_gap": {
+            "column": "20",
+            "row": "20",
+            "isLinked": true,
+            "unit": "px",
+            "size": 20
+           },
+           "flex_align_items": "center",
+           "flex_wrap": "wrap",
+           "flex_direction_mobile": "column",
+           "flex_align_items_mobile": "stretch",
+           "_title": "Botones"
+          },
+          "elements": [
+           {
+            "id": "4876087",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+             "text": "Ver formatos y comprar",
+             "link": {
+              "url": "https://www.karuesencial.cl/producto/cafe-especialidad-carlos-roldi/",
+              "is_external": "",
+              "nofollow": "",
+              "custom_attributes": ""
+             },
+             "size": "md",
+             "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "button_hover_transition_duration": {
+              "unit": "s",
+              "size": 0.2,
+              "sizes": []
+             },
+             "__globals__": {
+              "typography_typography": "globals/typography?id=accent",
+              "background_color": "globals/colors?id=primary",
+              "button_text_color": "globals/colors?id=blanco",
+              "button_background_hover_color": "globals/colors?id=azulhover",
+              "hover_color": "globals/colors?id=blanco"
+             },
+             "selected_icon": {
+              "value": "fas fa-shopping-cart",
+              "library": "fa-solid"
+             },
+             "icon_indent": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_padding": {
+              "unit": "px",
+              "top": "15",
+              "right": "28",
+              "bottom": "15",
+              "left": "28",
+              "isLinked": false
+             },
+             "button_box_shadow_box_shadow_type": "yes",
+             "button_box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 6,
+              "blur": 18,
+              "spread": 0,
+              "color": "rgba(74,144,226,0.28)"
+             },
+             "align_mobile": "justify"
+            },
+            "elements": []
+           },
+           {
+            "id": "237e0ca",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+             "text": "Consultar por WhatsApp",
+             "link": {
+              "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20quiero%20consultar%20por%20el%20Caf%C3%A9%20de%20especialidad%20Carlos%20Roldi.",
+              "is_external": "on",
+              "nofollow": "",
+              "custom_attributes": ""
+             },
+             "size": "md",
+             "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": true
+             },
+             "button_hover_transition_duration": {
+              "unit": "s",
+              "size": 0.2,
+              "sizes": []
+             },
+             "__globals__": {
+              "typography_typography": "globals/typography?id=accent",
+              "button_text_color": "globals/colors?id=primary",
+              "hover_color": "globals/colors?id=azulhover"
+             },
+             "selected_icon": {
+              "value": "fab fa-whatsapp",
+              "library": "fa-brands"
+             },
+             "icon_indent": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+             },
+             "text_padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+             },
+             "background_background": "classic",
+             "background_color": "rgba(255,255,255,0)",
+             "button_background_hover_color": "rgba(255,255,255,0)",
+             "align_mobile": "center"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "95926e1",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -3430,7 +4217,7 @@
     },
     "elements": [
      {
-      "id": "3612978",
+      "id": "e87e547",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3445,7 +4232,7 @@
        },
        "width": {
         "unit": "%",
-        "size": 32,
+        "size": 55,
         "sizes": []
        },
        "width_tablet": {
@@ -3462,7 +4249,7 @@
       },
       "elements": [
        {
-        "id": "69fd791",
+        "id": "e64a3d3",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3476,7 +4263,7 @@
         "elements": []
        },
        {
-        "id": "9f3db9a",
+        "id": "b0f0a9d",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3507,11 +4294,11 @@
         "elements": []
        },
        {
-        "id": "caed6f0",
+        "id": "412e462",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Estamos preparando dos productos más. Si te interesan, escríbenos y te avisamos cuando estén disponibles.</p>",
+         "editor": "<p>Estamos preparando un producto más para tu cocina. Si te interesa, escríbenos y te avisamos cuando esté disponible.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=text",
           "text_color": "globals/colors?id=text"
@@ -3522,7 +4309,7 @@
       ]
      },
      {
-      "id": "73804f6",
+      "id": "7594469",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3530,12 +4317,12 @@
        "container_type": "grid",
        "grid_columns_grid": {
         "unit": "fr",
-        "size": 2,
+        "size": 1,
         "sizes": []
        },
        "grid_columns_grid_tablet": {
         "unit": "fr",
-        "size": 2,
+        "size": 1,
         "sizes": []
        },
        "grid_columns_grid_mobile": {
@@ -3555,7 +4342,7 @@
        },
        "grid_rows_grid_mobile": {
         "unit": "fr",
-        "size": 2,
+        "size": 1,
         "sizes": []
        },
        "grid_gaps": {
@@ -3568,7 +4355,7 @@
        "grid_align_items": "stretch",
        "width": {
         "unit": "%",
-        "size": 68,
+        "size": 45,
         "sizes": []
        },
        "width_tablet": {
@@ -3585,7 +4372,7 @@
       },
       "elements": [
        {
-        "id": "2605554",
+        "id": "7e125b8",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3641,7 +4428,7 @@
         },
         "elements": [
          {
-          "id": "9c831c9",
+          "id": "90b126e",
           "elType": "widget",
           "widgetType": "image",
           "settings": {
@@ -3672,7 +4459,7 @@
           "elements": []
          },
          {
-          "id": "ffde212",
+          "id": "1743f71",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3697,7 +4484,7 @@
           },
           "elements": [
            {
-            "id": "80886cd",
+            "id": "55bfbc6",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3745,7 +4532,7 @@
             "elements": []
            },
            {
-            "id": "dd56f56",
+            "id": "fcb54b2",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3759,7 +4546,7 @@
             "elements": []
            },
            {
-            "id": "a241220",
+            "id": "1202342",
             "elType": "widget",
             "widgetType": "text-editor",
             "settings": {
@@ -3772,259 +4559,13 @@
             "elements": []
            },
            {
-            "id": "331881d",
+            "id": "30c6d09",
             "elType": "widget",
             "widgetType": "button",
             "settings": {
              "text": "Avísame por WhatsApp",
              "link": {
               "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20av%C3%ADsenme%20cuando%20llegue%20el%20Aceite%20de%20Oliva.",
-              "is_external": "on",
-              "nofollow": "",
-              "custom_attributes": ""
-             },
-             "size": "md",
-             "border_radius": {
-              "unit": "px",
-              "top": "999",
-              "right": "999",
-              "bottom": "999",
-              "left": "999",
-              "isLinked": true
-             },
-             "button_hover_transition_duration": {
-              "unit": "s",
-              "size": 0.2,
-              "sizes": []
-             },
-             "__globals__": {
-              "typography_typography": "globals/typography?id=accent",
-              "button_text_color": "globals/colors?id=primary",
-              "hover_color": "globals/colors?id=azulhover"
-             },
-             "selected_icon": {
-              "value": "fas fa-arrow-right",
-              "library": "fa-solid"
-             },
-             "icon_indent": {
-              "unit": "px",
-              "size": 10,
-              "sizes": []
-             },
-             "icon_align": "row-reverse",
-             "text_padding": {
-              "unit": "px",
-              "top": "0",
-              "right": "0",
-              "bottom": "0",
-              "left": "0",
-              "isLinked": true
-             },
-             "background_background": "classic",
-             "background_color": "rgba(255,255,255,0)",
-             "button_background_hover_color": "rgba(255,255,255,0)"
-            },
-            "elements": []
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "id": "c6be045",
-        "elType": "container",
-        "isInner": true,
-        "settings": {
-         "content_width": "full",
-         "flex_direction": "column",
-         "flex_gap": {
-          "column": "0",
-          "row": "0",
-          "isLinked": true,
-          "unit": "px",
-          "size": 0
-         },
-         "padding": {
-          "unit": "px",
-          "top": "0",
-          "right": "0",
-          "bottom": "0",
-          "left": "0",
-          "isLinked": true
-         },
-         "background_background": "classic",
-         "border_border": "solid",
-         "border_width": {
-          "unit": "px",
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1",
-          "isLinked": true
-         },
-         "border_radius": {
-          "unit": "px",
-          "top": "20",
-          "right": "20",
-          "bottom": "20",
-          "left": "20",
-          "isLinked": true
-         },
-         "overflow": "hidden",
-         "box_shadow_box_shadow_type": "",
-         "box_shadow_box_shadow": {
-          "horizontal": 0,
-          "vertical": 4,
-          "blur": 16,
-          "spread": 0,
-          "color": "rgba(36,61,91,0.05)"
-         },
-         "__globals__": {
-          "background_color": "globals/colors?id=blanco",
-          "border_color": "globals/colors?id=grisclaro"
-         },
-         "_title": "Café en Grano"
-        },
-        "elements": [
-         {
-          "id": "b8c7f38",
-          "elType": "widget",
-          "widgetType": "image",
-          "settings": {
-           "image": {
-            "url": "https://www.karuesencial.cl/wp-content/uploads/2026/09/proximamente-cafe.svg",
-            "id": 67,
-            "size": "",
-            "source": "library"
-           },
-           "image_size": "full",
-           "width": {
-            "unit": "%",
-            "size": 100,
-            "sizes": []
-           },
-           "height": {
-            "unit": "px",
-            "size": 200,
-            "sizes": []
-           },
-           "object-fit": "cover",
-           "height_mobile": {
-            "unit": "px",
-            "size": 190,
-            "sizes": []
-           }
-          },
-          "elements": []
-         },
-         {
-          "id": "2b0c187",
-          "elType": "container",
-          "isInner": true,
-          "settings": {
-           "content_width": "full",
-           "flex_direction": "column",
-           "flex_gap": {
-            "column": "8",
-            "row": "8",
-            "isLinked": true,
-            "unit": "px",
-            "size": 8
-           },
-           "padding": {
-            "unit": "px",
-            "top": "20",
-            "right": "22",
-            "bottom": "22",
-            "left": "22",
-            "isLinked": false
-           },
-           "_title": "Cuerpo"
-          },
-          "elements": [
-           {
-            "id": "477441c",
-            "elType": "widget",
-            "widgetType": "heading",
-            "settings": {
-             "title": "Próximamente",
-             "header_size": "p",
-             "__globals__": {
-              "title_color": "globals/colors?id=primary",
-              "_border_color": "globals/colors?id=primary"
-             },
-             "_padding": {
-              "unit": "px",
-              "top": "3",
-              "right": "10",
-              "bottom": "3",
-              "left": "10",
-              "isLinked": false
-             },
-             "_border_border": "dashed",
-             "_border_width": {
-              "unit": "px",
-              "top": "1",
-              "right": "1",
-              "bottom": "1",
-              "left": "1",
-              "isLinked": true
-             },
-             "_border_radius": {
-              "unit": "px",
-              "top": "999",
-              "right": "999",
-              "bottom": "999",
-              "left": "999",
-              "isLinked": true
-             },
-             "_element_width": "auto",
-             "_flex_align_self": "flex-start",
-             "typography_typography": "custom",
-             "typography_font_size": {
-              "unit": "px",
-              "size": 12,
-              "sizes": []
-             },
-             "typography_font_weight": "700"
-            },
-            "elements": []
-           },
-           {
-            "id": "d6fbd39",
-            "elType": "widget",
-            "widgetType": "heading",
-            "settings": {
-             "title": "Café en Grano",
-             "header_size": "h4",
-             "__globals__": {
-              "typography_typography": "globals/typography?id=h3tarjeta",
-              "title_color": "globals/colors?id=accent"
-             }
-            },
-            "elements": []
-           },
-           {
-            "id": "8f40346",
-            "elType": "widget",
-            "widgetType": "text-editor",
-            "settings": {
-             "editor": "<p>Para preparar en casa, a tu manera.</p>",
-             "__globals__": {
-              "typography_typography": "globals/typography?id=pequeno",
-              "text_color": "globals/colors?id=text"
-             }
-            },
-            "elements": []
-           },
-           {
-            "id": "0f82617",
-            "elType": "widget",
-            "widgetType": "button",
-            "settings": {
-             "text": "Avísame por WhatsApp",
-             "link": {
-              "url": "https://wa.me/56989048914?text=Hola%20Karu%20Esencial%2C%20av%C3%ADsenme%20cuando%20llegue%20el%20Caf%C3%A9%20en%20Grano.",
               "is_external": "on",
               "nofollow": "",
               "custom_attributes": ""
@@ -4083,7 +4624,7 @@
   ]
  },
  {
-  "id": "412e462",
+  "id": "591c2d0",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -4118,7 +4659,7 @@
   },
   "elements": [
    {
-    "id": "b0f0a9d",
+    "id": "d2b78bf",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -4140,7 +4681,7 @@
     },
     "elements": [
      {
-      "id": "16362d0",
+      "id": "94da46e",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4172,7 +4713,7 @@
       },
       "elements": [
        {
-        "id": "77e54ef",
+        "id": "9f441cf",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4186,7 +4727,7 @@
         "elements": []
        },
        {
-        "id": "1bd8885",
+        "id": "ebf14ec",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -4200,7 +4741,7 @@
         "elements": []
        },
        {
-        "id": "9a3af20",
+        "id": "5014a3b",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -4217,7 +4758,7 @@
         },
         "elements": [
          {
-          "id": "b2c084e",
+          "id": "1c5bfa4",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4256,7 +4797,7 @@
           },
           "elements": [
            {
-            "id": "d4963ed",
+            "id": "37be83f",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -4289,7 +4830,7 @@
             "elements": []
            },
            {
-            "id": "51d2fbe",
+            "id": "171ae81",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -4308,7 +4849,7 @@
             },
             "elements": [
              {
-              "id": "4fc6bcb",
+              "id": "d7a1bf6",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4329,7 +4870,7 @@
               "elements": []
              },
              {
-              "id": "58b6de0",
+              "id": "316bdf4",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4346,7 +4887,7 @@
           ]
          },
          {
-          "id": "6c998f4",
+          "id": "7db91e0",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4385,7 +4926,7 @@
           },
           "elements": [
            {
-            "id": "09ec87f",
+            "id": "953856c",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -4418,7 +4959,7 @@
             "elements": []
            },
            {
-            "id": "5ce3e0a",
+            "id": "3344a4d",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -4437,7 +4978,7 @@
             },
             "elements": [
              {
-              "id": "94084b6",
+              "id": "e750bc3",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4458,7 +4999,7 @@
               "elements": []
              },
              {
-              "id": "299fec3",
+              "id": "4dc2a9d",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4475,7 +5016,7 @@
           ]
          },
          {
-          "id": "0bb9166",
+          "id": "0f9fe93",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4502,7 +5043,7 @@
           },
           "elements": [
            {
-            "id": "f78416e",
+            "id": "c8dc568",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -4535,7 +5076,7 @@
             "elements": []
            },
            {
-            "id": "c5fddd7",
+            "id": "c1df98f",
             "elType": "container",
             "isInner": true,
             "settings": {
@@ -4554,7 +5095,7 @@
             },
             "elements": [
              {
-              "id": "48f4c61",
+              "id": "e37dec9",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4575,7 +5116,7 @@
               "elements": []
              },
              {
-              "id": "d6fcced",
+              "id": "181eba1",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4594,7 +5135,7 @@
         ]
        },
        {
-        "id": "3d8e012",
+        "id": "e48dc88",
         "elType": "widget",
         "widgetType": "button",
         "settings": {
@@ -4658,7 +5199,7 @@
       ]
      },
      {
-      "id": "e64a3d3",
+      "id": "1da5cd8",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -4719,7 +5260,7 @@
       },
       "elements": [
        {
-        "id": "cfeafca",
+        "id": "ca21158",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -4746,7 +5287,7 @@
         },
         "elements": [
          {
-          "id": "4876087",
+          "id": "be74d9a",
           "elType": "widget",
           "widgetType": "icon",
           "settings": {
@@ -4775,7 +5316,7 @@
           "elements": []
          },
          {
-          "id": "00466ed",
+          "id": "0b3e4d5",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4791,7 +5332,7 @@
           },
           "elements": [
            {
-            "id": "237e0ca",
+            "id": "e0b5860",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -4812,7 +5353,7 @@
             "elements": []
            },
            {
-            "id": "0799230",
+            "id": "577e2a7",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -4836,7 +5377,7 @@
         ]
        },
        {
-        "id": "61397d2",
+        "id": "dfd638a",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -4873,7 +5414,7 @@
         },
         "elements": [
          {
-          "id": "ca8fe7b",
+          "id": "e9a2bde",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
@@ -4911,7 +5452,7 @@
           "elements": []
          },
          {
-          "id": "1973f1f",
+          "id": "2134446",
           "elType": "widget",
           "widgetType": "text-editor",
           "settings": {
@@ -4939,7 +5480,7 @@
   ]
  },
  {
-  "id": "30c6d09",
+  "id": "c465a69",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -4973,7 +5514,7 @@
   },
   "elements": [
    {
-    "id": "1202342",
+    "id": "c293920",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -5030,7 +5571,7 @@
     },
     "elements": [
      {
-      "id": "e87e547",
+      "id": "085fef8",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
@@ -5072,7 +5613,7 @@
       "elements": []
      },
      {
-      "id": "90b126e",
+      "id": "bdd73b4",
       "elType": "widget",
       "widgetType": "text-editor",
       "settings": {
@@ -5097,7 +5638,7 @@
       "elements": []
      },
      {
-      "id": "55bfbc6",
+      "id": "6b9d284",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -5168,7 +5709,7 @@
       "elements": []
      },
      {
-      "id": "fcb54b2",
+      "id": "0fae757",
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
