@@ -93,7 +93,7 @@
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
-         "title": "Limpieza y cocina · Gran Concepción",
+         "title": "Karu Esencial · Gran Concepción",
          "header_size": "p",
          "__globals__": {
           "typography_typography": "globals/typography?id=eyebrow",
@@ -107,7 +107,7 @@
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
-         "title": "Esenciales para <span style=\"color:#4A90E2\">el hogar.</span>",
+         "title": "Lo esencial para tu hogar, <span style=\"color:#4A90E2\">simple y bien elegido.</span>",
          "header_size": "h1",
          "__globals__": {
           "typography_typography": "globals/typography?id=h1hero",
@@ -121,7 +121,7 @@
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Productos de limpieza multiuso y café de especialidad en grano, seleccionados para tu casa. Elige lo que necesitas y pídelo directo por WhatsApp.</p>",
+         "editor": "<p>Básicos de limpieza y de cocina que se usan todos los días en casa, de calidad y con entrega en el Gran Concepción.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=lead",
           "text_color": "globals/colors?id=text"

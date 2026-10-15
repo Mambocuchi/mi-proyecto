@@ -313,10 +313,10 @@ def section_head(eyebrow_text, title, body=None, align="center", tag="h2"):
 
 def hero():
     left = column([
-        eyebrow("Limpieza y cocina · Gran Concepción"),
-        heading('Esenciales para <span style="color:#4A90E2">el hogar.</span>', "h1", "h1hero"),
-        text("<p>Productos de limpieza multiuso y café de especialidad en grano, seleccionados para tu casa. "
-             "Elige lo que necesitas y pídelo directo por WhatsApp.</p>", typo="lead"),
+        eyebrow("Karu Esencial · Gran Concepción"),
+        heading('Lo esencial para tu hogar, <span style="color:#4A90E2">simple y bien elegido.</span>', "h1", "h1hero"),
+        text("<p>Básicos de limpieza y de cocina que se usan todos los días en casa, de calidad y con entrega "
+             "en el Gran Concepción.</p>", typo="lead"),
         row([
             button("Pedir por WhatsApp", wa("Hola Karu Esencial, quiero hacer un pedido."), size="lg",
                    align_m="justify"),
