@@ -313,10 +313,10 @@ def section_head(eyebrow_text, title, body=None, align="center", tag="h2"):
 
 def hero():
     left = column([
-        eyebrow("Esenciales para el hogar · Chile"),
-        heading('Lo esencial para un hogar <span style="color:#4A90E2">más simple.</span>', "h1", "h1hero"),
-        text("<p>Vinagre incoloro, percarbonato y bicarbonato de sodio para limpiar y cuidar tu casa, y café de "
-             "especialidad para tu cocina. Elige lo que necesitas y pídelo directo por WhatsApp.</p>", typo="lead"),
+        eyebrow("Limpieza y cocina · Gran Concepción"),
+        heading('Esenciales para <span style="color:#4A90E2">el hogar.</span>', "h1", "h1hero"),
+        text("<p>Productos de limpieza multiuso y café de especialidad en grano, seleccionados para tu casa. "
+             "Elige lo que necesitas y pídelo directo por WhatsApp.</p>", typo="lead"),
         row([
             button("Pedir por WhatsApp", wa("Hola Karu Esencial, quiero hacer un pedido."), size="lg",
                    align_m="justify"),
@@ -324,7 +324,7 @@ def hero():
                    ico="fas fa-arrow-right", ico_after=True, align_m="justify"),
         ], g=12, wrap=True, stack=None, _title="Botones", flex_direction_mobile="column",
             flex_align_items_mobile="stretch"),
-        checklist(["Pedidos directos por WhatsApp", "Atención cercana", "Productos multiuso"], inline=True,
+        checklist(["Pedidos directos por WhatsApp", "Atención cercana", "Despacho en el Gran Concepción"], inline=True,
                   size=13, _margin=dims(4, 0, 0, 0)),
     ], width=52, width_t=100, g=24, _title="Texto hero")
     note = row([

@@ -93,7 +93,7 @@
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
-         "title": "Esenciales para el hogar · Chile",
+         "title": "Limpieza y cocina · Gran Concepción",
          "header_size": "p",
          "__globals__": {
           "typography_typography": "globals/typography?id=eyebrow",
@@ -107,7 +107,7 @@
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
-         "title": "Lo esencial para un hogar <span style=\"color:#4A90E2\">más simple.</span>",
+         "title": "Esenciales para <span style=\"color:#4A90E2\">el hogar.</span>",
          "header_size": "h1",
          "__globals__": {
           "typography_typography": "globals/typography?id=h1hero",
@@ -121,7 +121,7 @@
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Vinagre incoloro, percarbonato y bicarbonato de sodio para limpiar y cuidar tu casa, y café de especialidad para tu cocina. Elige lo que necesitas y pídelo directo por WhatsApp.</p>",
+         "editor": "<p>Productos de limpieza multiuso y café de especialidad en grano, seleccionados para tu casa. Elige lo que necesitas y pídelo directo por WhatsApp.</p>",
          "__globals__": {
           "typography_typography": "globals/typography?id=lead",
           "text_color": "globals/colors?id=text"
@@ -305,7 +305,7 @@
           },
           {
            "_id": "f24693a",
-           "text": "Productos multiuso",
+           "text": "Despacho en el Gran Concepción",
            "selected_icon": {
             "value": "fas fa-check",
             "library": "fa-solid"
