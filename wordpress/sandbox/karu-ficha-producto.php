@@ -136,13 +136,12 @@ add_action( 'wp_head', function () {
 .karu-ficha .karu-select-oculto { position: absolute !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important; }
 .karu-ficha .reset_variations { display: none !important; }
 .karu-formatos { display: flex; flex-wrap: wrap; gap: 10px; }
-.karu-formato { border: 2px solid #E4ECF4; background: #FFFFFF; color: #243D5B; border-radius: 999px; padding: 10px 18px; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; cursor: pointer; transition: border-color .2s, background-color .2s; }
-.karu-formato:hover { border-color: #B8E0FF; background: #EDF6FF; }
-.karu-formato.is-activo { border-color: #4A90E2; background: #EDF6FF; }
+.karu-ficha .karu-formatos .karu-formato { display: inline-flex; align-items: center; min-height: 0; height: auto; margin: 0; border: 2px solid #E4ECF4; background: #FFFFFF; color: #243D5B; border-radius: 999px; padding: 10px 18px; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-transform: none; letter-spacing: 0; box-shadow: none; cursor: pointer; transition: border-color .2s, background-color .2s; }
+.karu-ficha .karu-formatos .karu-formato:hover { border-color: #B8E0FF; background: #EDF6FF; color: #243D5B; }
+.karu-ficha .karu-formatos .karu-formato.is-activo { border-color: #4A90E2; background: #EDF6FF; color: #243D5B; }
 .karu-formato:focus-visible { outline: 3px solid #B8E0FF; outline-offset: 2px; }
 .karu-ficha .woocommerce-variation-description { margin-top: 8px; padding: 10px 14px; border-radius: 12px; background: #EDF6FF; color: #243D5B; font-size: 14px; }
 .karu-ficha .woocommerce-variation-description p { margin: 0; }
-.karu-ficha .quantity { border-radius: 999px; overflow: hidden; }
 .karu-ficha .single_add_to_cart_button { font-weight: 700; box-shadow: 0 6px 18px rgba(74,144,226,.28); }
 .karu-ficha-wa { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; color: #4A90E2; font-weight: 700; text-decoration: none; }
 .karu-ficha-wa:hover { color: #3A7DCB; }
@@ -151,7 +150,7 @@ add_action( 'wp_head', function () {
 .karu-confianza li + li { margin-top: 8px; }
 .karu-confianza li::before { content: ""; position: absolute; left: 2px; top: .3em; width: 14px; height: 8px; border-left: 2.5px solid #4A90E2; border-bottom: 2.5px solid #4A90E2; transform: rotate(-45deg); }
 .karu-confianza strong { color: #243D5B; }
-.karu-ficha .product_meta .sku_wrapper { display: none; }
+.karu-ficha .product_meta .sku_wrapper { display: none !important; }
 .karu-ficha .woocommerce-tabs .tabs li a { font-family: Nunito, sans-serif; font-size: 16px; font-weight: 800; text-transform: none; letter-spacing: 0; }
 /* Descripción */
 .karu-desc { max-width: 980px; margin: 0 auto; }
