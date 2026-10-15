@@ -140,8 +140,15 @@ add_action( 'wp_head', function () {
 .karu-ficha .karu-formatos .karu-formato:hover { border-color: #B8E0FF; background: #EDF6FF; color: #243D5B; }
 .karu-ficha .karu-formatos .karu-formato.is-activo { border-color: #4A90E2; background: #EDF6FF; color: #243D5B; }
 .karu-formato:focus-visible { outline: 3px solid #B8E0FF; outline-offset: 2px; }
-.karu-ficha .woocommerce-variation-description { margin-top: 8px; padding: 10px 14px; border-radius: 12px; background: #EDF6FF; color: #243D5B; font-size: 14px; }
-.karu-ficha .woocommerce-variation-description p { margin: 0; }
+.karu-ficha .single_variation { display: flex; flex-direction: column; gap: 10px; }
+.karu-ficha .single_variation .woocommerce-variation-price { order: 1; }
+.karu-ficha .single_variation .woocommerce-variation-description { order: 2; }
+.karu-ficha .single_variation .woocommerce-variation-availability { order: 3; }
+.karu-ficha .woocommerce-variation-description:empty { display: none; }
+.karu-ficha .woocommerce-variation-description { margin: 0; padding: 10px 14px; border-radius: 12px; background: #EDF6FF; color: #243D5B; font-size: 14px; }
+.karu-ficha .woocommerce-variation-description > * { margin: 0 !important; }
+.karu-ficha .woocommerce-product-gallery .flexy-pills[data-type="thumbs"] ol { gap: 10px; }
+.karu-ficha .woocommerce-product-gallery .flexy-pills[data-type="thumbs"] ol li { width: calc((100% - 30px) / 4) !important; flex: 0 0 auto !important; margin: 0 !important; }
 .karu-ficha .single_add_to_cart_button { font-weight: 700; box-shadow: 0 6px 18px rgba(74,144,226,.28); }
 .karu-ficha-wa { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; color: #4A90E2; font-weight: 700; text-decoration: none; }
 .karu-ficha-wa:hover { color: #3A7DCB; }
