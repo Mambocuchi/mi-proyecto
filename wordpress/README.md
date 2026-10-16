@@ -17,6 +17,7 @@ Elementor (gratis) y WPForms Lite.
 | Botón flotante de WhatsApp | Elementor → Elementos flotantes → "WhatsApp Karu Esencial" (todo el sitio) |
 | Formulario "Contacto Karu Esencial" | WPForms → Todos los formularios |
 | Página de inicio | Ajustes → Lectura → Página estática "Inicio" |
+| Opiniones de clientes: cada envío del formulario queda como "Pendiente"; al publicarla aparece en Testimonios (Inicio y Beneficios). Solo se publican las autorizadas | WordPress → Opiniones (`sandbox/karu-testimonios.php`, shortcode `[karu_testimonios]`) |
 | Ficha de producto (formatos como botones, precio "Desde", despacho/retiro/pago, WhatsApp, enlace a la Guía de usos) | `sandbox/karu-ficha-producto.php` (se instala en `wp-content/novamira-sandbox/`) |
 | Categorías de productos: Limpieza del hogar; Cocina → Café (Aceite de oliva irá también dentro de Cocina) | Productos → Categorías. Los productos de Cocina usan detalles en tono crema |
 
