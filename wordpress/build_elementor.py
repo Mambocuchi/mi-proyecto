@@ -734,11 +734,10 @@ def review_block():
 def testimonials_section():
     return section([
         section_head("Testimonios", "Experiencias de nuestros clientes",
-                     "Pronto compartiremos aquí las opiniones de quienes ya usan Karu Esencial. "
-                     "Solo publicamos testimonios reales y con autorización. Quienes comparten su experiencia "
-                     "reciben un código de descuento, sin importar si su opinión es positiva o negativa."),
-        grid([testimonial_slot(), testimonial_slot(True), testimonial_slot(True)], 3, cols_t=3, cols_m=1, g=20,
-             _title="Testimonios", grid_rows_grid_mobile={"unit": "fr", "size": 1, "sizes": []}),
+                     "Opiniones reales de quienes ya usan Karu Esencial, publicadas con su autorización. "
+                     "Quienes comparten su experiencia reciben un código de descuento, sin importar si su "
+                     "opinión es positiva o negativa."),
+        widget("shortcode", shortcode="[karu_testimonios]", _title="Testimonios publicados"),
         review_block(),
     ], bg="blancocalido", anchor="testimonios", title="Testimonios")
 
