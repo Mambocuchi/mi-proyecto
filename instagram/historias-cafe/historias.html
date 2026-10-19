@@ -78,6 +78,16 @@ body { background: #888; font-family: 'Figtree', sans-serif; }
 .cta .wa svg { width: 58px; height: 58px; fill: #fff; }
 .cta p { margin-top: 24px; font-size: 34px; font-weight: 700; color: var(--cafe); }
 .cta p span { color: var(--marino); }
+
+/* ---------- 2. Rueda de sabores (imagen original) */
+.s2r { background: #EDD7BF; }
+.s2r .cab2 { position: absolute; top: 262px; left: 0; right: 0; text-align: center; }
+.s2r h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 70px; line-height: 1.05; color: var(--marino); margin-top: 10px; }
+.s2r .rueda { position: absolute; top: 400px; left: 0; width: 1080px; height: 1080px; display: block; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 70px, #000 1010px, transparent 1080px); mask-image: linear-gradient(180deg, transparent 0, #000 70px, #000 1010px, transparent 1080px); }
+.s2r .ideal2 { position: absolute; top: 1478px; left: 60px; right: 60px; text-align: center; }
+.s2r .ideal2 p { font-size: 30px; font-weight: 800; color: var(--cafe); }
+.s2r .ideal2 div { display: flex; justify-content: center; gap: 16px; margin-top: 14px; }
+.s2r .ideal2 div span { background: var(--cafe); color: #fff; font-weight: 800; font-size: 34px; padding: 12px 30px; border-radius: 99px; }
 </style>
 </head>
 <body>
@@ -97,24 +107,14 @@ body { background: #888; font-family: 'Figtree', sans-serif; }
 </section>
 
 <!-- 2 -->
-<section class="story s2">
+<section class="story s2r">
   <img class="logo" src="logo-karu-esencial.png" alt="Karu Esencial">
-  <div class="cab">
+  <div class="cab2">
     <span class="eyebrow">Perfil de taza</span>
-    <h2>Intenso, dulce<br><span>y con cuerpo</span></h2>
+    <h2>Intenso, dulce y con cuerpo</h2>
   </div>
-  <img class="bolsa" src="bolsa-recortada.png" alt="">
-  <div class="notas">
-    <div class="nota n1"><i></i><b>Chocolate</b></div>
-    <div class="nota n2"><i></i><b>Nueces</b></div>
-    <div class="nota n3"><i></i><b>Azúcar morena</b></div>
-  </div>
-  <div class="perfil">
-    <div class="fila"><span>Cuerpo</span><div class="puntos"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><em>Alto</em></div>
-    <div class="fila"><span>Acidez</span><div class="puntos"><i class="on"></i><i></i><i></i><i></i><i></i></div><em>Baja</em></div>
-    <div class="fila"><span>Tueste</span><div class="puntos"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><em>Medio</em></div>
-  </div>
-  <div class="ideal">
+  <img class="rueda" src="cafe-rueda-sabores.jpg" alt="Rueda de sabores del café Carlos Roldi">
+  <div class="ideal2">
     <p>IDEAL PARA</p>
     <div><span>Espresso</span><span>Moka</span><span>Café con leche</span></div>
   </div>
