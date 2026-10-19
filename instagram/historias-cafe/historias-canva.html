@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Historias café Karu</title>
+<link rel="stylesheet" href="fonts-ttf/fonts.css">
+<style>
+:root { --cafe: #6B4A2E; --oscuro: #2E2016; --crema: #FAF8F4; --arena: #F3EADB; --arena2: #E9DCC6; --oro: #C9A44C; --marino: #243D5B; --verde: #2F7D4F; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #888; font-family: 'Figtree', sans-serif; }
+.story { width: 1080px; height: 1920px; position: relative; overflow: hidden; margin-bottom: 20px; }
+.nunito { font-family: 'Nunito', sans-serif; }
+.logo { position: absolute; top: 120px; left: 50%; transform: translateX(-50%); height: 92px; }
+.logo--claro { filter: brightness(0) invert(94%) sepia(12%) saturate(300%) hue-rotate(340deg); }
+
+/* ---------- 1. Portada oscura */
+.s1 { background: radial-gradient(900px 900px at 50% 58%, #5A3E28 0%, #3A281B 45%, #24180F 100%); color: var(--arena); }
+.s1 .pill { position: absolute; top: 290px; left: 50%; transform: translateX(-50%); background: var(--oro); color: var(--oscuro); font-weight: 800; font-size: 30px; letter-spacing: .14em; text-transform: uppercase; padding: 14px 34px; border-radius: 99px; white-space: nowrap; }
+.s1 h1 { position: absolute; top: 380px; left: 0; right: 0; text-align: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 94px; line-height: 1.02; color: #FFF8EC; }
+.s1 h1 span { display: block; color: var(--oro); font-size: 92px; margin-top: 10px; }
+.s1 .bolsa { position: absolute; top: 650px; left: 50%; transform: translateX(-50%); width: 760px; filter: drop-shadow(0 40px 60px rgba(0,0,0,.35)); }
+.s1 .halo { position: absolute; top: 720px; left: 50%; width: 820px; height: 820px; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(201,164,76,.28) 0%, rgba(201,164,76,0) 65%); }
+.sello { position: absolute; width: 230px; height: 230px; border-radius: 50%; background: var(--oro); color: var(--oscuro); display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 0 0 12px rgba(201,164,76,.25), 0 20px 40px rgba(0,0,0,.3); transform: rotate(-8deg); }
+.sello b { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 104px; line-height: .9; }
+.sello small { font-size: 26px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.sello em { font-style: normal; font-size: 19px; font-weight: 700; opacity: .8; margin-top: 2px; }
+.s1 .sello { top: 760px; right: 90px; }
+.s1 .pie { position: absolute; bottom: 300px; left: 0; right: 0; text-align: center; }
+.s1 .pie p { font-size: 40px; font-weight: 600; color: var(--arena); }
+.s1 .pie p b { color: #fff; }
+.s1 .tags { display: flex; gap: 16px; justify-content: center; margin-top: 26px; }
+.s1 .tags span { border: 2px solid rgba(243,234,219,.45); border-radius: 99px; padding: 10px 26px; font-size: 30px; font-weight: 700; color: var(--arena); }
+
+/* ---------- 2. Perfil (crema) */
+.s2 { background: linear-gradient(180deg, #FAF8F4 0%, #F3EADB 100%); color: var(--cafe); }
+.eyebrow { font-size: 30px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--cafe); }
+.s2 .cab { position: absolute; top: 270px; left: 90px; right: 90px; }
+.s2 h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 96px; line-height: 1.02; color: var(--marino); margin-top: 14px; }
+.s2 h2 span { color: var(--cafe); }
+.notas { z-index: 1; position: absolute; top: 560px; left: 90px; right: 90px; display: flex; flex-direction: column; gap: 22px; }
+.nota { display: flex; align-items: center; gap: 28px; background: #fff; border: 2px solid var(--arena2); border-radius: 36px; padding: 26px 34px; width: 580px; box-shadow: 0 10px 30px rgba(107,74,46,.08); }
+.nota i { width: 84px; height: 84px; border-radius: 50%; flex: none; }
+.nota b { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 52px; color: var(--marino); }
+.n1 i { background: radial-gradient(circle at 35% 35%, #8A5A3B, #4A2C1A); }
+.n2 i { background: radial-gradient(circle at 35% 35%, #D9AE74, #9C6B3A); }
+.n3 i { background: radial-gradient(circle at 35% 35%, #C9874A, #8E4E1F); }
+.s2 .bolsa { position: absolute; top: 500px; right: -90px; width: 500px; z-index: 0; transform: rotate(8deg); filter: drop-shadow(0 30px 40px rgba(107,74,46,.25)); }
+.perfil { z-index: 1; position: absolute; top: 1050px; left: 90px; right: 90px; background: #fff; border-radius: 40px; padding: 44px 50px; box-shadow: 0 14px 40px rgba(107,74,46,.10); display: flex; flex-direction: column; gap: 30px; }
+.fila { display: flex; align-items: center; justify-content: space-between; }
+.fila span { font-size: 38px; font-weight: 700; color: var(--marino); }
+.puntos { display: flex; gap: 14px; }
+.puntos i { width: 40px; height: 40px; border-radius: 50%; background: var(--arena2); }
+.puntos i.on { background: var(--cafe); }
+.fila em { font-style: normal; font-size: 30px; font-weight: 700; color: var(--cafe); width: 120px; text-align: right; }
+.ideal { position: absolute; top: 1450px; left: 90px; right: 90px; text-align: center; }
+.ideal p { font-size: 34px; font-weight: 700; color: var(--cafe); letter-spacing: .04em; }
+.ideal div { display: flex; justify-content: center; gap: 16px; margin-top: 18px; flex-wrap: wrap; }
+.ideal div span { background: var(--cafe); color: #fff; font-weight: 800; font-size: 36px; padding: 14px 32px; border-radius: 99px; }
+
+/* ---------- 3. Precios */
+.s3 { background: linear-gradient(180deg, #FAF8F4 0%, #F3EADB 100%); }
+.s3 .cab { position: absolute; top: 270px; left: 90px; right: 90px; }
+.s3 h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 92px; line-height: 1.02; color: var(--marino); margin-top: 14px; }
+.s3 .sub { font-size: 36px; color: var(--cafe); font-weight: 600; margin-top: 16px; }
+.precios { position: absolute; top: 625px; left: 90px; right: 90px; display: flex; flex-direction: column; gap: 24px; }
+.precio { background: #fff; border: 3px solid var(--arena2); border-radius: 40px; padding: 34px 44px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(107,74,46,.08); position: relative; }
+.precio.top { border-color: var(--cafe); }
+.precio .fmt b { display: block; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 54px; color: var(--marino); line-height: 1.05; }
+.precio .fmt small { font-size: 30px; font-weight: 700; color: #9A8670; }
+.precio .val { text-align: right; }
+.precio .val b { display: block; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 64px; color: var(--marino); line-height: 1; }
+.precio .val small { display: inline-block; margin-top: 10px; font-size: 28px; font-weight: 800; color: var(--verde); background: #E7F5EC; padding: 6px 18px; border-radius: 99px; }
+.precio .cinta { position: absolute; top: -22px; left: 44px; background: var(--cafe); color: #fff; font-size: 24px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 8px 20px; border-radius: 99px; }
+.despacho { position: absolute; top: 1265px; left: 90px; right: 90px; background: var(--marino); color: #fff; border-radius: 36px; padding: 30px 40px; font-size: 36px; font-weight: 600; text-align: center; }
+.despacho b { color: #B8E0FF; }
+.cta { position: absolute; top: 1420px; left: 90px; right: 90px; text-align: center; }
+.cta .wa { display: inline-flex; align-items: center; gap: 20px; background: #25D366; color: #fff; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 50px; padding: 26px 50px; border-radius: 99px; box-shadow: 0 14px 30px rgba(37,211,102,.3); }
+.cta .wa svg { width: 58px; height: 58px; fill: #fff; }
+.cta p { margin-top: 24px; font-size: 34px; font-weight: 700; color: var(--cafe); }
+.cta p span { color: var(--marino); }
+* { letter-spacing: 0 !important; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="story s1">
+  <img class="logo logo--claro" src="logo-karu-esencial.png" alt="Karu Esencial">
+  <span class="pill">Nuevo en Karu</span>
+  <h1>Café de especialidad<span>Carlos Roldi</span></h1>
+  <div class="halo"></div>
+  <img class="bolsa" src="bolsa-recortada.png" alt="">
+  <div class="sello"><b>88</b><small>puntos</small><em>escala SCA</em></div>
+  <div class="pie">
+    <p>De <b>Espírito Santo, Brasil</b> a tu casa</p>
+    <div class="tags"><span>En grano</span><span>Tueste medio</span><span>Bolsa 250 g</span></div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="story s2">
+  <img class="logo" src="logo-karu-esencial.png" alt="Karu Esencial">
+  <div class="cab">
+    <span class="eyebrow">Perfil de taza</span>
+    <h2>Intenso, dulce<br><span>y con cuerpo</span></h2>
+  </div>
+  <img class="bolsa" src="bolsa-recortada.png" alt="">
+  <div class="notas">
+    <div class="nota n1"><i></i><b>Chocolate</b></div>
+    <div class="nota n2"><i></i><b>Nueces</b></div>
+    <div class="nota n3"><i></i><b>Azúcar morena</b></div>
+  </div>
+  <div class="perfil">
+    <div class="fila"><span>Cuerpo</span><div class="puntos"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><em>Alto</em></div>
+    <div class="fila"><span>Acidez</span><div class="puntos"><i class="on"></i><i></i><i></i><i></i><i></i></div><em>Baja</em></div>
+    <div class="fila"><span>Tueste</span><div class="puntos"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><em>Medio</em></div>
+  </div>
+  <div class="ideal">
+    <p>IDEAL PARA</p>
+    <div><span>Espresso</span><span>Moka</span><span>Café con leche</span></div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="story s3">
+  <img class="logo" src="logo-karu-esencial.png" alt="Karu Esencial">
+  <div class="cab">
+    <span class="eyebrow">Formatos y precios</span>
+    <h2>Más bolsas,<br>mejor precio</h2>
+    <p class="sub">Todo el café viene en bolsas de 250 g</p>
+  </div>
+  <div class="precios">
+    <div class="precio"><div class="fmt"><b>250 g</b><small>1 bolsa</small></div><div class="val"><b>$9.500</b></div></div>
+    <div class="precio"><div class="fmt"><b>1 kg</b><small>4 bolsas</small></div><div class="val"><b>$31.400</b><small>$7.850 c/u</small></div></div>
+    <div class="precio top"><span class="cinta">Mejor precio</span><div class="fmt"><b>2 kg</b><small>8 bolsas</small></div><div class="val"><b>$59.600</b><small>$7.450 c/u</small></div></div>
+  </div>
+  <div class="despacho"><b>Despacho gratis</b> en el Gran Concepción<br>por compras desde $20.000</div>
+  <div class="cta">
+    <span class="wa"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 13.8c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.6-.3h.5c.1 0 .4 0 .6.4l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2.1 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.7-.1 1.3z"/></svg>+56 9 8904 8914</span>
+    <p>o en <span>karuesencial.cl</span></p>
+  </div>
+</section>
+
+</body>
+</html>
