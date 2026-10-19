@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Catálogo Karu Esencial</title>
+<link rel="stylesheet" href="fonts/fonts-local.css">
+<style>
+@page { size: A4; margin: 0; }
+:root {
+  --azul: #4A90E2; --celeste: #B8E0FF; --marino: #243D5B; --texto: #5B6C82;
+  --hielo: #EDF6FF; --borde: #E4ECF4; --crema: #FAF8F4; --arena: #F3EADB; --arena2: #EFE7DA;
+  --cafe: #6B4A2E; --verde: #2F7D4F;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; }
+body { font-family: 'Figtree', sans-serif; color: var(--texto); font-size: 10.5pt; line-height: 1.45; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3, .num { font-family: 'Nunito', sans-serif; color: var(--marino); line-height: 1.1; }
+.page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; display: flex; flex-direction: column; padding: 16mm 15mm 0; }
+.page:last-child { page-break-after: auto; }
+
+/* Encabezado y pie de páginas interiores */
+.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9mm; }
+.top img { height: 11mm; }
+.top span { font-size: 8.5pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--azul); }
+.foot { margin-top: auto; margin-left: -15mm; margin-right: -15mm; padding: 4.5mm 15mm; display: flex; justify-content: space-between; align-items: center; font-size: 8.5pt; color: var(--texto); border-top: 1px solid var(--borde); }
+.foot b { color: var(--marino); }
+
+.eyebrow { display: inline-block; font-size: 8.5pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--azul); margin-bottom: 2.5mm; }
+.h2 { font-size: 27pt; font-weight: 900; }
+.lead { font-size: 11.5pt; margin-top: 3mm; max-width: 150mm; }
+
+/* ---------------------------------------------------------- Portada */
+.cover { padding: 0; background: linear-gradient(180deg, #EDF6FF 0%, #F7FBFF 55%, #FFFFFF 100%); }
+.cover__in { padding: 18mm 16mm 0; flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.cover__logo { height: 24mm; align-self: flex-start; }
+.cover__fecha { position: absolute; top: 20mm; right: 16mm; font-size: 9pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--azul); background: #fff; border: 1px solid var(--celeste); border-radius: 99px; padding: 2mm 4.5mm; }
+.cover h1 { font-size: 44pt; font-weight: 900; margin-top: 15mm; letter-spacing: -.01em; }
+.cover h1 span { color: var(--azul); }
+.cover__lema { font-size: 14pt; margin-top: 5mm; max-width: 150mm; color: var(--texto); }
+.cover__arte { margin: 8mm -16mm 0; flex: 1; min-height: 0; position: relative; overflow: hidden; }
+.cover__arte img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; display: block; }
+.chips { display: flex; gap: 3mm; margin-top: 7mm; flex-wrap: wrap; }
+.chip { display: inline-flex; align-items: center; gap: 2mm; padding: 2.2mm 4.5mm; border-radius: 99px; font-size: 10pt; font-weight: 700; color: var(--marino); background: #fff; border: 1px solid var(--borde); }
+.chip i { width: 2.4mm; height: 2.4mm; border-radius: 50%; background: var(--azul); display: inline-block; }
+.chip--cafe i { background: var(--cafe); }
+.chip--prox { color: var(--texto); border-style: dashed; border-color: #CBD9E8; background: transparent; }
+.chip--prox i { background: #CBD9E8; }
+.cover__barra { background: var(--marino); color: #fff; padding: 7mm 16mm; display: flex; justify-content: space-between; align-items: center; gap: 6mm; }
+.cover__barra .dato { display: flex; align-items: center; gap: 2.5mm; font-size: 10pt; font-weight: 600; }
+.cover__barra svg { width: 5mm; height: 5mm; fill: var(--celeste); flex: none; }
+
+/* ---------------------------------------------------------- Producto (fila) */
+.prods { display: flex; flex-direction: column; gap: 6mm; margin-top: 8mm; }
+.prod { display: grid; grid-template-columns: 62mm 1fr; gap: 7mm; padding: 5mm; border: 1px solid var(--borde); border-radius: 5mm; background: #fff; box-shadow: 0 1.5mm 5mm rgba(36,61,91,.05); }
+.prod__img { border-radius: 3.5mm; overflow: hidden; background: var(--hielo); display: flex; align-items: center; justify-content: center; }
+.prod__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.prod__body { display: flex; flex-direction: column; padding: 1mm 0; }
+.prod__cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 4mm; }
+.prod h3 { font-size: 16pt; font-weight: 900; }
+.formato { display: inline-block; margin-top: 1.5mm; font-size: 8.5pt; font-weight: 700; color: var(--marino); background: var(--hielo); border-radius: 99px; padding: .8mm 3mm; }
+.precio { text-align: right; flex: none; }
+.precio .num { font-size: 21pt; font-weight: 900; display: block; }
+.precio s { font-size: 9pt; color: #8A99AC; }
+.precio .ahorro { display: inline-block; margin-left: 1.5mm; font-size: 8pt; font-weight: 700; color: var(--verde); background: #E7F5EC; border-radius: 99px; padding: .5mm 2.2mm; }
+.prod p.desc { margin-top: 2.5mm; font-size: 10pt; }
+.usos { list-style: none; margin-top: 3mm; display: grid; grid-template-columns: 1fr 1fr; gap: 1.6mm 5mm; }
+.usos li { position: relative; padding-left: 5mm; font-size: 9.5pt; color: var(--marino); }
+.usos li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 2.8mm; height: 2.8mm; border-radius: 50%; background: var(--celeste); box-shadow: inset 0 0 0 .8mm #fff, 0 0 0 .3mm var(--azul); }
+.aviso { margin-top: 3mm; padding: 2mm 3mm; border-radius: 2.5mm; background: #FFF6E5; color: #7A5410; font-size: 9pt; }
+.aviso b { color: #6A4708; }
+
+/* ---------------------------------------------------------- Packs */
+.packs { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 8mm; }
+.pack { border: 1px solid var(--borde); border-radius: 5mm; overflow: hidden; background: #fff; box-shadow: 0 1.5mm 5mm rgba(36,61,91,.05); display: flex; flex-direction: column; }
+.pack__img { height: 52mm; background: var(--hielo); position: relative; }
+.pack__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pack__tag { position: absolute; top: 3.5mm; left: 3.5mm; background: var(--verde); color: #fff; font-size: 8.5pt; font-weight: 700; border-radius: 99px; padding: 1mm 3mm; }
+.pack__body { padding: 5mm; display: flex; flex-direction: column; gap: 2mm; flex: 1; }
+.pack h3 { font-size: 15pt; font-weight: 900; }
+.pack .incluye { font-size: 9.5pt; }
+.pack .precio { text-align: left; margin-top: auto; padding-top: 2mm; display: flex; align-items: baseline; gap: 2.5mm; flex-wrap: wrap; }
+.pack .precio .num { display: inline; }
+
+.fila2 { display: grid; grid-template-columns: 1.25fr 1fr; gap: 6mm; margin-top: 7mm; }
+.guia { border-radius: 5mm; background: var(--marino); color: #DCE8F5; padding: 7mm; display: flex; gap: 6mm; align-items: center; }
+.guia h3 { color: #fff; font-size: 15pt; font-weight: 900; margin-bottom: 2mm; }
+.guia p { font-size: 9.8pt; }
+.guia .url { margin-top: 2.5mm; font-weight: 700; color: var(--celeste); font-size: 9.5pt; }
+.qr { flex: none; background: #fff; border-radius: 3mm; padding: 2.5mm; line-height: 0; }
+.qr img { width: 24mm; height: 24mm; display: block; }
+.prox { border-radius: 5mm; border: 2px dashed #CBD9E8; padding: 5mm; display: flex; flex-direction: column; gap: 3mm; }
+.prox__img { height: 34mm; border-radius: 3mm; overflow: hidden; }
+.prox__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.prox h3 { font-size: 13pt; font-weight: 900; }
+.prox p { font-size: 9.5pt; }
+
+.consejos { margin-top: 7mm; padding: 5mm 6mm; border-radius: 5mm; background: var(--hielo); display: grid; grid-template-columns: auto 1fr 1fr 1fr; gap: 5mm; align-items: start; }
+.consejos h3 { font-size: 12pt; font-weight: 900; max-width: 32mm; }
+.consejos p { font-size: 9.3pt; color: var(--marino); position: relative; padding-left: 5mm; }
+.consejos p::before { content: "✓"; position: absolute; left: 0; color: var(--azul); font-weight: 800; }
+
+/* ---------------------------------------------------------- Café */
+.p-cafe { background: var(--crema); }
+.p-cafe .eyebrow, .p-cafe .top span { color: var(--cafe); }
+.p-cafe .foot { border-top-color: var(--arena2); }
+.cafe-hero { display: grid; grid-template-columns: 70mm 1fr; gap: 7mm; margin-top: 5mm; align-items: stretch; }
+.cafe-hero__img { border-radius: 5mm; overflow: hidden; background: #E9E9E9; position: relative; }
+.cafe-hero__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sello { position: absolute; right: 3.5mm; top: 3.5mm; width: 21mm; height: 21mm; border-radius: 50%; background: var(--cafe); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 0 0 1.2mm rgba(255,255,255,.7); }
+.sello b { font-family: 'Nunito', sans-serif; font-size: 18pt; font-weight: 900; line-height: 1; }
+.sello small { font-size: 6.5pt; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.cafe-hero h3 { font-size: 20pt; font-weight: 900; }
+.cafe-hero .sub { font-size: 10.5pt; font-weight: 700; color: var(--cafe); margin-top: 1.5mm; }
+.cafe-hero p.desc { margin-top: 3mm; font-size: 10.3pt; }
+.notas { display: flex; gap: 2mm; flex-wrap: wrap; margin-top: 3.5mm; }
+.notas span { font-size: 9pt; font-weight: 700; color: var(--cafe); background: var(--arena); border-radius: 99px; padding: 1mm 3.2mm; }
+.ficha { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; margin-top: 3.5mm; }
+.ficha div { background: #fff; border: 1px solid var(--arena2); border-radius: 2.5mm; padding: 1.5mm 3mm; }
+.ficha dt { font-size: 7.5pt; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #9A8670; }
+.ficha dd { font-size: 9.5pt; font-weight: 600; color: var(--marino); }
+.ficha div.ancho { grid-column: span 2; }
+
+.precios-cafe { margin-top: 6mm; }
+.precios-cafe h3 { font-size: 15pt; font-weight: 900; }
+.precios-cafe .lead2 { font-size: 10pt; margin-top: 1.5mm; }
+.tarifas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 4mm; }
+.tarifa { background: #fff; border: 1px solid var(--arena2); border-radius: 4mm; padding: 4mm 5mm; display: flex; flex-direction: column; gap: 1.2mm; }
+.tarifa--top { border: 2px solid var(--cafe); }
+.tarifa .fmt { font-size: 9pt; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--cafe); }
+.tarifa .num { font-size: 20pt; font-weight: 900; }
+.tarifa s { font-size: 9pt; color: #A2968A; }
+.tarifa .xb { font-size: 9.5pt; color: var(--marino); font-weight: 600; margin-top: 1mm; }
+.tarifa .badge { align-self: flex-start; font-size: 8pt; font-weight: 700; color: var(--verde); background: #E7F5EC; border-radius: 99px; padding: .6mm 2.4mm; margin-top: 1mm; }
+.nota-cafe { margin-top: 3mm; font-size: 9.5pt; color: var(--marino); background: var(--arena); border-radius: 3mm; padding: 3mm 4mm; }
+.cafeteria { margin-top: 4mm; border-radius: 4mm; background: var(--cafe); color: #F3EADB; padding: 5mm 6mm; display: flex; justify-content: space-between; align-items: center; gap: 5mm; }
+.cafeteria b { color: #fff; font-family: 'Nunito', sans-serif; font-size: 13pt; font-weight: 900; display: block; margin-bottom: 1mm; }
+.cafeteria .wa { flex: none; background: #fff; color: var(--cafe); font-weight: 800; font-size: 10pt; border-radius: 99px; padding: 2.5mm 5mm; }
+
+/* ---------------------------------------------------------- Cómo comprar */
+.pasos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; margin-top: 8mm; }
+.paso { border: 1px solid var(--borde); border-radius: 5mm; padding: 5.5mm; background: #fff; }
+.paso .n { width: 9mm; height: 9mm; border-radius: 50%; background: var(--azul); color: #fff; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 13pt; display: flex; align-items: center; justify-content: center; margin-bottom: 3mm; }
+.paso h3 { font-size: 12.5pt; font-weight: 900; margin-bottom: 1.5mm; }
+.paso p { font-size: 9.6pt; }
+.bloques { display: grid; grid-template-columns: 1.1fr 1fr; gap: 6mm; margin-top: 7mm; }
+.caja { border-radius: 5mm; background: var(--hielo); padding: 6mm; }
+.caja h3 { font-size: 14pt; font-weight: 900; margin-bottom: 3mm; }
+.gratis { background: var(--azul); color: #fff; border-radius: 3mm; padding: 3mm 4mm; font-weight: 700; font-size: 10.5pt; margin-bottom: 3.5mm; }
+table.tarifas-envio { width: 100%; border-collapse: collapse; font-size: 9.8pt; }
+table.tarifas-envio td { padding: 2mm 0; border-bottom: 1px solid #D6E6F7; color: var(--marino); vertical-align: top; }
+table.tarifas-envio td:last-child { text-align: right; font-weight: 800; white-space: nowrap; padding-left: 4mm; }
+table.tarifas-envio tr:last-child td { border-bottom: 0; }
+.caja .peq { font-size: 8.8pt; margin-top: 3mm; }
+.retiro { margin-top: 4mm; background: #fff; border-radius: 3mm; padding: 3.5mm 4mm; font-size: 9.5pt; color: var(--marino); }
+.retiro b { display: block; font-size: 10.5pt; }
+.pago { display: flex; flex-direction: column; gap: 6mm; }
+.pago .caja p { font-size: 10pt; color: var(--marino); }
+.contacto { border-radius: 5mm; background: var(--marino); color: #DCE8F5; padding: 6mm; flex: 1; display: flex; flex-direction: column; gap: 3.5mm; }
+.contacto h3 { color: #fff; font-size: 14pt; font-weight: 900; }
+.contacto .dato { display: flex; align-items: center; gap: 3mm; font-size: 10.5pt; font-weight: 600; color: #fff; }
+.contacto .dato svg { width: 5mm; height: 5mm; fill: var(--celeste); flex: none; }
+.qrs { display: flex; gap: 6mm; margin-top: auto; }
+.qrs figure { display: flex; flex-direction: column; align-items: center; gap: 1.5mm; font-size: 8.5pt; font-weight: 700; color: var(--celeste); }
+.qrs .qr img { width: 22mm; height: 22mm; }
+.cierre { margin: auto 0; padding: 6mm 0; text-align: center; }
+.cierre p { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 17pt; color: var(--marino); }
+.cierre p span { color: var(--azul); }
+.cierre small { display: block; margin-top: 2mm; font-size: 8.5pt; }
+</style>
+</head>
+<body>
+
+<!-- ======================================================= 1. PORTADA -->
+<section class="page cover">
+  <div class="cover__in">
+    <img class="cover__logo" src="logo-karu-esencial.png" alt="Karu Esencial">
+    <span class="cover__fecha">Octubre 2026</span>
+    <h1>Catálogo de<br><span>productos</span></h1>
+    <p class="cover__lema">Lo esencial para tu hogar, simple y bien elegido. Básicos de limpieza y de cocina con entrega en el Gran Concepción.</p>
+    <div class="chips">
+      <span class="chip"><i></i>Limpieza del hogar</span>
+      <span class="chip chip--cafe"><i></i>Cocina · Café</span>
+      <span class="chip chip--prox"><i></i>Próximamente: aceite de oliva</span>
+    </div>
+    <div class="cover__arte"><img src="hero-composicion.svg" alt=""></div>
+  </div>
+  <div class="cover__barra">
+    <span class="dato"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 13.8c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.6-.3h.5c.1 0 .4 0 .6.4l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2.1 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.7-.1 1.3z"/></svg>+56 9 8904 8914</span>
+    <span class="dato"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-3a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3zm.8 2h3a15.7 15.7 0 0 0 1.4 3.6A8 8 0 0 1 5.1 16zm3-8h-3a8 8 0 0 1 4.4-3.6C8.9 5.5 8.4 6.7 8.1 8zM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h3a8 8 0 0 1-4.4 3.6zm1.7-5.6a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4z"/></svg>www.karuesencial.cl</span>
+    <span class="dato"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.9c-.1-1.6-.4-3-1.6-4.2S17.7 2.2 16.1 2.1C14.5 2 9.5 2 7.9 2.1 6.3 2.2 4.9 2.5 3.7 3.7S2.2 6.3 2.1 7.9C2 9.5 2 14.5 2.1 16.1c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.6.1 8.2 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.6 0-8.2zm-2.1 9.9a3.3 3.3 0 0 1-1.9 1.9c-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4a3.3 3.3 0 0 1-1.9-1.9c-.5-1.3-.4-4.4-.4-5.8s-.1-4.6.4-5.9a3.3 3.3 0 0 1 1.9-1.9c1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 0 1 1.9 1.9c.5 1.3.4 4.4.4 5.9s.1 4.5-.4 5.8z"/></svg>@karu_esencial</span>
+  </div>
+</section>
+
+<!-- ======================================================= 2. LIMPIEZA -->
+<section class="page">
+  <div class="top"><img src="logo-karu-esencial.png" alt="Karu Esencial"><span>Limpieza del hogar</span></div>
+  <span class="eyebrow">Categoría</span>
+  <h2 class="h2">Limpieza del hogar</h2>
+  <p class="lead">Tres básicos que resuelven gran parte de la limpieza de la casa. Rinden mucho y se combinan entre sí.</p>
+
+  <div class="prods">
+    <article class="prod">
+      <div class="prod__img"><img src="producto-vinagre.svg" alt="Vinagre incoloro"></div>
+      <div class="prod__body">
+        <div class="prod__cab">
+          <div><h3>Vinagre Incoloro</h3><span class="formato">Bidón de 5 litros</span></div>
+          <div class="precio"><span class="num">$6.500</span><s>$7.500</s><span class="ahorro">-$1.000</span></div>
+        </div>
+        <p class="desc">Vinagre de alcohol incoloro con <b>4% de acidez</b>, multiuso para la limpieza de la casa. Producto chileno.</p>
+        <ul class="usos">
+          <li>Vidrios y espejos</li>
+          <li>Sarro del hervidor</li>
+          <li>Llaves, griferías y acero</li>
+          <li>Cerámicas de cocina y baño</li>
+          <li>Elimina olores</li>
+          <li>Reemplaza el suavizante</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="prod">
+      <div class="prod__img"><img src="producto-percarbonato.svg" alt="Percarbonato de sodio"></div>
+      <div class="prod__body">
+        <div class="prod__cab">
+          <div><h3>Percarbonato de Sodio</h3><span class="formato">Bolsa de 1 kg</span></div>
+          <div class="precio"><span class="num">$7.500</span></div>
+        </div>
+        <p class="desc">Gránulos que liberan oxígeno al disolverse en agua caliente. Ayudan a blanquear la ropa, quitar manchas y limpiar a fondo.</p>
+        <ul class="usos">
+          <li>Ropa blanca en la lavadora</li>
+          <li>Remojo de prendas con manchas</li>
+          <li>Juntas y fragüe</li>
+          <li>Tablas de picar</li>
+        </ul>
+        <p class="aviso"><b>Se activa con agua caliente:</b> desde 40 °C, y rinde más entre 50 y 60 °C.</p>
+      </div>
+    </article>
+
+    <article class="prod">
+      <div class="prod__img"><img src="producto-bicarbonato.svg" alt="Bicarbonato de sodio"></div>
+      <div class="prod__body">
+        <div class="prod__cab">
+          <div><h3>Bicarbonato de Sodio</h3><span class="formato">Bolsa de 1 kg</span></div>
+          <div class="precio"><span class="num">$2.500</span><s>$3.000</s><span class="ahorro">-$500</span></div>
+        </div>
+        <p class="desc">El comodín de la casa: un polvo blanco y fino que frota sin rayar y ayuda a reducir los olores.</p>
+        <ul class="usos">
+          <li>Ollas, lavaplatos y horno</li>
+          <li>Olores del refrigerador</li>
+          <li>Olores del calzado</li>
+          <li>Complemento en el lavado de ropa</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  <div class="foot"><span><b>Karu Esencial</b> · Precios en pesos chilenos</span><span>WhatsApp <b>+56 9 8904 8914</b></span></div>
+</section>
+
+<!-- ======================================================= 3. PACKS -->
+<section class="page">
+  <div class="top"><img src="logo-karu-esencial.png" alt="Karu Esencial"><span>Packs</span></div>
+  <span class="eyebrow">Ahorra combinando</span>
+  <h2 class="h2">Packs de limpieza</h2>
+  <p class="lead">Los productos que más se usan juntos, a mejor precio que por separado.</p>
+
+  <div class="packs">
+    <article class="pack">
+      <div class="pack__img"><img src="pack-vinagre-bicarbonato.svg" alt="Pack vinagre y bicarbonato"><span class="pack__tag">Ahorras $1.500</span></div>
+      <div class="pack__body">
+        <h3>Pack Vinagre + Bicarbonato</h3>
+        <p class="incluye">1 Vinagre Incoloro de 5 litros + 1 Bicarbonato de Sodio de 1 kg. La dupla para cocina, baño y lavado.</p>
+        <div class="precio"><span class="num">$8.500</span><s>$10.000</s></div>
+      </div>
+    </article>
+    <article class="pack">
+      <div class="pack__img"><img src="pack-2-vinagres.svg" alt="Pack 2 vinagres"><span class="pack__tag">Ahorras $2.000</span></div>
+      <div class="pack__body">
+        <h3>Pack 2 Vinagres</h3>
+        <p class="incluye">2 Vinagres Incoloros de 5 litros. Para tener reserva en casa o compartir.</p>
+        <div class="precio"><span class="num">$12.000</span><s>$14.000</s></div>
+      </div>
+    </article>
+  </div>
+
+  <div class="consejos">
+    <h3>Buenas prácticas</h3>
+    <p>Prueba primero en una zona poco visible.</p>
+    <p>Usa guantes si tienes la piel sensible.</p>
+    <p>Guarda los productos bien cerrados, en un lugar seco y fuera del alcance de los niños.</p>
+  </div>
+
+  <div class="fila2">
+    <div class="guia">
+      <div>
+        <h3>Guía de usos</h3>
+        <p>Paso a paso para cada producto: cantidades, tiempos y consejos para limpiar vidrios, sarro, ropa, juntas y mucho más.</p>
+        <p class="url">karuesencial.cl/guia-de-usos</p>
+      </div>
+      <div class="qr"><img src="qr-guia.svg" alt="QR Guía de usos"></div>
+    </div>
+    <div class="prox">
+      <div class="prox__img"><img src="proximamente-aceite.svg" alt=""></div>
+      <span class="eyebrow" style="margin:0">Próximamente · Cocina</span>
+      <h3>Aceite de oliva</h3>
+      <p>Pronto se suma a la categoría Cocina. Pregúntanos por WhatsApp.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span><b>Karu Esencial</b> · Precios en pesos chilenos</span><span>WhatsApp <b>+56 9 8904 8914</b></span></div>
+</section>
+
+<!-- ======================================================= 4. CAFÉ -->
+<section class="page p-cafe">
+  <div class="top"><img src="logo-karu-esencial.png" alt="Karu Esencial"><span>Cocina · Café</span></div>
+  <span class="eyebrow">Categoría Cocina</span>
+  <h2 class="h2">Café de especialidad</h2>
+
+  <div class="cafe-hero">
+    <div class="cafe-hero__img"><img src="cafe-bolsa.png" alt="Café Carlos Roldi"><div class="sello"><b>88</b><small>puntos</small></div></div>
+    <div>
+      <h3>Carlos Roldi</h3>
+      <p class="sub">Intenso, dulce y con cuerpo · En grano</p>
+      <p class="desc">Un café de <b>baja acidez</b> con notas a chocolate, nueces y azúcar morena, ideal para espresso y café con leche. <b>88 puntos de cata</b>, cultivado en Espírito Santo, Brasil.</p>
+      <div class="notas"><span>Chocolate</span><span>Nueces</span><span>Azúcar morena</span></div>
+      <dl class="ficha">
+        <div class="ancho"><dt>Origen</dt><dd>Finca Caldeirão de São José, Espírito Santo, Brasil</dd></div>
+        <div><dt>Especie y variedad</dt><dd>Canephora, Conilon</dd></div>
+        <div><dt>Altitud</dt><dd>500 msnm</dd></div>
+        <div><dt>Proceso</dt><dd>Honey</dd></div>
+        <div><dt>Tueste</dt><dd>Medio</dd></div>
+        <div><dt>Acidez</dt><dd>Baja</dd></div>
+        <div><dt>Puntaje</dt><dd>88 / 100 (escala SCA)</dd></div>
+        <div class="ancho"><dt>Recomendado para</dt><dd>Espresso, moka y bebidas con leche</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="precios-cafe">
+    <h3>Formatos y precios</h3>
+    <p class="lead2">Todo el café viene en bolsas de 250 g. Mientras más bolsas, menor el precio por bolsa.</p>
+    <div class="tarifas">
+      <div class="tarifa">
+        <span class="fmt">250 g · 1 bolsa</span>
+        <span class="num">$9.500</span>
+        <s>$10.500</s>
+        <span class="xb">Precio por bolsa</span>
+        <span class="badge" style="color:var(--cafe);background:var(--arena)">Ideal para probar</span>
+      </div>
+      <div class="tarifa">
+        <span class="fmt">1 kg · 4 bolsas</span>
+        <span class="num">$31.400</span>
+        <s>$34.700</s>
+        <span class="xb">$7.850 por bolsa</span>
+        <span class="badge">17% menos por bolsa</span>
+      </div>
+      <div class="tarifa tarifa--top">
+        <span class="fmt">2 kg · 8 bolsas</span>
+        <span class="num">$59.600</span>
+        <s>$65.800</s>
+        <span class="xb">$7.450 por bolsa</span>
+        <span class="badge">22% menos por bolsa</span>
+      </div>
+    </div>
+    <p class="nota-cafe"><b>Desde 4 bolsas sueltas pagas el precio por kilo</b> ($7.850 por bolsa), y desde 8 bolsas, $7.450 por bolsa.</p>
+    <div class="cafeteria">
+      <div><b>¿Tienes una cafetería?</b>Escríbenos por WhatsApp para conocer nuestros precios especiales.</div>
+      <span class="wa">+56 9 8904 8914</span>
+    </div>
+  </div>
+
+  <div class="foot"><span><b>Karu Esencial</b> · Precios en pesos chilenos</span><span>WhatsApp <b>+56 9 8904 8914</b></span></div>
+</section>
+
+<!-- ======================================================= 5. CÓMO COMPRAR -->
+<section class="page">
+  <div class="top"><img src="logo-karu-esencial.png" alt="Karu Esencial"><span>Cómo comprar</span></div>
+  <span class="eyebrow">Pedidos</span>
+  <h2 class="h2">Cómo hacer tu pedido</h2>
+  <p class="lead">Compra en la web o escríbenos directo por WhatsApp. Te confirmamos el pedido y coordinamos la entrega.</p>
+
+  <div class="pasos">
+    <div class="paso"><span class="n">1</span><h3>Elige tus productos</h3><p>En karuesencial.cl o enviándonos tu lista por WhatsApp.</p></div>
+    <div class="paso"><span class="n">2</span><h3>Despacho o retiro</h3><p>Te lo llevamos a tu casa en el Gran Concepción o lo retiras gratis.</p></div>
+    <div class="paso"><span class="n">3</span><h3>Paga fácil</h3><p>Con transferencia o en efectivo al recibir o al retirar.</p></div>
+  </div>
+
+  <div class="bloques">
+    <div class="caja">
+      <h3>Despacho a domicilio</h3>
+      <p class="gratis">Gratis por compras desde $20.000</p>
+      <table class="tarifas-envio">
+        <tr><td>Concepción y San Pedro de la Paz</td><td>$1.000</td></tr>
+        <tr><td>Chiguayante</td><td>$2.000</td></tr>
+        <tr><td>Talcahuano, Hualpén, Penco, Tomé, Coronel, Lota y Hualqui</td><td>$3.000</td></tr>
+      </table>
+      <p class="peq">Valores para compras bajo $20.000.</p>
+      <div class="retiro"><b>Retiro gratis</b>Castellón 1333, Concepción. Lunes a jueves de 08:30 a 18:00 y viernes de 08:30 a 13:00.</div>
+    </div>
+    <div class="pago">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <span class="dato"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 13.8c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.6-.3h.5c.1 0 .4 0 .6.4l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2.1 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.7-.1 1.3z"/></svg>+56 9 8904 8914</span>
+        <span class="dato"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>contacto@karuesencial.cl</span>
+        <span class="dato"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.9c-.1-1.6-.4-3-1.6-4.2S17.7 2.2 16.1 2.1C14.5 2 9.5 2 7.9 2.1 6.3 2.2 4.9 2.5 3.7 3.7S2.2 6.3 2.1 7.9C2 9.5 2 14.5 2.1 16.1c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.6.1 8.2 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.6 0-8.2zm-2.1 9.9a3.3 3.3 0 0 1-1.9 1.9c-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4a3.3 3.3 0 0 1-1.9-1.9c-.5-1.3-.4-4.4-.4-5.8s-.1-4.6.4-5.9a3.3 3.3 0 0 1 1.9-1.9c1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 0 1 1.9 1.9c.5 1.3.4 4.4.4 5.9s.1 4.5-.4 5.8z"/></svg>@karu_esencial</span>
+        <div class="qrs">
+          <figure><div class="qr"><img src="qr-whatsapp.svg" alt="QR WhatsApp"></div>Pide por WhatsApp</figure>
+          <figure><div class="qr"><img src="qr-web.svg" alt="QR tienda"></div>Compra en la web</figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cierre">
+    <p>Lo esencial para tu hogar, <span>simple y bien elegido.</span></p>
+    <small>Precios en pesos chilenos, válidos para octubre de 2026 y sujetos a cambios.</small>
+  </div>
+
+  <div class="foot"><span><b>Karu Esencial</b> · San Pedro de la Paz, Gran Concepción</span><span>www.karuesencial.cl</span></div>
+</section>
+
+</body>
+</html>

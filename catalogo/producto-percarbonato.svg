@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="t">
+  <title id="t">Bolsa de percarbonato de sodio junto a un bowl de cerámica con gránulos blancos y una cuchara de madera</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5FAFF"/><stop offset="1" stop-color="#DCEEFF"/></linearGradient>
+    <linearGradient id="pouch" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF3FA"/></linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg)"/>
+  <polygon points="40,0 150,0 334,250 218,250" fill="#FFFFFF" opacity=".5"/>
+  <rect y="250" width="400" height="70" fill="#F2E8D8"/>
+  <rect y="250" width="400" height="4" fill="#E6D6BC"/>
+  <ellipse cx="196" cy="255" rx="66" ry="7" fill="#243D5B" opacity=".1"/>
+  <ellipse cx="316" cy="255" rx="48" ry="5" fill="#243D5B" opacity=".08"/>
+  <path d="M146 76h100l8 164a11 11 0 0 1-11 12h-94a11 11 0 0 1-11-12z" fill="url(#pouch)" stroke="#D5E3F2" stroke-width="2"/>
+  <rect x="146" y="76" width="100" height="14" rx="2" fill="#E8F1FA"/>
+  <path d="M148 98h96" stroke="#D5E3F2" stroke-width="2" stroke-dasharray="4 4"/>
+  <rect x="160" y="130" width="72" height="80" rx="10" fill="#B8E0FF"/>
+  <rect x="172" y="146" width="48" height="6" rx="3" fill="#243D5B"/>
+  <rect x="176" y="159" width="40" height="4" rx="2" fill="#FFFFFF"/>
+  <circle cx="184" cy="185" r="6" fill="#FFFFFF"/>
+  <circle cx="198" cy="190" r="4" fill="#FFFFFF" opacity=".85"/>
+  <circle cx="208" cy="181" r="3" fill="#FFFFFF" opacity=".7"/>
+  <rect x="172" y="198" width="48" height="3" rx="1.5" fill="#4A90E2"/>
+  <path d="M268 222h96a48 30 0 0 1-96 0z" fill="#FFFFFF" stroke="#E0EAF4" stroke-width="2"/>
+  <ellipse cx="316" cy="222" rx="48" ry="7" fill="#F4F8FC" stroke="#E0EAF4" stroke-width="2"/>
+  <g fill="#FFFFFF" stroke="#DCE6F0">
+    <circle cx="300" cy="217" r="3"/><circle cx="310" cy="214" r="3"/><circle cx="321" cy="216" r="3"/><circle cx="331" cy="219" r="3"/><circle cx="315" cy="220" r="3"/><circle cx="305" cy="221" r="2.5"/><circle cx="326" cy="223" r="2.5"/>
+  </g>
+  <rect x="40" y="238" width="68" height="7" rx="3.5" fill="#DEC49F" transform="rotate(-8 74 241)"/>
+  <ellipse cx="112" cy="235" rx="22" ry="11" fill="#E6CFAC" transform="rotate(-8 112 235)"/>
+  <g fill="#FFFFFF"><circle cx="106" cy="232" r="3"/><circle cx="114" cy="230" r="3"/><circle cx="118" cy="236" r="2.5"/><circle cx="109" cy="237" r="2.5"/></g>
+</svg>
