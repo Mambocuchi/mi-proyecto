@@ -166,6 +166,16 @@ table.tarifas-envio tr:last-child td { border-bottom: 0; }
 .cierre p { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 17pt; color: var(--marino); }
 .cierre p span { color: var(--azul); }
 .cierre small { display: block; margin-top: 2mm; font-size: 8.5pt; }
+
+/* ---------------------------------------------------------- Café: rueda de sabores */
+.rueda { margin-top: 6mm; border-radius: 5mm; overflow: hidden; background: #EDD7BF; height: 175mm; }
+.rueda img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rueda-pie { margin-top: 5mm; display: flex; justify-content: space-between; align-items: center; gap: 6mm; }
+.rueda-pie .notas { margin-top: 0; }
+.rueda-pie .notas span { font-size: 10.5pt; padding: 1.5mm 4mm; }
+.rueda-qr { display: flex; align-items: center; gap: 3mm; font-size: 9pt; font-weight: 700; color: var(--cafe); }
+.rueda-qr .qr { padding: 1.5mm; border: 1px solid var(--arena2); }
+.rueda-qr .qr img { width: 18mm; height: 18mm; }
 </style>
 </head>
 <body>
@@ -369,6 +379,23 @@ table.tarifas-envio tr:last-child td { border-bottom: 0; }
     </div>
   </div>
 
+  <div class="foot"><span><b>Karu Esencial</b> · Precios en pesos chilenos</span><span>WhatsApp <b>+56 9 8904 8914</b></span></div>
+</section>
+
+<!-- ======================================================= 4b. CAFÉ · PERFIL DE TAZA -->
+<section class="page p-cafe">
+  <div class="top"><img src="logo-karu-esencial.png" alt="Karu Esencial"><span>Cocina · Café</span></div>
+  <span class="eyebrow">Perfil de taza · Carlos Roldi</span>
+  <h2 class="h2">Intenso, dulce y con cuerpo</h2>
+  <p class="lead">Así se siente en la taza: mucho cuerpo, baja acidez y notas a chocolate, nueces y azúcar morena.</p>
+  <div class="rueda"><img src="cafe-rueda-sabores.jpg" alt="Rueda de sabores del café Carlos Roldi"></div>
+  <div class="rueda-pie">
+    <div>
+      <span class="eyebrow" style="margin-bottom:2mm">Ideal para</span>
+      <div class="notas"><span>Espresso</span><span>Moka</span><span>Café con leche</span></div>
+    </div>
+    <div class="rueda-qr"><div class="qr"><img src="qr-cafe.svg" alt="QR café Carlos Roldi"></div><span>Ver el café<br>en la web</span></div>
+  </div>
   <div class="foot"><span><b>Karu Esencial</b> · Precios en pesos chilenos</span><span>WhatsApp <b>+56 9 8904 8914</b></span></div>
 </section>
 
