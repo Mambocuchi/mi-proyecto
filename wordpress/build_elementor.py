@@ -20,7 +20,8 @@ IMG = {
     "vinagre": (245, "2026/10/vinagre-karu-5l-tarjeta-v2.jpg"),  # foto real del bidón Karu
     "vinagre_ilustracion": (63, "producto-vinagre.svg"),
     "percarbonato": (64, "producto-percarbonato.svg"),
-    "bicarbonato": (65, "producto-bicarbonato.svg"),
+    "bicarbonato": (257, "2026/10/bicarbonato-karu-1kg-tarjeta.jpg"),  # foto real sobre blanco
+    "bicarbonato_ilustracion": (65, "producto-bicarbonato.svg"),
     "aceite": (66, "proximamente-aceite.svg"),
     "cafe": (67, "proximamente-cafe.svg"),
     "pack_vb": (253, "2026/10/pack-vinagre-bicarbonato-tarjeta.jpg"),  # foto real del pack
@@ -1007,7 +1008,7 @@ GUIDE = [
 ]
 
 # La Guía de usos mantiene las ilustraciones para que las tres secciones se vean iguales.
-GUIDE_IMG = {"vinagre": "vinagre_ilustracion"}
+GUIDE_IMG = {"vinagre": "vinagre_ilustracion", "bicarbonato": "bicarbonato_ilustracion"}
 
 # Aviso destacado bajo la descripción de un producto.
 GUIDE_NOTES = {
