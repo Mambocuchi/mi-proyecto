@@ -23,7 +23,7 @@ IMG = {
     "bicarbonato": (65, "producto-bicarbonato.svg"),
     "aceite": (66, "proximamente-aceite.svg"),
     "cafe": (67, "proximamente-cafe.svg"),
-    "pack_vb": (121, "pack-vinagre-bicarbonato.svg"),
+    "pack_vb": (253, "2026/10/pack-vinagre-bicarbonato-tarjeta.jpg"),  # foto real del pack
     "pack_2v": (249, "2026/10/pack-2-vinagres-tarjeta.jpg"),  # foto real con dos bidones Karu
     "cafe_roldi": (207, "2026/10/carlos_54364133-f9ab-4478-be47-5dd5154a68b9.png"),
 }
