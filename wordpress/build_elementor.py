@@ -19,7 +19,7 @@ IMG = {
     "hero": (62, "hero-composicion.svg"),
     "vinagre": (245, "2026/10/vinagre-karu-5l-tarjeta-v2.jpg"),  # foto real del bidón Karu
     "vinagre_ilustracion": (63, "producto-vinagre.svg"),
-    "percarbonato": (261, "2026/10/percarbonato-karu-1kg-tarjeta.jpg"),  # foto real sin fondo
+    "percarbonato": (265, "2026/10/percarbonato-karu-1kg-tarjeta-v2.jpg"),  # foto real sin fondo
     "percarbonato_ilustracion": (64, "producto-percarbonato.svg"),
     "bicarbonato": (257, "2026/10/bicarbonato-karu-1kg-tarjeta.jpg"),  # foto real sobre blanco
     "bicarbonato_ilustracion": (65, "producto-bicarbonato.svg"),
