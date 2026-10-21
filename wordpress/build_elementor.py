@@ -17,7 +17,8 @@ FB = "https://www.facebook.com/people/Karu-Esencial/61588649071645/"
 
 IMG = {
     "hero": (62, "hero-composicion.svg"),
-    "vinagre": (63, "producto-vinagre.svg"),
+    "vinagre": (243, "2026/10/vinagre-karu-5l-tarjeta-v2.jpg"),  # foto real del bidón Karu
+    "vinagre_ilustracion": (63, "producto-vinagre.svg"),
     "percarbonato": (64, "producto-percarbonato.svg"),
     "bicarbonato": (65, "producto-bicarbonato.svg"),
     "aceite": (66, "proximamente-aceite.svg"),
@@ -1005,6 +1006,9 @@ GUIDE = [
      ]),
 ]
 
+# La Guía de usos mantiene las ilustraciones para que las tres secciones se vean iguales.
+GUIDE_IMG = {"vinagre": "vinagre_ilustracion"}
+
 # Aviso destacado bajo la descripción de un producto.
 GUIDE_NOTES = {
     "percarbonato": ("Se activa con agua caliente",
@@ -1074,7 +1078,7 @@ def guide_product(key, anchor, tg, name, fmt, desc, uses, bg):
     if bg:
         pill["settings"]["__globals__"]["_background_color"] = gc("blanco")
     side = column([
-        card([image(key, height=240, height_m=220)], hover=False, _title="Imagen"),
+        card([image(GUIDE_IMG.get(key, key), height=240, height_m=220)], hover=False, _title="Imagen"),
         pill,
         heading(name, "h2", "h3tarjeta", "accent", typography_typography="custom", typography_font_family="Nunito",
                 typography_font_weight="900", typography_font_size=px(30), typography_font_size_mobile=px(26)),
