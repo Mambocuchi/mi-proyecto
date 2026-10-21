@@ -16,7 +16,8 @@ IG = "https://www.instagram.com/karu_esencial/"
 FB = "https://www.facebook.com/people/Karu-Esencial/61588649071645/"
 
 IMG = {
-    "hero": (270, "2026/10/portada-productos-karu-v2.jpg"),  # fotos reales (fuente por capas en canva/portada-inicio)
+    "hero": (272, "2026/10/portada-cocina-karu.jpg"),  # foto de cocina enviada por Karu
+    "hero_fondo_claro": (270, "2026/10/portada-productos-karu-v2.jpg"),  # fotos reales (fuente por capas en canva/portada-inicio)
     "hero_ilustracion": (62, "hero-composicion.svg"),
     "vinagre": (245, "2026/10/vinagre-karu-5l-tarjeta-v2.jpg"),  # foto real del bidón Karu
     "vinagre_ilustracion": (63, "producto-vinagre.svg"),
