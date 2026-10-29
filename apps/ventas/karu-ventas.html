@@ -453,10 +453,10 @@ function viewHome(){
     return html;
   }
   // product breakdown
-  const byP={}; list.forEach(s=>{ const c=calc(s); const tot=(s.items||[]).reduce((a,i)=>a+lineTotal(i),0)||1; (s.items||[]).forEach(i=>{ const share=lineTotal(i)/tot; const k=i.name; byP[k]=byP[k]||{u:0,g:0}; byP[k].u+=Number(i.qty)||0; byP[k].g+= c.neto*share - i.qty*i.unitCost; }); });
+  const byP={}; list.forEach(s=>{ const c=calc(s); const tot=(s.items||[]).reduce((a,i)=>a+lineTotal(i),0)||1; (s.items||[]).forEach(i=>{ const share=lineTotal(i)/tot; const pl=prodLine(i); const k=pl.name; byP[k]=byP[k]||{u:0,g:0}; byP[k].u+=pl.u; byP[k].g+= c.neto*share - i.qty*i.unitCost; }); });
   const prods=Object.entries(byP).sort((a,b)=>b[1].g-a[1].g); const maxG=Math.max(1,...prods.map(p=>p[1].g));
   html+=`<h3>Qué te dejó más ganancia</h3>`;
-  html+= prods.length? `<div class="panel bars">${prods.map(([n,v])=>`<div class="bar"><span>${esc(n)} <span class="muted">· ${v.u} u.</span></span><b>${money(v.g)}</b><div class="track"><div class="fill" style="width:${Math.max(3,v.g/maxG*100)}%"></div></div></div>`).join("")}</div>` : `<div class="empty">Sin ventas en este mes.</div>`;
+  html+= prods.length? `<div class="panel bars">${prods.map(([n,v])=>`<div class="bar"><span>${esc(n)} <span class="muted">· ${unitLbl(n,v.u)}</span></span><b>${money(v.g)}</b><div class="track"><div class="fill" style="width:${Math.max(3,v.g/maxG*100)}%"></div></div></div>`).join("")}</div>` : `<div class="empty">Sin ventas en este mes.</div>`;
   // channels
   const byC={}; list.forEach(s=>{ const k=s.channel||"Sin canal"; byC[k]=(byC[k]||0)+1; });
   if(list.length){ html+=`<h3>Por dónde te compran</h3><div class="panel bars">${Object.entries(byC).sort((a,b)=>b[1]-a[1]).map(([n,v])=>`<div class="bar"><span>${esc(n)}</span><b>${v} ${v===1?"venta":"ventas"}</b><div class="track"><div class="fill" style="width:${v/list.length*100}%"></div></div></div>`).join("")}</div>`; }
@@ -656,8 +656,8 @@ function balanceSheet(){
 }
 function prodProfit(sales){
   const P={}; sales.forEach(s=>{ const c=calc(s); const base=(s.items||[]).reduce((a,i)=>a+lineTotal(i),0)||1;
-    (s.items||[]).forEach(i=>{ if(!usesOf(i).length && !(Number(i.unitCost)>0)) return; const k=i.name||"Producto"; const n=c.neto*lineTotal(i)/base, co=(Number(i.qty)||0)*(Number(i.unitCost)||0);
-      P[k]=P[k]||{name:k,u:0,neto:0,cost:0}; P[k].u+=Number(i.qty)||0; P[k].neto+=n; P[k].cost+=co; }); });
+    (s.items||[]).forEach(i=>{ if(!usesOf(i).length && !(Number(i.unitCost)>0)) return; const pl=prodLine(i); const k=pl.name; const n=c.neto*lineTotal(i)/base, co=(Number(i.qty)||0)*(Number(i.unitCost)||0);
+      P[k]=P[k]||{name:k,u:0,neto:0,cost:0}; P[k].u+=pl.u; P[k].neto+=n; P[k].cost+=co; }); });
   return Object.values(P).map(p=>({...p, gm:p.neto-p.cost, pct:p.neto? (p.neto-p.cost)/p.neto*100 : 0})).sort((a,b)=>b.gm-a.gm);
 }
 function pctS(v){ return (isFinite(v)? (Math.round(v*10)/10).toLocaleString("es-CL") : "–")+"%"; }
@@ -989,6 +989,10 @@ function viewClients(){
 const COMUNAS=["Concepción","San Pedro de la Paz","Chiguayante","Talcahuano","Hualpén","Penco","Tomé","Coronel","Lota","Hualqui","Otra comuna"];
 const ORIGENES=["Instagram","Facebook","Marketplace","Recomendación de un cliente","Familia o amigos","Página web","En persona / feria","Otro"];
 function optBlank(list,sel,blank){ return `<option value=""${sel?"":" selected"}>${esc(blank)}</option>`+list.map(v=>`<option${v===sel?" selected":""}>${esc(v)}</option>`).join("")+(sel&&!list.includes(sel)?`<option selected>${esc(sel)}</option>`:""); }
+// Todas las variantes de café (250 g, 1 kg, 2 kg, ofertas y precios de cafetería) se agrupan como un solo producto, contado en bolsas de 250 g.
+const CAFE_LINE="Café Carlos Roldi";
+function prodLine(i){ const u=usesOf(i); const q=Number(i.qty)||0; if(u.length===1 && u[0][0]==="cafe") return {name:CAFE_LINE, u:q*(Number(u[0][1])||1)}; if(/caf[eé]/i.test(i.name||"") && /roldi/i.test(i.name||"")) return {name:CAFE_LINE, u:q}; return {name:i.name||"Producto", u:q}; }
+function unitLbl(name,u){ return name===CAFE_LINE? `${u} ${u===1?"bolsa":"bolsas"}` : `${u} u.`; }
 function isDelivery(i){ return /^despacho/i.test(i.productId||"") || /^despacho/i.test(i.name||""); }
 function clientKey(s){ return s.clientId||("n:"+norm(s.clientName)); }
 function clientOf(s){ return (s.clientId&&S.clients.find(c=>c.id===s.clientId)) || S.clients.find(c=>norm(c.name)===norm(s.clientName)) || null; }
@@ -1000,9 +1004,9 @@ function clientMetrics(){
   [...S.sales].sort((a,b)=>(a.date||"").localeCompare(b.date||"")||(a.createdAt||"").localeCompare(b.createdAt||"")).forEach(s=>{
     const k=clientKey(s); const c=clientOf(s); const t=calc(s);
     const m=M[k]=M[k]||{key:k, id:c?c.id:"", name:c?c.name:(s.clientName||"Sin nombre"), phone:c&&c.phone||"", comuna:"", origen:c&&c.origen||"", dates:[], n:0, total:0, gain:0, prods:{}, firstChannel:"", firstProducts:[]};
-    if(!m.dates.length){ m.firstChannel=s.channel||""; m.firstProducts=(s.items||[]).filter(i=>!isDelivery(i)).map(i=>i.name); }
+    if(!m.dates.length){ m.firstChannel=s.channel||""; m.firstProducts=(s.items||[]).filter(i=>!isDelivery(i)).map(i=>prodLine(i).name); }
     m.dates.push(s.date||""); m.n++; m.total+=t.total; m.gain+=t.gain; if(s.comuna) m.comuna=s.comuna;
-    (s.items||[]).filter(i=>!isDelivery(i)).forEach(i=>{ m.prods[i.name]=(m.prods[i.name]||0)+(Number(i.qty)||0); });
+    (s.items||[]).filter(i=>!isDelivery(i)).forEach(i=>{ const pl=prodLine(i); m.prods[pl.name]=(m.prods[pl.name]||0)+pl.u; });
   });
   Object.values(M).forEach(m=>{
     const c=m.id&&S.clients.find(x=>x.id===m.id); if(c&&c.comuna) m.comuna=c.comuna;
@@ -1025,7 +1029,7 @@ function marketData(p){
   const repeat=buyers.filter(k=>M[k]&&M[k].n>1).length;
   const C={}; sales.forEach(s=>{ const k=saleComuna(s)||"Sin comuna"; C[k]=C[k]||{name:k,total:0,n:0,cl:new Set()}; C[k].total+=calc(s).total; C[k].n++; C[k].cl.add(clientKey(s)); });
   const comunas=Object.values(C).map(x=>({name:x.name,total:x.total,n:x.n,nc:x.cl.size,ticket:x.total/x.n})).sort((a,b)=>(a.name==="Sin comuna")-(b.name==="Sin comuna")||b.total-a.total);
-  const P={}; sales.forEach(s=>{ const sub=(s.items||[]).reduce((a,i)=>a+lineTotal(i),0)||1; const t=calc(s).total; (s.items||[]).filter(i=>!isDelivery(i)).forEach(i=>{ const k=i.name||"Producto"; P[k]=P[k]||{name:k,u:0,total:0,cl:new Set()}; P[k].u+=Number(i.qty)||0; P[k].total+=t*lineTotal(i)/sub; P[k].cl.add(clientKey(s)); }); });
+  const P={}; sales.forEach(s=>{ const sub=(s.items||[]).reduce((a,i)=>a+lineTotal(i),0)||1; const t=calc(s).total; (s.items||[]).filter(i=>!isDelivery(i)).forEach(i=>{ const pl=prodLine(i); const k=pl.name; P[k]=P[k]||{name:k,u:0,total:0,cl:new Set()}; P[k].u+=pl.u; P[k].total+=t*lineTotal(i)/sub; P[k].cl.add(clientKey(s)); }); });
   const prods=Object.values(P).map(x=>({name:x.name,u:x.u,total:x.total,nc:x.cl.size})).sort((a,b)=>b.total-a.total);
   const K={}; const ch=k=>K[k]=K[k]||{name:k,total:0,n:0,nuevos:0};
   sales.forEach(s=>{ const c=ch(s.channel||"Sin canal"); c.total+=calc(s).total; c.n++; });
@@ -1077,7 +1081,7 @@ function viewAnalysis(){
   if(!ns) return h+`<div class="empty" style="margin-top:14px"><b>Sin ventas en este periodo</b>Prueba con "Desde el inicio".</div>`;
   h+=`<h3>Ideas para vender más</h3><div class="panel an">${marketInsights(D).map(a=>`<div class="an-i ${a.tone}"><span aria-hidden="true">${TONE_ICON[a.tone]}</span><span>${esc(a.text)}</span></div>`).join("")}</div>`;
   h+=`<h3>¿En qué comuna te compran más?</h3>`+bars(D.comunas.map(c=>({l:c.name, sub:`${c.nc} ${c.nc===1?"cliente":"clientes"} · ${c.n} ${c.n===1?"venta":"ventas"}`, v:c.total, txt:money(c.total), muted:c.name==="Sin comuna"})));
-  h+=`<h3>¿Qué productos se venden más?</h3>`+bars(D.prods.map(x=>({l:x.name, sub:`${x.u} u. · ${x.nc} ${x.nc===1?"cliente":"clientes"}`, v:x.total, txt:money(x.total)})));
+  h+=`<h3>¿Qué productos se venden más?</h3>`+bars(D.prods.map(x=>({l:x.name, sub:`${unitLbl(x.name,x.u)} · ${x.nc} ${x.nc===1?"cliente":"clientes"}`, v:x.total, txt:money(x.total)})));
   h+=`<h3>¿Por qué canal te compran?</h3>`+bars(D.canales.map(c=>({l:c.name, sub:`${c.n} ${c.n===1?"venta":"ventas"}${c.nuevos?` · ${c.nuevos} ${c.nuevos===1?"cliente nuevo":"clientes nuevos"}`:""}`, v:c.total, txt:money(c.total), muted:c.name==="Sin canal"})));
   h+=`<h3>¿Cómo te conocieron?</h3>`+bars(D.origenes.map(([o,n])=>({l:o, v:n, txt:`${n} ${n===1?"cliente":"clientes"}`, muted:o==="Sin dato"})));
   const mc=monthlyClients(); const mx=Math.max(1,...mc.map(r=>r.nw+r.rt));
