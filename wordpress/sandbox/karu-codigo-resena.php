@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Karu Esencial - Código de descuento por opinión
- * Description: Al enviar el formulario "Opiniones de clientes" (WPForms), genera un código único de 15% (válido 30 días, un uso, uno por correo), lo registra como cupón de WooCommerce y lo envía al correo del cliente.
+ * Description: Al enviar el formulario "Opiniones de clientes" (WPForms), genera un código único de 10% (válido 30 días, un uso, uno por correo), lo registra como cupón de WooCommerce y lo envía al correo del cliente.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,7 +12,7 @@ const KARU_RESENA_FORM_ID    = 146;
 const KARU_RESENA_EMAIL_FIELD = 3;
 const KARU_RESENA_NAME_FIELD  = 1;
 const KARU_RESENA_CODE_FIELD  = 8;
-const KARU_RESENA_DESCUENTO  = 15;
+const KARU_RESENA_DESCUENTO  = 10;
 const KARU_RESENA_DIAS       = 30;
 
 /**

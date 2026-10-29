@@ -718,10 +718,10 @@ def review_block():
                 typography_typography="custom", typography_font_family="Nunito", typography_font_weight="800",
                 typography_font_size=px(30), typography_font_size_mobile=px(24),
                 typography_line_height={"unit": "em", "size": 1.15, "sizes": []}),
-        text("<p>Cuéntanos cómo te fue y te enviamos por correo un <strong>código de 15% de descuento</strong> "
+        text("<p>Cuéntanos cómo te fue y te enviamos por correo un <strong>código de 10% de descuento</strong> "
              "para tu próxima compra. Revisamos cada opinión y, si nos autorizas, la publicamos en esta sección "
              "junto a tu nombre y comuna.</p>"),
-        checklist(["15% de descuento, válido por 30 días", "Un código por persona, sea cual sea tu opinión",
+        checklist(["10% de descuento, válido por 30 días", "Un código por persona, sea cual sea tu opinión",
                    "Tu correo no se publica"], size=13),
         button("¿Prefieres WhatsApp? Escríbenos",
                wa("Hola Karu Esencial, quiero compartir mi experiencia con sus productos."),

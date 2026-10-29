@@ -9,6 +9,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 const KARU_OPINIONES_FORM = 146;
+const KARU_OPINIONES_CAMPO_TIPO      = 9; // ¿Sobre qué es tu opinión?
+const KARU_OPINIONES_CAMPO_PRODUCTOS = 4;
+const KARU_OPINIONES_TIPO_ATENCION   = 'La atención y el servicio de Karu';
+
+/**
+ * Texto corto de qué trata la opinión (para la tarjeta pública y la lista del administrador).
+ */
+function karu_opinion_sobre( $id ) {
+	$tipo      = (string) get_post_meta( $id, '_karu_tipo', true );
+	$productos = (string) get_post_meta( $id, '_karu_productos', true );
+	if ( $tipo === KARU_OPINIONES_TIPO_ATENCION ) {
+		return 'La atención de Karu';
+	}
+	if ( $productos === '' ) {
+		return '';
+	}
+	return strpos( $tipo, 'Ambos' ) === 0 ? $productos . ' y la atención' : $productos;
+}
 
 add_action( 'init', function () {
 	register_post_type( 'karu_testimonio', array(
@@ -51,12 +69,58 @@ add_action( 'wpforms_process_complete_' . KARU_OPINIONES_FORM, function ( $field
 	if ( ! $id || is_wp_error( $id ) ) {
 		return;
 	}
+	$tipo = sanitize_text_field( $valor( KARU_OPINIONES_CAMPO_TIPO ) );
 	update_post_meta( $id, '_karu_comuna', sanitize_text_field( $valor( 2 ) ) );
-	update_post_meta( $id, '_karu_productos', sanitize_text_field( str_replace( "\n", ', ', $valor( 4 ) ) ) );
+	update_post_meta( $id, '_karu_tipo', $tipo );
+	update_post_meta( $id, '_karu_productos', $tipo === KARU_OPINIONES_TIPO_ATENCION ? '' : sanitize_text_field( str_replace( "\n", ', ', $valor( KARU_OPINIONES_CAMPO_PRODUCTOS ) ) ) );
 	update_post_meta( $id, '_karu_experiencia', sanitize_text_field( $valor( 5 ) ) );
 	update_post_meta( $id, '_karu_autoriza', $autoriza ? 1 : 0 );
 	update_post_meta( $id, '_karu_email', sanitize_email( $valor( 3 ) ) );
 }, 20 );
+
+/* ------------------------------------------------------------------ Formulario: producto solo cuando corresponde */
+
+// Si la opinión es sobre un producto (o ambos), hay que marcar cuál.
+add_action( 'wpforms_process', function ( $fields, $entry, $form_data ) {
+	if ( (int) $form_data['id'] !== KARU_OPINIONES_FORM ) {
+		return;
+	}
+	$tipo      = trim( (string) ( $fields[ KARU_OPINIONES_CAMPO_TIPO ]['value'] ?? '' ) );
+	$productos = trim( (string) ( $fields[ KARU_OPINIONES_CAMPO_PRODUCTOS ]['value'] ?? '' ) );
+	if ( $tipo !== '' && $tipo !== KARU_OPINIONES_TIPO_ATENCION && $productos === '' ) {
+		wpforms()->obj( 'process' )->errors[ KARU_OPINIONES_FORM ][ KARU_OPINIONES_CAMPO_PRODUCTOS ] = 'Marca el producto sobre el que opinas.';
+	}
+}, 10, 3 );
+
+// Muestra la lista de productos solo si la opinión es sobre un producto.
+add_action( 'wp_footer', function () {
+	?>
+<script id="karu-opiniones-form">
+(function () {
+	var form = document.getElementById('wpforms-form-<?php echo (int) KARU_OPINIONES_FORM; ?>');
+	if (!form) { return; }
+	var caja = document.getElementById('wpforms-<?php echo (int) KARU_OPINIONES_FORM; ?>-field_<?php echo (int) KARU_OPINIONES_CAMPO_PRODUCTOS; ?>-container');
+	var radios = form.querySelectorAll('input[name="wpforms[fields][<?php echo (int) KARU_OPINIONES_CAMPO_TIPO; ?>]"]');
+	var texto = form.querySelector('#wpforms-<?php echo (int) KARU_OPINIONES_FORM; ?>-field_6');
+	if (!caja || !radios.length) { return; }
+	function actualizar() {
+		var elegido = form.querySelector('input[name="wpforms[fields][<?php echo (int) KARU_OPINIONES_CAMPO_TIPO; ?>]"]:checked');
+		var valor = elegido ? elegido.value : '';
+		var atencion = valor === <?php echo wp_json_encode( KARU_OPINIONES_TIPO_ATENCION ); ?>;
+		caja.style.display = (valor && !atencion) ? '' : 'none';
+		if (atencion) { caja.querySelectorAll('input[type=checkbox]').forEach(function (c) { c.checked = false; }); }
+		if (texto) {
+			texto.placeholder = atencion ? 'Cuéntanos cómo te atendimos: el pedido, la entrega, la comunicación…'
+				: (valor.indexOf('Ambos') === 0 ? 'Cuéntanos qué te pareció el producto y cómo te atendimos'
+				: 'Cuéntanos qué te pareció el producto');
+		}
+	}
+	radios.forEach(function (r) { r.addEventListener('change', actualizar); });
+	actualizar();
+})();
+</script>
+	<?php
+}, 30 );
 
 /* ------------------------------------------------------------------ Solo se publican las autorizadas */
 
@@ -102,6 +166,11 @@ add_action( 'add_meta_boxes_karu_testimonio', function () {
 			echo '<option value="' . esc_attr( $op ) . '"' . selected( get_post_meta( $post->ID, '_karu_experiencia', true ), $op, false ) . '>' . esc_html( $op ? $op : '—' ) . '</option>';
 		}
 		echo '</select></label></p>';
+		echo '<p><label>Opina sobre<br><select name="karu_tipo" class="widefat">';
+		foreach ( array( '', 'Un producto que compré', KARU_OPINIONES_TIPO_ATENCION, 'Ambos: producto y atención' ) as $op ) {
+			echo '<option value="' . esc_attr( $op ) . '"' . selected( get_post_meta( $post->ID, '_karu_tipo', true ), $op, false ) . '>' . esc_html( $op ? $op : '—' ) . '</option>';
+		}
+		echo '</select></label></p>';
 		echo '<p><label>Productos<br><input type="text" name="karu_productos" value="' . $g( '_karu_productos' ) . '" class="widefat"></label></p>';
 		echo '<p><label><input type="checkbox" name="karu_autoriza" value="1"' . checked( (int) get_post_meta( $post->ID, '_karu_autoriza', true ), 1, false ) . '> El cliente autorizó publicar su opinión con su nombre y comuna</label></p>';
 		$email = get_post_meta( $post->ID, '_karu_email', true );
@@ -118,6 +187,7 @@ add_action( 'save_post_karu_testimonio', function ( $id ) {
 	update_post_meta( $id, '_karu_comuna', sanitize_text_field( wp_unslash( $_POST['karu_comuna'] ?? '' ) ) );
 	update_post_meta( $id, '_karu_experiencia', sanitize_text_field( wp_unslash( $_POST['karu_experiencia'] ?? '' ) ) );
 	update_post_meta( $id, '_karu_productos', sanitize_text_field( wp_unslash( $_POST['karu_productos'] ?? '' ) ) );
+	update_post_meta( $id, '_karu_tipo', sanitize_text_field( wp_unslash( $_POST['karu_tipo'] ?? '' ) ) );
 	update_post_meta( $id, '_karu_autoriza', isset( $_POST['karu_autoriza'] ) ? 1 : 0 );
 } );
 
@@ -126,6 +196,7 @@ add_filter( 'manage_karu_testimonio_posts_columns', function ( $cols ) {
 		'cb'          => $cols['cb'],
 		'title'       => 'Nombre',
 		'karu_texto'  => 'Opinión',
+		'karu_sobre'  => 'Sobre',
 		'karu_exp'    => 'Experiencia',
 		'karu_aut'    => 'Autorizó',
 		'date'        => $cols['date'],
@@ -135,6 +206,8 @@ add_filter( 'manage_karu_testimonio_posts_columns', function ( $cols ) {
 add_action( 'manage_karu_testimonio_posts_custom_column', function ( $col, $id ) {
 	if ( $col === 'karu_texto' ) {
 		echo esc_html( wp_trim_words( get_post_field( 'post_content', $id ), 18 ) );
+	} elseif ( $col === 'karu_sobre' ) {
+		echo esc_html( karu_opinion_sobre( $id ) );
 	} elseif ( $col === 'karu_exp' ) {
 		echo esc_html( get_post_meta( $id, '_karu_experiencia', true ) );
 	} elseif ( $col === 'karu_aut' ) {
@@ -158,7 +231,9 @@ add_shortcode( 'karu_testimonios', function ( $atts ) {
 	foreach ( $opiniones as $op ) {
 		$comuna = get_post_meta( $op->ID, '_karu_comuna', true );
 		$exp    = get_post_meta( $op->ID, '_karu_experiencia', true );
+		$sobre  = karu_opinion_sobre( $op->ID );
 		$html  .= '<figure class="karu-op__card">' . $comilla
+			. ( $sobre ? '<span class="karu-op__sobre">Sobre: ' . esc_html( $sobre ) . '</span>' : '' )
 			. '<blockquote>' . wpautop( esc_html( $op->post_content ) ) . '</blockquote>'
 			. '<figcaption><strong>' . esc_html( $op->post_title ) . '</strong>' . ( $comuna ? '<span>' . esc_html( $comuna ) . '</span>' : '' ) . '</figcaption>'
 			. ( $exp ? '<span class="karu-op__exp">Experiencia: ' . esc_html( $exp ) . '</span>' : '' )
@@ -180,6 +255,7 @@ add_action( 'wp_head', function () {
 .karu-op figcaption { display: flex; flex-direction: column; gap: 2px; margin-top: auto; }
 .karu-op figcaption strong, .karu-op__card--vacia strong { color: #243D5B; font-size: 14px; font-weight: 700; }
 .karu-op figcaption span { font-size: 14px; }
+.karu-op__sobre { font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #4A90E2; }
 .karu-op__exp { align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #EDF6FF; color: #243D5B; font-size: 12px; font-weight: 700; }
 @media (max-width: 767px) { .karu-op { grid-template-columns: 1fr; } }
 </style>
