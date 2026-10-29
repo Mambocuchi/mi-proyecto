@@ -18,8 +18,8 @@ const KARU_RETIRO_TEXTO    = 'Castellón 1333, Concepción. Lunes a jueves de 08
 function karu_comunas() {
 	return array(
 		'Concepción'         => 1000,
-		'San Pedro de la Paz' => 1000,
-		'Chiguayante'         => 2000,
+		'San Pedro de la Paz' => 2000,
+		'Chiguayante'         => 3000,
 		'Talcahuano'          => 3000,
 		'Hualpén'             => 3000,
 		'Penco'               => 3000,

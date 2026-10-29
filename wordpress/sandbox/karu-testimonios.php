@@ -164,17 +164,14 @@ add_shortcode( 'karu_testimonios', function ( $atts ) {
 			. ( $exp ? '<span class="karu-op__exp">Experiencia: ' . esc_html( $exp ) . '</span>' : '' )
 			. '</figure>';
 	}
-	for ( $i = count( $opiniones ); $i < 3; $i++ ) {
-		$html .= '<div class="karu-op__card karu-op__card--vacia' . ( $i > 0 ? ' karu-op__card--extra' : '' ) . '">' . $comilla
-			. '<p>Aquí publicaremos la opinión de un cliente real, con su autorización.</p><strong>Espacio para testimonio</strong></div>';
-	}
+	// Solo opiniones reales: sin recuadros vacíos.
 	return $html . '</div>';
 } );
 
 add_action( 'wp_head', function () {
 	?>
 <style id="karu-testimonios">
-.karu-op { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.karu-op { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 380px)); justify-content: center; gap: 20px; }
 .karu-op__card { margin: 0; display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E4ECF4; box-shadow: 0 4px 16px rgba(36,61,91,.05); color: #5B6C82; }
 .karu-op__card--vacia { border: 2px dashed #CBD9E8; box-shadow: none; }
 .karu-op__comilla { color: #B8E0FF; }
@@ -184,8 +181,7 @@ add_action( 'wp_head', function () {
 .karu-op figcaption strong, .karu-op__card--vacia strong { color: #243D5B; font-size: 14px; font-weight: 700; }
 .karu-op figcaption span { font-size: 14px; }
 .karu-op__exp { align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #EDF6FF; color: #243D5B; font-size: 12px; font-weight: 700; }
-@media (max-width: 1024px) and (min-width: 768px) { .karu-op { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 767px) { .karu-op { grid-template-columns: 1fr; } .karu-op__card--extra { display: none; } }
+@media (max-width: 767px) { .karu-op { grid-template-columns: 1fr; } }
 </style>
 	<?php
 } );
